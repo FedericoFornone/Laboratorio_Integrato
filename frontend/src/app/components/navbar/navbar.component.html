@@ -1,0 +1,18 @@
+<nav class="relative px-5 flex justify-between items-center h-14 bg-blue-800 drop-shadow-md">
+  <!-- Logo -->
+  <div>
+      <a [routerLink]="'/home/'" class="text-white text-2xl font-semibold italic">
+          LOGO
+      </a>
+  </div>
+
+  <!-- This div and its children show up when screen's width >= 769px (md breakpoint) -->
+  <div>
+      <!-- Menu Links -->
+      <div
+          class="order-last flex flex-col items-end text-pink-200 space-y-3  md:flex-row md:items-start md:order-first md:space-y-0 md:space-x-3">
+          <a class="text-white" [routerLink]="'/stats/'">Stats</a>
+          <a class="hover:text-white" [routerLink]="'/contacts/'">Contacts</a>
+      </div>
+  </div>
+</nav>

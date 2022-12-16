@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
 
 import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.components';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, NavbarComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
