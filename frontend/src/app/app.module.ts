@@ -12,9 +12,10 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent, FooterComponent],
+  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent, FooterComponent, AboutComponent],
   imports: [
     HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
