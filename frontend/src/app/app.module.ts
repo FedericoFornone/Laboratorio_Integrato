@@ -10,9 +10,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { StatsComponent } from './pages/stats/stats.component';
 
 import { ButtonComponent } from './components/button/button.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent],
+  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent],
   imports: [
     HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
