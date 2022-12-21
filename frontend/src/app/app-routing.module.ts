@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './pages/about/about.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { StatsComponent } from './pages/stats/stats.component';
@@ -12,6 +13,10 @@ const routes: Routes = [
     path: 'stats',
     component: StatsComponent,
     resolve: { stats: StatsResolver },
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
