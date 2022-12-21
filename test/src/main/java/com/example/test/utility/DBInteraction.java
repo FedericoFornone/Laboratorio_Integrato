@@ -15,8 +15,7 @@ import java.util.Map.Entry;
 public class DBInteraction {
 
     public static void DBTest() {
-    // Trying to connect to a DB on a remote server
-    // Testing this from my laptop results in getting denied permission to connect to this MariaDB server
+    // daniele: connecting directly to DB with a user i created
     try {
         Connection connection = DriverManager.getConnection("jdbc:mariadb://18.102.24.178:3306/Region_Data","root", "87!tyIlp?1");
         try (PreparedStatement statement = connection.prepareStatement("""
