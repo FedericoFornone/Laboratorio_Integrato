@@ -8,12 +8,13 @@ import { NgChartsModule } from 'ng2-charts';
 
 import { HomeComponent } from './pages/home/home.component';
 import { StatsComponent } from './pages/stats/stats.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent],
+  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent, FooterComponent],
   imports: [
     HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
