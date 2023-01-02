@@ -3,11 +3,11 @@ import pandas as pd
 
 
 if __name__ == '__main__':
-    # path = 'https://raw.githubusercontent.com/FedericoFornone/Laboratorio_Integrato/fintech/DataSet/turismo_da_estero_in_italia.csv'
-    path = '../DataSet/turismo_abruzzo.csv'
-    df = pd.read_csv(path, sep=";").fillna(0)
-    df = df[df["Territorio"].isin(["Abruzzo", "Chieti", "L'Aquila", "Teramo", "Pescara"])][df["Indicatori"].isin(["arrivi ", "presenze"])][df["TIPO_ALLOGGIO2"].isin(["HOTELLIKE", "OTHER"])][df["Paese di residenza dei clienti"].isin(["Italia", "Paesi esteri"])]
-    df.drop(["ITTER107", "TIPO_DATO7", "Correzione", "CORREZ", "ATECO_2007", "Ateco 2007", "ISO", "Seleziona periodo", "Tipologia di esercizio", "Flags", "Flag Codes"], axis=1, inplace=True)
+    path = 'https://raw.githubusercontent.com/FedericoFornone/Laboratorio_Integrato/fintech/DataSet/turismo_da_estero_in_italia.csv'
+    # path = '../DataSet/turismo_abruzzo.csv'
+    df = pd.read_csv(path, sep=";", low_memory=False).fillna(0)
+
+    df.drop(["ITTER107", "TIPO_DATO7", "CORREZ", "Correzione", "Tipologia di esercizio", "ATECO_2007", "Ateco 2007", "ISO", "Seleziona periodo", "Flag Codes", "Flags"], axis=1, inplace=True)
 
     df.sort_values(by=["TIME", "Territorio", "Indicatori", "TIPO_ALLOGGIO2", "Paese di residenza dei clienti"], ascending=True, inplace=True)
 
@@ -23,4 +23,4 @@ if __name__ == '__main__':
     except OSError as error:
         print(error)
 
-    new_df.to_csv("../Data/province.csv", index=False)
+    new_df.to_csv("../Data/estero.csv", index=False)
