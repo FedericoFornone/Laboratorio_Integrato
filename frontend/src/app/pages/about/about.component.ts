@@ -5,9 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
 })
 export class AboutComponent {
-  /* name = 'luna';
-  role = 'dev';
-  image = './././assets/about/team/lunadiatto.webp'; */
+
   team = [
     {
       name: 'Federico Fornone',
@@ -17,7 +15,7 @@ export class AboutComponent {
     {
       name: 'Alessia Rizzo',
       role: 'Backend Developer',
-      image: './././assets/about/team/riccardorapizzi.webp',
+      image: './././assets/about/team/alessiarizzo.webp',
     },
     {
       name: 'Daniele Budano',
