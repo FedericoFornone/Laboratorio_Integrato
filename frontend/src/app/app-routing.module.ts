@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
-import { StatsComponent } from './pages/stats/stats.component';
+import { StatsComponent } from './pages/dashboard/dashboard.component';
 
 import { StatsResolver } from './resolvers/stats.resolver';
 

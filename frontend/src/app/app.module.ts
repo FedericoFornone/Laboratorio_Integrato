@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
 
 import { HomeComponent } from './pages/home/home.component';
-import { StatsComponent } from './pages/stats/stats.component';
+import { StatsComponent } from './pages/dashboard/dashboard.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';

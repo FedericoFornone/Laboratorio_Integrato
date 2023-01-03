@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-stats',
-  templateUrl: './stats.component.html',
+  templateUrl: './dashboard.component.html',
 })
 export class StatsComponent implements OnInit {
   lineChartConfig: any;
