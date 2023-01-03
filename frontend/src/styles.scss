@@ -2,3 +2,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pseudo-bg-primary {
+	position: relative;
+}
+
+.pseudo-bg-primary::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: -15rem;
+	width: 1000vw;
+	height: 100%;
+	background: #F1CFDD;
+	border-radius: 1000px 0 0 1000px;
+}
+
+@media (min-width: 1024px) {
+	.pseudo-bg-primary::before {
+		left: -10rem;
+	}
+}
