@@ -9,7 +9,7 @@ import { StatsResolver } from './resolvers/stats.resolver';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'stats',
+    path: 'dashboard',
     component: StatsComponent,
     resolve: { stats: StatsResolver },
   },
