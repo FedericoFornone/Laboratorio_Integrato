@@ -1,7 +1,8 @@
 <div
   class="hero min-h-screen"
   style="
-    background-image: url(./././assets/about/undraw_landscape_mode_re_r964.svg);
+    background-image: url(assets/about/greg-willson-Hvd8Mw7hKBE-unsplash.jpg);
+    background-position: top;
   "
 >
   <div class="hero-overlay bg-opacity-10"></div>
@@ -37,7 +38,7 @@
           >
             <!-- FIXME:bg-gray-500 -->
             <!-- Heroicon name: outline/globe-alt -->
-            <img src="./././assets/about/undraw_ghost.svg" />
+            <img src="assets/about/undraw_ghost.svg" />
           </div>
           <div class="sm:min-w-0 sm:flex-1">
             <p class="text-lg font-semibold leading-8 text-gray-900">
@@ -58,7 +59,7 @@
             class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
           >
             <!-- Heroicon name: outline/scale -->
-            <img src="./././assets/about/undraw_heart-fun.svg" />
+            <img src="assets/about/undraw_heart-fun.svg" />
           </div>
           <div class="sm:min-w-0 sm:flex-1">
             <p class="text-lg font-semibold leading-8 text-gray-900">
@@ -78,7 +79,7 @@
             class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
           >
             <!-- Heroicon name: outline/bolt -->
-            <img src="./././assets/about/undraw_code.svg" />
+            <img src="assets/about/undraw_code.svg" />
           </div>
           <div class="sm:min-w-0 sm:flex-1">
             <p class="text-lg font-semibold leading-8 text-gray-900">
@@ -96,7 +97,7 @@
           >
             <!-- FIXME:logo nomad? -->
             <!-- Heroicon name: outline/device-phone-mobile -->
-            <img src="./././assets/about/undraw_bar-chart.svg" />
+            <img src="assets/about/undraw_bar-chart.svg" />
           </div>
           <div class="sm:min-w-0 sm:flex-1">
             <p class="text-lg font-semibold leading-8 text-gray-900">NOMAD</p>
@@ -115,8 +116,8 @@
   </div>
 </div>
 
-<!-- TODO:mask -->
-<div class="py-10 sm:py-32" id="team">
+<!-- FIXME:check class -->
+<div class="py-10 sm:py-32 pseudo-bg-primary">
   <div class="mx-auto px-6 lg:px-8">
     <div class="text-center">
       <p
@@ -131,14 +132,17 @@
       </p>
     </div>
     <div
-      class="flex items-center justify-center gap-6 flex-wrap md:flex-row"
-      *ngFor="let person of team"
+      class="flex items-center justify-center flex-wrap gap-6 flex-col lg:flex-row"
+    
     >
-      <app-avatar
-        [name]="person.name"
-        [role]="person.role"
-        [image]="person.image"
-      ></app-avatar>
+      <div *ngFor="let person of team" style="flex: 0 0 320px" class="flex items-center justify-center">
+        <app-avatar
+          [name]="person.name"
+          [role]="person.role"
+          [image]="person.image"
+        
+        ></app-avatar>
+      </div>
     </div>
   </div>
 </div>
