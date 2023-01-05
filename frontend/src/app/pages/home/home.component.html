@@ -1,2 +1,18 @@
 <div class="text-3xl font-bold">Homepage</div>
+<!-- <a routerLink="." [fragment]="'divisione3'" class="class1" skipLocationChange>ccc</a> -->
 
+<div id="divisione1" style="margin-top: 50px; background-color: aqua; height: 100vh;">
+  <h2 style="font-weight: bold; text-align: center; font-size: 180px;">Prima divisione</h2>
+  <app-arrow-button routerLink="." [fragment]="'divisione2'" skipLocationChange></app-arrow-button>
+</div>
+
+
+<div id="divisione2" style="margin-top: 50px; background-color: rebeccapurple; height: 100vh;">
+  <h2 style="font-weight: bold; text-align: center; font-size: 180px;">Seconda divisione</h2>
+  <app-arrow-button routerLink="." [fragment]="'divisione3'" skipLocationChange></app-arrow-button>
+</div>
+
+
+<div id="divisione3" style="margin-top: 50px; background-color: greenyellow; height: 100vh;">
+  <h2 style="font-weight: bold; text-align: center; font-size: 180px;">Terza divisione</h2>
+</div>
