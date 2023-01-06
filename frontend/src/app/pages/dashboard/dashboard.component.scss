@@ -1,0 +1,4 @@
+.swiper-slide-prev + .swiper-slide-active {
+	transition: all 0.2s;
+	transform: translate(0);
+}

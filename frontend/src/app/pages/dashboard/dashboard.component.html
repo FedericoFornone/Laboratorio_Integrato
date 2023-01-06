@@ -5,26 +5,32 @@
 
   <div class="relative">
     <button
-      class="absolute text-5xl font-bold top-56 left-5"
+      class="absolute text-5xl font-bold top-56 left-5 lg:hidden"
       (click)="previousSlide()"
       [class.hidden]="currentSlide === 0"
     >
       <
     </button>
-    <div class="flex gap-5 px-5 overflow-x-hidden">
+    <div
+      class="flex gap-5 px-5 overflow-x-hidden lg:overflow-x-visible swiper-container"
+    >
       <div
-        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full"
+        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:grow"
         [class.swiper-slide-active]="currentSlide === 0"
         [class.swiper-slide-prev]="currentSlide === 1"
-      ></div>
+      >
+        1
+      </div>
       <div
-        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full"
+        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:grow"
         [class.swiper-slide-next]="currentSlide === 0"
         [class.swiper-slide-active]="currentSlide === 1"
         [class.swiper-slide-prev]="currentSlide === 2"
-      ></div>
+      >
+        2
+      </div>
       <div
-        class="grid min-w-full grid-rows-2 gap-4"
+        class="grid min-w-full grid-rows-2 gap-4 lg:min-w-0 lg:grow"
         [class.swiper-slide-next]="currentSlide === 1"
         [class.swiper-slide-active]="currentSlide === 2"
       >
@@ -33,7 +39,7 @@
       </div>
     </div>
     <button
-      class="absolute text-5xl font-bold top-56 right-5"
+      class="absolute text-5xl font-bold top-56 right-5 lg:hidden"
       (click)="nextSlide()"
       [class.hidden]="currentSlide === 2"
     >
