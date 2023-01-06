@@ -1,4 +1,33 @@
-.swiper-slide-prev + .swiper-slide-active {
-	transition: all 0.2s;
-	transform: translate(0);
+
+	.swiper-slide-prev {
+		transition: all 0.2s;
+		transform: translateX(-100%);
+	}
+	
+	.swiper-slide-active {
+		transition: all 0.2s;
+		transform: translateX(0%);
+	}
+	
+	.swiper-slide-next {
+		transition: all 0.2s;
+		transform: translateX(100%);
+	}
+
+@media (min-width: 1024px) {
+	.swiper-slide-prev {
+		transform: none;
+	}
+		
+	.swiper-slide-active {
+		transform: none;
+	}
+		
+	.swiper-slide-next {
+		transform: none;
+	}
+
+	.slide-container {
+		transform: none !important;
+	}
 }

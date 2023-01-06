@@ -5,32 +5,38 @@
 
   <div class="relative">
     <button
-      class="absolute text-5xl font-bold top-56 left-5 lg:hidden"
+      class="absolute z-50 text-5xl font-bold top-56 left-5 lg:hidden"
       (click)="previousSlide()"
       [class.hidden]="currentSlide === 0"
     >
       <
     </button>
-    <div
-      class="flex gap-5 px-5 overflow-x-hidden lg:overflow-x-visible swiper-container"
+    <button
+      class="absolute z-50 text-5xl font-bold top-56 right-5 lg:hidden"
+      (click)="nextSlide()"
+      [class.hidden]="currentSlide === 2"
     >
+      >
+    </button>
+    <div class="flex mx-5 lg:gap-5 slide-container" #carousel>
       <div
-        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:grow"
+        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:flex-1"
         [class.swiper-slide-active]="currentSlide === 0"
         [class.swiper-slide-prev]="currentSlide === 1"
       >
         1
       </div>
       <div
-        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:grow"
+        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:flex-1"
         [class.swiper-slide-next]="currentSlide === 0"
         [class.swiper-slide-active]="currentSlide === 1"
         [class.swiper-slide-prev]="currentSlide === 2"
       >
         2
       </div>
+
       <div
-        class="grid min-w-full grid-rows-2 gap-4 lg:min-w-0 lg:grow"
+        class="grid min-w-full grid-rows-2 gap-4 lg:static lg:min-w-0 lg:flex-1"
         [class.swiper-slide-next]="currentSlide === 1"
         [class.swiper-slide-active]="currentSlide === 2"
       >
@@ -38,13 +44,6 @@
         <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
       </div>
     </div>
-    <button
-      class="absolute text-5xl font-bold top-56 right-5 lg:hidden"
-      (click)="nextSlide()"
-      [class.hidden]="currentSlide === 2"
-    >
-      >
-    </button>
   </div>
 
   <!--<div class="grid grid-cols-3 gap-5">

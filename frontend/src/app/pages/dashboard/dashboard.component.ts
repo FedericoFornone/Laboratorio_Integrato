@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,6 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 export class StatsComponent implements OnInit {
   lineChartConfig: any;
   currentSlide: number = 0;
+
+  @ViewChild("carousel") carousel!: any;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -23,12 +25,23 @@ export class StatsComponent implements OnInit {
       return;
     }
     this.currentSlide--;
+
+    this.animateCarousel();
   }
 
   nextSlide() {
-    if (this.currentSlide === 2) {
+    const totalSlides = this.carousel.nativeElement.childNodes.length;
+
+    if (this.currentSlide === totalSlides) {
       return;
     }
     this.currentSlide++;
+
+    this.animateCarousel();
+  }
+
+  animateCarousel() {
+    const carousel = this.carousel.nativeElement;
+    carousel.style.transform = `translateX(-${this.currentSlide * 100}%)`;
   }
 }
