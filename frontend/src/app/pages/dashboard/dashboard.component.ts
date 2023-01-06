@@ -7,6 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class StatsComponent implements OnInit {
   lineChartConfig: any;
+  currentSlide: number = 0;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -14,5 +15,19 @@ export class StatsComponent implements OnInit {
     this.route.data.subscribe((data: any) => {
       this.lineChartConfig = data.stats;
     });
+  }
+
+  previousSlide() {
+    if (this.currentSlide === 0) {
+      return;
+    }
+    this.currentSlide--;
+  }
+
+  nextSlide() {
+    if (this.currentSlide === 2) {
+      return;
+    }
+    this.currentSlide++;
   }
 }

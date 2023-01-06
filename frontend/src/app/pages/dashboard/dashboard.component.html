@@ -1,14 +1,52 @@
 <main class="pb-20">
-  <h1 class="mt-5 mb-20 font-bold text-center text-7xl">Dashboard</h1>
+  <h1 class="mt-5 mb-20 text-5xl font-bold text-center lg:text-7xl">
+    Dashboard
+  </h1>
 
-  <div class="grid grid-cols-3 gap-5">
+  <div class="relative">
+    <button
+      class="absolute text-5xl font-bold top-56 left-5"
+      (click)="previousSlide()"
+      [class.hidden]="currentSlide === 0"
+    >
+      <
+    </button>
+    <div class="flex gap-5 px-5 overflow-x-hidden">
+      <div
+        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full"
+        [class.swiper-slide-active]="currentSlide === 0"
+        [class.swiper-slide-prev]="currentSlide === 1"
+      ></div>
+      <div
+        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full"
+        [class.swiper-slide-next]="currentSlide === 0"
+        [class.swiper-slide-active]="currentSlide === 1"
+        [class.swiper-slide-prev]="currentSlide === 2"
+      ></div>
+      <div
+        class="grid min-w-full grid-rows-2 gap-4"
+        [class.swiper-slide-next]="currentSlide === 1"
+        [class.swiper-slide-active]="currentSlide === 2"
+      >
+        <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
+        <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
+      </div>
+    </div>
+    <button
+      class="absolute text-5xl font-bold top-56 right-5"
+      (click)="nextSlide()"
+      [class.hidden]="currentSlide === 2"
+    >
+      >
+    </button>
+  </div>
+
+  <!--<div class="grid grid-cols-3 gap-5">
     <div class="border-2 border-neutral rounded-xl h-[35rem]"></div>
     <div class="border-2 border-neutral rounded-xl h-[35rem]"></div>
     <div class="grid grid-rows-2 gap-4">
       <div class="border-2 border-neutral rounded-xl h-[17rem]"></div>
       <div class="border-2 border-neutral rounded-xl h-[17rem]"></div>
     </div>
-  </div>
-
-  <div class="border-2 border-neutral rounded-xl h-[35rem] mt-5"></div>
+  </div>-->
 </main>
