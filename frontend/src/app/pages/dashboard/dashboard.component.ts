@@ -1,49 +1,43 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChildren,
+  AfterViewInit,
+  QueryList,
+  ElementRef,
+} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-stats',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss'],
 })
-export class StatsComponent implements OnInit {
-  lineChartConfig: any;
+export class StatsComponent implements OnInit, AfterViewInit {
+  @ViewChildren('slide') slides!: QueryList<ElementRef>;
   currentSlide: number = 0;
-  windowSize!: number;
-
-  @ViewChild('carousel') carousel!: any;
+  numberOfSlides!: number;
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.data.subscribe((data) => {
-      const { stats, windowSize } = data;
-      this.windowSize = windowSize;
-    });
+    this.route.data.subscribe((data) => {});
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.numberOfSlides = this.slides.length;
+    }, 0);
   }
 
   previousSlide() {
-    if (this.currentSlide === 0) {
-      return;
+    if (this.currentSlide > 0) {
+      this.currentSlide--;
     }
-    this.currentSlide--;
-
-    this.animateCarousel();
   }
 
   nextSlide() {
-    const totalSlides = this.carousel.nativeElement.childNodes.length;
-
-    if (this.currentSlide === totalSlides) {
-      return;
+    if (this.currentSlide < this.numberOfSlides) {
+      this.currentSlide++;
     }
-    this.currentSlide++;
-
-    this.animateCarousel();
-  }
-
-  animateCarousel() {
-    const carousel = this.carousel.nativeElement;
-    carousel.style.transform = `translateX(-${this.currentSlide * 100}%)`;
   }
 }
