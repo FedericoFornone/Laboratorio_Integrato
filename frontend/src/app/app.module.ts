@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { ResponsiveSliderComponent } from './components/responsive-slider/responsive-slider.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
     FooterComponent,
     ButtonComponent,
     AvatarComponent,
+    ResponsiveSliderComponent,
   ],
   imports: [
     HttpClientModule,

@@ -3,50 +3,18 @@
     Dashboard
   </h1>
 
-  <div class="relative">
-    <button
-      class="absolute z-50 text-5xl font-bold -translate-y-1/2 top-1/2 left-5 lg:hidden"
-      (click)="previousSlide()"
-      *ngIf="currentSlide > 0"
-    >
-      <
-    </button>
-    <button
-      class="absolute z-50 text-5xl font-bold -translate-y-1/2 top-1/2 right-5 lg:hidden"
-      (click)="nextSlide()"
-      *ngIf="currentSlide < numberOfSlides - 1"
-    >
-      >
-    </button>
-    <div
-      [ngStyle]="{ transform: 'translateX(' + -currentSlide * 100 + '%)' }"
-      class="flex mx-5 lg:gap-5 lg:!transform-none"
-    >
-      <div
-        class="min-w-full transition-all duration-200 lg:min-w-0 lg:flex-1 lg:transform-none"
-        [class.-translate-x-full]="currentSlide === 1"
-        [class.translate-x-0]="currentSlide === 0"
-      >
-        <div class="border-2 border-neutral rounded-xl h-[30rem]">1</div>
+  <app-responsive-slider>
+    <ng-template #slide>
+      <div class="border-2 border-neutral rounded-xl h-[30rem]">1</div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="border-2 border-neutral rounded-xl h-[30rem]">2</div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="grid grid-rows-2 gap-4">
+        <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
+        <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
       </div>
-      <div
-        class="min-w-full transition-all duration-200 lg:min-w-0 lg:flex-1 lg:transform-none"
-        [class.-translate-x-full]="currentSlide === 2"
-        [class.translate-x-0]="currentSlide === 1"
-        [class.translate-x-full]="currentSlide === 0"
-      >
-        <div class="border-2 border-neutral rounded-xl h-[30rem]">2</div>
-      </div>
-      <div
-        class="min-w-full transition-all duration-200 lg:min-w-0 lg:flex-1 lg:transform-none"
-        [class.translate-x-0]="currentSlide === 2"
-        [class.translate-x-full]="currentSlide === 1"
-      >
-        <div class="grid grid-rows-2 gap-4">
-          <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
-          <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </ng-template>
+  </app-responsive-slider>
 </main>
