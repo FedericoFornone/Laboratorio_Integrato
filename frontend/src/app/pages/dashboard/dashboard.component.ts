@@ -10,7 +10,7 @@ export class StatsComponent implements OnInit {
   lineChartConfig: any;
   currentSlide: number = 0;
 
-  @ViewChild("carousel") carousel!: any;
+ // @ViewChild("carousel") carousel!: any;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -20,7 +20,7 @@ export class StatsComponent implements OnInit {
     });
   }
 
-  previousSlide() {
+  /*previousSlide() {
     if (this.currentSlide === 0) {
       return;
     }
@@ -43,5 +43,5 @@ export class StatsComponent implements OnInit {
   animateCarousel() {
     const carousel = this.carousel.nativeElement;
     carousel.style.transform = `translateX(-${this.currentSlide * 100}%)`;
-  }
+  }*/
 }
