@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +13,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
-import { ResponsiveSliderComponent } from './components/responsive-slider/responsive-slider.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +23,12 @@ import { ResponsiveSliderComponent } from './components/responsive-slider/respon
     FooterComponent,
     ButtonComponent,
     AvatarComponent,
-    ResponsiveSliderComponent,
   ],
   imports: [
     HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgChartsModule,
-    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

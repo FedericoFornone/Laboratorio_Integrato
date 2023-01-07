@@ -1,18 +1,17 @@
-/*
-	.swiper-slide-prev {
-		transition: all 0.2s;
-		transform: translateX(-100%);
-	}
+.swiper-slide-prev {
+	transition: all 0.2s;
+	transform: translateX(-100%);
+}
 	
-	.swiper-slide-active {
-		transition: all 0.2s;
-		transform: translateX(0%);
-	}
+.swiper-slide-active {
+	transition: all 0.2s;
+	transform: translateX(0%);
+}
 	
-	.swiper-slide-next {
-		transition: all 0.2s;
-		transform: translateX(100%);
-	}
+.swiper-slide-next {
+	transition: all 0.2s;
+	transform: translateX(100%);
+}
 
 @media (min-width: 1024px) {
 	.swiper-slide-prev {
@@ -30,4 +29,4 @@
 	.slide-container {
 		transform: none !important;
 	}
-}*/
+}
