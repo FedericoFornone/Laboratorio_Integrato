@@ -10,7 +10,7 @@ import {
   templateUrl: './responsive-slider.component.html',
 })
 export class ResponsiveSliderComponent {
-  @ContentChildren('slide') slides!: QueryList<TemplateRef<any>>;
+  @ContentChildren('slide') slides!: QueryList<TemplateRef<void>>;
   currentSlide: number = 0;
 
   previousSlide() {
