@@ -1,4 +1,10 @@
-import { Component, Input, TemplateRef, ContentChildren, QueryList, HostListener } from '@angular/core';
+import {
+  Component,
+  TemplateRef,
+  ContentChildren,
+  QueryList,
+  Input,
+} from '@angular/core';
 
 @Component({
   selector: 'app-responsive-slider',
@@ -6,15 +12,18 @@ import { Component, Input, TemplateRef, ContentChildren, QueryList, HostListener
 })
 export class ResponsiveSliderComponent {
   @ContentChildren('slide') slides!: QueryList<TemplateRef<any>>;
-  @Input() currentSlideIndex: number = 0;
-  singleSlide = false;
+  @Input() singleSlide!: boolean;
+  currentSlideIndex: number = 0;
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    if(event.target.innerWidth < 1024) {
-      this.singleSlide = true;
-    } else {
-      this.singleSlide = false;
+  prevSlide() {
+    if (this.currentSlideIndex > 0) {
+      this.currentSlideIndex--;
+    }
+  }
+
+  nextSlide() {
+    if (this.currentSlideIndex < this.slides.length - 1) {
+      this.currentSlideIndex++;
     }
   }
 }

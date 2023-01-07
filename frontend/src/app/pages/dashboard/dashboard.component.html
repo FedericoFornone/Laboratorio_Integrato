@@ -3,25 +3,15 @@
     Dashboard
   </h1>
 
-  <app-responsive-slider [currentSlideIndex]="1">
+  <app-responsive-slider [singleSlide]="windowSize < 1024">
     <ng-template #slide>
-      <div
-        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:flex-1"
-      >
-        1
-      </div>
+      <div class="border-2 border-neutral rounded-xl h-[30rem]">1</div>
     </ng-template>
     <ng-template #slide>
-      <div
-        class="border-2 border-neutral rounded-xl h-[30rem] min-w-full lg:min-w-0 lg:flex-1"
-      >
-        2
-      </div>
+      <div class="border-2 border-neutral rounded-xl h-[30rem]">2</div>
     </ng-template>
     <ng-template #slide>
-      <div
-        class="grid min-w-full grid-rows-2 gap-4 lg:static lg:min-w-0 lg:flex-1"
-      >
+      <div class="grid grid-rows-2 gap-4">
         <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
         <div class="border-2 border-neutral rounded-xl h-[14.5rem]"></div>
       </div>

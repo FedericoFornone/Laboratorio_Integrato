@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,14 +9,21 @@ import { ActivatedRoute } from '@angular/router';
 export class StatsComponent implements OnInit {
   lineChartConfig: any;
   currentSlide: number = 0;
+  windowSize!: number;
 
- // @ViewChild("carousel") carousel!: any;
+  // @ViewChild("carousel") carousel!: any;
 
   constructor(private route: ActivatedRoute) {}
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.windowSize = event.target.innerWidth;
+  }
+
   ngOnInit(): void {
-    this.route.data.subscribe((data: any) => {
-      this.lineChartConfig = data.stats;
+    this.route.data.subscribe((data) => {
+      const { stats, windowSize } = data;
+      this.windowSize = windowSize;
     });
   }
 
