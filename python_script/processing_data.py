@@ -3,8 +3,9 @@ import pandas as pd
 
 
 if __name__ == '__main__':
-    path = 'https://raw.githubusercontent.com/FedericoFornone/Laboratorio_Integrato/fintech/DataSet/turismo_da_estero_in_italia.csv'
     # path = '../DataSet/turismo_abruzzo.csv'
+    #path = '../DataSet/dati_italia_abruzzo_annui.csv'
+    path = '../DataSet/italia_abruzzo_stranieri.csv'
     df = pd.read_csv(path, sep=";", low_memory=False).fillna(0)
 
     df.drop(["ITTER107", "TIPO_DATO7", "CORREZ", "Correzione", "Tipologia di esercizio", "ATECO_2007", "Ateco 2007", "ISO", "Seleziona periodo", "Flag Codes", "Flags"], axis=1, inplace=True)
@@ -18,9 +19,9 @@ if __name__ == '__main__':
 
     new_df["TIME"] = pd.to_datetime(new_df["TIME"], infer_datetime_format=True)
 
-    try:
-        os.mkdir("..\\Data")
-    except OSError as error:
-        print(error)
+    #try:
+    #    os.mkdir("..\\Data")
+    #except OSError as error:
+    #    print(error)
 
-    new_df.to_csv("../Data/estero.csv", index=False)
+    new_df.to_csv("../Data/italia_abruzzo_stranieri.csv", index=False)
