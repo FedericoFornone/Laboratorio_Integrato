@@ -1,4 +1,4 @@
-Territorio,TIPO_ALLOGGIO2,Paese di residenza dei clienti,TIME,arrivi,presenze
+Region,Infrastructure,ResidenceCountry,Date,Arrivals,Attendance
 Abruzzo,HOTELLIKE,Italia,2008-01-01,88624,257703
 Abruzzo,HOTELLIKE,Paesi esteri,2008-01-01,5346,19124
 Abruzzo,OTHER,Italia,2008-01-01,5701,20039

@@ -1,4 +1,4 @@
-Territorio,TIPO_ALLOGGIO2,Paese di residenza dei clienti,TIME,arrivi,presenze
+Region,Infrastructure,ResidenceCountry,Date,Arrivals,Attendance
 Abruzzo,ALL,Paesi esteri,2008-01-01,5548,21724
 Italia,ALL,Paesi esteri,2008-01-01,1595913,5875297
 Abruzzo,ALL,Paesi esteri,2008-02-01,7245,28281
