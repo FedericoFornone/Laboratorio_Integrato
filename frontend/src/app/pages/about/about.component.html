@@ -1,11 +1,13 @@
 <div
   class="hero min-h-screen"
   style="
-    background-image: url(assets/about/greg-willson-Hvd8Mw7hKBE-unsplash.jpg);
-    background-position: top;
+    background-image: url(assets/about/3.jpg);
+
+    background-size: cover;
   "
 >
-  <div class="hero-overlay bg-opacity-10"></div>
+  <!-- FIXME:border? text white -->
+  <div class="hero-overlay bg-opacity-0"></div>
   <div class="hero-content text-center">
     <div class="max-w-md">
       <h1
@@ -14,7 +16,6 @@
       >
         OUTLANDER
       </h1>
-      <!-- FIXME:white -->
       <p
         class="mb-7 text-xl text-white drop-shadow-2xl lg:text-2xl xl:text-3xl"
       >
@@ -133,14 +134,16 @@
     </div>
     <div
       class="flex items-center justify-center flex-wrap gap-6 flex-col lg:flex-row"
-    
     >
-      <div *ngFor="let person of team" style="flex: 0 0 320px" class="flex items-center justify-center">
+      <div
+        *ngFor="let person of team"
+        style="flex: 0 0 320px"
+        class="flex items-center justify-center"
+      >
         <app-avatar
           [name]="person.name"
           [role]="person.role"
           [image]="person.image"
-        
         ></app-avatar>
       </div>
     </div>
