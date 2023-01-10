@@ -11,38 +11,38 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class DBInteraction {
+    
+    public static ResultSet DBSelectFromRegion(String region) {
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:mariadb://18.102.24.178:3306/Region_Data","root", "87!tyIlp?1");
+            try (PreparedStatement statement = connection.prepareStatement("""
+                SELECT *
+                FROM Abruzzo
+                """))
+            { // this will be a prepared statement that subs out the ? with region, in the end
+                //statement.setString(1, "Abruzzo");
+                ResultSet resultSet = statement.executeQuery();
+                return resultSet;
 
-    public static void DBTest() {
-    // daniele: connecting directly to DB with a user i created
-    try {
-        Connection connection = DriverManager.getConnection("jdbc:mariadb://18.102.24.178:3306/Region_Data","root", "87!tyIlp?1");
-        try (PreparedStatement statement = connection.prepareStatement("""
-            SELECT TypeOfInfrastructure, CountryOfOrigin
-            FROM Abruzzo
-        """)) {
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            String val1 = resultSet.getString("TypeOfInfrastructure"); // using column name
-            System.out.println(val1);
+            }
+            catch (Exception e) {
+                System.out.println(e.toString());
+                ResultSet resultSet = null;
+                return resultSet;
+            }
         }
-        }
-        catch (Exception e) {
-            System.out.println(e.toString());
-        }
+        catch (Exception e){
+            System.out.println("Error while conntecting to DB: " + e.toString());
+            ResultSet resultSet = null;
+            return resultSet;
+        } 
     }
-    catch (Exception e){
-        System.out.println("Error while conntecting to DB: " + e.toString());
-    }
-
-
-
-
-
-
-
-
-}
-
 }
