@@ -15,7 +15,7 @@ if __name__ == '__main__':
     new_df["presenze"] = df[df["Indicatori"] == "presenze"]["Value"].to_numpy()
     new_df.drop("Indicatori", axis=1, inplace=True)
 
-    new_df["TIME"] = pd.to_datetime(new_df["TIME"], infer_datetime_format=True)
+    new_df["TIME"] = pd.to_datetime(new_df["TIME"], infer_datetime_format=True, format='%Y%m%d')
 
     new_df.rename(columns={'Territorio': 'Region', 'TIPO_ALLOGGIO2': 'Infrastructure',
                               'Paese di residenza dei clienti': 'ResidenceCountry', 'TIME': 'Date',
