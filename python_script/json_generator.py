@@ -17,6 +17,6 @@ def csv_to_json(csv_path, json_path):
 
 
 # csv_path = r'../Data/final_data/turisti_stranieri_abruzzo.csv'
-csv_path = r'../Data/final_data/province.csv'
-json_path = r'../Data/final_data/abruzzo.json'
+csv_path = r'../Data/final_data/stranieri_abruzzo.csv'
+json_path = r'../Data/final_data/stranieri_abruzzo.json'
 csv_to_json(csv_path, json_path)

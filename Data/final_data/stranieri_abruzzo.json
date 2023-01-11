@@ -234,14 +234,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-01-01",
-        "Arrivals": "9185.0",
-        "Attendance": "28125.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-01-01",
         "Arrivals": "9.0",
@@ -662,14 +654,6 @@
         "Date": "2008-01-01",
         "Arrivals": "2.0",
         "Attendance": "8.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-01-01",
-        "Arrivals": "937.0",
-        "Attendance": "6309.0"
     },
     {
         "Region": "Abruzzo",
@@ -1098,14 +1082,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-02-01",
-        "Arrivals": "10433.0",
-        "Attendance": "29625.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-02-01",
         "Arrivals": "9.0",
@@ -1526,14 +1502,6 @@
         "Date": "2008-02-01",
         "Arrivals": "2.0",
         "Attendance": "9.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-02-01",
-        "Arrivals": "1085.0",
-        "Attendance": "6037.0"
     },
     {
         "Region": "Abruzzo",
@@ -1962,14 +1930,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-03-01",
-        "Arrivals": "8971.0",
-        "Attendance": "23607.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-03-01",
         "Arrivals": "10.0",
@@ -2390,14 +2350,6 @@
         "Date": "2008-03-01",
         "Arrivals": "2.0",
         "Attendance": "10.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-03-01",
-        "Arrivals": "1229.0",
-        "Attendance": "5538.0"
     },
     {
         "Region": "Abruzzo",
@@ -2826,14 +2778,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-04-01",
-        "Arrivals": "12424.0",
-        "Attendance": "30652.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-04-01",
         "Arrivals": "10.0",
@@ -3254,14 +3198,6 @@
         "Date": "2008-04-01",
         "Arrivals": "11.0",
         "Attendance": "53.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-04-01",
-        "Arrivals": "2245.0",
-        "Attendance": "9298.0"
     },
     {
         "Region": "Abruzzo",
@@ -3690,14 +3626,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-05-01",
-        "Arrivals": "18822.0",
-        "Attendance": "53373.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-05-01",
         "Arrivals": "15.0",
@@ -4118,14 +4046,6 @@
         "Date": "2008-05-01",
         "Arrivals": "10.0",
         "Attendance": "46.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-05-01",
-        "Arrivals": "4396.0",
-        "Attendance": "22084.0"
     },
     {
         "Region": "Abruzzo",
@@ -4554,14 +4474,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-06-01",
-        "Arrivals": "24038.0",
-        "Attendance": "124100.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-06-01",
         "Arrivals": "17.0",
@@ -4982,14 +4894,6 @@
         "Date": "2008-06-01",
         "Arrivals": "14.0",
         "Attendance": "81.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-06-01",
-        "Arrivals": "7698.0",
-        "Attendance": "71217.0"
     },
     {
         "Region": "Abruzzo",
@@ -5418,14 +5322,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-07-01",
-        "Arrivals": "30675.0",
-        "Attendance": "210126.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-07-01",
         "Arrivals": "25.0",
@@ -5846,14 +5742,6 @@
         "Date": "2008-07-01",
         "Arrivals": "26.0",
         "Attendance": "151.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-07-01",
-        "Arrivals": "11633.0",
-        "Attendance": "146958.0"
     },
     {
         "Region": "Abruzzo",
@@ -6282,14 +6170,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-08-01",
-        "Arrivals": "29743.0",
-        "Attendance": "218315.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-08-01",
         "Arrivals": "19.0",
@@ -6710,14 +6590,6 @@
         "Date": "2008-08-01",
         "Arrivals": "25.0",
         "Attendance": "165.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-08-01",
-        "Arrivals": "13678.0",
-        "Attendance": "178325.0"
     },
     {
         "Region": "Abruzzo",
@@ -7146,14 +7018,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-09-01",
-        "Arrivals": "17153.0",
-        "Attendance": "80746.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-09-01",
         "Arrivals": "21.0",
@@ -7574,14 +7438,6 @@
         "Date": "2008-09-01",
         "Arrivals": "17.0",
         "Attendance": "83.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-09-01",
-        "Arrivals": "3361.0",
-        "Attendance": "34974.0"
     },
     {
         "Region": "Abruzzo",
@@ -8010,14 +7866,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-10-01",
-        "Arrivals": "11002.0",
-        "Attendance": "27783.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-10-01",
         "Arrivals": "11.0",
@@ -8438,14 +8286,6 @@
         "Date": "2008-10-01",
         "Arrivals": "18.0",
         "Attendance": "82.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-10-01",
-        "Arrivals": "1363.0",
-        "Attendance": "6955.0"
     },
     {
         "Region": "Abruzzo",
@@ -8874,14 +8714,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-11-01",
-        "Arrivals": "10355.0",
-        "Attendance": "28822.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-11-01",
         "Arrivals": "7.0",
@@ -9302,14 +9134,6 @@
         "Date": "2008-11-01",
         "Arrivals": "2.0",
         "Attendance": "15.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-11-01",
-        "Arrivals": "1057.0",
-        "Attendance": "6525.0"
     },
     {
         "Region": "Abruzzo",
@@ -9738,14 +9562,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-12-01",
-        "Arrivals": "11418.0",
-        "Attendance": "31357.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2008-12-01",
         "Arrivals": "7.0",
@@ -10166,14 +9982,6 @@
         "Date": "2008-12-01",
         "Arrivals": "2.0",
         "Attendance": "11.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2008-12-01",
-        "Arrivals": "1749.0",
-        "Attendance": "8424.0"
     },
     {
         "Region": "Abruzzo",
@@ -10602,14 +10410,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-01-01",
-        "Arrivals": "8036.0",
-        "Attendance": "24641.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-01-01",
         "Arrivals": "7.0",
@@ -11030,14 +10830,6 @@
         "Date": "2009-01-01",
         "Arrivals": "2.0",
         "Attendance": "9.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-01-01",
-        "Arrivals": "978.0",
-        "Attendance": "6418.0"
     },
     {
         "Region": "Abruzzo",
@@ -11466,14 +11258,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-02-01",
-        "Arrivals": "7463.0",
-        "Attendance": "18937.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-02-01",
         "Arrivals": "6.0",
@@ -11894,14 +11678,6 @@
         "Date": "2009-02-01",
         "Arrivals": "2.0",
         "Attendance": "10.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-02-01",
-        "Arrivals": "866.0",
-        "Attendance": "4474.0"
     },
     {
         "Region": "Abruzzo",
@@ -12330,14 +12106,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-03-01",
-        "Arrivals": "7782.0",
-        "Attendance": "21610.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-03-01",
         "Arrivals": "6.0",
@@ -12758,14 +12526,6 @@
         "Date": "2009-03-01",
         "Arrivals": "2.0",
         "Attendance": "14.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-03-01",
-        "Arrivals": "854.0",
-        "Attendance": "4968.0"
     },
     {
         "Region": "Abruzzo",
@@ -13194,14 +12954,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-04-01",
-        "Arrivals": "7756.0",
-        "Attendance": "19364.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-04-01",
         "Arrivals": "6.0",
@@ -13622,14 +13374,6 @@
         "Date": "2009-04-01",
         "Arrivals": "8.0",
         "Attendance": "38.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-04-01",
-        "Arrivals": "1624.0",
-        "Attendance": "6817.0"
     },
     {
         "Region": "Abruzzo",
@@ -14058,14 +13802,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-05-01",
-        "Arrivals": "13450.0",
-        "Attendance": "38754.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-05-01",
         "Arrivals": "7.0",
@@ -14486,14 +14222,6 @@
         "Date": "2009-05-01",
         "Arrivals": "7.0",
         "Attendance": "31.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-05-01",
-        "Arrivals": "3377.0",
-        "Attendance": "16920.0"
     },
     {
         "Region": "Abruzzo",
@@ -14922,14 +14650,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-06-01",
-        "Arrivals": "18398.0",
-        "Attendance": "99255.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-06-01",
         "Arrivals": "11.0",
@@ -15350,14 +15070,6 @@
         "Date": "2009-06-01",
         "Arrivals": "11.0",
         "Attendance": "63.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-06-01",
-        "Arrivals": "5943.0",
-        "Attendance": "58935.0"
     },
     {
         "Region": "Abruzzo",
@@ -15786,14 +15498,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-07-01",
-        "Arrivals": "23678.0",
-        "Attendance": "164251.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-07-01",
         "Arrivals": "14.0",
@@ -16214,14 +15918,6 @@
         "Date": "2009-07-01",
         "Arrivals": "23.0",
         "Attendance": "148.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-07-01",
-        "Arrivals": "9093.0",
-        "Attendance": "113706.0"
     },
     {
         "Region": "Abruzzo",
@@ -16650,14 +16346,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-08-01",
-        "Arrivals": "25124.0",
-        "Attendance": "172388.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-08-01",
         "Arrivals": "10.0",
@@ -17078,14 +16766,6 @@
         "Date": "2009-08-01",
         "Arrivals": "25.0",
         "Attendance": "156.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-08-01",
-        "Arrivals": "11303.0",
-        "Attendance": "136912.0"
     },
     {
         "Region": "Abruzzo",
@@ -17514,14 +17194,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-09-01",
-        "Arrivals": "14192.0",
-        "Attendance": "70750.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-09-01",
         "Arrivals": "10.0",
@@ -17942,14 +17614,6 @@
         "Date": "2009-09-01",
         "Arrivals": "18.0",
         "Attendance": "88.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-09-01",
-        "Arrivals": "2975.0",
-        "Attendance": "31236.0"
     },
     {
         "Region": "Abruzzo",
@@ -18378,14 +18042,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-10-01",
-        "Arrivals": "8554.0",
-        "Attendance": "28773.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-10-01",
         "Arrivals": "6.0",
@@ -18806,14 +18462,6 @@
         "Date": "2009-10-01",
         "Arrivals": "12.0",
         "Attendance": "71.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-10-01",
-        "Arrivals": "1165.0",
-        "Attendance": "7520.0"
     },
     {
         "Region": "Abruzzo",
@@ -19242,14 +18890,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-11-01",
-        "Arrivals": "9679.0",
-        "Attendance": "33660.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-11-01",
         "Arrivals": "6.0",
@@ -19670,14 +19310,6 @@
         "Date": "2009-11-01",
         "Arrivals": "3.0",
         "Attendance": "18.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-11-01",
-        "Arrivals": "1042.0",
-        "Attendance": "8192.0"
     },
     {
         "Region": "Abruzzo",
@@ -20106,14 +19738,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-12-01",
-        "Arrivals": "10189.0",
-        "Attendance": "36520.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2009-12-01",
         "Arrivals": "6.0",
@@ -20534,14 +20158,6 @@
         "Date": "2009-12-01",
         "Arrivals": "2.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2009-12-01",
-        "Arrivals": "1627.0",
-        "Attendance": "10097.0"
     },
     {
         "Region": "Abruzzo",
@@ -20970,14 +20586,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-01-01",
-        "Arrivals": "7801.0",
-        "Attendance": "30824.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-01-01",
         "Arrivals": "6.0",
@@ -21398,14 +21006,6 @@
         "Date": "2010-01-01",
         "Arrivals": "2.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-01-01",
-        "Arrivals": "931.0",
-        "Attendance": "7782.0"
     },
     {
         "Region": "Abruzzo",
@@ -21834,14 +21434,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-02-01",
-        "Arrivals": "7531.0",
-        "Attendance": "22096.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-02-01",
         "Arrivals": "5.0",
@@ -22262,14 +21854,6 @@
         "Date": "2010-02-01",
         "Arrivals": "2.0",
         "Attendance": "10.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-02-01",
-        "Arrivals": "846.0",
-        "Attendance": "5025.0"
     },
     {
         "Region": "Abruzzo",
@@ -22698,14 +22282,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-03-01",
-        "Arrivals": "8873.0",
-        "Attendance": "24915.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-03-01",
         "Arrivals": "8.0",
@@ -23126,14 +22702,6 @@
         "Date": "2010-03-01",
         "Arrivals": "7.0",
         "Attendance": "32.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-03-01",
-        "Arrivals": "1010.0",
-        "Attendance": "5633.0"
     },
     {
         "Region": "Abruzzo",
@@ -23562,14 +23130,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-04-01",
-        "Arrivals": "9010.0",
-        "Attendance": "24132.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-04-01",
         "Arrivals": "5.0",
@@ -23990,14 +23550,6 @@
         "Date": "2010-04-01",
         "Arrivals": "6.0",
         "Attendance": "33.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-04-01",
-        "Arrivals": "1754.0",
-        "Attendance": "7763.0"
     },
     {
         "Region": "Abruzzo",
@@ -24426,14 +23978,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-05-01",
-        "Arrivals": "14864.0",
-        "Attendance": "41346.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-05-01",
         "Arrivals": "8.0",
@@ -24854,14 +24398,6 @@
         "Date": "2010-05-01",
         "Arrivals": "12.0",
         "Attendance": "62.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-05-01",
-        "Arrivals": "2991.0",
-        "Attendance": "16356.0"
     },
     {
         "Region": "Abruzzo",
@@ -25290,14 +24826,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-06-01",
-        "Arrivals": "18549.0",
-        "Attendance": "90892.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-06-01",
         "Arrivals": "11.0",
@@ -25718,14 +25246,6 @@
         "Date": "2010-06-01",
         "Arrivals": "13.0",
         "Attendance": "69.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-06-01",
-        "Arrivals": "6081.0",
-        "Attendance": "53335.0"
     },
     {
         "Region": "Abruzzo",
@@ -26154,14 +25674,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-07-01",
-        "Arrivals": "28876.0",
-        "Attendance": "186528.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-07-01",
         "Arrivals": "17.0",
@@ -26582,14 +26094,6 @@
         "Date": "2010-07-01",
         "Arrivals": "32.0",
         "Attendance": "185.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-07-01",
-        "Arrivals": "11832.0",
-        "Attendance": "130553.0"
     },
     {
         "Region": "Abruzzo",
@@ -27018,14 +26522,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-08-01",
-        "Arrivals": "25865.0",
-        "Attendance": "197598.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-08-01",
         "Arrivals": "12.0",
@@ -27446,14 +26942,6 @@
         "Date": "2010-08-01",
         "Arrivals": "32.0",
         "Attendance": "226.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-08-01",
-        "Arrivals": "11427.0",
-        "Attendance": "155733.0"
     },
     {
         "Region": "Abruzzo",
@@ -27882,14 +27370,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-09-01",
-        "Arrivals": "14694.0",
-        "Attendance": "71300.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-09-01",
         "Arrivals": "11.0",
@@ -28310,14 +27790,6 @@
         "Date": "2010-09-01",
         "Arrivals": "30.0",
         "Attendance": "163.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-09-01",
-        "Arrivals": "3086.0",
-        "Attendance": "32043.0"
     },
     {
         "Region": "Abruzzo",
@@ -28746,14 +28218,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-10-01",
-        "Arrivals": "10403.0",
-        "Attendance": "29711.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-10-01",
         "Arrivals": "8.0",
@@ -29174,14 +28638,6 @@
         "Date": "2010-10-01",
         "Arrivals": "10.0",
         "Attendance": "45.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-10-01",
-        "Arrivals": "1471.0",
-        "Attendance": "8220.0"
     },
     {
         "Region": "Abruzzo",
@@ -29610,14 +29066,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-11-01",
-        "Arrivals": "9468.0",
-        "Attendance": "30062.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-11-01",
         "Arrivals": "8.0",
@@ -30038,14 +29486,6 @@
         "Date": "2010-11-01",
         "Arrivals": "3.0",
         "Attendance": "20.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-11-01",
-        "Arrivals": "1031.0",
-        "Attendance": "7849.0"
     },
     {
         "Region": "Abruzzo",
@@ -30474,14 +29914,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-12-01",
-        "Arrivals": "10542.0",
-        "Attendance": "33538.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2010-12-01",
         "Arrivals": "6.0",
@@ -30902,14 +30334,6 @@
         "Date": "2010-12-01",
         "Arrivals": "3.0",
         "Attendance": "17.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2010-12-01",
-        "Arrivals": "1609.0",
-        "Attendance": "9413.0"
     },
     {
         "Region": "Abruzzo",
@@ -31338,14 +30762,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-01-01",
-        "Arrivals": "9173.0",
-        "Attendance": "27120.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-01-01",
         "Arrivals": "7.0",
@@ -31766,14 +31182,6 @@
         "Date": "2011-01-01",
         "Arrivals": "2.0",
         "Attendance": "10.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-01-01",
-        "Arrivals": "1152.0",
-        "Attendance": "6930.0"
     },
     {
         "Region": "Abruzzo",
@@ -32202,14 +31610,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-02-01",
-        "Arrivals": "8198.0",
-        "Attendance": "21939.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-02-01",
         "Arrivals": "6.0",
@@ -32630,14 +32030,6 @@
         "Date": "2011-02-01",
         "Arrivals": "2.0",
         "Attendance": "10.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-02-01",
-        "Arrivals": "893.0",
-        "Attendance": "4969.0"
     },
     {
         "Region": "Abruzzo",
@@ -33066,14 +32458,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-03-01",
-        "Arrivals": "8767.0",
-        "Attendance": "23299.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-03-01",
         "Arrivals": "10.0",
@@ -33494,14 +32878,6 @@
         "Date": "2011-03-01",
         "Arrivals": "3.0",
         "Attendance": "14.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-03-01",
-        "Arrivals": "1057.0",
-        "Attendance": "5414.0"
     },
     {
         "Region": "Abruzzo",
@@ -33930,14 +33306,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-04-01",
-        "Arrivals": "13124.0",
-        "Attendance": "37271.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-04-01",
         "Arrivals": "12.0",
@@ -34358,14 +33726,6 @@
         "Date": "2011-04-01",
         "Arrivals": "16.0",
         "Attendance": "84.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-04-01",
-        "Arrivals": "2853.0",
-        "Attendance": "13144.0"
     },
     {
         "Region": "Abruzzo",
@@ -34794,14 +34154,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-05-01",
-        "Arrivals": "15900.0",
-        "Attendance": "46378.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-05-01",
         "Arrivals": "12.0",
@@ -35222,14 +34574,6 @@
         "Date": "2011-05-01",
         "Arrivals": "11.0",
         "Attendance": "54.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-05-01",
-        "Arrivals": "3268.0",
-        "Attendance": "18765.0"
     },
     {
         "Region": "Abruzzo",
@@ -35658,14 +35002,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-06-01",
-        "Arrivals": "21228.0",
-        "Attendance": "97533.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-06-01",
         "Arrivals": "16.0",
@@ -36086,14 +35422,6 @@
         "Date": "2011-06-01",
         "Arrivals": "17.0",
         "Attendance": "89.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-06-01",
-        "Arrivals": "6907.0",
-        "Attendance": "54843.0"
     },
     {
         "Region": "Abruzzo",
@@ -36522,14 +35850,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-07-01",
-        "Arrivals": "29944.0",
-        "Attendance": "195575.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-07-01",
         "Arrivals": "22.0",
@@ -36950,14 +36270,6 @@
         "Date": "2011-07-01",
         "Arrivals": "35.0",
         "Attendance": "204.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-07-01",
-        "Arrivals": "12136.0",
-        "Attendance": "134193.0"
     },
     {
         "Region": "Abruzzo",
@@ -37386,14 +36698,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-08-01",
-        "Arrivals": "26656.0",
-        "Attendance": "189418.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-08-01",
         "Arrivals": "18.0",
@@ -37814,14 +37118,6 @@
         "Date": "2011-08-01",
         "Arrivals": "33.0",
         "Attendance": "222.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-08-01",
-        "Arrivals": "12142.0",
-        "Attendance": "147506.0"
     },
     {
         "Region": "Abruzzo",
@@ -38250,14 +37546,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-09-01",
-        "Arrivals": "15128.0",
-        "Attendance": "64966.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-09-01",
         "Arrivals": "17.0",
@@ -38678,14 +37966,6 @@
         "Date": "2011-09-01",
         "Arrivals": "21.0",
         "Attendance": "97.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-09-01",
-        "Arrivals": "3520.0",
-        "Attendance": "29308.0"
     },
     {
         "Region": "Abruzzo",
@@ -39114,14 +38394,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-10-01",
-        "Arrivals": "11051.0",
-        "Attendance": "29251.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-10-01",
         "Arrivals": "13.0",
@@ -39542,14 +38814,6 @@
         "Date": "2011-10-01",
         "Arrivals": "18.0",
         "Attendance": "79.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-10-01",
-        "Arrivals": "1728.0",
-        "Attendance": "8227.0"
     },
     {
         "Region": "Abruzzo",
@@ -39978,14 +39242,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-11-01",
-        "Arrivals": "9485.0",
-        "Attendance": "30294.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-11-01",
         "Arrivals": "8.0",
@@ -40406,14 +39662,6 @@
         "Date": "2011-11-01",
         "Arrivals": "4.0",
         "Attendance": "23.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-11-01",
-        "Arrivals": "1097.0",
-        "Attendance": "7934.0"
     },
     {
         "Region": "Abruzzo",
@@ -40842,14 +40090,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-12-01",
-        "Arrivals": "10277.0",
-        "Attendance": "29530.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2011-12-01",
         "Arrivals": "6.0",
@@ -41270,14 +40510,6 @@
         "Date": "2011-12-01",
         "Arrivals": "2.0",
         "Attendance": "14.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2011-12-01",
-        "Arrivals": "1634.0",
-        "Attendance": "8414.0"
     },
     {
         "Region": "Abruzzo",
@@ -41714,14 +40946,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-01-01",
-        "Arrivals": "7977.0",
-        "Attendance": "23589.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-01-01",
         "Arrivals": "7.0",
@@ -42150,14 +41374,6 @@
         "Date": "2012-01-01",
         "Arrivals": "1.0",
         "Attendance": "7.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-01-01",
-        "Arrivals": "1015.0",
-        "Attendance": "6141.0"
     },
     {
         "Region": "Abruzzo",
@@ -42594,14 +41810,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-02-01",
-        "Arrivals": "7427.0",
-        "Attendance": "19294.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-02-01",
         "Arrivals": "7.0",
@@ -43030,14 +42238,6 @@
         "Date": "2012-02-01",
         "Arrivals": "2.0",
         "Attendance": "9.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-02-01",
-        "Arrivals": "825.0",
-        "Attendance": "4598.0"
     },
     {
         "Region": "Abruzzo",
@@ -43474,14 +42674,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-03-01",
-        "Arrivals": "9299.0",
-        "Attendance": "27868.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-03-01",
         "Arrivals": "11.0",
@@ -43910,14 +43102,6 @@
         "Date": "2012-03-01",
         "Arrivals": "4.0",
         "Attendance": "17.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-03-01",
-        "Arrivals": "1252.0",
-        "Attendance": "6636.0"
     },
     {
         "Region": "Abruzzo",
@@ -44354,14 +43538,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-04-01",
-        "Arrivals": "12043.0",
-        "Attendance": "37859.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-04-01",
         "Arrivals": "13.0",
@@ -44790,14 +43966,6 @@
         "Date": "2012-04-01",
         "Arrivals": "13.0",
         "Attendance": "79.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-04-01",
-        "Arrivals": "2875.0",
-        "Attendance": "14369.0"
     },
     {
         "Region": "Abruzzo",
@@ -45234,14 +44402,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-05-01",
-        "Arrivals": "14363.0",
-        "Attendance": "39810.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-05-01",
         "Arrivals": "12.0",
@@ -45670,14 +44830,6 @@
         "Date": "2012-05-01",
         "Arrivals": "12.0",
         "Attendance": "54.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-05-01",
-        "Arrivals": "2802.0",
-        "Attendance": "16267.0"
     },
     {
         "Region": "Abruzzo",
@@ -46114,14 +45266,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-06-01",
-        "Arrivals": "21204.0",
-        "Attendance": "96081.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-06-01",
         "Arrivals": "17.0",
@@ -46550,14 +45694,6 @@
         "Date": "2012-06-01",
         "Arrivals": "18.0",
         "Attendance": "93.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-06-01",
-        "Arrivals": "7671.0",
-        "Attendance": "56511.0"
     },
     {
         "Region": "Abruzzo",
@@ -46994,14 +46130,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-07-01",
-        "Arrivals": "26819.0",
-        "Attendance": "174479.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-07-01",
         "Arrivals": "29.0",
@@ -47430,14 +46558,6 @@
         "Date": "2012-07-01",
         "Arrivals": "34.0",
         "Attendance": "206.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-07-01",
-        "Arrivals": "10560.0",
-        "Attendance": "118032.0"
     },
     {
         "Region": "Abruzzo",
@@ -47874,14 +46994,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-08-01",
-        "Arrivals": "25170.0",
-        "Attendance": "185036.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-08-01",
         "Arrivals": "18.0",
@@ -48310,14 +47422,6 @@
         "Date": "2012-08-01",
         "Arrivals": "31.0",
         "Attendance": "207.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-08-01",
-        "Arrivals": "11722.0",
-        "Attendance": "142528.0"
     },
     {
         "Region": "Abruzzo",
@@ -48754,14 +47858,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-09-01",
-        "Arrivals": "14712.0",
-        "Attendance": "68105.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-09-01",
         "Arrivals": "19.0",
@@ -49190,14 +48286,6 @@
         "Date": "2012-09-01",
         "Arrivals": "39.0",
         "Attendance": "186.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-09-01",
-        "Arrivals": "3558.0",
-        "Attendance": "30436.0"
     },
     {
         "Region": "Abruzzo",
@@ -49634,14 +48722,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-10-01",
-        "Arrivals": "8483.0",
-        "Attendance": "23257.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-10-01",
         "Arrivals": "11.0",
@@ -50070,14 +49150,6 @@
         "Date": "2012-10-01",
         "Arrivals": "13.0",
         "Attendance": "65.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-10-01",
-        "Arrivals": "1260.0",
-        "Attendance": "6251.0"
     },
     {
         "Region": "Abruzzo",
@@ -50514,14 +49586,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-11-01",
-        "Arrivals": "8377.0",
-        "Attendance": "26006.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-11-01",
         "Arrivals": "8.0",
@@ -50950,14 +50014,6 @@
         "Date": "2012-11-01",
         "Arrivals": "3.0",
         "Attendance": "17.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-11-01",
-        "Arrivals": "1115.0",
-        "Attendance": "6750.0"
     },
     {
         "Region": "Abruzzo",
@@ -51394,14 +50450,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-12-01",
-        "Arrivals": "9877.0",
-        "Attendance": "29609.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2012-12-01",
         "Arrivals": "8.0",
@@ -51830,14 +50878,6 @@
         "Date": "2012-12-01",
         "Arrivals": "2.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2012-12-01",
-        "Arrivals": "1624.0",
-        "Attendance": "8456.0"
     },
     {
         "Region": "Abruzzo",
@@ -52274,14 +51314,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-01-01",
-        "Arrivals": "7052.0",
-        "Attendance": "19962.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-01-01",
         "Arrivals": "9.0",
@@ -52710,14 +51742,6 @@
         "Date": "2013-01-01",
         "Arrivals": "2.0",
         "Attendance": "7.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-01-01",
-        "Arrivals": "877.0",
-        "Attendance": "5365.0"
     },
     {
         "Region": "Abruzzo",
@@ -53154,14 +52178,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-02-01",
-        "Arrivals": "6738.0",
-        "Attendance": "16958.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-02-01",
         "Arrivals": "8.0",
@@ -53590,14 +52606,6 @@
         "Date": "2013-02-01",
         "Arrivals": "2.0",
         "Attendance": "9.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-02-01",
-        "Arrivals": "853.0",
-        "Attendance": "4260.0"
     },
     {
         "Region": "Abruzzo",
@@ -54034,14 +53042,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-03-01",
-        "Arrivals": "7859.0",
-        "Attendance": "18402.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-03-01",
         "Arrivals": "13.0",
@@ -54470,14 +53470,6 @@
         "Date": "2013-03-01",
         "Arrivals": "9.0",
         "Attendance": "36.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-03-01",
-        "Arrivals": "1244.0",
-        "Attendance": "4821.0"
     },
     {
         "Region": "Abruzzo",
@@ -54914,14 +53906,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-04-01",
-        "Arrivals": "8702.0",
-        "Attendance": "20144.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-04-01",
         "Arrivals": "9.0",
@@ -55350,14 +54334,6 @@
         "Date": "2013-04-01",
         "Arrivals": "6.0",
         "Attendance": "25.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-04-01",
-        "Arrivals": "1788.0",
-        "Attendance": "6948.0"
     },
     {
         "Region": "Abruzzo",
@@ -55794,14 +54770,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-05-01",
-        "Arrivals": "12722.0",
-        "Attendance": "33911.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-05-01",
         "Arrivals": "16.0",
@@ -56230,14 +55198,6 @@
         "Date": "2013-05-01",
         "Arrivals": "16.0",
         "Attendance": "65.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-05-01",
-        "Arrivals": "2383.0",
-        "Attendance": "12673.0"
     },
     {
         "Region": "Abruzzo",
@@ -56674,14 +55634,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-06-01",
-        "Arrivals": "20397.0",
-        "Attendance": "88557.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-06-01",
         "Arrivals": "19.0",
@@ -57110,14 +56062,6 @@
         "Date": "2013-06-01",
         "Arrivals": "18.0",
         "Attendance": "82.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-06-01",
-        "Arrivals": "7071.0",
-        "Attendance": "49926.0"
     },
     {
         "Region": "Abruzzo",
@@ -57554,14 +56498,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-07-01",
-        "Arrivals": "25408.0",
-        "Attendance": "163730.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-07-01",
         "Arrivals": "26.0",
@@ -57990,14 +56926,6 @@
         "Date": "2013-07-01",
         "Arrivals": "40.0",
         "Attendance": "223.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-07-01",
-        "Arrivals": "9948.0",
-        "Attendance": "107759.0"
     },
     {
         "Region": "Abruzzo",
@@ -58434,14 +57362,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-08-01",
-        "Arrivals": "25885.0",
-        "Attendance": "182736.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-08-01",
         "Arrivals": "22.0",
@@ -58870,14 +57790,6 @@
         "Date": "2013-08-01",
         "Arrivals": "39.0",
         "Attendance": "235.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-08-01",
-        "Arrivals": "12029.0",
-        "Attendance": "134834.0"
     },
     {
         "Region": "Abruzzo",
@@ -59314,14 +58226,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-09-01",
-        "Arrivals": "13169.0",
-        "Attendance": "60241.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-09-01",
         "Arrivals": "22.0",
@@ -59750,14 +58654,6 @@
         "Date": "2013-09-01",
         "Arrivals": "46.0",
         "Attendance": "229.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-09-01",
-        "Arrivals": "3071.0",
-        "Attendance": "25662.0"
     },
     {
         "Region": "Abruzzo",
@@ -60194,14 +59090,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-10-01",
-        "Arrivals": "7803.0",
-        "Attendance": "21633.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-10-01",
         "Arrivals": "12.0",
@@ -60630,14 +59518,6 @@
         "Date": "2013-10-01",
         "Arrivals": "11.0",
         "Attendance": "46.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-10-01",
-        "Arrivals": "1238.0",
-        "Attendance": "6308.0"
     },
     {
         "Region": "Abruzzo",
@@ -61074,14 +59954,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-11-01",
-        "Arrivals": "8798.0",
-        "Attendance": "24270.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-11-01",
         "Arrivals": "8.0",
@@ -61510,14 +60382,6 @@
         "Date": "2013-11-01",
         "Arrivals": "5.0",
         "Attendance": "21.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-11-01",
-        "Arrivals": "1285.0",
-        "Attendance": "6983.0"
     },
     {
         "Region": "Abruzzo",
@@ -61954,14 +60818,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-12-01",
-        "Arrivals": "11226.0",
-        "Attendance": "31920.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2013-12-01",
         "Arrivals": "11.0",
@@ -62390,14 +61246,6 @@
         "Date": "2013-12-01",
         "Arrivals": "3.0",
         "Attendance": "18.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2013-12-01",
-        "Arrivals": "1883.0",
-        "Attendance": "9537.0"
     },
     {
         "Region": "Abruzzo",
@@ -62834,14 +61682,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-01-01",
-        "Arrivals": "7129.0",
-        "Attendance": "20218.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-01-01",
         "Arrivals": "9.0",
@@ -63270,14 +62110,6 @@
         "Date": "2014-01-01",
         "Arrivals": "2.0",
         "Attendance": "10.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-01-01",
-        "Arrivals": "982.0",
-        "Attendance": "5539.0"
     },
     {
         "Region": "Abruzzo",
@@ -63714,14 +62546,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-02-01",
-        "Arrivals": "5880.0",
-        "Attendance": "15587.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-02-01",
         "Arrivals": "7.0",
@@ -64150,14 +62974,6 @@
         "Date": "2014-02-01",
         "Arrivals": "3.0",
         "Attendance": "10.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-02-01",
-        "Arrivals": "758.0",
-        "Attendance": "3903.0"
     },
     {
         "Region": "Abruzzo",
@@ -64594,14 +63410,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-03-01",
-        "Arrivals": "7143.0",
-        "Attendance": "18652.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-03-01",
         "Arrivals": "10.0",
@@ -65030,14 +63838,6 @@
         "Date": "2014-03-01",
         "Arrivals": "4.0",
         "Attendance": "14.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-03-01",
-        "Arrivals": "1057.0",
-        "Attendance": "4764.0"
     },
     {
         "Region": "Abruzzo",
@@ -65474,14 +64274,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-04-01",
-        "Arrivals": "12195.0",
-        "Attendance": "24717.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-04-01",
         "Arrivals": "14.0",
@@ -65910,14 +64702,6 @@
         "Date": "2014-04-01",
         "Arrivals": "23.0",
         "Attendance": "79.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-04-01",
-        "Arrivals": "3032.0",
-        "Attendance": "9035.0"
     },
     {
         "Region": "Abruzzo",
@@ -66354,14 +65138,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-05-01",
-        "Arrivals": "11744.0",
-        "Attendance": "29030.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-05-01",
         "Arrivals": "12.0",
@@ -66790,14 +65566,6 @@
         "Date": "2014-05-01",
         "Arrivals": "14.0",
         "Attendance": "55.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-05-01",
-        "Arrivals": "2880.0",
-        "Attendance": "11563.0"
     },
     {
         "Region": "Abruzzo",
@@ -67234,14 +66002,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-06-01",
-        "Arrivals": "16556.0",
-        "Attendance": "74516.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-06-01",
         "Arrivals": "18.0",
@@ -67670,14 +66430,6 @@
         "Date": "2014-06-01",
         "Arrivals": "22.0",
         "Attendance": "106.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-06-01",
-        "Arrivals": "5610.0",
-        "Attendance": "42015.0"
     },
     {
         "Region": "Abruzzo",
@@ -68114,14 +66866,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-07-01",
-        "Arrivals": "22224.0",
-        "Attendance": "139935.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-07-01",
         "Arrivals": "26.0",
@@ -68550,14 +67294,6 @@
         "Date": "2014-07-01",
         "Arrivals": "44.0",
         "Attendance": "244.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-07-01",
-        "Arrivals": "8605.0",
-        "Attendance": "93072.0"
     },
     {
         "Region": "Abruzzo",
@@ -68994,14 +67730,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-08-01",
-        "Arrivals": "23393.0",
-        "Attendance": "145917.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-08-01",
         "Arrivals": "20.0",
@@ -69430,14 +68158,6 @@
         "Date": "2014-08-01",
         "Arrivals": "45.0",
         "Attendance": "268.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-08-01",
-        "Arrivals": "10847.0",
-        "Attendance": "108937.0"
     },
     {
         "Region": "Abruzzo",
@@ -69874,14 +68594,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-09-01",
-        "Arrivals": "12131.0",
-        "Attendance": "56573.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-09-01",
         "Arrivals": "20.0",
@@ -70310,14 +69022,6 @@
         "Date": "2014-09-01",
         "Arrivals": "29.0",
         "Attendance": "134.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-09-01",
-        "Arrivals": "2831.0",
-        "Attendance": "23921.0"
     },
     {
         "Region": "Abruzzo",
@@ -70754,14 +69458,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-10-01",
-        "Arrivals": "7596.0",
-        "Attendance": "19149.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-10-01",
         "Arrivals": "12.0",
@@ -71190,14 +69886,6 @@
         "Date": "2014-10-01",
         "Arrivals": "26.0",
         "Attendance": "114.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-10-01",
-        "Arrivals": "1283.0",
-        "Attendance": "5568.0"
     },
     {
         "Region": "Abruzzo",
@@ -71634,14 +70322,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-11-01",
-        "Arrivals": "7264.0",
-        "Attendance": "21208.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-11-01",
         "Arrivals": "7.0",
@@ -72070,14 +70750,6 @@
         "Date": "2014-11-01",
         "Arrivals": "4.0",
         "Attendance": "18.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-11-01",
-        "Arrivals": "1004.0",
-        "Attendance": "5890.0"
     },
     {
         "Region": "Abruzzo",
@@ -72514,14 +71186,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-12-01",
-        "Arrivals": "7788.0",
-        "Attendance": "23548.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2014-12-01",
         "Arrivals": "7.0",
@@ -72950,14 +71614,6 @@
         "Date": "2014-12-01",
         "Arrivals": "3.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2014-12-01",
-        "Arrivals": "1375.0",
-        "Attendance": "6979.0"
     },
     {
         "Region": "Abruzzo",
@@ -73394,14 +72050,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-01-01",
-        "Arrivals": "5960.0",
-        "Attendance": "15203.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-01-01",
         "Arrivals": "8.0",
@@ -73830,14 +72478,6 @@
         "Date": "2015-01-01",
         "Arrivals": "3.0",
         "Attendance": "11.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-01-01",
-        "Arrivals": "880.0",
-        "Attendance": "4253.0"
     },
     {
         "Region": "Abruzzo",
@@ -74274,14 +72914,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-02-01",
-        "Arrivals": "5989.0",
-        "Attendance": "13363.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-02-01",
         "Arrivals": "8.0",
@@ -74710,14 +73342,6 @@
         "Date": "2015-02-01",
         "Arrivals": "4.0",
         "Attendance": "12.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-02-01",
-        "Arrivals": "804.0",
-        "Attendance": "3319.0"
     },
     {
         "Region": "Abruzzo",
@@ -75154,14 +73778,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-03-01",
-        "Arrivals": "6454.0",
-        "Attendance": "13647.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-03-01",
         "Arrivals": "9.0",
@@ -75590,14 +74206,6 @@
         "Date": "2015-03-01",
         "Arrivals": "6.0",
         "Attendance": "19.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-03-01",
-        "Arrivals": "941.0",
-        "Attendance": "3495.0"
     },
     {
         "Region": "Abruzzo",
@@ -76034,14 +74642,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-04-01",
-        "Arrivals": "7914.0",
-        "Attendance": "14609.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-04-01",
         "Arrivals": "10.0",
@@ -76470,14 +75070,6 @@
         "Date": "2015-04-01",
         "Arrivals": "14.0",
         "Attendance": "47.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-04-01",
-        "Arrivals": "1873.0",
-        "Attendance": "5122.0"
     },
     {
         "Region": "Abruzzo",
@@ -76914,14 +75506,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-05-01",
-        "Arrivals": "12444.0",
-        "Attendance": "29778.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-05-01",
         "Arrivals": "13.0",
@@ -77350,14 +75934,6 @@
         "Date": "2015-05-01",
         "Arrivals": "16.0",
         "Attendance": "55.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-05-01",
-        "Arrivals": "3422.0",
-        "Attendance": "12660.0"
     },
     {
         "Region": "Abruzzo",
@@ -77794,14 +76370,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-06-01",
-        "Arrivals": "16966.0",
-        "Attendance": "73663.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-06-01",
         "Arrivals": "23.0",
@@ -78230,14 +76798,6 @@
         "Date": "2015-06-01",
         "Arrivals": "25.0",
         "Attendance": "113.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-06-01",
-        "Arrivals": "5951.0",
-        "Attendance": "42495.0"
     },
     {
         "Region": "Abruzzo",
@@ -78674,14 +77234,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-07-01",
-        "Arrivals": "24196.0",
-        "Attendance": "146909.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-07-01",
         "Arrivals": "25.0",
@@ -79110,14 +77662,6 @@
         "Date": "2015-07-01",
         "Arrivals": "53.0",
         "Attendance": "299.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-07-01",
-        "Arrivals": "9655.0",
-        "Attendance": "98707.0"
     },
     {
         "Region": "Abruzzo",
@@ -79554,14 +78098,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-08-01",
-        "Arrivals": "24968.0",
-        "Attendance": "150942.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-08-01",
         "Arrivals": "22.0",
@@ -79990,14 +78526,6 @@
         "Date": "2015-08-01",
         "Arrivals": "60.0",
         "Attendance": "346.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-08-01",
-        "Arrivals": "11303.0",
-        "Attendance": "111872.0"
     },
     {
         "Region": "Abruzzo",
@@ -80434,14 +78962,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-09-01",
-        "Arrivals": "12463.0",
-        "Attendance": "55467.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-09-01",
         "Arrivals": "18.0",
@@ -80870,14 +79390,6 @@
         "Date": "2015-09-01",
         "Arrivals": "55.0",
         "Attendance": "261.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-09-01",
-        "Arrivals": "2964.0",
-        "Attendance": "23941.0"
     },
     {
         "Region": "Abruzzo",
@@ -81314,14 +79826,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-10-01",
-        "Arrivals": "7580.0",
-        "Attendance": "17316.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-10-01",
         "Arrivals": "12.0",
@@ -81750,14 +80254,6 @@
         "Date": "2015-10-01",
         "Arrivals": "17.0",
         "Attendance": "63.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-10-01",
-        "Arrivals": "1278.0",
-        "Attendance": "4882.0"
     },
     {
         "Region": "Abruzzo",
@@ -82194,14 +80690,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-11-01",
-        "Arrivals": "6551.0",
-        "Attendance": "17276.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-11-01",
         "Arrivals": "6.0",
@@ -82630,14 +81118,6 @@
         "Date": "2015-11-01",
         "Arrivals": "6.0",
         "Attendance": "24.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-11-01",
-        "Arrivals": "965.0",
-        "Attendance": "4940.0"
     },
     {
         "Region": "Abruzzo",
@@ -83074,14 +81554,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-12-01",
-        "Arrivals": "8470.0",
-        "Attendance": "22011.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2015-12-01",
         "Arrivals": "6.0",
@@ -83510,14 +81982,6 @@
         "Date": "2015-12-01",
         "Arrivals": "5.0",
         "Attendance": "24.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2015-12-01",
-        "Arrivals": "1654.0",
-        "Attendance": "6737.0"
     },
     {
         "Region": "Abruzzo",
@@ -83954,14 +82418,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-01-01",
-        "Arrivals": "5546.0",
-        "Attendance": "14784.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-01-01",
         "Arrivals": "7.0",
@@ -84390,14 +82846,6 @@
         "Date": "2016-01-01",
         "Arrivals": "4.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-01-01",
-        "Arrivals": "875.0",
-        "Attendance": "4279.0"
     },
     {
         "Region": "Abruzzo",
@@ -84834,14 +83282,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-02-01",
-        "Arrivals": "7374.0",
-        "Attendance": "17799.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-02-01",
         "Arrivals": "9.0",
@@ -85270,14 +83710,6 @@
         "Date": "2016-02-01",
         "Arrivals": "6.0",
         "Attendance": "19.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-02-01",
-        "Arrivals": "1149.0",
-        "Attendance": "4791.0"
     },
     {
         "Region": "Abruzzo",
@@ -85714,14 +84146,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-03-01",
-        "Arrivals": "7117.0",
-        "Attendance": "14568.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-03-01",
         "Arrivals": "10.0",
@@ -86150,14 +84574,6 @@
         "Date": "2016-03-01",
         "Arrivals": "6.0",
         "Attendance": "20.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-03-01",
-        "Arrivals": "1466.0",
-        "Attendance": "4438.0"
     },
     {
         "Region": "Abruzzo",
@@ -86594,14 +85010,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-04-01",
-        "Arrivals": "9425.0",
-        "Attendance": "17901.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-04-01",
         "Arrivals": "9.0",
@@ -87030,14 +85438,6 @@
         "Date": "2016-04-01",
         "Arrivals": "26.0",
         "Attendance": "89.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-04-01",
-        "Arrivals": "2200.0",
-        "Attendance": "6385.0"
     },
     {
         "Region": "Abruzzo",
@@ -87474,14 +85874,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-05-01",
-        "Arrivals": "11512.0",
-        "Attendance": "26550.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-05-01",
         "Arrivals": "15.0",
@@ -87910,14 +86302,6 @@
         "Date": "2016-05-01",
         "Arrivals": "20.0",
         "Attendance": "69.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-05-01",
-        "Arrivals": "2796.0",
-        "Attendance": "11282.0"
     },
     {
         "Region": "Abruzzo",
@@ -88354,14 +86738,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-06-01",
-        "Arrivals": "21139.0",
-        "Attendance": "83682.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-06-01",
         "Arrivals": "27.0",
@@ -88790,14 +87166,6 @@
         "Date": "2016-06-01",
         "Arrivals": "36.0",
         "Attendance": "144.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-06-01",
-        "Arrivals": "7588.0",
-        "Attendance": "46200.0"
     },
     {
         "Region": "Abruzzo",
@@ -89234,14 +87602,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-07-01",
-        "Arrivals": "27344.0",
-        "Attendance": "150656.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-07-01",
         "Arrivals": "28.0",
@@ -89670,14 +88030,6 @@
         "Date": "2016-07-01",
         "Arrivals": "70.0",
         "Attendance": "359.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-07-01",
-        "Arrivals": "11704.0",
-        "Attendance": "98380.0"
     },
     {
         "Region": "Abruzzo",
@@ -90114,14 +88466,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-08-01",
-        "Arrivals": "24007.0",
-        "Attendance": "153284.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-08-01",
         "Arrivals": "22.0",
@@ -90550,14 +88894,6 @@
         "Date": "2016-08-01",
         "Arrivals": "64.0",
         "Attendance": "383.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-08-01",
-        "Arrivals": "11133.0",
-        "Attendance": "111850.0"
     },
     {
         "Region": "Abruzzo",
@@ -90994,14 +89330,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-09-01",
-        "Arrivals": "13303.0",
-        "Attendance": "54043.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-09-01",
         "Arrivals": "18.0",
@@ -91430,14 +89758,6 @@
         "Date": "2016-09-01",
         "Arrivals": "38.0",
         "Attendance": "149.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-09-01",
-        "Arrivals": "3653.0",
-        "Attendance": "24334.0"
     },
     {
         "Region": "Abruzzo",
@@ -91874,14 +90194,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-10-01",
-        "Arrivals": "8893.0",
-        "Attendance": "18874.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-10-01",
         "Arrivals": "12.0",
@@ -92310,14 +90622,6 @@
         "Date": "2016-10-01",
         "Arrivals": "45.0",
         "Attendance": "147.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-10-01",
-        "Arrivals": "1769.0",
-        "Attendance": "5899.0"
     },
     {
         "Region": "Abruzzo",
@@ -92754,14 +91058,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-11-01",
-        "Arrivals": "6872.0",
-        "Attendance": "19976.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-11-01",
         "Arrivals": "7.0",
@@ -93190,14 +91486,6 @@
         "Date": "2016-11-01",
         "Arrivals": "7.0",
         "Attendance": "35.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-11-01",
-        "Arrivals": "1023.0",
-        "Attendance": "5789.0"
     },
     {
         "Region": "Abruzzo",
@@ -93634,14 +91922,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-12-01",
-        "Arrivals": "7391.0",
-        "Attendance": "18789.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2016-12-01",
         "Arrivals": "6.0",
@@ -94070,14 +92350,6 @@
         "Date": "2016-12-01",
         "Arrivals": "5.0",
         "Attendance": "22.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2016-12-01",
-        "Arrivals": "1495.0",
-        "Attendance": "5943.0"
     },
     {
         "Region": "Abruzzo",
@@ -94514,14 +92786,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-01-01",
-        "Arrivals": "6896.0",
-        "Attendance": "14416.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-01-01",
         "Arrivals": "9.0",
@@ -94950,14 +93214,6 @@
         "Date": "2017-01-01",
         "Arrivals": "4.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-01-01",
-        "Arrivals": "1124.0",
-        "Attendance": "4262.0"
     },
     {
         "Region": "Abruzzo",
@@ -95394,14 +93650,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-02-01",
-        "Arrivals": "5511.0",
-        "Attendance": "11291.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-02-01",
         "Arrivals": "7.0",
@@ -95830,14 +94078,6 @@
         "Date": "2017-02-01",
         "Arrivals": "5.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-02-01",
-        "Arrivals": "905.0",
-        "Attendance": "3162.0"
     },
     {
         "Region": "Abruzzo",
@@ -96274,14 +94514,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-03-01",
-        "Arrivals": "7044.0",
-        "Attendance": "14308.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-03-01",
         "Arrivals": "12.0",
@@ -96710,14 +94942,6 @@
         "Date": "2017-03-01",
         "Arrivals": "8.0",
         "Attendance": "21.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-03-01",
-        "Arrivals": "1205.0",
-        "Attendance": "4060.0"
     },
     {
         "Region": "Abruzzo",
@@ -97154,14 +95378,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-04-01",
-        "Arrivals": "8043.0",
-        "Attendance": "16908.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-04-01",
         "Arrivals": "9.0",
@@ -97590,14 +95806,6 @@
         "Date": "2017-04-01",
         "Arrivals": "23.0",
         "Attendance": "78.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-04-01",
-        "Arrivals": "2412.0",
-        "Attendance": "7172.0"
     },
     {
         "Region": "Abruzzo",
@@ -98034,14 +96242,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-05-01",
-        "Arrivals": "10807.0",
-        "Attendance": "23314.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-05-01",
         "Arrivals": "15.0",
@@ -98470,14 +96670,6 @@
         "Date": "2017-05-01",
         "Arrivals": "21.0",
         "Attendance": "63.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-05-01",
-        "Arrivals": "2584.0",
-        "Attendance": "9707.0"
     },
     {
         "Region": "Abruzzo",
@@ -98914,14 +97106,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-06-01",
-        "Arrivals": "20937.0",
-        "Attendance": "85361.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-06-01",
         "Arrivals": "27.0",
@@ -99350,14 +97534,6 @@
         "Date": "2017-06-01",
         "Arrivals": "36.0",
         "Attendance": "161.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-06-01",
-        "Arrivals": "8037.0",
-        "Attendance": "48228.0"
     },
     {
         "Region": "Abruzzo",
@@ -99794,14 +97970,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-07-01",
-        "Arrivals": "26491.0",
-        "Attendance": "144723.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-07-01",
         "Arrivals": "32.0",
@@ -100230,14 +98398,6 @@
         "Date": "2017-07-01",
         "Arrivals": "65.0",
         "Attendance": "316.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-07-01",
-        "Arrivals": "11419.0",
-        "Attendance": "96646.0"
     },
     {
         "Region": "Abruzzo",
@@ -100674,14 +98834,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-08-01",
-        "Arrivals": "22546.0",
-        "Attendance": "143821.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-08-01",
         "Arrivals": "24.0",
@@ -101110,14 +99262,6 @@
         "Date": "2017-08-01",
         "Arrivals": "67.0",
         "Attendance": "381.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-08-01",
-        "Arrivals": "10722.0",
-        "Attendance": "106045.0"
     },
     {
         "Region": "Abruzzo",
@@ -101554,14 +99698,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-09-01",
-        "Arrivals": "13326.0",
-        "Attendance": "55111.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-09-01",
         "Arrivals": "22.0",
@@ -101990,14 +100126,6 @@
         "Date": "2017-09-01",
         "Arrivals": "44.0",
         "Attendance": "185.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-09-01",
-        "Arrivals": "3687.0",
-        "Attendance": "25292.0"
     },
     {
         "Region": "Abruzzo",
@@ -102434,14 +100562,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-10-01",
-        "Arrivals": "7254.0",
-        "Attendance": "15833.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-10-01",
         "Arrivals": "13.0",
@@ -102870,14 +100990,6 @@
         "Date": "2017-10-01",
         "Arrivals": "30.0",
         "Attendance": "98.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-10-01",
-        "Arrivals": "1453.0",
-        "Attendance": "5267.0"
     },
     {
         "Region": "Abruzzo",
@@ -103314,14 +101426,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-11-01",
-        "Arrivals": "7345.0",
-        "Attendance": "15799.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-11-01",
         "Arrivals": "7.0",
@@ -103750,14 +101854,6 @@
         "Date": "2017-11-01",
         "Arrivals": "13.0",
         "Attendance": "38.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-11-01",
-        "Arrivals": "1220.0",
-        "Attendance": "5017.0"
     },
     {
         "Region": "Abruzzo",
@@ -104194,14 +102290,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-12-01",
-        "Arrivals": "8109.0",
-        "Attendance": "18071.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2017-12-01",
         "Arrivals": "6.0",
@@ -104630,14 +102718,6 @@
         "Date": "2017-12-01",
         "Arrivals": "9.0",
         "Attendance": "26.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2017-12-01",
-        "Arrivals": "1744.0",
-        "Attendance": "5901.0"
     },
     {
         "Region": "Abruzzo",
@@ -105074,14 +103154,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-01-01",
-        "Arrivals": "6399.0",
-        "Attendance": "12984.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-01-01",
         "Arrivals": "9.0",
@@ -105510,14 +103582,6 @@
         "Date": "2018-01-01",
         "Arrivals": "7.0",
         "Attendance": "18.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-01-01",
-        "Arrivals": "1055.0",
-        "Attendance": "3920.0"
     },
     {
         "Region": "Abruzzo",
@@ -105954,14 +104018,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-02-01",
-        "Arrivals": "5959.0",
-        "Attendance": "12977.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-02-01",
         "Arrivals": "8.0",
@@ -106390,14 +104446,6 @@
         "Date": "2018-02-01",
         "Arrivals": "9.0",
         "Attendance": "26.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-02-01",
-        "Arrivals": "1005.0",
-        "Attendance": "3720.0"
     },
     {
         "Region": "Abruzzo",
@@ -106834,14 +104882,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-03-01",
-        "Arrivals": "6469.0",
-        "Attendance": "13199.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-03-01",
         "Arrivals": "11.0",
@@ -107270,14 +105310,6 @@
         "Date": "2018-03-01",
         "Arrivals": "15.0",
         "Attendance": "42.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-03-01",
-        "Arrivals": "1257.0",
-        "Attendance": "3982.0"
     },
     {
         "Region": "Abruzzo",
@@ -107714,14 +105746,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-04-01",
-        "Arrivals": "9783.0",
-        "Attendance": "20867.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-04-01",
         "Arrivals": "11.0",
@@ -108150,14 +106174,6 @@
         "Date": "2018-04-01",
         "Arrivals": "22.0",
         "Attendance": "74.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-04-01",
-        "Arrivals": "2894.0",
-        "Attendance": "9110.0"
     },
     {
         "Region": "Abruzzo",
@@ -108594,14 +106610,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-05-01",
-        "Arrivals": "12564.0",
-        "Attendance": "28881.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-05-01",
         "Arrivals": "18.0",
@@ -109030,14 +107038,6 @@
         "Date": "2018-05-01",
         "Arrivals": "28.0",
         "Attendance": "91.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-05-01",
-        "Arrivals": "3133.0",
-        "Attendance": "12789.0"
     },
     {
         "Region": "Abruzzo",
@@ -109474,14 +107474,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-06-01",
-        "Arrivals": "22389.0",
-        "Attendance": "82300.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-06-01",
         "Arrivals": "28.0",
@@ -109910,14 +107902,6 @@
         "Date": "2018-06-01",
         "Arrivals": "48.0",
         "Attendance": "184.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-06-01",
-        "Arrivals": "8911.0",
-        "Attendance": "47979.0"
     },
     {
         "Region": "Abruzzo",
@@ -110354,14 +108338,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-07-01",
-        "Arrivals": "26003.0",
-        "Attendance": "142125.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-07-01",
         "Arrivals": "33.0",
@@ -110790,14 +108766,6 @@
         "Date": "2018-07-01",
         "Arrivals": "79.0",
         "Attendance": "369.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-07-01",
-        "Arrivals": "10696.0",
-        "Attendance": "93185.0"
     },
     {
         "Region": "Abruzzo",
@@ -111234,14 +109202,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-08-01",
-        "Arrivals": "23491.0",
-        "Attendance": "141733.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-08-01",
         "Arrivals": "22.0",
@@ -111670,14 +109630,6 @@
         "Date": "2018-08-01",
         "Arrivals": "84.0",
         "Attendance": "443.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-08-01",
-        "Arrivals": "11120.0",
-        "Attendance": "102850.0"
     },
     {
         "Region": "Abruzzo",
@@ -112114,14 +110066,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-09-01",
-        "Arrivals": "14314.0",
-        "Attendance": "50902.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-09-01",
         "Arrivals": "22.0",
@@ -112550,14 +110494,6 @@
         "Date": "2018-09-01",
         "Arrivals": "77.0",
         "Attendance": "294.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-09-01",
-        "Arrivals": "4314.0",
-        "Attendance": "24072.0"
     },
     {
         "Region": "Abruzzo",
@@ -112994,14 +110930,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-10-01",
-        "Arrivals": "7632.0",
-        "Attendance": "14691.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-10-01",
         "Arrivals": "14.0",
@@ -113430,14 +111358,6 @@
         "Date": "2018-10-01",
         "Arrivals": "22.0",
         "Attendance": "62.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-10-01",
-        "Arrivals": "1616.0",
-        "Attendance": "5044.0"
     },
     {
         "Region": "Abruzzo",
@@ -113874,14 +111794,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-11-01",
-        "Arrivals": "7851.0",
-        "Attendance": "16515.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-11-01",
         "Arrivals": "7.0",
@@ -114310,14 +112222,6 @@
         "Date": "2018-11-01",
         "Arrivals": "13.0",
         "Attendance": "45.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-11-01",
-        "Arrivals": "1500.0",
-        "Attendance": "5567.0"
     },
     {
         "Region": "Abruzzo",
@@ -114754,14 +112658,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-12-01",
-        "Arrivals": "8470.0",
-        "Attendance": "17676.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2018-12-01",
         "Arrivals": "7.0",
@@ -115190,14 +113086,6 @@
         "Date": "2018-12-01",
         "Arrivals": "11.0",
         "Attendance": "37.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2018-12-01",
-        "Arrivals": "1899.0",
-        "Attendance": "6175.0"
     },
     {
         "Region": "Abruzzo",
@@ -115634,14 +113522,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-01-01",
-        "Arrivals": "5977.0",
-        "Attendance": "11525.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-01-01",
         "Arrivals": "8.0",
@@ -116070,14 +113950,6 @@
         "Date": "2019-01-01",
         "Arrivals": "7.0",
         "Attendance": "19.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-01-01",
-        "Arrivals": "1063.0",
-        "Attendance": "3788.0"
     },
     {
         "Region": "Abruzzo",
@@ -116514,14 +114386,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-02-01",
-        "Arrivals": "5580.0",
-        "Attendance": "10161.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-02-01",
         "Arrivals": "8.0",
@@ -116950,14 +114814,6 @@
         "Date": "2019-02-01",
         "Arrivals": "9.0",
         "Attendance": "25.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-02-01",
-        "Arrivals": "993.0",
-        "Attendance": "3195.0"
     },
     {
         "Region": "Abruzzo",
@@ -117394,14 +115250,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-03-01",
-        "Arrivals": "6861.0",
-        "Attendance": "13149.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-03-01",
         "Arrivals": "11.0",
@@ -117830,14 +115678,6 @@
         "Date": "2019-03-01",
         "Arrivals": "11.0",
         "Attendance": "31.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-03-01",
-        "Arrivals": "1413.0",
-        "Attendance": "4374.0"
     },
     {
         "Region": "Abruzzo",
@@ -118274,14 +116114,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-04-01",
-        "Arrivals": "8176.0",
-        "Attendance": "16208.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-04-01",
         "Arrivals": "11.0",
@@ -118710,14 +116542,6 @@
         "Date": "2019-04-01",
         "Arrivals": "22.0",
         "Attendance": "69.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-04-01",
-        "Arrivals": "2632.0",
-        "Attendance": "7641.0"
     },
     {
         "Region": "Abruzzo",
@@ -119154,14 +116978,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-05-01",
-        "Arrivals": "12202.0",
-        "Attendance": "24018.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-05-01",
         "Arrivals": "20.0",
@@ -119590,14 +117406,6 @@
         "Date": "2019-05-01",
         "Arrivals": "30.0",
         "Attendance": "85.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-05-01",
-        "Arrivals": "3207.0",
-        "Attendance": "11569.0"
     },
     {
         "Region": "Abruzzo",
@@ -120034,14 +117842,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-06-01",
-        "Arrivals": "19815.0",
-        "Attendance": "72782.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-06-01",
         "Arrivals": "26.0",
@@ -120470,14 +118270,6 @@
         "Date": "2019-06-01",
         "Arrivals": "41.0",
         "Attendance": "156.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-06-01",
-        "Arrivals": "8088.0",
-        "Attendance": "43293.0"
     },
     {
         "Region": "Abruzzo",
@@ -120914,14 +118706,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-07-01",
-        "Arrivals": "23176.0",
-        "Attendance": "125343.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-07-01",
         "Arrivals": "32.0",
@@ -121350,14 +119134,6 @@
         "Date": "2019-07-01",
         "Arrivals": "75.0",
         "Attendance": "345.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-07-01",
-        "Arrivals": "9873.0",
-        "Attendance": "84814.0"
     },
     {
         "Region": "Abruzzo",
@@ -121794,14 +119570,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-08-01",
-        "Arrivals": "23508.0",
-        "Attendance": "129028.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-08-01",
         "Arrivals": "23.0",
@@ -122230,14 +119998,6 @@
         "Date": "2019-08-01",
         "Arrivals": "75.0",
         "Attendance": "359.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-08-01",
-        "Arrivals": "11876.0",
-        "Attendance": "96899.0"
     },
     {
         "Region": "Abruzzo",
@@ -122674,14 +120434,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-09-01",
-        "Arrivals": "13897.0",
-        "Attendance": "47792.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-09-01",
         "Arrivals": "21.0",
@@ -123110,14 +120862,6 @@
         "Date": "2019-09-01",
         "Arrivals": "49.0",
         "Attendance": "158.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-09-01",
-        "Arrivals": "4220.0",
-        "Attendance": "23311.0"
     },
     {
         "Region": "Abruzzo",
@@ -123554,14 +121298,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-10-01",
-        "Arrivals": "7532.0",
-        "Attendance": "15142.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-10-01",
         "Arrivals": "14.0",
@@ -123990,14 +121726,6 @@
         "Date": "2019-10-01",
         "Arrivals": "44.0",
         "Attendance": "129.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-10-01",
-        "Arrivals": "1773.0",
-        "Attendance": "5759.0"
     },
     {
         "Region": "Abruzzo",
@@ -124434,14 +122162,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-11-01",
-        "Arrivals": "7294.0",
-        "Attendance": "15829.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-11-01",
         "Arrivals": "8.0",
@@ -124870,14 +122590,6 @@
         "Date": "2019-11-01",
         "Arrivals": "11.0",
         "Attendance": "39.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-11-01",
-        "Arrivals": "1549.0",
-        "Attendance": "5767.0"
     },
     {
         "Region": "Abruzzo",
@@ -125314,14 +123026,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-12-01",
-        "Arrivals": "7770.0",
-        "Attendance": "16067.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2019-12-01",
         "Arrivals": "8.0",
@@ -125750,14 +123454,6 @@
         "Date": "2019-12-01",
         "Arrivals": "10.0",
         "Attendance": "29.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2019-12-01",
-        "Arrivals": "1853.0",
-        "Attendance": "6006.0"
     },
     {
         "Region": "Abruzzo",
@@ -126194,14 +123890,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-01-01",
-        "Arrivals": "5893.0",
-        "Attendance": "12372.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-01-01",
         "Arrivals": "8.0",
@@ -126630,14 +124318,6 @@
         "Date": "2020-01-01",
         "Arrivals": "7.0",
         "Attendance": "20.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-01-01",
-        "Arrivals": "1122.0",
-        "Attendance": "4147.0"
     },
     {
         "Region": "Abruzzo",
@@ -127074,14 +124754,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-02-01",
-        "Arrivals": "5287.0",
-        "Attendance": "9532.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-02-01",
         "Arrivals": "8.0",
@@ -127510,14 +125182,6 @@
         "Date": "2020-02-01",
         "Arrivals": "6.0",
         "Attendance": "18.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-02-01",
-        "Arrivals": "1047.0",
-        "Attendance": "3155.0"
     },
     {
         "Region": "Abruzzo",
@@ -127954,14 +125618,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-03-01",
-        "Arrivals": "1381.0",
-        "Attendance": "4644.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-03-01",
         "Arrivals": "1.0",
@@ -128390,14 +126046,6 @@
         "Date": "2020-03-01",
         "Arrivals": "1.0",
         "Attendance": "5.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-03-01",
-        "Arrivals": "294.0",
-        "Attendance": "3046.0"
     },
     {
         "Region": "Abruzzo",
@@ -128834,14 +126482,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-04-01",
-        "Arrivals": "333.0",
-        "Attendance": "3018.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-04-01",
         "Arrivals": "1.0",
@@ -129270,14 +126910,6 @@
         "Date": "2020-04-01",
         "Arrivals": "1.0",
         "Attendance": "3.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-04-01",
-        "Arrivals": "91.0",
-        "Attendance": "3700.0"
     },
     {
         "Region": "Abruzzo",
@@ -129714,14 +127346,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-05-01",
-        "Arrivals": "2311.0",
-        "Attendance": "5322.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-05-01",
         "Arrivals": "1.0",
@@ -130150,14 +127774,6 @@
         "Date": "2020-05-01",
         "Arrivals": "1.0",
         "Attendance": "5.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-05-01",
-        "Arrivals": "1045.0",
-        "Attendance": "4767.0"
     },
     {
         "Region": "Abruzzo",
@@ -130594,14 +128210,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-06-01",
-        "Arrivals": "10323.0",
-        "Attendance": "21616.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-06-01",
         "Arrivals": "3.0",
@@ -131030,14 +128638,6 @@
         "Date": "2020-06-01",
         "Arrivals": "1.0",
         "Attendance": "4.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-06-01",
-        "Arrivals": "5808.0",
-        "Attendance": "20540.0"
     },
     {
         "Region": "Abruzzo",
@@ -131474,14 +129074,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-07-01",
-        "Arrivals": "24320.0",
-        "Attendance": "88484.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-07-01",
         "Arrivals": "11.0",
@@ -131910,14 +129502,6 @@
         "Date": "2020-07-01",
         "Arrivals": "2.0",
         "Attendance": "8.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-07-01",
-        "Arrivals": "12478.0",
-        "Attendance": "69927.0"
     },
     {
         "Region": "Abruzzo",
@@ -132354,14 +129938,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-08-01",
-        "Arrivals": "27385.0",
-        "Attendance": "108966.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-08-01",
         "Arrivals": "12.0",
@@ -132790,14 +130366,6 @@
         "Date": "2020-08-01",
         "Arrivals": "2.0",
         "Attendance": "13.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-08-01",
-        "Arrivals": "15306.0",
-        "Attendance": "86162.0"
     },
     {
         "Region": "Abruzzo",
@@ -133234,14 +130802,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-09-01",
-        "Arrivals": "15689.0",
-        "Attendance": "42551.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-09-01",
         "Arrivals": "7.0",
@@ -133670,14 +131230,6 @@
         "Date": "2020-09-01",
         "Arrivals": "2.0",
         "Attendance": "7.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-09-01",
-        "Arrivals": "5954.0",
-        "Attendance": "24902.0"
     },
     {
         "Region": "Abruzzo",
@@ -134114,14 +131666,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-10-01",
-        "Arrivals": "9679.0",
-        "Attendance": "16210.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-10-01",
         "Arrivals": "4.0",
@@ -134550,14 +132094,6 @@
         "Date": "2020-10-01",
         "Arrivals": "3.0",
         "Attendance": "6.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-10-01",
-        "Arrivals": "2543.0",
-        "Attendance": "7157.0"
     },
     {
         "Region": "Abruzzo",
@@ -134994,14 +132530,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-11-01",
-        "Arrivals": "5091.0",
-        "Attendance": "13452.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-11-01",
         "Arrivals": "2.0",
@@ -135430,14 +132958,6 @@
         "Date": "2020-11-01",
         "Arrivals": "1.0",
         "Attendance": "4.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-11-01",
-        "Arrivals": "998.0",
-        "Attendance": "7594.0"
     },
     {
         "Region": "Abruzzo",
@@ -135874,14 +133394,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-12-01",
-        "Arrivals": "4419.0",
-        "Attendance": "11918.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2020-12-01",
         "Arrivals": "2.0",
@@ -136310,14 +133822,6 @@
         "Date": "2020-12-01",
         "Arrivals": "1.0",
         "Attendance": "3.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2020-12-01",
-        "Arrivals": "851.0",
-        "Attendance": "6769.0"
     },
     {
         "Region": "Abruzzo",
@@ -136754,14 +134258,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-01-01",
-        "Arrivals": "6004.0",
-        "Attendance": "13208.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-01-01",
         "Arrivals": "3.0",
@@ -137190,14 +134686,6 @@
         "Date": "2021-01-01",
         "Arrivals": "1.0",
         "Attendance": "3.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-01-01",
-        "Arrivals": "1078.0",
-        "Attendance": "7159.0"
     },
     {
         "Region": "Abruzzo",
@@ -137634,14 +135122,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-02-01",
-        "Arrivals": "6362.0",
-        "Attendance": "14805.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-02-01",
         "Arrivals": "2.0",
@@ -138070,14 +135550,6 @@
         "Date": "2021-02-01",
         "Arrivals": "1.0",
         "Attendance": "3.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-02-01",
-        "Arrivals": "1344.0",
-        "Attendance": "7069.0"
     },
     {
         "Region": "Abruzzo",
@@ -138514,14 +135986,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-03-01",
-        "Arrivals": "7733.0",
-        "Attendance": "15663.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-03-01",
         "Arrivals": "3.0",
@@ -138950,14 +136414,6 @@
         "Date": "2021-03-01",
         "Arrivals": "1.0",
         "Attendance": "3.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-03-01",
-        "Arrivals": "1403.0",
-        "Attendance": "8007.0"
     },
     {
         "Region": "Abruzzo",
@@ -139394,14 +136850,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-04-01",
-        "Arrivals": "7135.0",
-        "Attendance": "15902.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-04-01",
         "Arrivals": "3.0",
@@ -139830,14 +137278,6 @@
         "Date": "2021-04-01",
         "Arrivals": "1.0",
         "Attendance": "5.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-04-01",
-        "Arrivals": "1514.0",
-        "Attendance": "8403.0"
     },
     {
         "Region": "Abruzzo",
@@ -140274,14 +137714,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-05-01",
-        "Arrivals": "11334.0",
-        "Attendance": "18958.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-05-01",
         "Arrivals": "5.0",
@@ -140710,14 +138142,6 @@
         "Date": "2021-05-01",
         "Arrivals": "2.0",
         "Attendance": "6.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-05-01",
-        "Arrivals": "4363.0",
-        "Attendance": "11993.0"
     },
     {
         "Region": "Abruzzo",
@@ -141154,14 +138578,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-06-01",
-        "Arrivals": "21899.0",
-        "Attendance": "59389.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-06-01",
         "Arrivals": "17.0",
@@ -141590,14 +139006,6 @@
         "Date": "2021-06-01",
         "Arrivals": "11.0",
         "Attendance": "26.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-06-01",
-        "Arrivals": "10177.0",
-        "Attendance": "42219.0"
     },
     {
         "Region": "Abruzzo",
@@ -142034,14 +139442,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-07-01",
-        "Arrivals": "32621.0",
-        "Attendance": "134408.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-07-01",
         "Arrivals": "37.0",
@@ -142470,14 +139870,6 @@
         "Date": "2021-07-01",
         "Arrivals": "34.0",
         "Attendance": "95.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-07-01",
-        "Arrivals": "15735.0",
-        "Attendance": "96480.0"
     },
     {
         "Region": "Abruzzo",
@@ -142914,14 +140306,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-08-01",
-        "Arrivals": "28537.0",
-        "Attendance": "133093.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-08-01",
         "Arrivals": "30.0",
@@ -143350,14 +140734,6 @@
         "Date": "2021-08-01",
         "Arrivals": "25.0",
         "Attendance": "73.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-08-01",
-        "Arrivals": "14561.0",
-        "Attendance": "98378.0"
     },
     {
         "Region": "Abruzzo",
@@ -143794,14 +141170,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-09-01",
-        "Arrivals": "19398.0",
-        "Attendance": "61578.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-09-01",
         "Arrivals": "27.0",
@@ -144230,14 +141598,6 @@
         "Date": "2021-09-01",
         "Arrivals": "60.0",
         "Attendance": "155.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-09-01",
-        "Arrivals": "6822.0",
-        "Attendance": "32986.0"
     },
     {
         "Region": "Abruzzo",
@@ -144674,14 +142034,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-10-01",
-        "Arrivals": "9561.0",
-        "Attendance": "19659.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-10-01",
         "Arrivals": "14.0",
@@ -145110,14 +142462,6 @@
         "Date": "2021-10-01",
         "Arrivals": "17.0",
         "Attendance": "47.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-10-01",
-        "Arrivals": "2551.0",
-        "Attendance": "7871.0"
     },
     {
         "Region": "Abruzzo",
@@ -145554,14 +142898,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-11-01",
-        "Arrivals": "7134.0",
-        "Attendance": "14550.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-11-01",
         "Arrivals": "10.0",
@@ -145990,14 +143326,6 @@
         "Date": "2021-11-01",
         "Arrivals": "19.0",
         "Attendance": "58.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-11-01",
-        "Arrivals": "1525.0",
-        "Attendance": "5277.0"
     },
     {
         "Region": "Abruzzo",
@@ -146434,14 +143762,6 @@
     {
         "Region": "Abruzzo",
         "Infrastructure": "HOTELLIKE",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-12-01",
-        "Arrivals": "7258.0",
-        "Attendance": "13987.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "HOTELLIKE",
         "ResidenceCountry": "Lettonia",
         "Date": "2021-12-01",
         "Arrivals": "10.0",
@@ -146870,14 +144190,6 @@
         "Date": "2021-12-01",
         "Arrivals": "10.0",
         "Attendance": "26.0"
-    },
-    {
-        "Region": "Abruzzo",
-        "Infrastructure": "OTHER",
-        "ResidenceCountry": "Italia",
-        "Date": "2021-12-01",
-        "Arrivals": "1796.0",
-        "Attendance": "5023.0"
     },
     {
         "Region": "Abruzzo",
