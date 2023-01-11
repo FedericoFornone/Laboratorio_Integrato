@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { StatsComponent } from './pages/stats/stats.component';
+import { UploadComponent } from './pages/upload/upload.component';
 import { StatsResolver } from './resolvers/stats.resolver';
 
 const routes: Routes = [
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+  },
+  { 
+    path: 'upload',
+    component: UploadComponent,
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
