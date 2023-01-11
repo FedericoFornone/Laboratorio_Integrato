@@ -25,10 +25,10 @@ public class DBInteraction {
             Connection connection = DriverManager.getConnection("jdbc:mariadb://18.102.24.178:3306/Region_Data","root", "87!tyIlp?1");
             try (PreparedStatement statement = connection.prepareStatement("""
                 SELECT *
-                FROM Abruzzo
+                FROM Abruzzo WHERE Region = ?
                 """))
-            { // this will be a prepared statement that subs out the ? with region, in the end
-                //statement.setString(1, "Abruzzo");
+            {
+                statement.setString(1, region);
                 ResultSet resultSet = statement.executeQuery();
                 return resultSet;
 
