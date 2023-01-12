@@ -1,21 +1,13 @@
-import {
-  Component,
-  OnInit,
-  ViewChild,
-  AfterViewInit,
-  HostListener,
-} from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ChartConfiguration, ChartOptions } from 'chart.js';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-stats',
   templateUrl: './dashboard.component.html',
 })
-export class StatsComponent implements OnInit, AfterViewInit {
-  @ViewChild('canvasContainer') canvasContainer!: any;
-  @ViewChild('barChartCanvas') barChartCanvas!: any;
-
+export class StatsComponent implements OnInit {
   barChartData!: ChartConfiguration<'bar'>['data'];
   barChartOptions: ChartOptions<'bar'> = {
     plugins: {
@@ -31,6 +23,11 @@ export class StatsComponent implements OnInit, AfterViewInit {
     responsive: true,
   };
   barChartLegend = true;
+
+  selectedRegion = 'Abruzzo';
+  selectedArrivals = 'Tutti gli arrivi';
+  infrastructure = '';
+  residenceCountry = '';
 
   labels = [
     '2008',
@@ -49,11 +46,10 @@ export class StatsComponent implements OnInit, AfterViewInit {
     '2021',
   ];
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    if (event.target.innerWidth < 1024) {
+  makeGraphResponsive(width: number) {
+    if (width < 1024) {
       this.barChartOptions = {
         ...this.barChartOptions,
         scales: {
@@ -62,6 +58,9 @@ export class StatsComponent implements OnInit, AfterViewInit {
           },
           y: {
             stacked: true,
+            ticks: {
+              display: false,
+            },
           },
         },
       };
@@ -80,101 +79,75 @@ export class StatsComponent implements OnInit, AfterViewInit {
     }
   }
 
-  getArrivals(
-    data: any,
-    region: string,
-    residenceCountry: 'Italia' | 'Paesi esteri',
-    infrastructure: 'HOTELLIKE' | 'OTHER'
-  ): number[] {
-    const regionData = data.filter((d: any) => d['Region'] === region);
-    const tourists = regionData.filter(
-      (d: any) =>
-        d['ResidenceCountry'] === residenceCountry &&
-        d['Infrastructure'] === infrastructure
-    );
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.makeGraphResponsive(event.target.innerWidth);
+  }
 
-    const arrivals = tourists.map((d: any) => d['Arrivals']);
-    return arrivals;
+  onRegionChange() {
+    this.barChartOptions = {
+      ...this.barChartOptions,
+      plugins: {
+        ...this.barChartOptions.plugins,
+        title: {
+          ...this.barChartOptions.plugins?.title,
+          text: 'Arrivi in ' + this.selectedRegion,
+        },
+      },
+    };
+
+    this.apiService
+      .getStats(this.selectedRegion, this.infrastructure, this.residenceCountry)
+      .subscribe((stats) => {
+        this.barChartData = {
+          labels: this.labels,
+          datasets: [...stats],
+        };
+      });
+  }
+
+  onArrivalsChange() {
+    switch (this.selectedArrivals) {
+      case 'Tutti gli arrivi':
+        this.infrastructure = '';
+        this.residenceCountry = '';
+        break;
+      case 'Italiani in hotel':
+        this.infrastructure = 'HOTELLIKE';
+        this.residenceCountry = 'Italia';
+        break;
+      case 'Italiani in altre strutture':
+        this.infrastructure = 'OTHER';
+        this.residenceCountry = 'Italia';
+        break;
+      case 'Esteri in hotel':
+        this.infrastructure = 'HOTELLIKE';
+        this.residenceCountry = 'Paesi esteri';
+        break;
+      case 'Esteri in altre strutture':
+        this.infrastructure = 'OTHER';
+        this.residenceCountry = 'Paesi esteri';
+        break;
+    }
+
+    this.apiService
+      .getStats(this.selectedRegion, this.infrastructure, this.residenceCountry)
+      .subscribe((stats) => {
+        this.barChartData = {
+          labels: this.labels,
+          datasets: [...stats],
+        };
+      });
   }
 
   ngOnInit(): void {
     this.route.data.subscribe(({ stats, windowSize }) => {
-      if (windowSize < 1024) {
-        this.barChartOptions = {
-          ...this.barChartOptions,
-          scales: {
-            x: {
-              stacked: true,
-            },
-            y: {
-              stacked: true,
-            },
-          },
-        };
-      }
-
-      const italiansInHotels = this.getArrivals(
-        stats,
-        'Abruzzo',
-        'Italia',
-        'HOTELLIKE'
-      );
-      const foreignersInHotel = this.getArrivals(
-        stats,
-        'Abruzzo',
-        'Paesi esteri',
-        'HOTELLIKE'
-      );
-      const italiansInOthers = this.getArrivals(
-        stats,
-        'Abruzzo',
-        'Italia',
-        'OTHER'
-      );
-      const foreignersInOthers = this.getArrivals(
-        stats,
-        'Abruzzo',
-        'Paesi esteri',
-        'OTHER'
-      );
+      this.makeGraphResponsive(windowSize);
 
       this.barChartData = {
         labels: this.labels,
-        datasets: [
-          {
-            label: 'Esteri in altre strutture',
-            data: foreignersInOthers,
-            backgroundColor: '#0BE7A3',
-            borderRadius: 5,
-          },
-          {
-            label: 'Esteri in hotel',
-            data: foreignersInHotel,
-            backgroundColor: '#F2B705',
-            borderRadius: 5,
-          },
-
-          {
-            label: 'Italiani in altre strutture',
-            data: italiansInOthers,
-            backgroundColor: '#0B7EE7',
-            borderRadius: 5,
-          },
-          {
-            label: 'Italiani in hotel',
-            data: italiansInHotels,
-            backgroundColor: '#E70B67',
-            borderRadius: 5,
-          },
-        ],
+        datasets: [...stats],
       };
     });
-  }
-
-  ngAfterViewInit(): void {
-    this.barChartCanvas.nativeElement.width =
-      this.canvasContainer.nativeElement.clientWidth;
-    this.barChartCanvas.nativeElement.height =
-      this.canvasContainer.nativeElement.clientHeight;
   }
 }
