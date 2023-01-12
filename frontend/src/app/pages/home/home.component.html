@@ -12,7 +12,7 @@
         La soluzione data-driven per scoprire i segreti del turismo in Abruzzo
       </p>
 
-      <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'/stats/'"
+      <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'/dashboard/'"
         >Inizia</app-button
       >
     </div>
@@ -43,7 +43,7 @@
         previsioni future basate su un modello di Machine Learning addestrato.
       </p>
 
-      <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'/stats/'"
+      <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'/about/'"
         >Scopri di più</app-button
       >
     </div>
@@ -61,7 +61,9 @@
         completa e flessibile.
       </p>
 
-      <app-button [class]="'mt-5 lg:mt-10'">Carica il tuo file</app-button>
+      <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'upload'"
+        >Carica il tuo file</app-button
+      >
     </div>
     <div class="grid place-content-center">
       <figure class="w-3/4 mx-auto lg:w-auto lg:mx-0">
