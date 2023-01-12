@@ -19,16 +19,16 @@
   </app-responsive-slider>
 
   <div
-    class="shadow-xl rounded-xl h-[30rem] grid place-items-center mx-5 p-5"
+    class="shadow-xl rounded-xl h-[30rem] grid place-items-center p-5 lg:p-10 mx-5 lg:mx-0"
     #canvasContainer
   >
     <canvas
       baseChart
-      [type]="'line'"
-      [data]="lineChartData"
-      [options]="lineChartOptions"
-      [legend]="lineChartLegend"
-      #lineChartCanvas
+      [type]="'bar'"
+      [data]="barChartData"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      #barChartCanvas
     >
     </canvas>
   </div>

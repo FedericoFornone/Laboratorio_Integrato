@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ChartConfiguration, ChartOptions } from 'chart.js';
+import { readlink } from 'fs';
 
 @Component({
   selector: 'app-stats',
@@ -8,209 +9,109 @@ import { ChartConfiguration, ChartOptions } from 'chart.js';
 })
 export class StatsComponent implements OnInit, AfterViewInit {
   @ViewChild('canvasContainer') canvasContainer!: any;
-  @ViewChild('lineChartCanvas') lineChartCanvas!: any;
+  @ViewChild('barChartCanvas') barChartCanvas!: any;
 
-  lineChartData!: ChartConfiguration<'line'>['data'];
-  public lineChartOptions: ChartOptions<'line'> = {
+  barChartData!: ChartConfiguration<'bar'>['data'];
+  public barChartOptions: ChartOptions<'bar'> = {
     maintainAspectRatio: false,
     responsive: true,
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+      },
+    },
   };
-  public lineChartLegend = true;
+  public barChartLegend = true;
 
   labels = [
     '2008',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2009',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2010',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2011',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2012',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2013',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2014',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2015',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2016',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2017',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2018',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2019',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2020',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
     '2021',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
   ];
 
   constructor(private route: ActivatedRoute) {}
 
+  getArrivals(
+    data: any,
+    region: string,
+    residenceCountry: 'Italia' | 'Paesi esteri',
+    infrastructure: 'HOTELLIKE' | 'OTHER'
+  ): number[] {
+    const regionData = data.filter((d: any) => d['Region'] === region);
+    const tourists = regionData.filter(
+      (d: any) =>
+        d['ResidenceCountry'] === residenceCountry &&
+        d['Infrastructure'] === infrastructure
+    );
+
+    const arrivals = tourists.map((d: any) => d['Arrivals']);
+    return arrivals;
+  }
+
   ngOnInit(): void {
     this.route.data.subscribe(({ stats }) => {
-      const abruzzo = stats.filter((d: any) => d['Region'] === 'Abruzzo');
-      const italiansInHotels = abruzzo.filter(
-        (d: any) =>
-          d['ResidenceCountry'] === 'Italia' &&
-          d['Infrastructure'] === 'HOTELLIKE'
+      const italiansInHotels = this.getArrivals(
+        stats,
+        'Abruzzo',
+        'Italia',
+        'HOTELLIKE'
+      );
+      const foreignersInHotel = this.getArrivals(
+        stats,
+        'Abruzzo',
+        'Paesi esteri',
+        'HOTELLIKE'
+      );
+      const italiansInOthers = this.getArrivals(
+        stats,
+        'Abruzzo',
+        'Italia',
+        'OTHER'
+      );
+      const foreignersInOthers = this.getArrivals(
+        stats,
+        'Abruzzo',
+        'Paesi esteri',
+        'OTHER'
       );
 
-      const arrivals = italiansInHotels.map((d: any) => d['Arrivals']);
-
-      this.lineChartData = {
+      this.barChartData = {
         labels: this.labels,
         datasets: [
           {
+            label: 'Esteri in altre strutture',
+            data: foreignersInOthers,
+            backgroundColor: '#0BE7A3',
+          },
+          {
+            label: 'Esteri in hotel',
+            data: foreignersInHotel,
+            backgroundColor: '#F2B705',
+          },
+
+          {
+            label: 'Italiani in altre strutture',
+            data: italiansInOthers,
+            backgroundColor: '#0B7EE7',
+          },
+          {
             label: 'Italiani in hotel',
-            fill: false,
-            tension: 0.5,
-            borderColor: '#E70B67',
-            backgroundColor: 'rgba(255,0,0,0.3)',
-            data: [...arrivals],
+            data: italiansInHotels,
+            backgroundColor: '#E70B67',
           },
         ],
       };
@@ -218,14 +119,9 @@ export class StatsComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.lineChartCanvas.nativeElement.width =
+    this.barChartCanvas.nativeElement.width =
       this.canvasContainer.nativeElement.clientWidth;
-    this.lineChartCanvas.nativeElement.height =
+    this.barChartCanvas.nativeElement.height =
       this.canvasContainer.nativeElement.clientHeight;
-
-    console.log(this.lineChartCanvas.nativeElement.width);
-    console.log(this.lineChartCanvas.nativeElement.height);
-    console.log(this.canvasContainer.nativeElement.clientWidth);
-    console.log(this.canvasContainer.nativeElement.clientHeight);
   }
 }
