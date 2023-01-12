@@ -20,9 +20,9 @@ if __name__ == '__main__':
     new_df.rename(columns={'Territorio': 'Region', 'TIPO_ALLOGGIO2': 'Infrastructure',
                               'Paese di residenza dei clienti': 'ResidenceCountry', 'TIME': 'Date',
                               'arrivi': 'Arrivals', 'presenze': 'Attendance'}, inplace=True)
-    #try:
-    #    os.mkdir("..\\Data")
-    #except OSError as error:
-    #    print(error)
+    try:
+        os.mkdir("..\\Data")
+    except OSError as error:
+        print(error)
 
     new_df.to_csv("../Data/final_data/annuo_abruzzo.csv", index=False)
