@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@CrossOrigin - This enables api calls from machines other than the one that allocated the resources. Might not want this enabled. We'll try without, first, to be safe.
+@CrossOrigin // This enables api calls from machines other than the one that allocated the resources. Might not want this enabled.
 public class API_fintech {
     
     @GetMapping("/test")

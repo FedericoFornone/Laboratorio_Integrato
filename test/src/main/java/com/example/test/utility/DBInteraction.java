@@ -20,26 +20,52 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class DBInteraction {
     
-    public static ResultSet DBSelectFromRegion(String region) {
-        try {
+    public static ResultSet DBSelectFromRegion(String region, String date, String infrastructure, String residenceCountry) throws SQLException {
             Connection connection = DriverManager.getConnection("jdbc:mariadb://18.102.24.178:3306/Region_Data","root", "87!tyIlp?1");
-            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM Abruzzo WHERE Region = ?"))
-            {
-                statement.setString(1, region);
-                ResultSet resultSet = statement.executeQuery();
-                return resultSet;
 
+            // this query has been modified to allow for multiple filters at the same time
+            String query = "SELECT * FROM Abruzzo WHERE Region = ?";
+            int parameterCount = 2;
+            int indexOfDate = 0;
+            int indexOfInfrastructure = 0;
+            int indexOfResidenceCountry = 0;
+            boolean isDatePresent = false;
+            boolean isInfrastructurePresent = false;
+            boolean isResidenceCountryPresent = false;
+
+            // first we have to check if a parameter has been passed and build the query string accordingly
+            // since the binding has to be done after setting the prepared statement, we have to memorize the index position here, and bind later
+            if (date != null) {
+                query += " AND Date = ?";
+                isDatePresent = true;
+                indexOfDate = parameterCount;
+                parameterCount++;
             }
-            catch (Exception e) {
-                System.out.println(e.toString());
-                ResultSet resultSet = null;
-                return resultSet;
+            if (infrastructure != null) {
+                query += " AND Infrastructure = ?";
+                isInfrastructurePresent = true;
+                indexOfInfrastructure = parameterCount;
+                parameterCount++;
             }
-        }
-        catch (Exception e){
-            System.out.println("Error while conntecting to DB: " + e.toString());
-            ResultSet resultSet = null;
+            if (residenceCountry != null) {
+                query += " AND ResidenceCountry = ?";
+                isResidenceCountryPresent = true;
+                indexOfResidenceCountry = parameterCount;
+                parameterCount++;
+            }
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setString(1, region);
+            // bind everything that is present
+            if (isDatePresent) {
+                statement.setString(indexOfDate, date);
+            }
+            if (isInfrastructurePresent) {
+                statement.setString(indexOfInfrastructure, infrastructure);
+            }
+            if (isResidenceCountryPresent) {
+                statement.setString(indexOfResidenceCountry, residenceCountry);
+            }
+            ResultSet resultSet = statement.executeQuery();
             return resultSet;
-        } 
     }
 }

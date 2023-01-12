@@ -19,11 +19,12 @@ import com.example.test.utility.ConvertToJSON;
 import com.example.test.utility.DBInteraction;
 
 @RestController
+@CrossOrigin // This enables api calls from machines other than the one that allocated the resources. Might not want this enabled.
 public class API_frontend {
-    @CrossOrigin(origins = "http://localhost:4200")
+
     @GetMapping("/statistics")
-    public static String APIStatistics(@RequestParam(defaultValue = "Abruzzo") String region) throws SQLException {
-        ResultSet resultSet = DBInteraction.DBSelectFromRegion(region);
+    public static String APIStatistics(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String date, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry) throws SQLException {
+        ResultSet resultSet = DBInteraction.DBSelectFromRegion(region, date, infrastructure, residenceCountry);
         JSONArray result = ConvertToJSON.ResultSetToJSON(resultSet);
         return result.toString();
     }
