@@ -10,6 +10,6 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getStats(): Observable<any> {
-    return this.http.get('localhost:8080/statistics');
+    return this.http.get('assets/abruzzo.json');
   }
 }
