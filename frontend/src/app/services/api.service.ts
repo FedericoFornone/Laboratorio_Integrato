@@ -9,6 +9,6 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getStats(): Observable<any> {
-    return this.http.get('assets/abruzzo.json');
+    return this.http.get('http://18.102.24.178:7790/statistics');
   }
 }

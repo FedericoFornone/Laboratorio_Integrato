@@ -1,7 +1,12 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  AfterViewInit,
+  HostListener,
+} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ChartConfiguration, ChartOptions } from 'chart.js';
-import { readlink } from 'fs';
 
 @Component({
   selector: 'app-stats',
@@ -12,19 +17,20 @@ export class StatsComponent implements OnInit, AfterViewInit {
   @ViewChild('barChartCanvas') barChartCanvas!: any;
 
   barChartData!: ChartConfiguration<'bar'>['data'];
-  public barChartOptions: ChartOptions<'bar'> = {
-    maintainAspectRatio: false,
-    responsive: true,
-    scales: {
-      x: {
-        stacked: true,
-      },
-      y: {
-        stacked: true,
+  barChartOptions: ChartOptions<'bar'> = {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Arrivi in Abruzzo',
+        font: {
+          size: 26,
+        },
       },
     },
+    maintainAspectRatio: false,
+    responsive: true,
   };
-  public barChartLegend = true;
+  barChartLegend = true;
 
   labels = [
     '2008',
@@ -45,6 +51,35 @@ export class StatsComponent implements OnInit, AfterViewInit {
 
   constructor(private route: ActivatedRoute) {}
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    if (event.target.innerWidth < 1024) {
+      this.barChartOptions = {
+        ...this.barChartOptions,
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true,
+          },
+        },
+      };
+    } else {
+      this.barChartOptions = {
+        ...this.barChartOptions,
+        scales: {
+          x: {
+            stacked: false,
+          },
+          y: {
+            stacked: false,
+          },
+        },
+      };
+    }
+  }
+
   getArrivals(
     data: any,
     region: string,
@@ -63,7 +98,21 @@ export class StatsComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.route.data.subscribe(({ stats }) => {
+    this.route.data.subscribe(({ stats, windowSize }) => {
+      if (windowSize < 1024) {
+        this.barChartOptions = {
+          ...this.barChartOptions,
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+            },
+          },
+        };
+      }
+
       const italiansInHotels = this.getArrivals(
         stats,
         'Abruzzo',
@@ -96,22 +145,26 @@ export class StatsComponent implements OnInit, AfterViewInit {
             label: 'Esteri in altre strutture',
             data: foreignersInOthers,
             backgroundColor: '#0BE7A3',
+            borderRadius: 5,
           },
           {
             label: 'Esteri in hotel',
             data: foreignersInHotel,
             backgroundColor: '#F2B705',
+            borderRadius: 5,
           },
 
           {
             label: 'Italiani in altre strutture',
             data: italiansInOthers,
             backgroundColor: '#0B7EE7',
+            borderRadius: 5,
           },
           {
             label: 'Italiani in hotel',
             data: italiansInHotels,
             backgroundColor: '#E70B67',
+            borderRadius: 5,
           },
         ],
       };
