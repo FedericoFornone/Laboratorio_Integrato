@@ -23,7 +23,7 @@ import { UploadComponent } from './pages/upload/upload.component';
   declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent, FooterComponent, AboutComponent, NavbarComponent,  ResponsiveSliderComponent, UploadComponent],
   imports: [
     HttpClientModule,
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     AppRoutingModule,
     NgChartsModule,
   ],
