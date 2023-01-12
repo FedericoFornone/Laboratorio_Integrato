@@ -8,8 +8,8 @@ import { ApiService } from 'src/app/services/api.service';
   templateUrl: './dashboard.component.html',
 })
 export class StatsComponent implements OnInit {
-  barChartData!: ChartConfiguration<'bar'>['data'];
-  barChartOptions: ChartOptions<'bar'> = {
+  arrivalsChartData!: ChartConfiguration<'bar'>['data'];
+  arrivalsChartOptions: ChartOptions<'bar'> = {
     plugins: {
       title: {
         display: true,
@@ -22,7 +22,23 @@ export class StatsComponent implements OnInit {
     maintainAspectRatio: false,
     responsive: true,
   };
-  barChartLegend = true;
+  arrivalsChartLegend = true;
+
+  predictionsChartData!: ChartConfiguration<'bar'>['data'];
+  predictionsChartOptions: ChartOptions<'bar'> = {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Previsioni arrivi in Abruzzo',
+        font: {
+          size: 26,
+        },
+      },
+    },
+    maintainAspectRatio: false,
+    responsive: true,
+  };
+  predictionsChartLegend = true;
 
   selectedRegion = 'Abruzzo';
   selectedArrivals = 'Tutti gli arrivi';
@@ -50,8 +66,8 @@ export class StatsComponent implements OnInit {
 
   makeGraphResponsive(width: number) {
     if (width < 1024) {
-      this.barChartOptions = {
-        ...this.barChartOptions,
+      this.arrivalsChartOptions = {
+        ...this.arrivalsChartOptions,
         scales: {
           x: {
             stacked: true,
@@ -65,8 +81,8 @@ export class StatsComponent implements OnInit {
         },
       };
     } else {
-      this.barChartOptions = {
-        ...this.barChartOptions,
+      this.arrivalsChartOptions = {
+        ...this.arrivalsChartOptions,
         scales: {
           x: {
             stacked: false,
@@ -85,12 +101,12 @@ export class StatsComponent implements OnInit {
   }
 
   onRegionChange() {
-    this.barChartOptions = {
-      ...this.barChartOptions,
+    this.arrivalsChartOptions = {
+      ...this.arrivalsChartOptions,
       plugins: {
-        ...this.barChartOptions.plugins,
+        ...this.arrivalsChartOptions.plugins,
         title: {
-          ...this.barChartOptions.plugins?.title,
+          ...this.arrivalsChartOptions.plugins?.title,
           text: 'Arrivi in ' + this.selectedRegion,
         },
       },
@@ -99,7 +115,7 @@ export class StatsComponent implements OnInit {
     this.apiService
       .getStats(this.selectedRegion, this.infrastructure, this.residenceCountry)
       .subscribe((stats) => {
-        this.barChartData = {
+        this.arrivalsChartData = {
           labels: this.labels,
           datasets: [...stats],
         };
@@ -133,7 +149,12 @@ export class StatsComponent implements OnInit {
     this.apiService
       .getStats(this.selectedRegion, this.infrastructure, this.residenceCountry)
       .subscribe((stats) => {
-        this.barChartData = {
+        this.arrivalsChartData = {
+          labels: this.labels,
+          datasets: [...stats],
+        };
+
+        this.predictionsChartData = {
           labels: this.labels,
           datasets: [...stats],
         };
@@ -144,7 +165,7 @@ export class StatsComponent implements OnInit {
     this.route.data.subscribe(({ stats, windowSize }) => {
       this.makeGraphResponsive(windowSize);
 
-      this.barChartData = {
+      this.arrivalsChartData = {
         labels: this.labels,
         datasets: [...stats],
       };
