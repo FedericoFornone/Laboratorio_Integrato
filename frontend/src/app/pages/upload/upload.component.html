@@ -1,1 +1,264 @@
-<p>upload works!</p>
+<div class="container mx-auto">
+  <div class="py-10 sm:py-15">
+    <div class="mx-auto px-6 lg:px-8">
+      <div class="text-center">
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          Use your data
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="mb-36">
+    <div class="md:grid md:grid-cols-3 md:gap-6 w-11/12 mx-auto">
+      <div class="md:col-span-1">
+        <div class="px-4 sm:px-0">
+          <h3 class="text-lg font-medium leading-6 text-gray-900 text-center">
+            Istruzioni
+          </h3>
+          <p class="mt-5 text-sm text-gray-600 text-justify">
+            Una volta caricato il tuo CSV controlleremo che i dati siano validi
+            e formattati correttamente. Se non lo sono,
+            <span class="font-bold">segui le istruzioni</span> per modificare i
+            campi necessari.
+          </p>
+          <p class="mt-5 text-sm text-gray-600 text-justify">
+            Se preferisci, puoi scaricare questo
+            <span class="font-bold">template compilabile</span>:
+          </p>
+          <button
+            class="btn btn-ghost"
+            (click)="downloadFile(download.url, download.filename)"
+          >
+            - CSV template
+          </button>
+          <div class="flex justify-center items-center">
+            <figure class="w-3/4 mx-auto lg:w-7/12 lg:mx-0">
+              <img src="assets/svg/home-upload.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 md:col-span-2 md:mt-0">
+        <form action="#" method="POST">
+          <div class="shadow sm:overflow-hidden sm:rounded-md">
+            <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
+              <div class="grid grid-cols-6 gap-6">
+                <div class="col-span-6 sm:col-span-3">
+                  <label
+                    for="first-name"
+                    class="block text-sm font-medium text-gray-700"
+                    >Nome</label
+                  >
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autocomplete="given-name"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  />
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label
+                    for="last-name"
+                    class="block text-sm font-medium text-gray-700"
+                    >Cognome</label
+                  >
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autocomplete="family-name"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  />
+                </div>
+
+                <div class="col-span-6 sm:col-span-4">
+                  <label
+                    for="email-address"
+                    class="block text-sm font-medium text-gray-700"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    name="email-address"
+                    id="email-address"
+                    autocomplete="email"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >File CSV</label
+                >
+                <div
+                  class="mt-1 flex justify-center rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-6"
+                >
+                  <div class="space-y-1 text-center">
+                    <svg
+                      class="mx-auto h-12 w-12 text-gray-400"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 48 48"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="flex text-sm text-gray-600">
+                      <label
+                        for="txtFileUpload"
+                        class="relative cursor-pointer rounded-md bg-white font-medium text-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:text-primary"
+                      >
+                        <span>Carica un file</span>
+                        <input
+                          type="file"
+                          #csvReader
+                          name="file upload"
+                          id="txtFileUpload"
+                          class="sr-only"
+                          (change)="uploadListener($event)"
+                          accept=".csv"
+                        />
+                      </label>
+                      <!--  <p class="pl-1">o trascinalo qui</p> -->
+                    </div>
+                    <!-- FIXME: -->
+                    <p class="text-xs text-gray-500">CSV fino a 10MB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+              <button
+                type="submit"
+                class="inline-flex justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              >
+                Salva
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- <input
+    type="file"
+    #csvReader
+    name="Upload CSV"
+    id="txtFileUpload"
+    (change)="uploadListener($event)"
+    accept=".csv"
+  />  
+  <table class="minimalistBlack" *ngIf="records.length > 0">
+    <thead>
+      <tr>
+        <th>ITTER107</th>
+        <th>Territorio</th>
+        <th>TIPO_DATO7</th>
+        <th>Indicatori</th>
+        <th>CORREZ</th>
+        <th>Correzione</th>
+        <th>TIPO_ALLOGGIO2</th>
+        <th>Tipologia di esercizi</th>
+        <th>ATECO_2007</th>
+        <th>Ateco 2007</th>
+        <th>ISO</th>
+        <th>Paese di residenza dei clienti</th>
+        <th>TIME</th>
+        <th>Value</th>
+        <th>Flags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of records; let i = index">
+        <td>
+          <span>{{ record['ITTER107 '] }}</span>
+        </td>
+        <td>
+          <span>{{ record.Territorio }}</span>
+        </td>
+        <td>
+          <span>{{ record.TIPO_DATO7 }}</span>
+        </td>
+        <td>
+          <span>{{ record.Indicatori }}</span>
+        </td>
+        <td>
+          <span>{{ record.CORREZ }}</span>
+        </td>
+        <td>
+          <span>{{ record.Correzione }}</span>
+        </td>
+        <td>
+          <span>{{ record.TIPO_ALLOGGIO2 }}</span>
+        </td>
+        <td>
+          <span>{{ record['Tipologia di esercizi']}}</span>
+        </td>
+        <td>
+          <span>{{ record.ATECO_2007 }}</span>
+        </td>
+        <td>
+          <span>{{ record['Ateco 2007'] }}</span>
+        </td>
+        <td>
+          <span>{{ record.ISO }}</span>
+        </td>
+        <td>
+          <span>{{ record['Paese di residenza dei clienti'] }}</span>
+        </td>
+        <td>
+          <span>{{ record.TIME }}</span>
+        </td>
+        <td>
+          <span>{{ record['Seleziona periodo'] }}</span>
+        </td>
+        <td>
+          <span>{{ record.Value }}</span>
+        </td>
+        <td>
+          <span>{{ record['Flag codes'] }}</span>
+        </td>
+        <td>
+          <span>{{ record.Flags }}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+   <input type="file" #csvReader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv" />    
+<table class="minimalistBlack" *ngIf="records.length > 0">    
+  <thead>    
+    <tr>    
+      <th>ID </th>    
+      <th>FirstName </th>    
+      <th>LastName </th>    
+      <th>Age </th>    
+      <th>Position </th>    
+      <th>Mobile </th>    
+    </tr>    
+  </thead>    
+  <tbody>    
+    <tr *ngFor="let record of records;let i = index;">    
+      <td> <span>{{record.id}}</span> </td>    
+      <td> <span>{{record.firstName}}</span> </td>    
+      <td> <span>{{record.lastName}}</span> </td>    
+      <td> <span>{{record.age}}</span> </td>    
+      <td> <span>{{record.position}}</span> </td>    
+      <td> <span>{{record.mobile}}</span> </td>    
+    </tr>    
+  </tbody>    
+</table>  
+</div>
+ -->
+</div>
