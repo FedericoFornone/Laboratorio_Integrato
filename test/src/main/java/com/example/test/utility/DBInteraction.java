@@ -23,10 +23,7 @@ public class DBInteraction {
     public static ResultSet DBSelectFromRegion(String region) {
         try {
             Connection connection = DriverManager.getConnection("jdbc:mariadb://18.102.24.178:3306/Region_Data","root", "87!tyIlp?1");
-            try (PreparedStatement statement = connection.prepareStatement("""
-                SELECT *
-                FROM Abruzzo WHERE Region = ?
-                """))
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM Abruzzo WHERE Region = ?"))
             {
                 statement.setString(1, region);
                 ResultSet resultSet = statement.executeQuery();
