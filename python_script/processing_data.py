@@ -3,10 +3,10 @@ import pandas as pd
 
 
 if __name__ == '__main__':
-    path = '../DataSet/turismo_abruzzo.csv'
+    path = '../DataSet/annuo_abruzzo.csv'
     df = pd.read_csv(path, sep=";", low_memory=False).fillna(0)
 
-    df.drop(["ITTER107", "TIPO_DATO7", "CORREZ", "Correzione", "Tipologia di esercizio", "ATECO_2007", "Ateco 2007", "ISO", "Seleziona periodo", "Flag Codes", "Flags"], axis=1, inplace=True)
+    df.drop(["ITTER107 ", "TIPO_DATO7", "CORREZ", "Correzione", "Tipologia di esercizio", "ATECO_2007", "Ateco 2007", "ISO", "Seleziona periodo", "Flag Codes", "Flags"], axis=1, inplace=True)
 
     df.sort_values(by=["TIME", "Territorio", "Indicatori", "TIPO_ALLOGGIO2", "Paese di residenza dei clienti"], ascending=True, inplace=True)
 
@@ -25,4 +25,4 @@ if __name__ == '__main__':
     #except OSError as error:
     #    print(error)
 
-    new_df.to_csv("../Data/final_data/province.csv", index=False)
+    new_df.to_csv("../Data/final_data/annuo_abruzzo.csv", index=False)
