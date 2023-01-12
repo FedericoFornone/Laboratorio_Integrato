@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ChartConfiguration, ChartOptions, ChartType } from 'chart.js';
+import { ChartConfiguration, ChartOptions } from 'chart.js';
 
 @Component({
   selector: 'app-stats',
   templateUrl: './dashboard.component.html',
 })
-export class StatsComponent implements OnInit {
+export class StatsComponent implements OnInit, AfterViewInit {
+  @ViewChild('canvasContainer') canvasContainer!: any;
+  @ViewChild('lineChartCanvas') lineChartCanvas!: any;
+
   lineChartData!: ChartConfiguration<'line'>['data'];
   public lineChartOptions: ChartOptions<'line'> = {
+    maintainAspectRatio: false,
     responsive: true,
   };
   public lineChartLegend = true;
@@ -211,5 +215,17 @@ export class StatsComponent implements OnInit {
         ],
       };
     });
+  }
+
+  ngAfterViewInit(): void {
+    this.lineChartCanvas.nativeElement.width =
+      this.canvasContainer.nativeElement.clientWidth;
+    this.lineChartCanvas.nativeElement.height =
+      this.canvasContainer.nativeElement.clientHeight;
+
+    console.log(this.lineChartCanvas.nativeElement.width);
+    console.log(this.lineChartCanvas.nativeElement.height);
+    console.log(this.canvasContainer.nativeElement.clientWidth);
+    console.log(this.canvasContainer.nativeElement.clientHeight);
   }
 }

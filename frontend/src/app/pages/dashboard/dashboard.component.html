@@ -1,11 +1,11 @@
-<main class="pb-20">
+<main class="container mx-auto">
   <h1 class="mt-5 mb-20 text-5xl font-bold text-center lg:text-7xl">
     Dashboard
   </h1>
 
   <app-responsive-slider>
     <ng-template #slide>
-      <div class="border-2 border-neutral rounded-xl h-[30rem]"></div>
+      <div class="shadow-xl rounded-xl h-[30rem]"></div>
     </ng-template>
     <ng-template #slide>
       <div class="border-2 border-neutral rounded-xl h-[30rem]"></div>
@@ -17,4 +17,19 @@
       </div>
     </ng-template>
   </app-responsive-slider>
+
+  <div
+    class="shadow-xl rounded-xl h-[30rem] grid place-items-center mx-5 p-5"
+    #canvasContainer
+  >
+    <canvas
+      baseChart
+      [type]="'line'"
+      [data]="lineChartData"
+      [options]="lineChartOptions"
+      [legend]="lineChartLegend"
+      #lineChartCanvas
+    >
+    </canvas>
+  </div>
 </main>
