@@ -1,3 +1,4 @@
+import { AbsoluteSourceSpan } from '@angular/compiler';
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ChartConfiguration, ChartOptions } from 'chart.js';
@@ -153,17 +154,17 @@ export class StatsComponent implements OnInit {
           labels: this.labels,
           datasets: [...stats],
         };
-
-        this.predictionsChartData = {
-          labels: this.labels,
-          datasets: [...stats],
-        };
       });
   }
 
   ngOnInit(): void {
-    this.route.data.subscribe(({ stats, windowSize }) => {
+    this.route.data.subscribe(({ stats, predictions, windowSize }) => {
       this.makeGraphResponsive(windowSize);
+
+      this.predictionsChartData = {
+        labels: [...predictions.labels],
+        datasets: [...predictions.datasets],
+      };
 
       this.arrivalsChartData = {
         labels: this.labels,

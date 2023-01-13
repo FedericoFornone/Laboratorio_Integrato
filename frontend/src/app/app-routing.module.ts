@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { UploadComponent } from './pages/upload/upload.component';
 import { StatsComponent } from './pages/dashboard/dashboard.component';
 import { StatsResolver } from './resolvers/stats.resolver';
+import { PredictionsResolver } from './resolvers/predictions.resolver';
 import { WindowSizeResolver } from './resolvers/windowsize.resolver';
 
 const routes: Routes = [
@@ -12,13 +13,17 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: StatsComponent,
-    resolve: { stats: StatsResolver, windowSize: WindowSizeResolver },
+    resolve: {
+      stats: StatsResolver,
+      predictions: PredictionsResolver,
+      windowSize: WindowSizeResolver,
+    },
   },
   {
     path: 'about',
     component: AboutComponent,
   },
-  { 
+  {
     path: 'upload',
     component: UploadComponent,
   },
@@ -26,9 +31,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes),
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

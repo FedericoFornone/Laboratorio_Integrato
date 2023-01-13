@@ -25,6 +25,24 @@ export class ApiService {
     return arrivals;
   }
 
+  getPredictions() {
+    return this.http.get('assets/predictions.json').pipe(
+      map((data: any) => {
+        return {
+          labels: data.map((d: any) => d['index']),
+          datasets: [
+            {
+              label: 'Italiani in hotel',
+              data: data.map((d: any) => d['predicted_mean']),
+              backgroundColor: '#E70B67',
+              borderRadius: 5,
+            },
+          ],
+        };
+      })
+    );
+  }
+
   getStats(
     region: string = 'Abruzzo',
     infrastructure: string = '',
