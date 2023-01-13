@@ -1,0 +1,70 @@
+<main class="container mx-auto">
+  <h1 class="my-5 text-5xl font-bold text-center lg:text-7xl">Dashboard</h1>
+
+  <!--<app-responsive-slider>
+    <ng-template #slide>
+      <div class="shadow-xl rounded-xl h-[30rem]"></div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="shadow-xl rounded-xl h-[30rem]"></div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="grid grid-rows-2 gap-4">
+        <div class="shadow-xl rounded-xl h-[14.5rem]"></div>
+        <div class="shadow-xl rounded-xl h-[14.5rem]"></div>
+      </div>
+    </ng-template>
+  </app-responsive-slider>-->
+
+  <div class="flex gap-3">
+    <select
+      class="container w-full mb-2 ml-5 bg-white shadow-xl max-w-fit lg:ml-0 select"
+      [(ngModel)]="selectedRegion"
+      (change)="onRegionChange()"
+    >
+      <option selected>Abruzzo</option>
+      <option>L'Aquila</option>
+      <option>Chieti</option>
+      <option>Pescara</option>
+      <option>Teramo</option>
+    </select>
+    <select
+      class="container w-full mb-2 bg-white shadow-xl max-w-fit select"
+      [(ngModel)]="selectedArrivals"
+      (change)="onArrivalsChange()"
+    >
+      <option selected>Tutti gli arrivi</option>
+      <option>Italiani in hotel</option>
+      <option>Italiani in altre strutture</option>
+      <option>Esteri in hotel</option>
+      <option>Esteri in altre strutture</option>
+    </select>
+  </div>
+
+  <div
+    class="shadow-xl rounded-xl h-[40rem] grid place-items-center p-5 lg:p-10 mx-5 lg:mx-0 bg-white"
+  >
+    <canvas
+      baseChart
+      [type]="'bar'"
+      [data]="arrivalsChartData"
+      [options]="arrivalsChartOptions"
+      [legend]="arrivalsChartLegend"
+    >
+    </canvas>
+  </div>
+
+  <div
+    class="shadow-xl rounded-xl h-[40rem] grid place-items-center p-5 lg:p-10 mx-5 lg:mx-0 bg-white mt-5"
+    *ngIf="selectedArrivals === 'Italiani in hotel'"
+  >
+    <canvas
+      baseChart
+      [type]="'bar'"
+      [data]="predictionsChartData"
+      [options]="predictionsChartOptions"
+      [legend]="predictionsChartLegend"
+    >
+    </canvas>
+  </div>
+</main>
