@@ -15,7 +15,7 @@
   </button>
   <div
     [ngStyle]="{ transform: 'translateX(' + -currentSlide * 100 + '%)' }"
-    class="flex mx-5 lg:gap-5 lg:!transform-none"
+    class="flex mx-5 lg:mx-0 lg:gap-5 lg:!transform-none"
   >
     <ng-container *ngFor="let slide of slides; let i = index">
       <div
