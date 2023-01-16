@@ -1,4 +1,19 @@
 <main class="container mx-auto">
+  <app-multistep-modal>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 1</h3>
+      <p class="py-4">This is the first step of the tutorial</p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 2</h3>
+      <p class="py-4">This is the second step of the tutorial</p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 3</h3>
+      <p class="py-4">This is the third step of the tutorial</p>
+    </ng-template>
+  </app-multistep-modal>
+
   <app-responsive-slider [hasMain]="true">
     <ng-template #slide *ngFor="let province of provincesData">
       <div class="rounded-xl h-[25rem] overflow-hidden">
@@ -19,56 +34,4 @@
       </div>
     </ng-template>
   </app-responsive-slider>
-
-  <!--<div class="flex gap-3">
-    <select
-      class="container w-full mb-2 ml-5 bg-white shadow-xl max-w-fit lg:ml-0 select"
-      [(ngModel)]="selectedRegion"
-      (change)="onRegionChange()"
-    >
-      <option selected>Abruzzo</option>
-      <option>L'Aquila</option>
-      <option>Chieti</option>
-      <option>Pescara</option>
-      <option>Teramo</option>
-    </select>
-    <select
-      class="container w-full mb-2 bg-white shadow-xl max-w-fit select"
-      [(ngModel)]="selectedArrivals"
-      (change)="onArrivalsChange()"
-    >
-      <option selected>Tutti gli arrivi</option>
-      <option>Italiani in hotel</option>
-      <option>Italiani in altre strutture</option>
-      <option>Esteri in hotel</option>
-      <option>Esteri in altre strutture</option>
-    </select>
-  </div>
-
-  <div
-    class="shadow-xl rounded-xl h-[40rem] grid place-items-center p-5 lg:p-10 mx-5 lg:mx-0 bg-white"
-  >
-    <canvas
-      baseChart
-      [type]="'bar'"
-      [data]="arrivalsChartData"
-      [options]="arrivalsChartOptions"
-      [legend]="arrivalsChartLegend"
-    >
-    </canvas>
-  </div>
-
-  <div
-    class="shadow-xl rounded-xl h-[40rem] grid place-items-center p-5 lg:p-10 mx-5 lg:mx-0 bg-white mt-5"
-    *ngIf="selectedArrivals === 'Italiani in hotel'"
-  >
-    <canvas
-      baseChart
-      [type]="'bar'"
-      [data]="predictionsChartData"
-      [options]="predictionsChartOptions"
-      [legend]="predictionsChartLegend"
-    >
-    </canvas>
-  </div>-->
 </main>

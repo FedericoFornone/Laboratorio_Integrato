@@ -1,0 +1,60 @@
+<input
+  type="checkbox"
+  id="tutorial-modal"
+  class="modal-toggle"
+  [checked]="!modalAlreadySeen"
+/>
+<div class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div class="flex flex-col">
+      <div class="mb-5 ml-auto">
+        <label
+          for="tutorial-modal"
+          class="cursor-pointer"
+          (click)="persistModalClose()"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </label>
+      </div>
+      <ng-container *ngFor="let step of steps; let i = index">
+        <div>
+          <ng-container
+            [ngTemplateOutlet]="step"
+            *ngIf="i === currentStep"
+          ></ng-container>
+        </div>
+      </ng-container>
+      <div class="flex gap-3 ml-auto">
+        <button class="btn" (click)="previousStep()" *ngIf="currentStep > 0">
+          Previous
+        </button>
+        <button
+          class="btn"
+          (click)="nextStep()"
+          *ngIf="currentStep < steps.length - 1"
+        >
+          Next
+        </button>
+        <label
+          for="tutorial-modal"
+          class="btn"
+          *ngIf="currentStep === steps.length - 1"
+          (click)="persistModalClose()"
+          >End</label
+        >
+      </div>
+    </div>
+  </div>
+</div>
