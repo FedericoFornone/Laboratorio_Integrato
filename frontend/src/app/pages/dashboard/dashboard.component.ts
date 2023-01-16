@@ -10,6 +10,10 @@ import { ApiService } from 'src/app/services/api.service';
 export class StatsComponent implements OnInit {
   provincesData = [
     {
+      name: 'Abruzzo',
+      imageName: 'abruzzo.jpg',
+    },
+    {
       name: "L'Aquila",
       imageName: 'aquila.jpg',
     },

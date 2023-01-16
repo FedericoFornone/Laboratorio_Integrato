@@ -3,6 +3,7 @@ import {
   ContentChildren,
   QueryList,
   TemplateRef,
+  Input,
 } from '@angular/core';
 
 @Component({
@@ -10,6 +11,7 @@ import {
   templateUrl: './responsive-slider.component.html',
 })
 export class ResponsiveSliderComponent {
+  @Input() hasMain: boolean = false;
   @ContentChildren('slide') slides!: QueryList<TemplateRef<void>>;
   currentSlide: number = 0;
 

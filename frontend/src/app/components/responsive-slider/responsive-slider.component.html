@@ -1,4 +1,4 @@
-<div class="relative my-14">
+<div class="relative">
   <button
     class="absolute z-50 text-5xl font-bold -translate-y-1/2 top-1/2 left-5 lg:hidden"
     (click)="previousSlide()"
@@ -20,6 +20,7 @@
     <ng-container *ngFor="let slide of slides; let i = index">
       <div
         class="min-w-full transition-all duration-200 lg:transform-none"
+        [class.col-span-2]="hasMain && i === 0"
         [class.-translate-x-full]="currentSlide - 1 === i"
         [class.translate-x-0]="currentSlide === i"
         [class.translate-x-full]="currentSlide + 1 === i"
