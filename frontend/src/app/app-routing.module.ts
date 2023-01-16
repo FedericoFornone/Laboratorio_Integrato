@@ -13,11 +13,11 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: StatsComponent,
-    resolve: {
+    /*resolve: {
       stats: StatsResolver,
       predictions: PredictionsResolver,
       windowSize: WindowSizeResolver,
-    },
+    },*/
   },
   {
     path: 'about',

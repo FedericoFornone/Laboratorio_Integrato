@@ -1,5 +1,4 @@
-import { AbsoluteSourceSpan } from '@angular/compiler';
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ChartConfiguration, ChartOptions } from 'chart.js';
 import { ApiService } from 'src/app/services/api.service';
@@ -9,7 +8,7 @@ import { ApiService } from 'src/app/services/api.service';
   templateUrl: './dashboard.component.html',
 })
 export class StatsComponent implements OnInit {
-  arrivalsChartData!: ChartConfiguration<'bar'>['data'];
+  /*arrivalsChartData!: ChartConfiguration<'bar'>['data'];
   arrivalsChartOptions: ChartOptions<'bar'> = {
     plugins: {
       title: {
@@ -155,10 +154,10 @@ export class StatsComponent implements OnInit {
           datasets: [...stats],
         };
       });
-  }
+  }*/
 
   ngOnInit(): void {
-    this.route.data.subscribe(({ stats, predictions, windowSize }) => {
+    /*this.route.data.subscribe(({ stats, predictions, windowSize }) => {
       this.makeGraphResponsive(windowSize);
 
       this.predictionsChartData = {
@@ -170,6 +169,6 @@ export class StatsComponent implements OnInit {
         labels: this.labels,
         datasets: [...stats],
       };
-    });
+    });*/
   }
 }
