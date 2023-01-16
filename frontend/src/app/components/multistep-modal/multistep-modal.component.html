@@ -29,12 +29,10 @@
         </label>
       </div>
       <ng-container *ngFor="let step of steps; let i = index">
-        <div>
-          <ng-container
-            [ngTemplateOutlet]="step"
-            *ngIf="i === currentStep"
-          ></ng-container>
-        </div>
+        <ng-container
+          [ngTemplateOutlet]="step"
+          *ngIf="i === currentStep"
+        ></ng-container>
       </ng-container>
       <div class="flex gap-3 ml-auto">
         <button class="btn" (click)="previousStep()" *ngIf="currentStep > 0">
