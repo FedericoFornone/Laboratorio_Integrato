@@ -8,6 +8,25 @@ import { ApiService } from 'src/app/services/api.service';
   templateUrl: './dashboard.component.html',
 })
 export class StatsComponent implements OnInit {
+  provincesData = [
+    {
+      name: "L'Aquila",
+      imageName: 'aquila.jpg',
+    },
+    {
+      name: 'Teramo',
+      imageName: 'teramo.jpg',
+    },
+    {
+      name: 'Pescara',
+      imageName: 'pescara.jpg',
+    },
+    {
+      name: 'Chieti',
+      imageName: 'chieti.jpg',
+    },
+  ];
+
   /*arrivalsChartData!: ChartConfiguration<'bar'>['data'];
   arrivalsChartOptions: ChartOptions<'bar'> = {
     plugins: {
