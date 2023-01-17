@@ -3,21 +3,20 @@ import {
   ContentChildren,
   QueryList,
   TemplateRef,
-  OnInit,
+  Input,
+  Output,
+  EventEmitter,
 } from '@angular/core';
 
 @Component({
   selector: 'app-multistep-modal',
   templateUrl: './multistep-modal.component.html',
 })
-export class MultistepModalComponent implements OnInit {
+export class MultistepModalComponent {
   @ContentChildren('step') steps!: QueryList<TemplateRef<void>>;
-  modalAlreadySeen: boolean = false;
+  @Input('modalOpen') modalOpen!: boolean;
+  @Output() closeModal = new EventEmitter<boolean>();
   currentStep: number = 0;
-
-  ngOnInit() {
-    this.modalAlreadySeen = localStorage.getItem('modalAlreadySeen') === 'true';
-  }
 
   previousStep() {
     if (this.currentStep > 0) {
@@ -31,7 +30,7 @@ export class MultistepModalComponent implements OnInit {
     }
   }
 
-  persistModalClose() {
-    localStorage.setItem('modalAlreadySeen', 'true');
+  emitCloseModal() {
+    this.closeModal.emit(false);
   }
 }

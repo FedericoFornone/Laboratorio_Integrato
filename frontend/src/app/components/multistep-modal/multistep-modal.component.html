@@ -2,17 +2,18 @@
   type="checkbox"
   id="tutorial-modal"
   class="modal-toggle"
-  [checked]="!modalAlreadySeen"
+  [checked]="modalOpen"
 />
 <div class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
     <div class="flex flex-col">
       <div class="mb-5 ml-auto">
-        <label
+        <button
           for="tutorial-modal"
           class="cursor-pointer"
-          (click)="persistModalClose()"
-          ><svg
+          (click)="emitCloseModal()"
+        >
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -26,7 +27,7 @@
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
-        </label>
+        </button>
       </div>
       <ng-container *ngFor="let step of steps; let i = index">
         <ng-container
@@ -45,13 +46,13 @@
         >
           Next
         </button>
-        <label
-          for="tutorial-modal"
+        <button
           class="btn"
           *ngIf="currentStep === steps.length - 1"
-          (click)="persistModalClose()"
-          >End</label
+          (click)="emitCloseModal()"
         >
+          End
+        </button>
       </div>
     </div>
   </div>
