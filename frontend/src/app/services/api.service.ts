@@ -51,8 +51,7 @@ export class ApiService {
 
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {
-        const arrivals = this.getArrivals(data);
-        return data;
+        return this.getArrivals(data);
       })
     );
   }
