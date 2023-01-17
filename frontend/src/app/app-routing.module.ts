@@ -3,21 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { UploadComponent } from './pages/upload/upload.component';
-import { StatsComponent } from './pages/dashboard/dashboard.component';
-import { StatsResolver } from './resolvers/stats.resolver';
-import { PredictionsResolver } from './resolvers/predictions.resolver';
-import { WindowSizeResolver } from './resolvers/windowsize.resolver';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { StatsComponent } from './pages/stats/stats.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'dashboard',
+    component: DashboardComponent,
+  },
+  {
+    path: 'dashboard/stats',
     component: StatsComponent,
-    /*resolve: {
-      stats: StatsResolver,
-      predictions: PredictionsResolver,
-      windowSize: WindowSizeResolver,
-    },*/
   },
   {
     path: 'about',

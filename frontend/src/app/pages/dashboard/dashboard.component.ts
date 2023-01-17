@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-stats',
   templateUrl: './dashboard.component.html',
 })
-export class StatsComponent implements OnInit {
+export class DashboardComponent implements OnInit {
   tutorialModalOpen = false;
   provincesData = [
     {

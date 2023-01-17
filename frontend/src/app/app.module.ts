@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
 
 import { HomeComponent } from './pages/home/home.component';
-import { StatsComponent } from './pages/dashboard/dashboard.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { StatsComponent } from './pages/stats/stats.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,6 +24,7 @@ import { UploadComponent } from './pages/upload/upload.component';
   declarations: [
     AppComponent,
     HomeComponent,
+    DashboardComponent,
     StatsComponent,
     ButtonComponent,
     AvatarComponent,
