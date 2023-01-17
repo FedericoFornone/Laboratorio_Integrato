@@ -43,7 +43,10 @@
 
   <app-responsive-slider [hasMain]="true">
     <ng-template #slide *ngFor="let province of provincesData">
-      <div class="rounded-xl h-[25rem] overflow-hidden">
+      <div
+        class="rounded-xl h-[25rem] overflow-hidden"
+        [routerLink]="'stats/' + province.name.toLowerCase()"
+      >
         <figure
           class="relative w-full h-full transition-all duration-200 cursor-pointer hover:scale-105"
         >
