@@ -21,7 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class DBInteraction {
     
     public static ResultSet DBSelectFromRegion(String region, String date, String infrastructure, String residenceCountry) throws SQLException {
-            Connection connection = DriverManager.getConnection("jdbc:mariadb://18.102.24.178:3306/Region_Data","root", "87!tyIlp?1");
+            Connection connection = DriverManager.getConnection("jdbc:mariadb://localhost/region_data","root", "");
 
             // this query has been modified to allow for multiple filters at the same time
             String query = "SELECT * FROM Abruzzo WHERE Region = ?";

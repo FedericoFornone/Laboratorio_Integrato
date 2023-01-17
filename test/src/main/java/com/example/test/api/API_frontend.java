@@ -33,7 +33,8 @@ public class API_frontend {
 
     @GetMapping("/predictions")
     public static String APIPredictions(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry) throws IOException {
-        String json = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonTestScripts\\testPython.py");
+      // currently just pulling data from a test python script. this should get replaced by the actual predictive models.  
+      String json = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonTestScripts\\testPython.py");
         return json;
     }
  
