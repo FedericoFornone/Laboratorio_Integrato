@@ -33,8 +33,8 @@ public class API_frontend {
 
     @GetMapping("/predictions")
     public static String APIPredictions(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry) throws IOException {
-		String json = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonTestScripts\\testPython.py");
-		return json;
-  }
+        String json = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonTestScripts\\testPython.py");
+        return json;
+    }
  
 }
