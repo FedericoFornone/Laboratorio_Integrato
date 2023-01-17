@@ -45,6 +45,10 @@ export class ApiService {
       year
     );
 
-    return this.http.get<ApiModel>(url);
+    return this.http.get<ApiModel[]>(url).pipe(
+      map((data) => {
+        return data;
+      })
+    );
   }
 }
