@@ -5,6 +5,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { UploadComponent } from './pages/upload/upload.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { StatsComponent } from './pages/stats/stats.component';
+import { StatsResolver } from './resolvers/stats.resolver';
+import { RegionResolver } from './resolvers/regions.resolver';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,8 +15,12 @@ const routes: Routes = [
     component: DashboardComponent,
   },
   {
-    path: 'dashboard/stats',
+    path: 'dashboard/stats/:region',
     component: StatsComponent,
+    resolve: {
+      stats: StatsResolver,
+      region: RegionResolver,
+    },
   },
   {
     path: 'about',
