@@ -36,18 +36,22 @@
         ></ng-container>
       </ng-container>
       <div class="flex gap-3 ml-auto">
-        <button class="btn" (click)="previousStep()" *ngIf="currentStep > 0">
+        <button
+          class="btn btn-primary"
+          (click)="previousStep()"
+          *ngIf="currentStep > 0"
+        >
           Previous
         </button>
         <button
-          class="btn"
+          class="btn btn-primary"
           (click)="nextStep()"
           *ngIf="currentStep < steps.length - 1"
         >
           Next
         </button>
         <button
-          class="btn"
+          class="btn btn-primary"
           *ngIf="currentStep === steps.length - 1"
           (click)="emitCloseModal()"
         >
