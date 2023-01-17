@@ -45,18 +45,117 @@
     </div>
   </div>
 
+  <!--<div class="flex justify-center gap-5 my-5">
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="tourists" class="text-sm font-medium">Tipo di turisti</label>
+      <select class="w-full select select-bordered" id="tourists">
+        <option selected>Tutti</option>
+        <option>Turisti italiani</option>
+        <option>Turisti stranieri</option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="structures" class="text-sm font-medium"
+        >Struttura di residenza</label
+      >
+      <select class="w-full select select-bordered" id="structures">
+        <option selected>Tutte</option>
+        <option>Hotel</option>
+        <option>Altre</option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="statsYear" class="text-sm font-medium"
+        >Anno statistiche</label
+      >
+      <select class="w-full select select-bordered" id="statsYear">
+        <option selected>2021</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="predictionsYear" class="text-sm font-medium"
+        >Anno previsioni</label
+      >
+      <select class="w-full select select-bordered" id="predictionsYear">
+        <option selected>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+        <option>2026</option>
+      </select>
+    </div>
+  </div>-->
+
+  <div
+    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0"
+  >
+    <select class="flex-1 w-full select select-bordered">
+      <option selected disabled>Tipo di turisti</option>
+      <option>Tutti</option>
+      <option>Turisti italiani</option>
+      <option>Turisti stranieri</option>
+    </select>
+
+    <select class="flex-1 w-full select select-bordered">
+      <option selected disabled>Struttura di residenza</option>
+      <option>Tutte</option>
+      <option>Hotel</option>
+      <option>Altre</option>
+    </select>
+
+    <select class="flex-1 w-full select select-bordered">
+      <option selected disabled>Anno statistiche</option>
+      <option>2021</option>
+      <option>2020</option>
+      <option>2019</option>
+      <option>2018</option>
+      <option>2017</option>
+      <option>2016</option>
+      <option>2015</option>
+      <option>2014</option>
+      <option>2013</option>
+      <option>2012</option>
+      <option>2011</option>
+      <option>2010</option>
+      <option>2009</option>
+      <option>2008</option>
+    </select>
+
+    <select class="flex-1 w-full select select-bordered">
+      <option selected disabled>Anno previsioni</option>
+      <option>2022</option>
+      <option>2023</option>
+      <option>2024</option>
+      <option>2025</option>
+      <option>2026</option>
+    </select>
+  </div>
+
   <app-responsive-slider>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border-2 border-base-content"></div>
+      <div class="rounded-xl h-[30rem] border border-base-content"></div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border-2 border-base-content"></div>
+      <div class="rounded-xl h-[30rem] border border-base-content"></div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border-2 border-base-content"></div>
+      <div class="rounded-xl h-[30rem] border border-base-content"></div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border-2 border-base-content"></div>
+      <div class="rounded-xl h-[30rem] border border-base-content"></div>
     </ng-template>
   </app-responsive-slider>
 </main>
