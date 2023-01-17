@@ -10,7 +10,12 @@ app = Flask(__name__)
 def get_data():
     data = open('../Data/final_data/abruzzo.json')
     return data
-
+'''
+@app.route('/estero', methods=['GET'])
+def get_data():
+    data = open('../Data/final_data/estero.json')
+    return data
+'''
 @app.route('/post_data/<data>', methods=['POST'])
 def post_data(data):
     new_data = json.load(data)
