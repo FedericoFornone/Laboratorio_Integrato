@@ -25,8 +25,8 @@ import com.example.test.utility.ExecutePythonAndCaptureOutput;
 public class API_frontend {
 
     @GetMapping("/statistics")
-    public static String APIStatistics(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String date, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry) throws SQLException {
-        ResultSet resultSet = DBInteraction.DBSelectFromRegion(region, date, infrastructure, residenceCountry);
+    public static String APIStatistics(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String date, @RequestParam(required = false) String dateType, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry) throws SQLException {
+        ResultSet resultSet = DBInteraction.DBSelectFromRegion(region, date, dateType, infrastructure, residenceCountry);
         JSONArray result = ConvertToJSON.ResultSetToJSON(resultSet);
         return result.toString();
     }
