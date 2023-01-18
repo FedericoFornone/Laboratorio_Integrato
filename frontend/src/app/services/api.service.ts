@@ -83,7 +83,7 @@ export class ApiService {
             },
           },
         };
-        const barChartLegend = true;
+        const barChartLegend = false;
 
         return {
           chartData: barChartData,
