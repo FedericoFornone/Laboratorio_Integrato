@@ -1,18 +1,30 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-stats',
   templateUrl: './stats.component.html',
 })
-export class StatsComponent implements OnInit, AfterViewInit {
-  @ViewChild('chart') chartCanvas: any;
-  @ViewChild('chartContainer') chartContainer: any;
+export class StatsComponent implements OnInit {
   regionName!: string;
   tutorialModalOpen = false;
   arrivalsStatsChart: any;
 
   constructor(private route: ActivatedRoute) {}
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.makeChartResponsive(event.target.innerWidth);
+  }
+
+  makeChartResponsive(width: number) {
+    if (width < 768) {
+      this.arrivalsStatsChart.options = {
+        ...this.arrivalsStatsChart.options,
+        indexAxis: 'y',
+      };
+    }
+  }
 
   ngOnInit() {
     this.tutorialModalOpen = localStorage.getItem('statsModalSeen') !== 'true';
@@ -21,13 +33,6 @@ export class StatsComponent implements OnInit, AfterViewInit {
       this.arrivalsStatsChart = stats;
       this.regionName = region;
     });
-  }
-
-  ngAfterViewInit() {
-    this.chartCanvas.nativeElement.width =
-      this.chartContainer.nativeElement.clientWidth;
-    this.chartCanvas.nativeElement.height =
-      this.chartContainer.nativeElement.clientHeight;
   }
 
   closeModal() {

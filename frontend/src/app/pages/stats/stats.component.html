@@ -146,14 +146,10 @@
 
   <app-responsive-slider>
     <ng-template #slide>
-      <div
-        class="rounded-xl h-[30rem] border border-base-content"
-        #chartContainer
-      >
+      <div class="rounded-xl h-[30rem] border border-base-content">
         <canvas
           baseChart
-          #chart
-          [type]="'line'"
+          [type]="'bar'"
           [data]="arrivalsStatsChart.chartData"
           [options]="arrivalsStatsChart.options"
           [legend]="arrivalsStatsChart.legend"

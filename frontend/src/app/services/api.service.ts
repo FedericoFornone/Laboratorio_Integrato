@@ -53,7 +53,7 @@ export class ApiService {
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {
         const arrivals = this.getArrivals(data);
-        const lineChartData: ChartConfiguration<'line'>['data'] = {
+        const barChartData: ChartConfiguration<'bar'>['data'] = {
           labels: [
             'January',
             'February',
@@ -67,22 +67,27 @@ export class ApiService {
             {
               data: [65, 59, 80, 81, 56, 55, 40],
               label: 'Series A',
-              fill: true,
-              tension: 0.5,
               borderColor: 'black',
               backgroundColor: 'rgba(255,0,0,0.3)',
             },
           ],
         };
-        const lineChartOptions: ChartOptions<'line'> = {
-          responsive: false,
+        const barChartOptions: ChartOptions<'bar'> = {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            title: {
+              display: true,
+              text: 'Statistiche arrivi',
+            },
+          },
         };
-        const lineChartLegend = true;
+        const barChartLegend = true;
 
         return {
-          chartData: lineChartData,
-          options: lineChartOptions,
-          legend: lineChartLegend,
+          chartData: barChartData,
+          options: barChartOptions,
+          legend: barChartLegend,
         };
       })
     );
