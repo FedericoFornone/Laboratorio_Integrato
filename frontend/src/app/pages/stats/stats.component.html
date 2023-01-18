@@ -158,13 +158,40 @@
       </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border border-base-content"></div>
+      <div class="rounded-xl h-[30rem] border border-base-content">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.options"
+          [legend]="arrivalsStatsChart.legend"
+        >
+        </canvas>
+      </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border border-base-content"></div>
+      <div class="rounded-xl h-[30rem] border border-base-content">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.options"
+          [legend]="arrivalsStatsChart.legend"
+        >
+        </canvas>
+      </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border border-base-content"></div>
+      <div class="rounded-xl h-[30rem] border border-base-content">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.options"
+          [legend]="arrivalsStatsChart.legend"
+        >
+        </canvas>
+      </div>
     </ng-template>
   </app-responsive-slider>
 </main>

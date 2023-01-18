@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -11,20 +11,6 @@ export class StatsComponent implements OnInit {
   arrivalsStatsChart: any;
 
   constructor(private route: ActivatedRoute) {}
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.makeChartResponsive(event.target.innerWidth);
-  }
-
-  makeChartResponsive(width: number) {
-    if (width < 768) {
-      this.arrivalsStatsChart.options = {
-        ...this.arrivalsStatsChart.options,
-        indexAxis: 'y',
-      };
-    }
-  }
 
   ngOnInit() {
     this.tutorialModalOpen = localStorage.getItem('statsModalSeen') !== 'true';
