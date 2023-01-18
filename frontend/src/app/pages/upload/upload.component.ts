@@ -1,11 +1,13 @@
-import { Component, ViewChild } from '@angular/core';
-import { CSVRecord } from 'src/app/CSVRecord';
+import { HttpClient } from '@angular/common/http';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { FileUploadService } from '../../services/file-upload.service';
 
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
+  styleUrls: ['./upload.component.scss'],
 })
-export class UploadComponent {
+export class UploadComponent implements OnInit {
   download = {
     filename: 'CSV Template',
     url: 'assets/download/CSV_TEMPLATE.csv',
@@ -31,92 +33,60 @@ export class UploadComponent {
   }
 
   /* UPLOAD FILE */
-  public records: any[] = [];
-  @ViewChild('csvReader') csvReader: any;
 
-  uploadListener($event: any): void {
-    let text = [];
-    let files = $event.srcElement.files;
+  /* fileName = '';
+  file: File = null 
 
-    if (this.isValidCSVFile(files[0])) {
-      let input = $event.target;
-      let reader = new FileReader();
-      reader.readAsText(input.files[0]);
+  constructor(private http: HttpClient) {}
 
-      reader.onload = () => {
-        let csvData = reader.result;
-        let csvRecordsArray = (<string>csvData).split(/\r\n|\n/);
+  onFileSelected(event : any) {
+    this.file = event.target.files[0];
+  }
 
-        let headersRow = this.getHeaderArray(csvRecordsArray);
+  onUpload() {
+    if (this.file) {
+      this.fileName = this.file.name;
 
-        this.records = this.getDataRecordsArrayFromCSVFile(
-          csvRecordsArray,
-          headersRow.length
-        );
-      };
+      const formData = new FormData();
 
-      reader.onerror = function () {
-        console.log('error is occured while reading file!');
-      };
-    } else {
-      alert('Please import valid .csv file.');
-      this.fileReset();
+      formData.append('thumbnail', this.file);
+
+      const upload$ = this.http.post('/api/thumbnail-upload', formData);
+
+      upload$.subscribe();
     }
+  } */
+
+  // Variable to store shortLink from api response
+  shortLink: string = "";
+  loading: boolean = false; // Flag variable
+  file: File = null as any; // Variable to store file
+
+  // Inject service 
+  constructor(private fileUploadService: FileUploadService) { }
+
+  ngOnInit(): void {
   }
 
-  getDataRecordsArrayFromCSVFile(csvRecordsArray: any, headerLength: any) {
-    let csvArr = [];
-
-    for (let i = 1; i < csvRecordsArray.length; i++) {
-      let currentRecord = (<string>csvRecordsArray[i]).split(',');
-      if (currentRecord.length == headerLength) {
-        let csvRecord: CSVRecord = new CSVRecord();
-        /* csvRecord.id = curruntRecord[0].trim();  
-        csvRecord.firstName = curruntRecord[1].trim();  
-        csvRecord.lastName = curruntRecord[2].trim();  
-        csvRecord.age = curruntRecord[3].trim();  
-        csvRecord.position = curruntRecord[4].trim();  
-        csvRecord.mobile = curruntRecord[5].trim();   */
-        csvRecord['ITTER107 '] = currentRecord[0].trim();
-        csvRecord.Territorio = currentRecord[1].trim();
-        csvRecord.TIPO_DATO7 = currentRecord[2].trim();
-        csvRecord.Indicatori = currentRecord[3].trim();
-        csvRecord.CORREZ = currentRecord[4].trim();
-        csvRecord.Correzione = currentRecord[5].trim();
-        csvRecord.TIPO_ALLOGGIO2 = currentRecord[6].trim();
-        csvRecord['Tipologia di esercizi'] = currentRecord[7].trim();
-        csvRecord.ATECO_2007 = currentRecord[8].trim();
-        csvRecord['Ateco 2007'] = currentRecord[9].trim();
-        csvRecord.ISO = currentRecord[10].trim();
-        csvRecord['Paese di residenza dei clienti'] = currentRecord[11].trim();
-        csvRecord.TIME = currentRecord[12].trim();
-        csvRecord['Seleziona periodo'] = currentRecord[13].trim();
-        csvRecord.Value = currentRecord[14].trim();
-        csvRecord['Flag codes'] = currentRecord[15].trim();
-        csvRecord.Flags = currentRecord[16].trim();
-        csvArr.push(csvRecord);
-      }
-    }
-    return csvArr;
+  // On file Select
+  onChange(event : any) {
+      this.file = event.target.files[0];
   }
 
-  isValidCSVFile(file: any) {
-    return file.name.endsWith('.csv');
-  }
+  // OnClick of button Upload
+  onUpload() {
+      this.loading = !this.loading;
+      console.log(this.file);
+      this.fileUploadService.upload(this.file).subscribe(
+          (event: any) => {
+              if (typeof (event) === 'object') {
 
-  getHeaderArray(csvRecordsArr: any) {
-    let headers = (<string>csvRecordsArr[0]).split(',');
-    let headerArray = [];
-    for (let j = 0; j < headers.length; j++) {
-      headerArray.push(headers[j]);
-    }
-    return headerArray;
-  }
+                  // Short link via api response
+                  this.shortLink = event.link;
 
-  fileReset() {
-    this.csvReader.nativeElement.value = '';
-    this.records = [];
-  }
-
-  ngOnInit(): void {}
+                  this.loading = false; // Flag variable 
+              }
+          }
+      );
+        }
 }

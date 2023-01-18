@@ -15,11 +15,19 @@ import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { UploadComponent } from './pages/upload/upload.component';
-import { ProgressComponent } from './components/progress/progress.component';
-
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent, FooterComponent, AboutComponent, NavbarComponent, UploadComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    StatsComponent,
+    ButtonComponent,
+    AvatarComponent,
+    FooterComponent,
+    AboutComponent,
+    NavbarComponent,
+    UploadComponent,
+  ],
   imports: [
     HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -90,9 +90,10 @@
                   />
                 </div>
               </div>
+
               <div>
                 <label class="block text-sm font-medium text-gray-700"
-                  >File CSV</label
+                  >File</label
                 >
                 <div
                   class="mt-1 flex justify-center rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-6"
@@ -114,34 +115,49 @@
                     </svg>
                     <div class="flex text-sm text-gray-600">
                       <label
-                        for="txtFileUpload"
-                        class="relative cursor-pointer rounded-md bg-white font-medium text-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:text-primary"
+                        for="file-upload"
+                        class="relative cursor-pointer rounded-md bg-white font-medium text-primary"
                       >
-                        <span>Carica un file</span>
                         <input
+                          id="file-upload"
+                          name="file-upload"
                           type="file"
-                          #csvReader
-                          name="file upload"
-                          id="txtFileUpload"
-                          class="sr-only"
-                          (change)="uploadListener($event)"
+                          class="form-control"
                           accept=".csv"
+                          (change)="onChange($event)"
                         />
+                        <!--  <button (click)="onUpload()" class="btn btn-success">
+                          Upload
+                        </button> -->
+                        <!-- Shareable short link of  uploaded file -->
+                        <!-- <div
+                          class="container text-center jumbotron"
+                          *ngIf="shortLink"
+                        >
+                          <h2>Visit Here</h2>
+                          <a href="{{ shortLink }}">{{ shortLink }}</a>
+                        </div> -->
+
+                        <!--Flag variable is used here-->
+                        <!-- <div class="container" *ngIf="loading">
+                          <h3>Loading ...</h3>
+                        </div> -->
                       </label>
-                      <!--  <p class="pl-1">o trascinalo qui</p> -->
+                      <!-- <p class="pl-1">o trascinalo qui</p> -->
                     </div>
-                    <!-- FIXME: -->
                     <p class="text-xs text-gray-500">CSV fino a 10MB</p>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
               <button
                 type="submit"
                 class="inline-flex justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                (click)="onUpload()"
               >
-                Salva
+                Invia
               </button>
             </div>
           </div>
@@ -149,116 +165,4 @@
       </div>
     </div>
   </div>
-
-  <!-- <input
-    type="file"
-    #csvReader
-    name="Upload CSV"
-    id="txtFileUpload"
-    (change)="uploadListener($event)"
-    accept=".csv"
-  />  
-  <table class="minimalistBlack" *ngIf="records.length > 0">
-    <thead>
-      <tr>
-        <th>ITTER107</th>
-        <th>Territorio</th>
-        <th>TIPO_DATO7</th>
-        <th>Indicatori</th>
-        <th>CORREZ</th>
-        <th>Correzione</th>
-        <th>TIPO_ALLOGGIO2</th>
-        <th>Tipologia di esercizi</th>
-        <th>ATECO_2007</th>
-        <th>Ateco 2007</th>
-        <th>ISO</th>
-        <th>Paese di residenza dei clienti</th>
-        <th>TIME</th>
-        <th>Value</th>
-        <th>Flags</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let record of records; let i = index">
-        <td>
-          <span>{{ record['ITTER107 '] }}</span>
-        </td>
-        <td>
-          <span>{{ record.Territorio }}</span>
-        </td>
-        <td>
-          <span>{{ record.TIPO_DATO7 }}</span>
-        </td>
-        <td>
-          <span>{{ record.Indicatori }}</span>
-        </td>
-        <td>
-          <span>{{ record.CORREZ }}</span>
-        </td>
-        <td>
-          <span>{{ record.Correzione }}</span>
-        </td>
-        <td>
-          <span>{{ record.TIPO_ALLOGGIO2 }}</span>
-        </td>
-        <td>
-          <span>{{ record['Tipologia di esercizi']}}</span>
-        </td>
-        <td>
-          <span>{{ record.ATECO_2007 }}</span>
-        </td>
-        <td>
-          <span>{{ record['Ateco 2007'] }}</span>
-        </td>
-        <td>
-          <span>{{ record.ISO }}</span>
-        </td>
-        <td>
-          <span>{{ record['Paese di residenza dei clienti'] }}</span>
-        </td>
-        <td>
-          <span>{{ record.TIME }}</span>
-        </td>
-        <td>
-          <span>{{ record['Seleziona periodo'] }}</span>
-        </td>
-        <td>
-          <span>{{ record.Value }}</span>
-        </td>
-        <td>
-          <span>{{ record['Flag codes'] }}</span>
-        </td>
-        <td>
-          <span>{{ record.Flags }}</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-   <input type="file" #csvReader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv" />    
-<table class="minimalistBlack" *ngIf="records.length > 0">    
-  <thead>    
-    <tr>    
-      <th>ID </th>    
-      <th>FirstName </th>    
-      <th>LastName </th>    
-      <th>Age </th>    
-      <th>Position </th>    
-      <th>Mobile </th>    
-    </tr>    
-  </thead>    
-  <tbody>    
-    <tr *ngFor="let record of records;let i = index;">    
-      <td> <span>{{record.id}}</span> </td>    
-      <td> <span>{{record.firstName}}</span> </td>    
-      <td> <span>{{record.lastName}}</span> </td>    
-      <td> <span>{{record.age}}</span> </td>    
-      <td> <span>{{record.position}}</span> </td>    
-      <td> <span>{{record.mobile}}</span> </td>    
-    </tr>    
-  </tbody>    
-</table>  
-</div>
- -->
 </div>
