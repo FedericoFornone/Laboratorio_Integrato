@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { ApiModel } from '../models/api.model';
+import { ChartConfiguration, ChartOptions } from 'chart.js';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +16,7 @@ export class ApiService {
     infrastructure?: 'hotel' | 'other',
     residenceCountry?: 'italy' | 'foreign'
   ) {
-    let url = `http://18.102.24.178:7790/statistics?region=${region}&date=${date}`;
+    let url = `http://localhost:7790/statistics?region=${region}&date=${date}`;
 
     if (infrastructure) {
       url += '&infrastructure=' + infrastructure;
@@ -51,7 +52,38 @@ export class ApiService {
 
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {
-        return this.getArrivals(data);
+        const arrivals = this.getArrivals(data);
+        const lineChartData: ChartConfiguration<'line'>['data'] = {
+          labels: [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+          ],
+          datasets: [
+            {
+              data: [65, 59, 80, 81, 56, 55, 40],
+              label: 'Series A',
+              fill: true,
+              tension: 0.5,
+              borderColor: 'black',
+              backgroundColor: 'rgba(255,0,0,0.3)',
+            },
+          ],
+        };
+        const lineChartOptions: ChartOptions<'line'> = {
+          responsive: false,
+        };
+        const lineChartLegend = true;
+
+        return {
+          chartData: lineChartData,
+          options: lineChartOptions,
+          legend: lineChartLegend,
+        };
       })
     );
   }

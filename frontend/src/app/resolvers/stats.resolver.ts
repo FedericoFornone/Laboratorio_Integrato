@@ -10,7 +10,7 @@ import { ApiService } from '../services/api.service';
 @Injectable({
   providedIn: 'root',
 })
-export class StatsResolver implements Resolve<Observable<number[]>> {
+export class StatsResolver implements Resolve<Observable<any>> {
   constructor(private apiService: ApiService) {}
 
   resolve(route: ActivatedRouteSnapshot, _: RouterStateSnapshot) {
