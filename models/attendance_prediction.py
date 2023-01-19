@@ -78,5 +78,12 @@ def main(region, infrastructure, residence):
 
     print(fa_pred[-60:])
 
+
 if __name__ == '__main__':
     main(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))
+
+
+# ===================================================================
+# To run the script write in the terminal:
+# python attendance_prediction.py 'region' 'infrastructure' 'residence'
+# ===================================================================

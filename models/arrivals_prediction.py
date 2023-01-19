@@ -80,3 +80,9 @@ def main(region, infrastructure, residence):
 
 if __name__ == '__main__':
     main(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))
+
+
+# ===================================================================
+# To run the script write in the terminal:
+# python arrivals_prediction.py 'region' 'infrastructure' 'residence'
+# ===================================================================
