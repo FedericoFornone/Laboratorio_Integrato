@@ -16,7 +16,7 @@ export class ApiService {
     infrastructure?: 'hotel' | 'other',
     residenceCountry?: 'italy' | 'foreign'
   ) {
-    let url = `http://localhost:7790/statistics?region=${region}&date=${date}`;
+    let url = `http://localhost:7790/statistics?region=${region}&date=${date}&dateType=monthly`;
 
     if (infrastructure) {
       url += '&infrastructure=' + infrastructure;
@@ -29,12 +29,21 @@ export class ApiService {
     return url;
   }
 
-  private getArrivals(data: ApiModel[]) {
-    const arrivals = data.map((item) => {
-      return item.Arrivals;
-    });
+  private reduceByDate(data: ApiModel[]) {
+    const reducedData = data.reduce((acc: any, item) => {
+      const date = item.Date;
+      const arrivals = item.Arrivals;
 
-    return arrivals;
+      if (acc[date]) {
+        acc[date] += arrivals;
+      } else {
+        acc[date] = arrivals;
+      }
+
+      return acc;
+    }, {});
+
+    return reducedData;
   }
 
   getStats(
@@ -52,23 +61,18 @@ export class ApiService {
 
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {
-        const arrivals = this.getArrivals(data);
+        const arrivals = this.reduceByDate(data);
+        const labels: string[] = [...Object.keys(arrivals)];
+        const values: any = [...Object.values(arrivals)];
+
         const barChartData: ChartConfiguration<'bar'>['data'] = {
-          labels: [
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
-            'July',
-          ],
+          labels,
           datasets: [
             {
-              data: [65, 59, 80, 81, 56, 55, 40],
-              label: 'Series A',
-              borderColor: 'black',
-              backgroundColor: 'rgba(255,0,0,0.3)',
+              data: values,
+              label: 'Arrivi',
+              backgroundColor: '#E70B67',
+              borderRadius: 5,
             },
           ],
         };
@@ -79,7 +83,7 @@ export class ApiService {
           plugins: {
             title: {
               display: true,
-              text: 'Statistiche arrivi',
+              text: 'Statistiche arrivi - ' + date,
             },
           },
         };
