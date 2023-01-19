@@ -28,11 +28,6 @@ export class AboutComponent {
       image: 'assets/about/team/riccardorapizzi.webp',
     },
     {
-      name: 'Luca Mainardi',
-      role: 'Fintech Developer',
-      image: 'assets/about/team/lucamainardi.webp',
-    },
-    {
       name: 'Jacopo Trompeo',
       role: 'Web Developer',
       image: 'assets/about/team/jacopotrompeo.webp',

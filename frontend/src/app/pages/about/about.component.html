@@ -222,9 +222,8 @@
         class="flex items-center justify-center flex-wrap gap-6 flex-col lg:flex-row"
       >
         <div
+          class="flex items-center justify-center flex-[0_0_20%] xs:flex-[0_0_10%]"
           *ngFor="let person of team"
-          style="flex: 0 0 320px"
-          class="flex items-center justify-center"
         >
           <app-avatar
             [name]="person.name"
