@@ -5,7 +5,7 @@ import {
   RouterStateSnapshot,
 } from '@angular/router';
 import { Observable } from 'rxjs';
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../services/stats.service';
 
 @Injectable({
   providedIn: 'root',
