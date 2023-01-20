@@ -85,5 +85,6 @@ if __name__ == '__main__':
 
 # ===================================================================
 # To run the script write in the terminal:
+# !pip install skforecast
 # python attendance_prediction.py 'region' 'infrastructure' 'residence'
 # ===================================================================
