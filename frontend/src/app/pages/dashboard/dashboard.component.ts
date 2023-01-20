@@ -9,8 +9,8 @@ import { ApiService } from 'src/app/services/api.service';
   templateUrl: './dashboard.component.html',
 })
 export class StatsComponent implements OnInit {
-  arrivalsChartData!: ChartConfiguration<'bar'>['data'];
-  arrivalsChartOptions: ChartOptions<'bar'> = {
+  arrivalsChartData!: ChartConfiguration<'line'>['data'];
+  arrivalsChartOptions: ChartOptions<'line'> = {
     plugins: {
       title: {
         display: true,
@@ -25,8 +25,8 @@ export class StatsComponent implements OnInit {
   };
   arrivalsChartLegend = true;
 
-  predictionsChartData!: ChartConfiguration<'bar'>['data'];
-  predictionsChartOptions: ChartOptions<'bar'> = {
+  predictionsChartData!: ChartConfiguration<'line'>['data'];
+  predictionsChartOptions: ChartOptions<'line'> = {
     plugins: {
       title: {
         display: true,
