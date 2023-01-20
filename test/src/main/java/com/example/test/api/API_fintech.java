@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin // This enables api calls from machines other than the one that allocated the resources. Might not want this enabled.
 public class API_fintech {
+
+    // This whole API class is unnecessary in the end
     
     @GetMapping("/test")
     public static void APITest() {
