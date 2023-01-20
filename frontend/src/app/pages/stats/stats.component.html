@@ -107,7 +107,7 @@
 
   <app-responsive-slider>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
         <canvas
           baseChart
           [type]="'bar'"
@@ -129,7 +129,7 @@
       </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
+      <div class="rounded-xl h-[35rem] shadow-xl bg-white">
         <canvas
           baseChart
           [type]="'bar'"
@@ -141,28 +141,10 @@
       </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
-        <canvas
-          baseChart
-          [type]="'bar'"
-          [data]="arrivalsStatsChart.chartData"
-          [options]="arrivalsStatsChart.options"
-          [legend]="arrivalsStatsChart.legend"
-        >
-        </canvas>
-      </div>
+      <div class="rounded-xl h-[30rem] shadow-xl bg-white"></div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
-        <canvas
-          baseChart
-          [type]="'bar'"
-          [data]="arrivalsStatsChart.chartData"
-          [options]="arrivalsStatsChart.options"
-          [legend]="arrivalsStatsChart.legend"
-        >
-        </canvas>
-      </div>
+      <div class="rounded-xl h-[30rem] shadow-xl bg-white"></div>
     </ng-template>
   </app-responsive-slider>
 </main>

@@ -49,6 +49,9 @@ export class ApiService {
             title: {
               display: true,
               text: 'Statistiche arrivi - ' + date,
+              font: {
+                size: 16,
+              },
             },
           },
         };
@@ -101,6 +104,9 @@ export class ApiService {
             title: {
               display: true,
               text: 'Statistiche presenze - ' + date,
+              font: {
+                size: 16,
+              },
             },
           },
         };
