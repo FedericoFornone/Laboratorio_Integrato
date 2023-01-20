@@ -80,6 +80,7 @@ def main(region, infrastructure, residence):
 
     prediction = fa_pred[-120:]
 
+    print('data start')
     print(prediction.to_json(orient="index", date_format='iso'))
 
 
