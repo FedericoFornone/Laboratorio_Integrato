@@ -1,7 +1,7 @@
 <div
   class="navbar bg-transparent sticky top-0 z-50 bg-base-100 shadow-md px-10"
 >
-  <a [routerLink]="'/home/'" class="navbar-start flex items-center ml-5">
+  <a [routerLink]="'/home/'" class="navbar-start flex items-center ml-16">
     <picture>
       <source media="(min-width:1024px)" srcset="/assets/logo-desktop.png" />
       <img src="assets/logo-mobile.webp" alt="Nomad Logo" class="h-10 my-4" />
@@ -30,7 +30,6 @@
         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-40"
       >
         <li><a [routerLink]="'/dashboard/'">Dashboard</a></li>
-        <li><a [routerLink]="'/upload/'">Upload</a></li>
         <li><a [routerLink]="'/about/'">About</a></li>
       </ul>
     </div>
@@ -40,7 +39,6 @@
       <li class="mr-10">
         <a [routerLink]="'/dashboard/'">Dashboard</a>
       </li>
-      <li class="mr-10"><a [routerLink]="'/upload/'">Upload</a></li>
       <li><a [routerLink]="'/about/'">About</a></li>
     </ul>
   </div>
