@@ -16,6 +16,7 @@ def make_mask(df:pd.DataFrame, region:str, infrastructure:str, residence:str):
 
 
 def main(region, infrastructure, residence):
+
     input_df = pd.read_csv('https://raw.githubusercontent.com/FedericoFornone/Laboratorio_Integrato/fintech/Data/final_data/abruzzo.csv')
 
     input_df.Date = pd.to_datetime(input_df.Date)
@@ -31,11 +32,11 @@ def main(region, infrastructure, residence):
     df_train = df[:-24]
     df_test = df[-24:]
 
-    df_train_arrivals = df_train['Arrivals']
-    df_test_arrivals = df_test['Arrivals']
+    df_train_arrivals = df_train[['Arrivals','Date']]
+    df_test_arrivals = df_test[['Arrivals','Date']]
 
     # i 24 mesi di test più i 60 sconosciuti
-    steps = 24 + 60
+    steps = 24 + 120
 
     # addestramento
     forecaster = ForecasterAutoreg(
@@ -44,7 +45,9 @@ def main(region, infrastructure, residence):
         lags=30  # la finestra temporale che definisce le righe della matrice di feature
     )
 
-    forecaster.fit(y=df_train_arrivals)
+    df_train_arrivals.index = pd.DatetimeIndex(df_train_arrivals.Date, freq='MS')
+
+    forecaster.fit(y=df_train_arrivals['Arrivals'])
 
     # predizione
     df_pred = forecaster.predict(steps=steps)
@@ -55,7 +58,7 @@ def main(region, infrastructure, residence):
 
     grid_search = grid_search_forecaster(
         forecaster=forecaster,
-        y=df_train_arrivals,
+        y=df_train_arrivals['Arrivals'],
         param_grid=param_grid,
         lags_grid=lags_grid,
         steps=steps,
@@ -70,12 +73,16 @@ def main(region, infrastructure, residence):
                                    transformer_y=StandardScaler(),
                                    lags=20)
 
-    fa_autoreg.fit(y=df_train_arrivals)
+    fa_autoreg.fit(y=df_train_arrivals['Arrivals'])
 
     # predizione
     fa_pred = fa_autoreg.predict(steps=steps)
 
-    print(fa_pred[-60:])
+    prediction = fa_pred[-120:]
+
+    print('data start')
+    print(prediction.to_json(orient="index", date_format='iso'))
+
 
 if __name__ == '__main__':
     main(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))

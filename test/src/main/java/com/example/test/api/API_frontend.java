@@ -35,26 +35,30 @@ public class API_frontend {
 
     @GetMapping("/predictions")
     public static String APIPredictions(@RequestParam(defaultValue = "arrivals") String dataType, @RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(defaultValue = "HOTELLIKE") String infrastructure, @RequestParam(defaultValue = "Italia") String residenceCountry) throws IOException {
-        String json = new String();
+        String pythonStdOut = new String();
         if (dataType.equals("attendance")) {
-            json = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\attendance_prediction.py", region, infrastructure, residenceCountry);
+            pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\attendance_prediction.py", region, infrastructure, residenceCountry);
         }
         else { // defaulting to arrivals even is misspelled
-            json = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\arrivals_prediction.py", region, infrastructure, residenceCountry);
+            pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\arrivals_prediction.py", region, infrastructure, residenceCountry);
         }
-        // this is subject to change. I am removing the header from the result of the python model. It is currently not even jsonified.
-        BufferedReader bufReader = new BufferedReader(new StringReader(json));
-        final int headerSize = 26;
+        // the python standard output also contains a bunch of junk that we don't care about
+        // to solve this, there is a print of the "data start" string to indicate that the data we want to collect is about to start
+        // we discard everything before and including that string
+        BufferedReader bufReader = new BufferedReader(new StringReader(pythonStdOut));
         String result = new String();
         String line=null;
-        int counter = 0;
+        boolean startReading = false;
         while( (line=bufReader.readLine()) != null ){
-            if (counter > headerSize) {
+            if (startReading) {
                 result += line;
                 result += System.getProperty("line.separator");
             }
-            counter++;
+            if (startReading == false && line.equals("data start")) {
+                startReading = true;
+            }
         }
+        System.out.println(result);
         return result;
     }
  
