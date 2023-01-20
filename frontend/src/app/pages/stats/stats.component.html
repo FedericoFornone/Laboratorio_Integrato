@@ -1,6 +1,7 @@
 <main class="container mx-auto">
-  <h1 class="my-5 text-5xl font-bold text-center lg:text-7xl">
-    {{ regionName | titlecase }}
+  <h1 class="mt-10 mb-5 text-4xl font-medium text-center lg:text-6xl">
+    Statistiche relative a
+    <span class="text-primary font-bold">{{ regionName | uppercase }}</span>
   </h1>
 
   <app-multistep-modal
@@ -45,10 +46,12 @@
     </div>
   </div>
 
-  <!--<div class="flex justify-center gap-5 my-5">
+  <div
+    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0"
+  >
     <div class="flex flex-col flex-1 gap-1">
       <label for="tourists" class="text-sm font-medium">Tipo di turisti</label>
-      <select class="w-full select select-bordered" id="tourists">
+      <select class="w-full select select-bordered bg-white" id="tourists">
         <option selected>Tutti</option>
         <option>Turisti italiani</option>
         <option>Turisti stranieri</option>
@@ -58,7 +61,7 @@
       <label for="structures" class="text-sm font-medium"
         >Struttura di residenza</label
       >
-      <select class="w-full select select-bordered" id="structures">
+      <select class="w-full select select-bordered bg-white" id="structures">
         <option selected>Tutte</option>
         <option>Hotel</option>
         <option>Altre</option>
@@ -68,7 +71,7 @@
       <label for="statsYear" class="text-sm font-medium"
         >Anno statistiche</label
       >
-      <select class="w-full select select-bordered" id="statsYear">
+      <select class="w-full select select-bordered bg-white" id="statsYear">
         <option selected>2021</option>
         <option>2020</option>
         <option>2019</option>
@@ -89,7 +92,10 @@
       <label for="predictionsYear" class="text-sm font-medium"
         >Anno previsioni</label
       >
-      <select class="w-full select select-bordered" id="predictionsYear">
+      <select
+        class="w-full select select-bordered bg-white"
+        id="predictionsYear"
+      >
         <option selected>2022</option>
         <option>2023</option>
         <option>2024</option>
@@ -97,54 +103,31 @@
         <option>2026</option>
       </select>
     </div>
-  </div>-->
-
-  <div
-    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0"
-  >
-    <select class="flex-1 w-full select select-bordered">
-      <option selected disabled>Tipo di turisti</option>
-      <option>Tutti</option>
-      <option>Turisti italiani</option>
-      <option>Turisti stranieri</option>
-    </select>
-
-    <select class="flex-1 w-full select select-bordered">
-      <option selected disabled>Struttura di residenza</option>
-      <option>Tutte</option>
-      <option>Hotel</option>
-      <option>Altre</option>
-    </select>
-
-    <select class="flex-1 w-full select select-bordered">
-      <option selected disabled>Anno statistiche</option>
-      <option>2021</option>
-      <option>2020</option>
-      <option>2019</option>
-      <option>2018</option>
-      <option>2017</option>
-      <option>2016</option>
-      <option>2015</option>
-      <option>2014</option>
-      <option>2013</option>
-      <option>2012</option>
-      <option>2011</option>
-      <option>2010</option>
-      <option>2009</option>
-      <option>2008</option>
-    </select>
-
-    <select class="flex-1 w-full select select-bordered">
-      <option selected disabled>Anno previsioni</option>
-      <option>2022</option>
-      <option>2023</option>
-      <option>2024</option>
-      <option>2025</option>
-      <option>2026</option>
-    </select>
   </div>
 
   <app-responsive-slider>
+    <ng-template #slide>
+      <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.options"
+          [legend]="arrivalsStatsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="mobileOptions"
+          [legend]="arrivalsStatsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
+    </ng-template>
     <ng-template #slide>
       <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
         <canvas
@@ -158,7 +141,7 @@
       </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border border-base-content">
+      <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
         <canvas
           baseChart
           [type]="'bar'"
@@ -170,19 +153,7 @@
       </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border border-base-content">
-        <canvas
-          baseChart
-          [type]="'bar'"
-          [data]="arrivalsStatsChart.chartData"
-          [options]="arrivalsStatsChart.options"
-          [legend]="arrivalsStatsChart.legend"
-        >
-        </canvas>
-      </div>
-    </ng-template>
-    <ng-template #slide>
-      <div class="rounded-xl h-[30rem] border border-base-content">
+      <div class="rounded-xl h-[30rem] shadow-2xl bg-white">
         <canvas
           baseChart
           [type]="'bar'"

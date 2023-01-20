@@ -7,6 +7,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { StatsResolver } from './resolvers/stats.resolver';
 import { RegionResolver } from './resolvers/region.resolver';
+import { WindowSizeResolver } from './resolvers/windowsize.resolver';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
     resolve: {
       stats: StatsResolver,
       region: RegionResolver,
+      windowSize: WindowSizeResolver,
     },
   },
   {

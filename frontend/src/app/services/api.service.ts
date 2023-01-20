@@ -79,7 +79,6 @@ export class ApiService {
         const barChartOptions: ChartOptions<'bar'> = {
           responsive: true,
           maintainAspectRatio: false,
-          indexAxis: 'y',
           plugins: {
             title: {
               display: true,
