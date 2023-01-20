@@ -121,7 +121,7 @@
           baseChart
           [type]="'bar'"
           [data]="arrivalsStatsChart.chartData"
-          [options]="mobileOptions"
+          [options]="arrivalsStatsChart.mobileOptions"
           [legend]="arrivalsStatsChart.legend"
           *ngIf="mobileCanvas"
         >
@@ -129,22 +129,32 @@
       </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[35rem] shadow-xl bg-white">
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
         <canvas
           baseChart
           [type]="'bar'"
           [data]="attendancesStatsChart.chartData"
           [options]="attendancesStatsChart.options"
           [legend]="attendancesStatsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesStatsChart.chartData"
+          [options]="attendancesStatsChart.mobileOptions"
+          [legend]="attendancesStatsChart.legend"
+          *ngIf="mobileCanvas"
         >
         </canvas>
       </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] shadow-xl bg-white"></div>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[30rem] shadow-xl bg-white"></div>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
     </ng-template>
   </app-responsive-slider>
 </main>

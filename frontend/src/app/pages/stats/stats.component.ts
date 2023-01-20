@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ChartConfiguration, ChartOptions } from 'chart.js';
+import { ResponseChartData } from 'src/app/models/api.model';
 
 @Component({
   selector: 'app-stats',
@@ -9,18 +9,9 @@ import { ChartConfiguration, ChartOptions } from 'chart.js';
 export class StatsComponent implements OnInit {
   regionName!: string;
   tutorialModalOpen = false;
-  arrivalsStatsChart!: {
-    chartData: ChartConfiguration<'bar'>['data'];
-    options: ChartOptions<'bar'>;
-    legend: boolean;
-  };
-  attendancesStatsChart!: {
-    chartData: ChartConfiguration<'bar'>['data'];
-    options: ChartOptions<'bar'>;
-    legend: boolean;
-  };
+  arrivalsStatsChart!: ResponseChartData;
+  attendancesStatsChart!: ResponseChartData;
   mobileCanvas = false;
-  mobileOptions: ChartOptions<'bar'> = {};
 
   constructor(private route: ActivatedRoute) {}
 
@@ -31,10 +22,6 @@ export class StatsComponent implements OnInit {
 
   makeChartsResponsive(width: number) {
     this.mobileCanvas = width <= 768;
-    this.mobileOptions = {
-      ...this.arrivalsStatsChart.options,
-      indexAxis: 'y',
-    };
   }
 
   ngOnInit() {

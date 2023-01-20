@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { ApiModel } from '../models/api.model';
-import { ChartConfiguration, ChartOptions } from 'chart.js';
-import { assembleUrl, reduceByDate } from './utils';
+import { assembleUrl, reduceByDate, generateChartData } from './utils';
 
 @Injectable({
   providedIn: 'root',
@@ -31,37 +30,12 @@ export class ApiService {
         const labels: string[] = [...Object.keys(arrivals)];
         const values: any = [...Object.values(arrivals)];
 
-        const barChartData: ChartConfiguration<'bar'>['data'] = {
+        return generateChartData(
           labels,
-          datasets: [
-            {
-              data: values,
-              label: 'Arrivi',
-              backgroundColor: '#E70B67',
-              borderRadius: 5,
-            },
-          ],
-        };
-        const barChartOptions: ChartOptions<'bar'> = {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            title: {
-              display: true,
-              text: 'Statistiche arrivi - ' + date,
-              font: {
-                size: 16,
-              },
-            },
-          },
-        };
-        const barChartLegend = false;
-
-        return {
-          chartData: barChartData,
-          options: barChartOptions,
-          legend: barChartLegend,
-        };
+          values,
+          'Statistiche arrivi - ' + date,
+          'Arrivi'
+        );
       })
     );
   }
@@ -86,37 +60,12 @@ export class ApiService {
         const labels: string[] = [...Object.keys(attendances)];
         const values: any = [...Object.values(attendances)];
 
-        const barChartData: ChartConfiguration<'bar'>['data'] = {
+        return generateChartData(
           labels,
-          datasets: [
-            {
-              data: values,
-              label: 'Presenze',
-              backgroundColor: '#E70B67',
-              borderRadius: 5,
-            },
-          ],
-        };
-        const barChartOptions: ChartOptions<'bar'> = {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            title: {
-              display: true,
-              text: 'Statistiche presenze - ' + date,
-              font: {
-                size: 16,
-              },
-            },
-          },
-        };
-        const barChartLegend = false;
-
-        return {
-          chartData: barChartData,
-          options: barChartOptions,
-          legend: barChartLegend,
-        };
+          values,
+          'Statistiche presenze - ' + date,
+          'Presenze'
+        );
       })
     );
   }

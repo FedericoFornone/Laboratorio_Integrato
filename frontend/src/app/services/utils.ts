@@ -1,3 +1,4 @@
+import { ChartConfiguration, ChartOptions } from 'chart.js';
 import { ApiModel } from '../models/api.model';
 
 export const assembleUrl = (
@@ -38,4 +39,47 @@ export const reduceByDate = (
   }, {});
 
   return reducedData;
+};
+
+export const generateChartData = (
+  labels: string[],
+  values: any,
+  titleText: string,
+  label: string
+) => {
+  const barChartData: ChartConfiguration<'bar'>['data'] = {
+    labels,
+    datasets: [
+      {
+        data: values,
+        label,
+        backgroundColor: '#E70B67',
+        borderRadius: 5,
+      },
+    ],
+  };
+  const barChartOptions: ChartOptions<'bar'> = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      title: {
+        display: true,
+        text: titleText,
+        font: {
+          size: 16,
+        },
+      },
+    },
+  };
+  const barChartLegend = false;
+
+  return {
+    chartData: barChartData,
+    options: barChartOptions,
+    mobileOptions: {
+      ...barChartOptions,
+      indexAxis: 'y',
+    },
+    legend: barChartLegend,
+  };
 };
