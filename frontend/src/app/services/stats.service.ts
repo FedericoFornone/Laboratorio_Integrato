@@ -11,7 +11,7 @@ import { assembleUrl, reduceByDate } from './utils';
 export class ApiService {
   constructor(private http: HttpClient) {}
 
-  getStats(
+  getArrivals(
     region: string,
     date: string = '2021',
     infrastructure?: 'hotel' | 'other',
@@ -49,6 +49,58 @@ export class ApiService {
             title: {
               display: true,
               text: 'Statistiche arrivi - ' + date,
+            },
+          },
+        };
+        const barChartLegend = false;
+
+        return {
+          chartData: barChartData,
+          options: barChartOptions,
+          legend: barChartLegend,
+        };
+      })
+    );
+  }
+
+  getAttendances(
+    region: string,
+    date: string = '2021',
+    infrastructure?: 'hotel' | 'other',
+    residenceCountry?: 'italy' | 'foreign'
+  ) {
+    const url = assembleUrl(
+      'statistics',
+      region,
+      date,
+      infrastructure,
+      residenceCountry
+    );
+
+    return this.http.get<ApiModel[]>(url).pipe(
+      map((data) => {
+        const attendances = reduceByDate(data, 'Attendance');
+        const labels: string[] = [...Object.keys(attendances)];
+        const values: any = [...Object.values(attendances)];
+
+        const barChartData: ChartConfiguration<'bar'>['data'] = {
+          labels,
+          datasets: [
+            {
+              data: values,
+              label: 'Presenze',
+              backgroundColor: '#E70B67',
+              borderRadius: 5,
+            },
+          ],
+        };
+        const barChartOptions: ChartOptions<'bar'> = {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            title: {
+              display: true,
+              text: 'Statistiche presenze - ' + date,
             },
           },
         };

@@ -14,6 +14,11 @@ export class StatsComponent implements OnInit {
     options: ChartOptions<'bar'>;
     legend: boolean;
   };
+  attendancesStatsChart!: {
+    chartData: ChartConfiguration<'bar'>['data'];
+    options: ChartOptions<'bar'>;
+    legend: boolean;
+  };
   mobileCanvas = false;
   mobileOptions: ChartOptions<'bar'> = {};
 
@@ -35,11 +40,14 @@ export class StatsComponent implements OnInit {
   ngOnInit() {
     this.tutorialModalOpen = localStorage.getItem('statsModalSeen') !== 'true';
 
-    this.route.data.subscribe(({ stats, region, windowSize }) => {
-      this.arrivalsStatsChart = stats;
-      this.regionName = region;
-      this.makeChartsResponsive(windowSize);
-    });
+    this.route.data.subscribe(
+      ({ arrivals, attendances, region, windowSize }) => {
+        this.arrivalsStatsChart = arrivals;
+        this.attendancesStatsChart = attendances;
+        this.regionName = region;
+        this.makeChartsResponsive(windowSize);
+      }
+    );
   }
 
   closeModal() {

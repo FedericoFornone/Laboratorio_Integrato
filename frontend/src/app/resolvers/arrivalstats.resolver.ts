@@ -10,12 +10,12 @@ import { ApiService } from '../services/stats.service';
 @Injectable({
   providedIn: 'root',
 })
-export class StatsResolver implements Resolve<Observable<any>> {
+export class ArrivalStatsResolver implements Resolve<Observable<any>> {
   constructor(private apiService: ApiService) {}
 
   resolve(route: ActivatedRouteSnapshot, _: RouterStateSnapshot) {
     const region = route.paramMap.get('region');
-    const stats = this.apiService.getStats(region!);
-    return stats;
+    const arrivals = this.apiService.getArrivals(region!);
+    return arrivals;
   }
 }
