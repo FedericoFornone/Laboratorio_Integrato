@@ -6,15 +6,12 @@
       >
         Nomad
       </h1>
-      <p
-        class="text-neutral text-center lg:text-left text-xl lg:text-2xl max-w-[45ch]"
-      >
-        La soluzione data-driven per scoprire i segreti del turismo in Abruzzo
-      </p>
+      <p class="text-neutral text-center lg:text-left text-xl lg:text-2xl max-w-[45ch]"
+      [translate]="'homepage.section1.paragraph'"></p>
 
-      <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'/dashboard/'"
-        >Inizia</app-button
-      >
+      <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'/dashboard/'">
+        <p [translate]="'homepage.section1.label'"></p>
+      </app-button>
     </div>
     <div class="grid place-content-center">
       <figure class="w-3/4 mx-auto lg:w-auto lg:mx-0">
@@ -33,18 +30,14 @@
     <div class="grid text-center lg:text-left place-content-center">
       <h1
         class="mb-3 text-5xl font-bold md:text-6xl lg:text-7xl text-secondary"
-      >
-        About Nomad
-      </h1>
-      <p class="text-neutral text-lg lg:text-xl max-w-[45ch]">
-        Nomad è la soluzione Outlander legata al mondo del turismo che permette
-        di esplorare la regione Abruzzo come mai prima d’ora. Monitora i flussi
-        turistici a partire da dataset ufficiali ISTAT, fornendo statistiche e
-        previsioni future basate su un modello di Machine Learning addestrato.
+        [translate]="'homepage.section2.title'"
+      ></h1>
+      <p class="text-neutral text-lg lg:text-xl max-w-[45ch]"
+         [translate]="'homepage.section2.paragraph'">
       </p>
 
       <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'/about/'"
-        >Scopri di più</app-button
+        ><p [translate]="'homepage.section2.label'"></p></app-button
       >
     </div>
   </section>
@@ -52,17 +45,15 @@
     <div class="grid text-center lg:text-left place-content-center">
       <h1
         class="mb-3 text-5xl font-bold md:text-6xl lg:text-7xl text-secondary"
+        [translate]="'homepage.section3.title'"
       >
-        Use your data
       </h1>
-      <p class="text-neutral text-lg lg:text-xl max-w-[45ch]">
-        Ti interessa applicare Nomad ai tuoi dati? Carica il tuo CSV o scarica e
-        compila il nostro template per avere un'analisi dell'andamento turistico
-        completa e flessibile.
+      <p class="text-neutral text-lg lg:text-xl max-w-[45ch]"
+         [translate]="'homepage.section3.paragraph'">
       </p>
 
       <app-button [class]="'mt-5 lg:mt-10'" [routerLink]="'upload'"
-        >Carica il tuo file</app-button
+        ><p [translate]="'homepage.section3.label'"></p></app-button
       >
     </div>
     <div class="grid place-content-center">

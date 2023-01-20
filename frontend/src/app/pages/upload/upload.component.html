@@ -1,11 +1,11 @@
 <div class="container mx-auto">
-  <div class="py-10 sm:py-15">
+  <div class="py-10 sm:py-15 mt-10">
     <div class="mx-auto px-6 lg:px-8">
       <div class="text-center">
         <p
-          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          [translate]="'upload.title'"
         >
-          Use your data
         </p>
       </div>
     </div>
@@ -14,19 +14,11 @@
     <div class="md:grid md:grid-cols-3 md:gap-6 w-11/12 mx-auto">
       <div class="md:col-span-1">
         <div class="px-4 sm:px-0">
-          <h3 class="text-lg font-medium leading-6 text-gray-900 text-center">
-            Istruzioni
+          <h3 class="text-lg font-medium leading-6 text-gray-900 text-center"
+          [translate]="'upload.instructions.title'">
           </h3>
-          <p class="mt-5 text-md text-gray-600 text-justify">
-            Una volta caricato il tuo CSV controlleremo che i dati siano validi
-            e formattati correttamente. Se non lo sono,
-            <span class="font-bold">segui le istruzioni</span> per modificare i
-            campi necessari.
-          </p>
-          <p class="mt-5 text-md text-gray-600 text-justify">
-            Se preferisci, puoi scaricare questo
-            <span class="font-bold">template compilabile</span>:
-          </p>
+          <p class="mt-5 text-md text-gray-600 text-justify" [innerHTML]="'upload.instructions.paragraph1' | translate"></p>
+          <p class="mt-5 text-md text-gray-600 text-justify" [innerHTML]="'upload.instructions.paragraph2' | translate"></p>
           <button
             class="btn btn-ghost"
             (click)="downloadFile(download.url, download.filename)"
@@ -49,7 +41,8 @@
                   <label
                     for="first-name"
                     class="block text-md font-medium text-gray-700"
-                    >Nome</label
+                    [innerHTML]="'upload.form.name' | translate"
+                    ></label
                   >
                   <input
                     type="text"
@@ -64,7 +57,8 @@
                   <label
                     for="last-name"
                     class="block text-md font-medium text-gray-700"
-                    >Cognome</label
+                    [innerHTML]="'upload.form.last-name' | translate"
+                    ></label
                   >
                   <input
                     type="text"
@@ -79,7 +73,8 @@
                   <label
                     for="email-address"
                     class="block text-md font-medium text-gray-700"
-                    >Email</label
+                    [innerHTML]="'upload.form.email' | translate"
+                    ></label
                   >
                   <input
                     type="text"
@@ -92,7 +87,8 @@
               </div>
               <div>
                 <label class="block text-md font-medium text-gray-700"
-                  >File CSV</label
+                       [innerHTML]="'upload.form.file.label' | translate"
+                  ></label
                 >
                 <div
                   class="mt-1 flex justify-center rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-6"
@@ -117,7 +113,7 @@
                         for="txtFileUpload"
                         class="relative cursor-pointer rounded-md bg-white font-medium text-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:text-primary"
                       >
-                        <span>Carica un file</span>
+                        <span [innerHTML]="'upload.form.file.description1' | translate"></span>
                         <input
                           type="file"
                           #csvReader
@@ -131,7 +127,7 @@
                       <!--  <p class="pl-1">o trascinalo qui</p> -->
                     </div>
                     <!-- FIXME: -->
-                    <p class="text-xs text-gray-500">CSV fino a 10MB</p>
+                    <p class="text-xs text-gray-500" [innerHTML]="'upload.form.file.description2' | translate"></p>
                   </div>
                 </div>
               </div>
@@ -140,8 +136,8 @@
               <button
                 type="submit"
                 class="inline-flex justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                [innerHTML]="'upload.form.submit' | translate"
               >
-                Salva
               </button>
             </div>
           </div>
@@ -157,7 +153,7 @@
     id="txtFileUpload"
     (change)="uploadListener($event)"
     accept=".csv"
-  />  
+  />
   <table class="minimalistBlack" *ngIf="records.length > 0">
     <thead>
       <tr>
@@ -236,29 +232,29 @@
   </table>
 
 
-   <input type="file" #csvReader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv" />    
-<table class="minimalistBlack" *ngIf="records.length > 0">    
-  <thead>    
-    <tr>    
-      <th>ID </th>    
-      <th>FirstName </th>    
-      <th>LastName </th>    
-      <th>Age </th>    
-      <th>Position </th>    
-      <th>Mobile </th>    
-    </tr>    
-  </thead>    
-  <tbody>    
-    <tr *ngFor="let record of records;let i = index;">    
-      <td> <span>{{record.id}}</span> </td>    
-      <td> <span>{{record.firstName}}</span> </td>    
-      <td> <span>{{record.lastName}}</span> </td>    
-      <td> <span>{{record.age}}</span> </td>    
-      <td> <span>{{record.position}}</span> </td>    
-      <td> <span>{{record.mobile}}</span> </td>    
-    </tr>    
-  </tbody>    
-</table>  
+   <input type="file" #csvReader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv" />
+<table class="minimalistBlack" *ngIf="records.length > 0">
+  <thead>
+    <tr>
+      <th>ID </th>
+      <th>FirstName </th>
+      <th>LastName </th>
+      <th>Age </th>
+      <th>Position </th>
+      <th>Mobile </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of records;let i = index;">
+      <td> <span>{{record.id}}</span> </td>
+      <td> <span>{{record.firstName}}</span> </td>
+      <td> <span>{{record.lastName}}</span> </td>
+      <td> <span>{{record.age}}</span> </td>
+      <td> <span>{{record.position}}</span> </td>
+      <td> <span>{{record.mobile}}</span> </td>
+    </tr>
+  </tbody>
+</table>
 </div>
  -->
 </div>

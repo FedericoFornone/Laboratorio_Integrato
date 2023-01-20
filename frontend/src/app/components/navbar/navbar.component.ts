@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,10 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent {
 
-  constructor(public router: Router){}
+  constructor(public router: Router, private translate: TranslateService){}
 
+  changeLanguage(language: string): void {
+    this.translate.use(language);
+  }
 
 }

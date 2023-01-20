@@ -1,5 +1,5 @@
 <div
-  class="navbar bg-transparent sticky top-0 z-50 bg-base-100 shadow-md px-10"
+  class="navbar bg-transparent fixed top-0 z-50 bg-base-100 shadow-md px-10"
 >
   <a [routerLink]="'/home/'" class="navbar-start flex items-center ml-5">
     <picture>
@@ -29,19 +29,19 @@
         tabindex="0"
         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-40"
       >
+        <li><a [routerLink]="'/home/'">Home</a></li>
         <li><a [routerLink]="'/dashboard/'">Dashboard</a></li>
-        <li><a [routerLink]="'/upload/'">Upload</a></li>
         <li><a [routerLink]="'/about/'">About</a></li>
       </ul>
     </div>
   </div>
   <div class="navbar-end hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-lg">
-      <li class="mr-10">
-        <a [routerLink]="'/dashboard/'">Dashboard</a>
-      </li>
-      <li class="mr-10"><a [routerLink]="'/upload/'">Upload</a></li>
-      <li><a [routerLink]="'/about/'">About</a></li>
+      <li><a class="mr-10" [routerLink]="'/home/'">Home</a></li>
+      <li class="mr-10"><a [routerLink]="'/dashboard/'">Dashboard</a></li>
+      <li class="mr-10"><a [routerLink]="'/about/'">About</a></li>
+      <li><a (click)="changeLanguage('it')">IT</a></li>
+      <li><a (click)="changeLanguage('en')">EN</a></li>
     </ul>
   </div>
 </div>
