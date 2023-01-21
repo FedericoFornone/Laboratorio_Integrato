@@ -75,5 +75,8 @@
 
   "footer": {
     "rights": "Copyright © 2022 - All rights reserved by OUTLANDER Co. Ltd"
+  },
+  "404" : {
+    "paragraph": "Oops, this page doesn't exist. Click on the compass and go back to the homepage!"
   }
 }
