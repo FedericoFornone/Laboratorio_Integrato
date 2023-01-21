@@ -58,7 +58,16 @@ public class API_frontend {
                 startReading = true;
             }
         }
-        System.out.println(result);
+        // now we need to work on the data output from python a little bit more.
+        // firstly, the date field has these unnecessary "T00:00:00.000" strings that we will simply remove
+        result = result.replace("T00:00:00.000", "");
+        // then, the value field is a float value, so we will want to round this down
+        // i could use a json library to parse though it, isolate every value field, and round it down, but i chose the lazier solution of...
+        // ...simply using a regex to truncate the decimal values
+        // it looks for a "." followed by any string and a lookahead delimiter "," (for most values} or "}" (for the last value)
+        // and removes it all
+        // this does mean that results are effectively rounded down
+        result = result.replaceAll("(\\.)(.*?)(?=,|})", "");
         return result;
     }
  
