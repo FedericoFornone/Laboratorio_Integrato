@@ -9,7 +9,8 @@ import { WindowSizeResolver } from './resolvers/windowsize.resolver';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
     path: 'dashboard',
     component: StatsComponent,
@@ -23,7 +24,7 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent,
   },
-  { path: '**', pathMatch: 'full', component: PageNotFoundComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
