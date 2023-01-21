@@ -47,7 +47,7 @@
   </div>
 
   <div
-    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0"
+    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
   >
     <div class="flex flex-col flex-1 gap-1">
       <label for="tourists" class="text-sm font-medium">Tipo di turisti</label>
@@ -55,7 +55,6 @@
         class="w-full bg-white select select-bordered"
         id="tourists"
         [(ngModel)]="residenceCountry"
-        (change)="onFilterChange()"
       >
         <option selected value="">Tutti</option>
         <option value="Italia">Turisti italiani</option>
@@ -70,7 +69,6 @@
         class="w-full bg-white select select-bordered"
         id="structures"
         [(ngModel)]="infrastructureType"
-        (change)="onFilterChange()"
       >
         <option selected value="">Tutte</option>
         <option value="HOTELLIKE">Hotel</option>
@@ -85,7 +83,6 @@
         class="w-full bg-white select select-bordered"
         id="statsYear"
         [(ngModel)]="statisticsYear"
-        (change)="onFilterChange()"
       >
         <option selected value="2021">2021</option>
         <option value="2020">2020</option>
@@ -111,7 +108,6 @@
         class="w-full bg-white select select-bordered"
         id="predictionsYear"
         [(ngModel)]="predictionsYear"
-        (change)="onFilterChange()"
       >
         <option selected value="2022">2022</option>
         <option value="2023">2023</option>
@@ -120,6 +116,9 @@
         <option value="2026">2026</option>
       </select>
     </div>
+    <button class="md:col-span-2 btn btn-primary" (click)="onFilterChange()">
+      Filtra
+    </button>
   </div>
 
   <app-responsive-slider>
