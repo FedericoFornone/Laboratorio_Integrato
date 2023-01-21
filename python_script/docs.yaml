@@ -4,10 +4,8 @@ info:
   description: Flask api for python-java webApp
   version: 0.1.0
 servers:
-  - url: test
-    description: todo
-  - url: todo
-    description: todo
+  - url: http://127.0.0.1:5000/
+    description: Abruzzo tourism data
 paths:
   /abruzzo/:
     get:

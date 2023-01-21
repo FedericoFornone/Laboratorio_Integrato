@@ -1,25 +1,14 @@
-import json
-
-from flask import Flask, jsonify
-import pandas as pd
+from flask import Flask
 
 # initiating flask object
 app = Flask(__name__)
+
 
 @app.route('/abruzzo', methods=['GET'])
 def get_data():
     data = open('../Data/final_data/abruzzo.json')
     return data
-'''
-@app.route('/estero', methods=['GET'])
-def get_data():
-    data = open('../Data/final_data/estero.json')
-    return data
-'''
-@app.route('/post_data/<data>', methods=['POST'])
-def post_data(data):
-    new_data = json.load(data)
-    return ''
+
 
 # calling  main
 if __name__ == '__main__':
