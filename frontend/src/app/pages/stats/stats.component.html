@@ -1,7 +1,7 @@
 <main class="container mx-auto">
   <h1 class="mt-10 mb-5 text-4xl font-medium text-center lg:text-6xl">
     Statistiche relative a
-    <span class="text-primary font-bold">{{ regionName | uppercase }}</span>
+    <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
   </h1>
 
   <app-multistep-modal
@@ -51,41 +51,56 @@
   >
     <div class="flex flex-col flex-1 gap-1">
       <label for="tourists" class="text-sm font-medium">Tipo di turisti</label>
-      <select class="w-full select select-bordered bg-white" id="tourists">
-        <option selected>Tutti</option>
-        <option>Turisti italiani</option>
-        <option>Turisti stranieri</option>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="tourists"
+        [(ngModel)]="residenceCountry"
+        (change)="onFilterChange()"
+      >
+        <option selected value="">Tutti</option>
+        <option value="Italia">Turisti italiani</option>
+        <option value="Paesi esteri">Turisti stranieri</option>
       </select>
     </div>
     <div class="flex flex-col flex-1 gap-1">
       <label for="structures" class="text-sm font-medium"
         >Struttura di residenza</label
       >
-      <select class="w-full select select-bordered bg-white" id="structures">
-        <option selected>Tutte</option>
-        <option>Hotel</option>
-        <option>Altre</option>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="structures"
+        [(ngModel)]="infrastructureType"
+        (change)="onFilterChange()"
+      >
+        <option selected value="">Tutte</option>
+        <option value="HOTELLIKE">Hotel</option>
+        <option value="OTHER">Altre</option>
       </select>
     </div>
     <div class="flex flex-col flex-1 gap-1">
       <label for="statsYear" class="text-sm font-medium"
         >Anno statistiche</label
       >
-      <select class="w-full select select-bordered bg-white" id="statsYear">
-        <option selected>2021</option>
-        <option>2020</option>
-        <option>2019</option>
-        <option>2018</option>
-        <option>2017</option>
-        <option>2016</option>
-        <option>2015</option>
-        <option>2014</option>
-        <option>2013</option>
-        <option>2012</option>
-        <option>2011</option>
-        <option>2010</option>
-        <option>2009</option>
-        <option>2008</option>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="statsYear"
+        [(ngModel)]="statisticsYear"
+        (change)="onFilterChange()"
+      >
+        <option selected value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
       </select>
     </div>
     <div class="flex flex-col flex-1 gap-1">
@@ -93,14 +108,16 @@
         >Anno previsioni</label
       >
       <select
-        class="w-full select select-bordered bg-white"
+        class="w-full bg-white select select-bordered"
         id="predictionsYear"
+        [(ngModel)]="predictionsYear"
+        (change)="onFilterChange()"
       >
-        <option selected>2022</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option>
-        <option>2026</option>
+        <option selected value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
       </select>
     </div>
   </div>

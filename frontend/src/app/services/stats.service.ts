@@ -13,8 +13,8 @@ export class ApiService {
   getArrivals(
     region: string,
     date: string = '2021',
-    infrastructure?: 'hotel' | 'other',
-    residenceCountry?: 'italy' | 'foreign'
+    infrastructure?: '' | 'HOTELLIKE' | 'OTHER',
+    residenceCountry?: '' | 'Italia' | 'Paesi esteri'
   ) {
     const url = assembleUrl(
       'statistics',
@@ -43,8 +43,8 @@ export class ApiService {
   getAttendances(
     region: string,
     date: string = '2021',
-    infrastructure?: 'hotel' | 'other',
-    residenceCountry?: 'italy' | 'foreign'
+    infrastructure?: '' | 'HOTELLIKE' | 'OTHER',
+    residenceCountry?: '' | 'Italia' | 'Paesi esteri'
   ) {
     const url = assembleUrl(
       'statistics',

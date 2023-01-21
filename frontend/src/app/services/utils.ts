@@ -5,8 +5,8 @@ export const assembleUrl = (
   endpoint: 'statistics' | 'predictions',
   region: string,
   date: string,
-  infrastructure?: 'hotel' | 'other',
-  residenceCountry?: 'italy' | 'foreign'
+  infrastructure?: '' | 'HOTELLIKE' | 'OTHER',
+  residenceCountry?: '' | 'Italia' | 'Paesi esteri'
 ) => {
   let url = `http://localhost:7790/${endpoint}?region=${region}&date=${date}&dateType=monthly`;
 

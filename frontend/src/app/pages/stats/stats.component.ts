@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ResponseChartData } from 'src/app/models/api.model';
+import { ApiService } from 'src/app/services/stats.service';
 
 @Component({
   selector: 'app-stats',
@@ -13,7 +14,12 @@ export class StatsComponent implements OnInit {
   attendancesStatsChart!: ResponseChartData;
   mobileCanvas = false;
 
-  constructor(private route: ActivatedRoute) {}
+  residenceCountry: '' | 'Italia' | 'Paesi esteri' = '';
+  infrastructureType: '' | 'HOTELLIKE' | 'OTHER' = '';
+  statisticsYear = '2021';
+  predictionsYear = '2022';
+
+  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -44,5 +50,25 @@ export class StatsComponent implements OnInit {
 
   openModal() {
     this.tutorialModalOpen = true;
+  }
+
+  onFilterChange() {
+    this.apiService
+      .getArrivals(
+        this.regionName,
+        this.statisticsYear,
+        this.infrastructureType,
+        this.residenceCountry
+      )
+      .subscribe((data: any) => (this.arrivalsStatsChart = data));
+
+    this.apiService
+      .getAttendances(
+        this.regionName,
+        this.statisticsYear,
+        this.infrastructureType,
+        this.residenceCountry
+      )
+      .subscribe((data: any) => (this.attendancesStatsChart = data));
   }
 }
