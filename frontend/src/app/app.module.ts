@@ -18,12 +18,19 @@ import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ResponsiveSliderComponent } from './components/responsive-slider/responsive-slider.component';
-import { UploadComponent } from './pages/upload/upload.component';
-
-
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, StatsComponent, ButtonComponent, AvatarComponent, FooterComponent, AboutComponent, NavbarComponent,  ResponsiveSliderComponent, UploadComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    StatsComponent,
+    ButtonComponent,
+    AvatarComponent,
+    FooterComponent,
+    AboutComponent,
+    NavbarComponent,
+    ResponsiveSliderComponent,
+  ],
   imports: [
     HttpClientModule,
     BrowserModule,

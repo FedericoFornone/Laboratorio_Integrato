@@ -21,7 +21,7 @@
         OUTLANDER
       </h1>
       <p
-        class="mb-7 text-xl text-white drop-shadow-2xl lg:text-2xl xl:text-3xl"
+        class="mb-7 text-3xl text-white drop-shadow-2xl lg:text-3xl xl:text-4xl m-auto w-[90%] md:w-auto"
         [innerHTML]="'about.introduction.paragraph' | translate"
       >
       </p>
@@ -38,7 +38,7 @@
           class="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16"
         >
           <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
               class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
@@ -47,19 +47,19 @@
               <img src="assets/about/handcrafts/undraw_ghost.svg" />
             </div>
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900" [innerHTML]="'about.main.features.div1.title' | translate">
+              <p class="text-xl font-semibold leading-8 text-gray-900" [innerHTML]="'about.main.features.div1.title' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div1.paragraph1' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div1.paragraph1' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div1.paragraph2' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div1.paragraph2' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div1.paragraph3' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div1.paragraph3' | translate">
               </p>
             </div>
           </div>
 
           <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
               class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
@@ -68,19 +68,19 @@
               <img src="assets/about/handcrafts/undraw_heart-fun.svg" />
             </div>
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900" [innerHTML]="'about.main.features.div2.title' | translate">
+              <p class="text-xl font-semibold leading-8 text-gray-900" [innerHTML]="'about.main.features.div2.title' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div2.paragraph1' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div2.paragraph1' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div2.paragraph2' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div2.paragraph2' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div2.paragraph3' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div2.paragraph3' | translate">
               </p>
             </div>
           </div>
 
           <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
               class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
@@ -90,12 +90,16 @@
             </div>
             <!-- FIXME:icons e copyright -->
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900" [innerHTML]="'about.main.features.div3.title' | translate">
+              <p class="text-xl font-semibold leading-8 text-gray-900" [innerHTML]="'about.main.features.div3.title' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600 mb-5" [innerHTML]="'about.main.features.div3.paragraph1' | translate">
+              <p
+                class="mt-2 text-base leading-7 text-gray-600 mb-5 text-justify"
+               [innerHTML]="'about.main.features.div3.paragraph1' | translate">
               </p>
-              <ul class="mt-5 text-base leading-7 text-gray-600">
-                <li class="flex items-center justify-center m-5 gap-20">
+              <ul class="m-5 text-base leading-7 text-gray-600">
+                <li
+                  class="flex items-center justify-center mt-8 gap-8 lg:gap-20"
+                >
                   <img
                     src="assets/about/technologies/angular.svg"
                     alt="tecnology logo"
@@ -103,6 +107,11 @@
                   />
                   <img
                     src="assets/about/technologies/javascript.svg"
+                    alt="tecnology logo"
+                    class="w-20 h-20"
+                  />
+                  <img
+                    src="assets/about/technologies/sql.svg"
                     alt="tecnology logo"
                     class="w-20 h-20"
                   />
@@ -114,25 +123,19 @@
                     class="w-20 h-20"
                   />
                   <img
-                    src="assets/about/technologies/sql.svg"
-                    alt="tecnology logo"
-                    class="w-20 h-20"
-                  />
-                </li>
-
-                <li class="flex items-center justify-center m-5 gap-20">
-                  <img
                     src="assets/about/technologies/python.svg"
                     alt="tecnology logo"
                     class="w-20 h-20"
                   />
                 </li>
+
+                <li class="flex items-center justify-center m-5 gap-20"></li>
               </ul>
             </div>
           </div>
 
           <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
               class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
@@ -142,12 +145,12 @@
               <img src="assets/about/handcrafts/undraw_bar-chart.svg" />
             </div>
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900">NOMAD</p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div4.paragraph1' | translate">
+              <p class="text-xl font-semibold leading-8 text-gray-900">NOMAD</p>
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div4.paragraph1' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div4.paragraph2' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div4.paragraph2' | translate">
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div4.paragraph3' | translate">
+              <p class="mt-2 text-base leading-7 text-gray-600 text-justify" [innerHTML]="'about.main.features.div4.paragraph3' | translate">
               </p>
               <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.features.div4.paragraph4' | translate">
               </p>
@@ -163,7 +166,7 @@
     <div class="mx-auto px-6 lg:px-8">
       <div class="text-center">
         <p
-          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          class="mb-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           [innerHTML]="'about.main.team.title' | translate"
         >
         </p>
@@ -172,11 +175,15 @@
         class="flex items-center justify-center flex-wrap gap-6 flex-col lg:flex-row"
       >
         <div
+          class="flex items-center justify-center flex-[0_0_22%] xs:flex-[0_0_10%]"
           *ngFor="let person of team"
-          style="flex: 0 0 320px"
-          class="flex items-center justify-center"
         >
-          <app-avatar
+        <app-avatar *ngIf="person.name === 'Federico Fornone'" style="width: max-content;"
+        [name]="person.name"
+        [role]="person.role"
+        [image]="person.image"
+      ></app-avatar>
+          <app-avatar *ngIf="person.name !== 'Federico Fornone'"
             [name]="person.name"
             [role]="person.role"
             [image]="person.image"
@@ -207,15 +214,15 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0 m-auto"
           >
             <img src="assets/about/handcrafts/undraw_heart-fun.svg" />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
+          <div class="sm:min-w-0 sm:flex-1 text-center lg:text-justify lg:ml-5">
             <p class="text-lg font-semibold leading-8 text-gray-900">
               OUTLANDER S.r.l.
             </p>
-            <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.contacts.div1.description' | translate">
+            <p class="m-auto w-[60%] md:mt-2 md:w-auto text-base leading-7 text-gray-600" [innerHTML]="'about.main.contacts.div1.description' | translate">
             </p>
           </div>
         </div>
@@ -224,14 +231,15 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0 m-auto"
           >
             <img src="assets/about/handcrafts/undraw_pointer.svg" />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
+          <div class="sm:min-w-0 sm:flex-1 text-center lg:text-justify lg:ml-5">
             <p class="text-lg font-semibold leading-8 text-gray-900" [innerHTML]="'about.main.contacts.div2.title' | translate">
             </p>
-            <p class="mt-2 text-base leading-7 text-gray-600" [innerHTML]="'about.main.contacts.div2.description' | translate">
+            <p class="m-auto w-[60%] md:mt-2 md:w-auto text-base leading-7 text-gray-600">
+              Via Jacopo Durandi 10 - Torino (TO) 10123 - IT
             </p>
           </div>
         </div>
@@ -240,11 +248,11 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0 m-auto"
           >
             <img src="assets/about/handcrafts/undraw_envelope.svg" />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
+          <div class="sm:min-w-0 sm:flex-1 text-center lg:text-justify lg:ml-5">
             <p class="text-lg font-semibold leading-8 text-gray-900">EMAIL</p>
             <p class="mt-2 text-base leading-7 text-gray-600">
               <a
@@ -260,13 +268,13 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0 m-auto"
           >
             <img src="assets/about/handcrafts/undraw_chat.svg" />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
+          <div class="sm:min-w-0 sm:flex-1 text-center lg:text-justify lg:ml-5">
             <p class="text-lg font-semibold leading-8 text-gray-900">TEL.</p>
-            <p class="mt-2 text-base leading-7 text-gray-600">
+            <p class="mt-2 leading-7 text-gray-600">
               <a href="tel:+3901103333333" class="underline underline-offset-2"
                 >+39 011 03333333</a
               >
