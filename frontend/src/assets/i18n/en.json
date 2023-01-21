@@ -37,24 +37,24 @@
       "features": {
         "div1": {
           "title": "WHO WE ARE",
-          "paragraph1": "Outlander is a <span class='font-bold'>web agency in Turin</span> specialising in the creation of cutting-edge sites and web applications.",
-          "paragraph2": "The company was born from a team of developers and designers determined to <span class='font-bold'>transform their passions into solutions</span> for individuals and companies, conceived one by one with creativity and an out-of-the-box approach.",
-          "paragraph3": "The word outlander conjures up the idea of <span class='font-bold'>an exploration into innovative solutions</span>, created to satisfy the customer and accompany him or her on a voyage of discovery into the digital frontier."
+          "paragraph1": "Outlander is a <strong>web agency in Turin</strong> specialising in the creation of cutting-edge sites and web applications.",
+          "paragraph2": "The company was born from a team of developers and designers determined to <strong>transform their passions into solutions</strong> for individuals and companies, conceived one by one with creativity and an out-of-the-box approach.",
+          "paragraph3": "The word outlander conjures up the idea of <strong>an exploration into innovative solutions</strong>, created to satisfy the customer and accompany him or her on a voyage of discovery into the digital frontier."
         },
         "div2": {
           "title": "OUR FOCUS",
-          "paragraph1": "We deal with web solutions for individuals and companies related to the <span class='font-bold'>tourism</span> sector.",
-          "paragraph2": "Our focus includes <span class='font-bold'>innovation</span> and <span class='font-bold'>User Experience</span>, and with these pillars we offer tailored solutions to meet customer needs.",
-          "paragraph3": "All Outlander projects and solutions include a careful analysis of the <span class='font-bold'>UX</span> and the <span class='font-bold'>UI</span>, a <span class='font-bold'>Mobile First</span> development and <span class='font-bold'>SEO</span> optimization."
+          "paragraph1": "We deal with web solutions for individuals and companies related to the <strong>tourism</strong> sector.",
+          "paragraph2": "Our focus includes <strong>innovation</strong> and <strong>User Experience</strong>, and with these pillars we offer tailored solutions to meet customer needs.",
+          "paragraph3": "All Outlander projects and solutions include a careful analysis of the <strong>UX</strong> and the <strong>UI</strong>, a <strong>Mobile First</strong> development and <strong>SEO</strong> optimization."
         },
         "div3": {
           "title": "OUR TECHNOLOGIES",
           "paragraph1": "A journey to discover the digital age, guided by innovative technology and experience."
         },
         "div4": {
-          "paragraph1": "It is our latest project, a web application that allows the user to <span class='font-bold'>explore the Abruzzo</span> region like never before.",
-          "paragraph2": "With a user-friendly interface, NOMAD analyzes ISTAT datasets and creates <span class='font-bold'>interactive charts</span> that provide the user with a detailed look at tourist flows and their choices, from the type of accommodation to the most popular provinces. NOMAD is the ideal solution that guarantees reliability and data accuracy.",
-          "paragraph3": "In addition, with a trained machine learning model, NOMAD proposes medium and long-term <span class='font-bold'>forecasts</span> of future tourist flows, ensuring accuracy up to <span class='font-bold'>five years</span>."
+          "paragraph1": "It is our latest project, a web application that allows the user to <strong>explore the Abruzzo</strong> region like never before.",
+          "paragraph2": "With a user-friendly interface, NOMAD analyzes ISTAT datasets and creates <strong>interactive charts</strong> that provide the user with a detailed look at tourist flows and their choices, from the type of accommodation to the most popular provinces. NOMAD is the ideal solution that guarantees reliability and data accuracy.",
+          "paragraph3": "In addition, with a trained machine learning model, NOMAD proposes medium and long-term <strong>forecasts</strong> of future tourist flows, ensuring accuracy up to <strong>five years</strong>."
         }
       },
       "team": {
@@ -63,6 +63,7 @@
       "contacts": {
         "title": "Contacts",
         "div1": {
+          "title": "OUTLANDER Co. Ltd",
           "description": "© 2022. All rights reserved. VAT N:1000000000"
         },
         "div2": {
