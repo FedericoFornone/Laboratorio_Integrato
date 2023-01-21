@@ -18,6 +18,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ResponsiveSliderComponent } from './components/responsive-slider/responsive-slider.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ResponsiveSliderComponent } from './components/responsive-slider/respon
     AboutComponent,
     NavbarComponent,
     ResponsiveSliderComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     HttpClientModule,
