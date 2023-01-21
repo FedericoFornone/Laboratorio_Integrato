@@ -1,44 +1,33 @@
 {
   "homepage": {
     "section1": {
-      "paragraph": "The data-driven solution to discover the secrets of tourism in Abruzzo",
-      "label": "Start"
+      "paragraph": "Our data-driven solution for smart planning and unlock the secrets of Abruzzo tourism",
+      "label": "Get started"
     },
     "section2": {
       "title": "About Nomad",
-      "paragraph": "Nomad is Outlander's tourism-related solution for exploring the Abruzzo region like never before. It monitors tourist flows from official ISTAT datasets, providing statistics and future forecasts based on a trained Machine Learning model.",
-      "label": "Read more"
+      "paragraph": "Nomad is our solution linked to the world of tourism that monitors the tourist flows of Abruzzo, starting from official ISTAT datasets. It provides statistics and  future forecasts based on a trained Machine Learning model.",
+      "label": "Find out more"
     },
     "section3": {
-      "title": "Use your data",
-      "paragraph": "Interested in applying Nomad to your data? Upload your CSV or download and fill in our template for a comprehensive and flexible tourism trend analysis.",
-      "label": "Upload your own file"
-    }
-  },
-
-  "dashboard": {
-
-  },
-
-  "upload": {
-    "title": "Use your data",
-    "instructions": {
-      "title": "Instructions",
-      "paragraph1": "Once you have uploaded your CSV we will check that the data are valid and correctly formatted. If they are not, <span class='font-bold'>follow the instructions</span> to edit the necessary fields.",
-      "paragraph2": "If you prefer, you can download this <span class='font-bold'>fillable template</span>:"
-    },
-    "form": {
-      "name": "First name",
-      "last-name": "Last name",
-      "email": "Email",
-      "file": {
-        "label": "CSV File",
-        "description1": "Upload a file",
-        "description2": "CSV up to 10MB"
+      "title": "Titolo",
+      "paragraph": "We designed Nomad starting from an idea: to guide the user on a journey to better understand the data of tourist flows in Abruzzo, making his experience interactive and enjoyable.",
+      "div1": {
+        "title": "User friendly",
+        "paragraph": "Nomad has an intuitive interface and an attractive visual design. We have implemented interactive graphs and a tutorial, to make its functionality more accessible and to focus the user on data visualization."
       },
-      "submit": "Save"
+      "div2": {
+        "title": "Reliable",
+        "paragraph": "All data comes from official ISTAT datasets. Nomad therefore guarantees the accuracy and quality of the statistical information."
+      },
+      "div3": {
+        "title": "Powerful",
+        "paragraph": "Despite the large amount of data taken into analysis, we implemented a series of optimizations that have made Nomad performing and effective. This was also possible thanks to the use of cutting-edge technologies, such as the machine learning model to calculate forecasts."
+      }
     }
   },
+
+  "dashboard": {},
 
   "about": {
     "introduction": {
@@ -48,25 +37,24 @@
       "features": {
         "div1": {
           "title": "WHO WE ARE",
-           "paragraph1": "Outlander is a <span class='font-bold'>web agency in Turin</span> specialising in the creation of cutting-edge sites and web applications.",
-           "paragraph2": "The company was born from a team of developers and designers determined to <span class='font-bold'>transform their passions into solutions</span> for individuals and companies, conceived one by one with creativity and an out-of-the-box approach.",
-           "paragraph3": "The word outlander conjures up the idea of <span class='font-bold'>an exploration into innovative solutions</span>, created to satisfy the customer and accompany him or her on a voyage of discovery into the digital frontier."
+          "paragraph1": "Outlander is a <span class='font-bold'>web agency in Turin</span> specialising in the creation of cutting-edge sites and web applications.",
+          "paragraph2": "The company was born from a team of developers and designers determined to <span class='font-bold'>transform their passions into solutions</span> for individuals and companies, conceived one by one with creativity and an out-of-the-box approach.",
+          "paragraph3": "The word outlander conjures up the idea of <span class='font-bold'>an exploration into innovative solutions</span>, created to satisfy the customer and accompany him or her on a voyage of discovery into the digital frontier."
         },
         "div2": {
           "title": "OUR FOCUS",
-           "paragraph1": "We deal with web solutions for individuals and companies related to the <span class='font-bold'>tourism</span> sector.",
-           "paragraph2": "Our focus encompasses <span class='font-bold'>innovation</span> and <span class='font-bold'>User Experience</span>, and with these pillars we offer tailor-made solutions to meet customer needs.",
-           "paragraph3": "All Outlander projects and solutions include careful <span class='font-bold'>UX</span> and <span class='font-bold'>UI</span> analysis, <span class='font-bold'>Mobile First</span> development and <span class='font-bold'>SEO</span> optimisation."
+          "paragraph1": "We deal with web solutions for individuals and companies related to the <span class='font-bold'>tourism</span> sector.",
+          "paragraph2": "Our focus includes <span class='font-bold'>innovation</span> and <span class='font-bold'>User Experience</span>, and with these pillars we offer tailored solutions to meet customer needs.",
+          "paragraph3": "All Outlander projects and solutions include a careful analysis of the <span class='font-bold'>UX</span> and the <span class='font-bold'>UI</span>, a <span class='font-bold'>Mobile First</span> development and <span class='font-bold'>SEO</span> optimization."
         },
         "div3": {
           "title": "OUR TECHNOLOGIES",
-           "paragraph1": "A journey of discovery into the digital age, guided by innovative technology and experience."
+          "paragraph1": "A journey to discover the digital age, guided by innovative technology and experience."
         },
         "div4": {
-           "paragraph1": "It is our latest project, a web application that allows the user to <span class='font-bold'>explore the Abruzzo</span> region like never before.",
-           "paragraph2": "Analysing ISTAT datasets, NOMAD creates <span class='font-bold'>interactive graphs</span> that provide the user with a detailed look at the flow of tourists, both Italian and foreign, and their choices, from the type of accommodation to the most popular provinces. NOMAD is the ideal solution that guarantees reliability and correctness of data.",
-           "paragraph3": "Moreover, with a trained machine learning model, NOMAD proposes a series of short-, medium- and long-term <span class='font-bold'>forecasts</span> of future tourist flows, ensuring an accuracy of up to <span class='font-bold'>five years</span>.",
-           "paragraph4": "With its user-friendly interface and ability to analyse complex data, NOMAD is the perfect tool to fully discover Abruzzo."
+          "paragraph1": "It is our latest project, a web application that allows the user to <span class='font-bold'>explore the Abruzzo</span> region like never before.",
+          "paragraph2": "With a user-friendly interface, NOMAD analyzes ISTAT datasets and creates <span class='font-bold'>interactive charts</span> that provide the user with a detailed look at tourist flows and their choices, from the type of accommodation to the most popular provinces. NOMAD is the ideal solution that guarantees reliability and data accuracy.",
+          "paragraph3": "In addition, with a trained machine learning model, NOMAD proposes medium and long-term <span class='font-bold'>forecasts</span> of future tourist flows, ensuring accuracy up to <span class='font-bold'>five years</span>."
         }
       },
       "team": {
@@ -75,7 +63,7 @@
       "contacts": {
         "title": "Contacts",
         "div1": {
-          "description": "© 2022. All right reserved. P.Iva:1000000000"
+          "description": "© 2022. All rights reserved. VAT N:1000000000"
         },
         "div2": {
           "title": "TURIN HQ",
@@ -86,6 +74,6 @@
   },
 
   "footer": {
-    "rights": "Copyright © 2022 - All right reserved by OUTLANDER Srl"
+    "rights": "Copyright © 2022 - All rights reserved by OUTLANDER Co. Ltd"
   }
 }
