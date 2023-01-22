@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 import { ResponseChartData } from 'src/app/models/api.model';
 import { StatsService } from 'src/app/services/stats.service';
 

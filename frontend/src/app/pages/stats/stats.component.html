@@ -8,7 +8,7 @@
   <h2
     class="font-bold text-center text-3xl md:text-4xl lg:text-5xl text-secondary"
   >
-    Statistiche relative a
+  {{ 'Statistiche_relative_a' | translate }}
     <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
   </h2>
   <app-content [content]="'stats'"></app-content>
@@ -191,7 +191,7 @@
   <h2
     class="font-bold text-center text-3xl md:text-4xl lg:text-5xl text-secondary mt-20"
   >
-    Previsioni relative a
+  {{ 'Previsioni_relative_a' | translate }}
     <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
   </h2>
   <app-content [content]="'prevs'"></app-content>

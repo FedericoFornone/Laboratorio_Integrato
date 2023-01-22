@@ -142,5 +142,7 @@
   },
   "404": {
     "paragraph": "Oops, this page doesn't exist. Click on the compass and go back to the homepage!"
-  }
+  },
+  "Statistiche_relative_a": "Statistics related to",
+  "Previsioni_relative_a": "Forecasts related to"
 }
