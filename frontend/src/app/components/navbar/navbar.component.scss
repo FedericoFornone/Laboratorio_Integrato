@@ -10,3 +10,8 @@ li>a:active {
 .menu {
   right: 10px;
 }
+
+label>input {
+  display: none;
+  visibility: hidden;
+}
