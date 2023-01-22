@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ResponseChartData } from 'src/app/models/api.model';
-import { ApiService } from 'src/app/services/stats.service';
+import { StatsService } from 'src/app/services/stats.service';
 
 @Component({
   selector: 'app-stats',
@@ -19,7 +19,10 @@ export class StatsComponent implements OnInit {
   statisticsYear = '2021';
   predictionsYear = '2022';
 
-  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private statsService: StatsService
+  ) {}
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -53,7 +56,7 @@ export class StatsComponent implements OnInit {
   }
 
   onFilterChange() {
-    this.apiService
+    this.statsService
       .getArrivals(
         this.regionName,
         this.statisticsYear,
@@ -62,7 +65,7 @@ export class StatsComponent implements OnInit {
       )
       .subscribe((data: any) => (this.arrivalsStatsChart = data));
 
-    this.apiService
+    this.statsService
       .getAttendances(
         this.regionName,
         this.statisticsYear,

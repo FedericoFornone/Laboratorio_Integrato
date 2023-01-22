@@ -7,7 +7,7 @@ import { assembleUrl, reduceByDate, generateChartData } from './utils';
 @Injectable({
   providedIn: 'root',
 })
-export class ApiService {
+export class StatsService {
   constructor(private http: HttpClient) {}
 
   getArrivals(
