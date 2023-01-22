@@ -19,6 +19,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ResponsiveSliderComponent } from './components/responsive-slider/responsive-slider.component';
+import { MultistepModalComponent } from './components/multistep-modal/multistep-modal.component';
 
 @NgModule({
   declarations: [
