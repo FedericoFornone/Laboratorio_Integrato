@@ -10,7 +10,7 @@
       "label": "Scopri di più"
     },
     "section3": {
-      "title": "Titolo", 
+      "title": "Titolo",
       "paragraph": "Abbiamo progettato Nomad a partire da un'idea: guidare l'utente in un viaggio per comprendere al meglio i dati dei flussi turistici in Abruzzo, rendendo la sua esperienza interattiva e piacevole.",
       "div1": {
         "title": "User friendly",
@@ -24,12 +24,42 @@
         "title": "Performante",
         "paragraph": "Nonostante la grande mole di dati presi in analisi, abbiamo attuato una serie di ottimizzazioni che hanno reso Nomad performante ed efficace. Tutto ciò è stato possibile anche grazie all'utilizzo di tecnologie all'avanguardia, come il modello di machine learning per calcolare le previsioni."
       }
-      }
-      },
+    }
+  },
 
   "dashboard": {
-
+    "section1": {
+      "paragraph": "Da qui puoi vedere le statistiche e le previsioni relative all’Abruzzo. <strong>Seleziona la regione o la provincia</strong> di cui desideri visualizzare i dati."
+    },
+    "tutorial": {
+      "step1": {
+        "paragraph": "Benvenut* nella dashboard! Da qui puoi scegliere una provincia o la regione completa per visualizzare i grafici relativi."
+      },
+      "step2": {
+        "paragraph": "Se vuoi vedere i dati relativi a tutta la regione clicca su <em>Abruzzo</em>, altrimenti clicca sulla provincia desiderata. Buon viaggio!"
+      }
+    }
   },
+  "modal": {
+    "previous": "Indietro",
+    "next": "Avanti",
+    "end": "Fine"
+  },
+  "stats": {
+    "subtitle": "Qui trovi tutte le statistiche relative al territorio che hai scelto. Prima di iniziare, alcune informazioni importanti:",
+    "section1": "Tutti i grafici riguardano dataset ISTAT relativi ad un preciso periodo: <strong>dal 2008 al 2021</strong>.",
+    "section2": "Puoi selezionare uno o più <strong>filtri</strong> per vagliare la ricerca, in base ad anno, struttura ricettiva, o Paese di residenza dei turisti.",
+    "section3": "<strong>Se non selezioni nulla</strong>, vedrai le statistiche di tutti i turisti in qualsiasi struttura di residenza nell’anno 2021.",
+    "section4": "E’ la prima volta che utilizzi Nomad? Apri il <strong>tutorial</strong>, troverai una spiegazione dettagliata del pannello di controllo."
+  },
+  "prevs": {
+    "subtitle": " ciao",
+    "section1": "",
+    "section2": "",
+    "section3": "",
+    "section4": ""
+  },
+
   "about": {
     "introduction": {
       "paragraph": "Tracciamo un nuovo percorso nell'era digitale"
@@ -38,24 +68,24 @@
       "features": {
         "div1": {
           "title": "CHI SIAMO",
-           "paragraph1": "Outlander è una <strong>web agency torinese</strong> specializzata nella creazione di siti e web applications all'avanguardia.",
-           "paragraph2": "L'azienda è nata da un team di developers e designers determinati a <strong>trasformare le loro passioni in soluzioni</strong> per privati ed aziende, ideate una ad una con creatività e con un approccio fuori dagli schemi.",
-           "paragraph3": "La parola outlander evoca l'idea di <strong>un'esplorazione verso soluzioni innovative</strong>, create per soddisfare il cliente ed accompagnarlo in un viaggio alla scoperta della frontiera digitale."
+          "paragraph1": "Outlander è una <strong>web agency torinese</strong> specializzata nella creazione di siti e web applications all'avanguardia.",
+          "paragraph2": "L'azienda è nata da un team di developers e designers determinati a <strong>trasformare le loro passioni in soluzioni</strong> per privati ed aziende, ideate una ad una con creatività e con un approccio fuori dagli schemi.",
+          "paragraph3": "La parola outlander evoca l'idea di <strong>un'esplorazione verso soluzioni innovative</strong>, create per soddisfare il cliente ed accompagnarlo in un viaggio alla scoperta della frontiera digitale."
         },
         "div2": {
           "title": "IL NOSTRO FOCUS",
-           "paragraph1": "Ci occupiamo di soluzioni web per privati e aziende legate al <strong>settore turistico</strong>.",
-           "paragraph2": "Il nostro focus comprende <strong>innovazione</strong> e <strong>User Experience</strong>, e con questi pilastri proponiamo soluzioni su misura per soddisfare i bisogni del cliente.",
-           "paragraph3": "Tutti i progetti e le soluzioni di Outlander comprendono un'attenta analisi della <strong>UX</strong> e della <strong>UI</strong>, uno sviluppo <strong>Mobile First</strong> e un'ottimizzazione in ottica <strong>SEO</strong>."
+          "paragraph1": "Ci occupiamo di soluzioni web per privati e aziende legate al <strong>settore turistico</strong>.",
+          "paragraph2": "Il nostro focus comprende <strong>innovazione</strong> e <strong>User Experience</strong>, e con questi pilastri proponiamo soluzioni su misura per soddisfare i bisogni del cliente.",
+          "paragraph3": "Tutti i progetti e le soluzioni di Outlander comprendono un'attenta analisi della <strong>UX</strong> e della <strong>UI</strong>, uno sviluppo <strong>Mobile First</strong> e un'ottimizzazione in ottica <strong>SEO</strong>."
         },
         "div3": {
           "title": "LE NOSTRE TECNOLOGIE",
-           "paragraph1": "Un viaggio alla scoperta della digital era, guidato da tecnologie innovative ed esperienza."
+          "paragraph1": "Un viaggio alla scoperta della digital era, guidato da tecnologie innovative ed esperienza."
         },
         "div4": {
-           "paragraph1": "È il nostro ultimo progetto, una web application che permette l'utente di <strong>esplorare la regione Abruzzo</strong> come mai prima d'ora.",
-           "paragraph2": "Con un'interfaccia user-friendly, NOMAD analizza dataset ISTAT e crea <strong>grafici interattivi</strong> che forniscono all'utente uno sguardo dettagliato sui flussi di turisti e sulle loro scelte, dal tipo di alloggio alle province più popolari. NOMAD è la soluzione ideale che garantisce affidabilità e correttezza dei dati.",
-           "paragraph3": "Inoltre, con un modello di machine learning addestrato, NOMAD propone <strong>previsioni</strong> a medio e lungo termine dei flussi turistici futuri, assicurando un'accuratezza fino a <strong>cinque anni</strong>."
+          "paragraph1": "È il nostro ultimo progetto, una web application che permette l'utente di <strong>esplorare la regione Abruzzo</strong> come mai prima d'ora.",
+          "paragraph2": "Con un'interfaccia user-friendly, NOMAD analizza dataset ISTAT e crea <strong>grafici interattivi</strong> che forniscono all'utente uno sguardo dettagliato sui flussi di turisti e sulle loro scelte, dal tipo di alloggio alle province più popolari. NOMAD è la soluzione ideale che garantisce affidabilità e correttezza dei dati.",
+          "paragraph3": "Inoltre, con un modello di machine learning addestrato, NOMAD propone <strong>previsioni</strong> a medio e lungo termine dei flussi turistici futuri, assicurando un'accuratezza fino a <strong>cinque anni</strong>."
         }
       },
       "team": {
@@ -78,7 +108,7 @@
   "footer": {
     "rights": "Copyright © 2022 - Tutti i diritti riservati da OUTLANDER Srl"
   },
-  "404" : {
+  "404": {
     "paragraph": "Ops, la pagina che hai cercato non esiste. Clicca sulla bussola e torna alla homepage!"
   }
 }

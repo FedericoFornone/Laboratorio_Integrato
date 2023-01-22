@@ -21,6 +21,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ResponsiveSliderComponent } from './components/responsive-slider/responsive-slider.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { MultistepModalComponent } from './components/multistep-modal/multistep-modal.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MultistepModalComponent } from './components/multistep-modal/multistep-
     ResponsiveSliderComponent,
     PageNotFoundComponent,
     MultistepModalComponent,
+    ContentComponent,
   ],
   imports: [
     HttpClientModule,
