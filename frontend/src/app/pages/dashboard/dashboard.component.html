@@ -1,70 +1,67 @@
 <main class="container mx-auto">
-  <h1 class="my-5 text-5xl font-bold text-center lg:text-7xl">Dashboard</h1>
+  <div class="flex justify-end mx-5 my-5 lg:mx-0">
+    <div
+      class="flex items-center tooltip tooltip-left tooltip-open tooltip-primary"
+      data-tip="Mostra il tutorial"
+    >
+      <button (click)="openModal()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-7 h-7"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
 
-  <!--<app-responsive-slider>
-    <ng-template #slide>
-      <div class="shadow-xl rounded-xl h-[30rem]"></div>
+  <app-multistep-modal
+    [modalOpen]="tutorialModalOpen"
+    (closeModal)="closeModal()"
+  >
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 1</h3>
+      <p class="py-4">This is the first step of the tutorial</p>
     </ng-template>
-    <ng-template #slide>
-      <div class="shadow-xl rounded-xl h-[30rem]"></div>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 2</h3>
+      <p class="py-4">This is the second step of the tutorial</p>
     </ng-template>
-    <ng-template #slide>
-      <div class="grid grid-rows-2 gap-4">
-        <div class="shadow-xl rounded-xl h-[14.5rem]"></div>
-        <div class="shadow-xl rounded-xl h-[14.5rem]"></div>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 3</h3>
+      <p class="py-4">This is the third step of the tutorial</p>
+    </ng-template>
+  </app-multistep-modal>
+
+  <app-responsive-slider [hasMain]="true">
+    <ng-template #slide *ngFor="let province of provincesData">
+      <div
+        class="rounded-xl h-[25rem] overflow-hidden"
+        [routerLink]="'stats/' + province.name.toLowerCase()"
+      >
+        <figure
+          class="relative w-full h-full transition-all duration-200 cursor-pointer hover:scale-105"
+        >
+          <img
+            [src]="'assets/provinces/' + province.imageName"
+            [alt]="province.name"
+            class="object-cover w-full h-full"
+          />
+          <figcaption
+            class="absolute inset-0 grid text-5xl font-medium text-white pointer-events-none bg-base-content bg-opacity-70 place-items-center lg:text-7xl"
+          >
+            {{ province.name }}
+          </figcaption>
+        </figure>
       </div>
     </ng-template>
-  </app-responsive-slider>-->
-
-  <div class="flex gap-3">
-    <select
-      class="container w-full mb-2 ml-5 bg-white shadow-xl max-w-fit lg:ml-0 select"
-      [(ngModel)]="selectedRegion"
-      (change)="onRegionChange()"
-    >
-      <option selected>Abruzzo</option>
-      <option>L'Aquila</option>
-      <option>Chieti</option>
-      <option>Pescara</option>
-      <option>Teramo</option>
-    </select>
-    <select
-      class="container w-full mb-2 bg-white shadow-xl max-w-fit select"
-      [(ngModel)]="selectedArrivals"
-      (change)="onArrivalsChange()"
-    >
-      <option selected>Tutti gli arrivi</option>
-      <option>Italiani in hotel</option>
-      <option>Italiani in altre strutture</option>
-      <option>Esteri in hotel</option>
-      <option>Esteri in altre strutture</option>
-    </select>
-  </div>
-
-  <div
-    class="shadow-xl rounded-xl h-[40rem] grid place-items-center p-5 lg:p-10 mx-5 lg:mx-0 bg-white"
-  >
-    <canvas
-      baseChart
-      [type]="'line'"
-      [data]="arrivalsChartData"
-      [options]="arrivalsChartOptions"
-      [legend]="arrivalsChartLegend"
-    >
-    </canvas>
-  </div>
-
-  <div
-    class="shadow-xl rounded-xl h-[40rem] grid place-items-center p-5 lg:p-10 mx-5 lg:mx-0 bg-white mt-5"
-    *ngIf="selectedArrivals === 'Italiani in hotel'"
-  >
-    <canvas
-      baseChart
-      [type]="'line'"
-      [data]="predictionsChartData"
-      [options]="predictionsChartOptions"
-      [legend]="predictionsChartLegend"
-    >
-    </canvas>
-  </div>
+  </app-responsive-slider>
 </main>

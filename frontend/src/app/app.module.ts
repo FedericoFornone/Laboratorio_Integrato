@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
 
 import { HomeComponent } from './pages/home/home.component';
-import { StatsComponent } from './pages/dashboard/dashboard.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { StatsComponent } from './pages/stats/stats.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,6 +24,7 @@ import { ResponsiveSliderComponent } from './components/responsive-slider/respon
   declarations: [
     AppComponent,
     HomeComponent,
+    DashboardComponent,
     StatsComponent,
     ButtonComponent,
     AvatarComponent,
@@ -30,6 +32,7 @@ import { ResponsiveSliderComponent } from './components/responsive-slider/respon
     AboutComponent,
     NavbarComponent,
     ResponsiveSliderComponent,
+    MultistepModalComponent,
   ],
   imports: [
     HttpClientModule,
@@ -41,15 +44,14 @@ import { ResponsiveSliderComponent } from './components/responsive-slider/respon
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
+        deps: [HttpClient],
       },
-      defaultLanguage: 'it'
-    })
+      defaultLanguage: 'it',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-
 export class AppModule {}
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
