@@ -1,10 +1,16 @@
 <main class="container mx-auto">
+  <!-- FIXME: breadcrumbs -->
   <h1
-    class="font-bold text-center text-3xl md:text-4xl lg:text-5xl text-secondary mt-36"
+    class="font-bold text-center text-secondary text-xl md:text-2xl mt-36 mb-10"
+  >
+    Dashboard
+  </h1>
+  <h2
+    class="font-bold text-center text-3xl md:text-4xl lg:text-5xl text-secondary"
   >
     Statistiche relative a
     <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
-  </h1>
+  </h2>
   <app-content [content]="'stats'"></app-content>
   <app-multistep-modal
     [modalOpen]="tutorialModalOpen"
@@ -168,6 +174,17 @@
         </canvas>
       </div>
     </ng-template>
+  </app-responsive-slider>
+
+  <h2
+    class="font-bold text-center text-3xl md:text-4xl lg:text-5xl text-secondary mt-20"
+  >
+    Previsioni relative a
+    <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
+  </h2>
+  <app-content [content]="'prevs'"></app-content>
+
+  <app-responsive-slider>
     <ng-template #slide>
       <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
     </ng-template>
