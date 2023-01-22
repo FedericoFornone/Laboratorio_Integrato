@@ -36,7 +36,7 @@
         "paragraph": "Welcome to the dashboard! From here you can choose a particular province or the complete region and view the relevant charts"
       },
       "step2": {
-        "paragraph": "If you want to see the data for the whole region click on <em>Abruzzo</em>, otherwise click on the desired province. Enjoy your trip!"
+        "paragraph": "If you want to see the data for the whole region click on <strong>Abruzzo</strong>, otherwise click on the desired province. Enjoy your trip!"
       }
     },
     "tutorial2": {
