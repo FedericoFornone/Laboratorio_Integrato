@@ -5,68 +5,57 @@
       "label": "Inizia"
     },
     "section2": {
-      "title": "Su Nomad",
-      "paragraph": "Nomad è la soluzione Outlander legata al mondo del turismo che permette di esplorare la regione Abruzzo come mai prima d’ora. Monitora i flussi turistici a partire da dataset ufficiali ISTAT, fornendo statistiche e previsioni future basate su un modello di Machine Learning addestrato.",
+      "title": "Cos'è Nomad",
+      "paragraph": "Nomad è la soluzione Outlander legata al mondo del turismo che monitora i flussi turistici dell'Abruzzo a partire da dataset ufficiali ISTAT. Fornisce statistiche e previsioni future basate su un modello di Machine Learning addestrato.",
       "label": "Scopri di più"
     },
     "section3": {
-      "title": "Usa i tuoi dati",
-      "paragraph": "Ti interessa applicare Nomad ai tuoi dati? Carica il tuo CSV o scarica e compila il nostro template per avere un'analisi dell'andamento turistico completa e flessibile.",
-      "label": "Carica il tuo file"
-    }
-  },
+      "title": "Titolo", 
+      "paragraph": "Abbiamo progettato Nomad a partire da un'idea: guidare l'utente in un viaggio per comprendere al meglio i dati dei flussi turistici in Abruzzo, rendendo la sua esperienza interattiva e piacevole.",
+      "div1": {
+        "title": "User friendly",
+        "paragraph": "Nomad ha un'interfaccia intuitiva e un design visivo accattivante. Abbiamo implementato grafici interattivi e un tutorial, per rendere più accessibili le sue funzionalità e focalizzare l'utente alla visualizzazione dei dati."
+      },
+      "div2": {
+        "title": "Attendibile",
+        "paragraph": "Tutti i dati utilizzati provengono da dataset ufficiali ISTAT. Nomad garantisce quindi correttezza e qualità dell'informazione statistica."
+      },
+      "div3": {
+        "title": "Performante",
+        "paragraph": "Nonostante la grande mole di dati presi in analisi, abbiamo attuato una serie di ottimizzazioni che hanno reso Nomad performante ed efficace. Tutto ciò è stato possibile anche grazie all'utilizzo di tecnologie all'avanguardia, come il modello di machine learning per calcolare le previsioni."
+      }
+      }
+      },
 
   "dashboard": {
 
   },
-
-  "upload": {
-    "title": "Usa i tuoi dati",
-    "instructions": {
-      "title": "Istruzioni",
-      "paragraph1": "Una volta caricato il tuo CSV controlleremo che i dati siano validi e formattati correttamente. Se non lo sono, <span class='font-bold'>segui le istruzioni</span> per modificare i campi necessari.",
-      "paragraph2": "Se preferisci, puoi scaricare questo <span class='font-bold'>template compilabile</span>:"
-    },
-    "form": {
-      "name": "Nome",
-      "last-name": "Cognome",
-      "email": "Email",
-      "file": {
-        "label": "File CSV",
-        "description1": "Carica un file",
-        "description2": "CSV fino a 10MB"
-      },
-      "submit": "Salva"
-    }
-  },
-
   "about": {
     "introduction": {
-      "paragraph": "Tracciare una nuova rotta nel regno digitale"
+      "paragraph": "Tracciamo un nuovo percorso nell'era digitale"
     },
     "main": {
       "features": {
         "div1": {
           "title": "CHI SIAMO",
-           "paragraph1": "Outlander è una <span class='font-bold'>web agency torinese</span> specializzata nella creazione di siti e web applications all'avanguardia.",
-           "paragraph2": "L'azienda è nata da un team di developers e designers determinati a <span class='font-bold'>trasformare le loro passioni in soluzioni</span> per privati ed aziende, ideate una ad una con creatività e con un approccio fuori dagli schemi.",
-           "paragraph3": "La parola outlander evoca l'idea di <span class='font-bold'>un'esplorazione verso soluzioni innovative</span>, create per soddisfare il cliente ed accompagnarlo in un viaggio alla scoperta frontiera digitale."
+           "paragraph1": "Outlander è una <strong>web agency torinese</strong> specializzata nella creazione di siti e web applications all'avanguardia.",
+           "paragraph2": "L'azienda è nata da un team di developers e designers determinati a <strong>trasformare le loro passioni in soluzioni</strong> per privati ed aziende, ideate una ad una con creatività e con un approccio fuori dagli schemi.",
+           "paragraph3": "La parola outlander evoca l'idea di <strong>un'esplorazione verso soluzioni innovative</strong>, create per soddisfare il cliente ed accompagnarlo in un viaggio alla scoperta della frontiera digitale."
         },
         "div2": {
           "title": "IL NOSTRO FOCUS",
-           "paragraph1": "Ci occupiamo di soluzioni web per privati e aziende legate al <span class='font-bold'>settore turistico</span>.",
-           "paragraph2": "Il nostro focus comprende <span class='font-bold'>innovazione</span> e <span class='font-bold'>User Experience</span>, e con questi pilastri proponiamo soluzioni su misura per soddisfare i bisogni del cliente.",
-           "paragraph3": "Tutti i progetti e le soluzioni di Outlander comprendono un'attenta analisi della <span class='font-bold'>UX</span> e della <span class='font-bold'>UI</span>, uno sviluppo <span class='font-bold'>Mobile First</span> e un'ottimizzazione in ottica <span class='font-bold'>SEO</span>."
+           "paragraph1": "Ci occupiamo di soluzioni web per privati e aziende legate al <strong>settore turistico</strong>.",
+           "paragraph2": "Il nostro focus comprende <strong>innovazione</strong> e <strong>User Experience</strong>, e con questi pilastri proponiamo soluzioni su misura per soddisfare i bisogni del cliente.",
+           "paragraph3": "Tutti i progetti e le soluzioni di Outlander comprendono un'attenta analisi della <strong>UX</strong> e della <strong>UI</strong>, uno sviluppo <strong>Mobile First</strong> e un'ottimizzazione in ottica <strong>SEO</strong>."
         },
         "div3": {
           "title": "LE NOSTRE TECNOLOGIE",
            "paragraph1": "Un viaggio alla scoperta della digital era, guidato da tecnologie innovative ed esperienza."
         },
         "div4": {
-           "paragraph1": "È il nostro ultimo progetto, una web application che permette l'utente di <span class='font-bold'>esplorare la regione Abruzzo</span> come mai prima d'ora.",
-           "paragraph2": "Analizzando dataset ISTAT, NOMAD crea <span class='font-bold'>grafici interattivi</span> che forniscono all'utente uno sguardo dettagliato sui flussi di turisti, italiani e stranieri, e sulle loro scelte, dal tipo di alloggio alle province più popolari. NOMAD è la soluzione ideale che garantisce affidabilità e correttezza dei dati.",
-           "paragraph3": "Inoltre, con un modello di machine learning addestrato, NOMAD propone una serie di <span class='font-bold'>previsioni</span> a breve, medio e lungo termine dei flussi turistici futuri, assicurando un'accuratezza fino a <span class='font-bold'>cinque anni</span>.",
-           "paragraph4": "Con la sua interfaccia user-friendly e la capacità di analizzare dati complessi, NOMAD è lo strumento perfetto per scoprire a pieno l'Abruzzo."
+           "paragraph1": "È il nostro ultimo progetto, una web application che permette l'utente di <strong>esplorare la regione Abruzzo</strong> come mai prima d'ora.",
+           "paragraph2": "Con un'interfaccia user-friendly, NOMAD analizza dataset ISTAT e crea <strong>grafici interattivi</strong> che forniscono all'utente uno sguardo dettagliato sui flussi di turisti e sulle loro scelte, dal tipo di alloggio alle province più popolari. NOMAD è la soluzione ideale che garantisce affidabilità e correttezza dei dati.",
+           "paragraph3": "Inoltre, con un modello di machine learning addestrato, NOMAD propone <strong>previsioni</strong> a medio e lungo termine dei flussi turistici futuri, assicurando un'accuratezza fino a <strong>cinque anni</strong>."
         }
       },
       "team": {
@@ -75,6 +64,7 @@
       "contacts": {
         "title": "Contatti",
         "div1": {
+          "title": "OUTLANDER Srl",
           "description": "© 2022. Tutti i diritti riservati. P.Iva:1000000000"
         },
         "div2": {
@@ -87,5 +77,8 @@
 
   "footer": {
     "rights": "Copyright © 2022 - Tutti i diritti riservati da OUTLANDER Srl"
+  },
+  "404" : {
+    "paragraph": "Ops, la pagina che hai cercato non esiste. Clicca sulla bussola e torna alla homepage!"
   }
 }

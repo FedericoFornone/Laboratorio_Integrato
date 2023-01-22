@@ -1,14 +1,15 @@
-<div>
-  <div
-  data-theme="nomad-light"
-  class="navbar bg-transparent fixed top-0 z-50 bg-base-100 shadow-md px-10"
->
-  <a [routerLink]="'/home/'" class="navbar-start flex items-center ml-5">
-    <picture>
+<div data-theme="nomad-light" class="navbar bg-transparent fixed top-0 z-50 bg-base-100 shadow-md px-10">
+  <section class="navbar-start flex items-center lg:ml-16">
+    <picture role="button">
       <source media="(min-width:1024px)" srcset="/assets/logo-desktop.png" />
-      <img src="assets/logo-mobile.webp" alt="Nomad Logo" class="h-10 my-4" />
+      <img
+        src="assets/logo-mobile.webp"
+        alt="Nomad Logo Mobile"
+        class="h-10 my-4"
+        [routerLink]="'/home/'"
+      />
     </picture>
-  </a>
+  </section>
   <div class="navbar-end">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -18,6 +19,8 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          width="24"
+          height="24"
         >
           <path
             stroke-linecap="round"
@@ -42,8 +45,8 @@
       <li><a class="mr-10" [routerLink]="'/home/'">Home</a></li>
       <li class="mr-10"><a [routerLink]="'/dashboard/'">Dashboard</a></li>
       <li class="mr-10"><a [routerLink]="'/about/'">About</a></li>
-      <li><a (click)="changeLanguage('it')">IT</a></li>
-      <li><a (click)="changeLanguage('en')">EN</a></li>
+      <li><button (click)="changeLanguage('it')">IT</button></li>
+      <li><button (click)="changeLanguage('en')">EN</button></li>
       <li>
         <label class="swap swap-rotate">
 
@@ -60,7 +63,6 @@
       </li>
     </ul>
   </div>
-</div>
 </div>
 
 
