@@ -1,0 +1,176 @@
+<main class="container mx-auto">
+  <h1 class="mt-10 mb-5 text-4xl font-medium text-center lg:text-6xl">
+    Statistiche relative a
+    <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
+  </h1>
+
+  <app-multistep-modal
+    [modalOpen]="tutorialModalOpen"
+    (closeModal)="closeModal()"
+  >
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 1</h3>
+      <p class="py-4">This is the first step of the tutorial</p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 2</h3>
+      <p class="py-4">This is the second step of the tutorial</p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Tutorial step 3</h3>
+      <p class="py-4">This is the third step of the tutorial</p>
+    </ng-template>
+  </app-multistep-modal>
+
+  <div class="flex justify-end mx-5 my-5 lg:mx-0">
+    <div
+      class="flex items-center tooltip tooltip-left tooltip-open tooltip-primary"
+      data-tip="Mostra il tutorial"
+    >
+      <button (click)="openModal()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-7 h-7"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
+  >
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="tourists" class="text-sm font-medium">Tipo di turisti</label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="tourists"
+        [(ngModel)]="residenceCountry"
+      >
+        <option selected value="">Tutti</option>
+        <option value="Italia">Turisti italiani</option>
+        <option value="Paesi esteri">Turisti stranieri</option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="structures" class="text-sm font-medium"
+        >Struttura di residenza</label
+      >
+      <select
+        class="w-full bg-white select select-bordered"
+        id="structures"
+        [(ngModel)]="infrastructureType"
+      >
+        <option selected value="">Tutte</option>
+        <option value="HOTELLIKE">Hotel</option>
+        <option value="OTHER">Altre</option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="statsYear" class="text-sm font-medium"
+        >Anno statistiche</label
+      >
+      <select
+        class="w-full bg-white select select-bordered"
+        id="statsYear"
+        [(ngModel)]="statisticsYear"
+      >
+        <option selected value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label for="predictionsYear" class="text-sm font-medium"
+        >Anno previsioni</label
+      >
+      <select
+        class="w-full bg-white select select-bordered"
+        id="predictionsYear"
+        [(ngModel)]="predictionsYear"
+      >
+        <option selected value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+      </select>
+    </div>
+    <button class="md:col-span-2 btn btn-primary" (click)="onFilterChange()">
+      Filtra
+    </button>
+  </div>
+
+  <app-responsive-slider>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.options"
+          [legend]="arrivalsStatsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.mobileOptions"
+          [legend]="arrivalsStatsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesStatsChart.chartData"
+          [options]="attendancesStatsChart.options"
+          [legend]="attendancesStatsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesStatsChart.chartData"
+          [options]="attendancesStatsChart.mobileOptions"
+          [legend]="attendancesStatsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
+    </ng-template>
+  </app-responsive-slider>
+</main>

@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
 
 import { HomeComponent } from './pages/home/home.component';
-import { StatsComponent } from './pages/dashboard/dashboard.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { StatsComponent } from './pages/stats/stats.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -19,11 +20,13 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ResponsiveSliderComponent } from './components/responsive-slider/responsive-slider.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { MultistepModalComponent } from './components/multistep-modal/multistep-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    DashboardComponent,
     StatsComponent,
     ButtonComponent,
     AvatarComponent,
@@ -32,6 +35,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     NavbarComponent,
     ResponsiveSliderComponent,
     PageNotFoundComponent,
+    MultistepModalComponent,
   ],
   imports: [
     HttpClientModule,
@@ -43,15 +47,14 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
+        deps: [HttpClient],
       },
-      defaultLanguage: 'it'
-    })
+      defaultLanguage: 'it',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-
 export class AppModule {}
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
