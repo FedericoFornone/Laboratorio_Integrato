@@ -17,23 +17,35 @@
     (closeModal)="closeModal()"
   >
     <ng-template #step>
-      <h3 class="text-lg font-bold">Tutorial step 1</h3>
-      <p class="py-4">This is the first step of the tutorial</p>
+      <h3 class="text-lg font-bold">Step 1</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step1' | translate"></p>
     </ng-template>
     <ng-template #step>
-      <h3 class="text-lg font-bold">Tutorial step 2</h3>
-      <p class="py-4">This is the second step of the tutorial</p>
+      <h3 class="text-lg font-bold">Step 2</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step2' | translate"></p>
     </ng-template>
     <ng-template #step>
-      <h3 class="text-lg font-bold">Tutorial step 3</h3>
-      <p class="py-4">This is the third step of the tutorial</p>
+      <h3 class="text-lg font-bold">Step 3</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step3' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 4</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step4' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 5</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step5' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 6</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step6' | translate"></p>
     </ng-template>
   </app-multistep-modal>
 
   <section class="flex justify-end mx-5 my-5 lg:mx-0">
     <div
       class="flex items-center tooltip tooltip-left tooltip-open tooltip-primary"
-      data-tip="Mostra il tutorial"
+      data-tip="Tutorial"
     >
       <button (click)="openModal()">
         <svg
@@ -58,34 +70,34 @@
     class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
   >
     <div class="flex flex-col flex-1 gap-1">
-      <label for="tourists" class="text-sm font-medium">Tipo di turisti</label>
+      <label for="tourists" class="text-sm font-medium" [translate]="'charts.select1.label'"></label>
       <select
         class="w-full bg-white select select-bordered"
         id="tourists"
         [(ngModel)]="residenceCountry"
       >
-        <option selected value="">Tutti</option>
-        <option value="Italia">Turisti italiani</option>
-        <option value="Paesi esteri">Turisti stranieri</option>
+        <option selected value="" [translate]="'charts.select1.options.all'"></option>
+        <option value="Italia" [translate]="'charts.select1.options.italy'"></option>
+        <option value="Paesi esteri" [translate]="'charts.select1.options.foreign'"></option>
       </select>
     </div>
     <div class="flex flex-col flex-1 gap-1">
       <label for="structures" class="text-sm font-medium"
-        >Struttura di residenza</label
+      [translate]="'charts.select2.label'"></label
       >
       <select
         class="w-full bg-white select select-bordered"
         id="structures"
         [(ngModel)]="infrastructureType"
       >
-        <option selected value="">Tutte</option>
-        <option value="HOTELLIKE">Hotel</option>
-        <option value="OTHER">Altre</option>
+        <option selected value="" [translate]="'charts.select2.options.all'"></option>
+        <option value="HOTELLIKE" [translate]="'charts.select2.options.hotel'"></option>
+        <option value="OTHER" [translate]="'charts.select2.options.other'"></option>
       </select>
     </div>
     <div class="flex flex-col flex-1 gap-1">
       <label for="statsYear" class="text-sm font-medium"
-        >Anno statistiche</label
+      [translate]="'charts.select3.label'"></label
       >
       <select
         class="w-full bg-white select select-bordered"
@@ -110,7 +122,7 @@
     </div>
     <div class="flex flex-col flex-1 gap-1">
       <label for="predictionsYear" class="text-sm font-medium"
-        >Anno previsioni</label
+      [translate]="'charts.select4.label'"></label
       >
       <select
         class="w-full bg-white select select-bordered"
@@ -124,8 +136,8 @@
         <option value="2026">2026</option>
       </select>
     </div>
-    <button class="md:col-span-2 btn btn-primary" (click)="onFilterChange()">
-      Filtra
+    <button class="md:col-span-2 btn btn-primary" (click)="onFilterChange()" [translate]="'charts.button'">
+    
     </button>
   </section>
 
@@ -183,7 +195,6 @@
     <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
   </h2>
   <app-content [content]="'prevs'"></app-content>
-
   <app-responsive-slider>
     <ng-template #slide>
       <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
