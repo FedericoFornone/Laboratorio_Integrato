@@ -40,23 +40,20 @@
           class="btn btn-primary"
           (click)="previousStep()"
           *ngIf="currentStep > 0"
-        >
-          Previous
-        </button>
+          [translate]="'modal.previous'"
+        ></button>
         <button
           class="btn btn-primary"
           (click)="nextStep()"
           *ngIf="currentStep < steps.length - 1"
-        >
-          Next
-        </button>
+          [translate]="'modal.next'"
+        ></button>
         <button
           class="btn btn-primary"
           *ngIf="currentStep === steps.length - 1"
           (click)="emitCloseModal()"
-        >
-          End
-        </button>
+          [translate]="'modal.end'"
+        ></button>
       </div>
     </div>
   </div>
