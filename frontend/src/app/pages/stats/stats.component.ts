@@ -55,6 +55,16 @@ export class StatsComponent implements OnInit {
   ngOnInit() {
     this.tutorialModalOpen = localStorage.getItem('statsModalSeen') !== 'true';
 
+    const statisticsFilters = localStorage.getItem('statisticsFilters');
+    if (statisticsFilters) {
+      this.statisticsFilters = JSON.parse(statisticsFilters);
+    }
+
+    const predictionsFilters = localStorage.getItem('predictionsFilters');
+    if (predictionsFilters) {
+      this.predictionsFilters = JSON.parse(predictionsFilters);
+    }
+
     this.route.data.subscribe((data) => {
       const {
         arrivalsStats,
@@ -84,6 +94,11 @@ export class StatsComponent implements OnInit {
   }
 
   onStatisticsFilterChange() {
+    localStorage.setItem(
+      'statisticsFilters',
+      JSON.stringify(this.statisticsFilters)
+    );
+
     this.statsService
       .getArrivals(
         this.regionName,
@@ -104,6 +119,11 @@ export class StatsComponent implements OnInit {
   }
 
   onPredictionsFilterChange() {
+    localStorage.setItem(
+      'predictionsFilters',
+      JSON.stringify(this.predictionsFilters)
+    );
+
     this.predictionsService
       .getArrivals(
         this.regionName,
