@@ -43,7 +43,7 @@
       "step1": "Welcome to the Dashboard! Here you can find statistics and predictive models of the province you have chosen or the entire region.",
       "step2": "The dashboard is divided into two sections.<br> The <strong>first</strong> is about statistics: here you will see the graphs of <strong>arrivals</strong> and <strong>attendance</strong>. Arrivals include the number of customers who have arrived and checked in to the accommodation facility. Attendance includes the number of nights spent by customers in the accommodation facility.<br> The <strong>second</strong>  is about predictive models: here you will see the future forecasts of arrivals and attendance. At the top you find the control panel, continue to find out what it contains!",
       "step3": "In the control panel you find <strong>4 filters</strong>: <br> - <strong>Type of tourists</strong>, it concerns their country of residence. You can choose between Italians, foreigners or both. <br> - <strong>Residence structure</strong>, you can choose the accommodation among hotels, other (includes b&b, farmhouses or private) or all. <br> - <strong>Year of the statistics</strong>, it concerns the section Statistics.  You can choose a year in particular from 2008 to 2021. <br> - <strong>Year of the forecast</strong>, it concerns the Forecast section. You can choose a particular year from 2022 to 2032.",
-      "step4": "⚠️Remember that the predictive model is only <strong>accurate for the first 5 years</strong>, later it will be less accurate. <br>Moreover the model does not consider the years 2020 and 2021, in which the COVID-19 has determined an intense bending of the tourist flows in all the national territory. If you prefer to take these years into account, you can select the <strong>check ****</strong>. We advise you not to consider them for greater stability of the model, but the choice is yours!",
+      "step4": "⚠️Remember that the predictive model is only <strong>accurate for the first 5 years</strong>, later it will be less accurate. <br>Moreover the model does not consider the years 2020 and 2021, in which the COVID-19 has determined an intense bending of the tourist flows in all the national territory. If you prefer to take these years into account, you can select the <strong>check</strong> down here. We advise you not to consider them for greater stability of the model, but the choice is yours!",
       "step5": "Do you prefer not to select any filters? As soon as you enter the dashboard you can see in the Statistics section the graphs of all tourists in any accommodation, in the year 2021. <br> In the Forecast section you can see a predictive trend of all tourists in any residence structure from January 2022 to December 2026.",
       "step6": "You are now ready to use Nomad to the fullest. If at any time you need to open the tutorial, you can click on the <strong>question mark</strong> at the top right. Have a nice trip!"
     }
@@ -144,5 +144,6 @@
     "paragraph": "Oops, this page doesn't exist. Click on the compass and go back to the homepage!"
   },
   "Statistiche_relative_a": "Statistics related to",
-  "Previsioni_relative_a": "Forecasts related to"
+  "Previsioni_relative_a": "Forecasts related to",
+  "check": "<strong>Includes COVID-19 years</strong>"
 }

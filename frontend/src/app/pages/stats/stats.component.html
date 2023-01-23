@@ -211,14 +211,14 @@
   </h2>
   <app-content [content]="'prevs'"></app-content>
 
-  <div class="flex gap-3 mx-5 my-3 lg:mx-0">
+  <div class="flex gap-3 mx-5 my-3 lg:mx-0 justify-center items-center">
     <input
       type="checkbox"
       id="covidCheck"
       class="checkbox checkbox-primary"
       [(ngModel)]="covidIncluded"
     />
-    <label for="covidCheck">Includi gli anni del covid</label>
+    <label for="covidCheck" [innerHTML]="'check' | translate" class="text-neutral"></label>
   </div>
 
   <section

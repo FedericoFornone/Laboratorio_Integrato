@@ -43,7 +43,7 @@
       "step1": "Benvenut* nella Dashboard! Qui trovi le statistiche e i modelli predittivi della provincia che hai scelto o dell’intera regione.",
       "step2": "La dashboard è suddivisa in due sezioni.<br> La <strong>prima</strong> riguarda le statistiche: qui visualizzerai i grafici di <strong>arrivi</strong> e <strong>presenze</strong>. Gli arrivi comprendono il numero di clienti arrivati che hanno effettuato il check-in nell’esercizio ricettivo. Le presenze comprendono il numero delle notti trascorse dai clienti nell’esercizio ricettivo.<br> La <strong>seconda</strong> riguarda i modelli predittivi: qui visualizzerai le previsioni future di arrivi e presenze. In alto trovi il pannello di controllo, prosegui per scoprire cosa contiene!",
       "step3": "Nel pannello di controllo trovi <strong>4 filtri</strong> che puoi selezionare: <br>  - <strong>Tipo di turisti</strong>, riguarda il loro Paese di residenza. Puoi scegliere tra italiani, stranieri o entrambi. <br>  - <strong>Struttura di residenza</strong>, puoi scegliere la struttura ricettiva tra Hotel, altre (comprende b&b, agriturismi o privati) o tutte. <br>  - <strong>Anno statistiche</strong>, riguarda la sezione Statistiche.  Puoi scegliere un anno in particolare dal 2008 al 2021. <br>  - <strong>Anno previsioni</strong>, riguarda la sezione Previsioni.  Puoi scegliere un anno in particolare dal 2022 al 2032.",
-      "step4": "⚠️Ricorda che il modello predittivo è accurato <strong>solo per i primi 5 anni</strong>, successivamente sarà meno preciso. <br>Inoltre il modello non considera gli anni 2020 e 2021, in cui il COVID-19 ha determinato un’intensa flessione dei flussi turistici in tutto il territorio nazionale. Se preferisci tenerne conto, puoi selezionare la <strong>spunta ****</strong>. Noi ti consigliamo di non considerarli per una maggiore stabilità del modello, ma la scelta è tua!",
+      "step4": "⚠️Ricorda che il modello predittivo è accurato <strong>solo per i primi 5 anni</strong>, successivamente sarà meno preciso. <br>Inoltre il modello non considera gli anni 2020 e 2021, in cui il COVID-19 ha determinato un’intensa flessione dei flussi turistici in tutto il territorio nazionale. Se preferisci tenerne conto, puoi selezionare la <strong>spunta</strong> che trovi qua sotto. Noi ti consigliamo di non considerarli per una maggiore stabilità del modello, ma la scelta è tua!",
       "step5": "Preferisci non selezionare nessun filtro? Appena entri nella dashboard puoi visualizzare nella sezione Statistiche i grafici relativi a tutti i turisti in qualsiasi struttura ricettiva, nell’anno 2021.<br> Nella sezione Previsioni puoi vedere un andamento predittivo di tutti i turisti in qualsiasi struttura di residenza da Gennaio 2022 a Dicembre 2026.",
       "step6": "Ora sei pront* per utilizzare Nomad al meglio. Se in qualsiasi momento avessi bisogno di aprire il tutorial, puoi cliccare sul <strong>punto interrogativo</strong> in alto a destra. Buon viaggio!"
     }
@@ -146,5 +146,6 @@
     "paragraph": "Ops, la pagina che hai cercato non esiste. Clicca sulla bussola e torna alla homepage!"
   },
   "Statistiche_relative_a": "Statistiche relative a",
-  "Previsioni_relative_a": "Previsioni relative a"
+  "Previsioni_relative_a": "Previsioni relative a",
+  "check": "<strong>Includi gli anni del COVID-19</strong>"
 }
