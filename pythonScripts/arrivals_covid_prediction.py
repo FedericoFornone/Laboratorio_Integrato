@@ -29,14 +29,12 @@ def main(region, infrastructure, residence):
     df.reset_index(inplace=True)
     df = df.drop(['index'], axis=1)
 
-    df_train = df[:-24]
-    df_test = df[-24:]
+    df_train = df
 
-    df_train_attendance = df_train[['Attendance', 'Date']]
-    df_test_attendance = df_test[['Attendance', 'Date']]
+    df_train_arrivals = df_train[['Arrivals','Date']]
 
-    # i 24 mesi di test più i 60 sconosciuti
-    steps = 24 + 120
+    # i 120 sconosciuti
+    steps = 120
 
     # addestramento
     forecaster = ForecasterAutoreg(
@@ -45,9 +43,9 @@ def main(region, infrastructure, residence):
         lags=30  # la finestra temporale che definisce le righe della matrice di feature
     )
 
-    df_train_attendance.index = pd.DatetimeIndex(df_train_attendance.Date, freq='MS')
+    df_train_arrivals.index = pd.DatetimeIndex(df_train_arrivals.Date, freq='MS')
 
-    forecaster.fit(y=df_train_attendance['Attendance'])
+    forecaster.fit(y=df_train_arrivals['Arrivals'])
 
     # predizione
     df_pred = forecaster.predict(steps=steps)
@@ -58,7 +56,7 @@ def main(region, infrastructure, residence):
 
     grid_search = grid_search_forecaster(
         forecaster=forecaster,
-        y=df_train_attendance['Attendance'],
+        y=df_train_arrivals['Arrivals'],
         param_grid=param_grid,
         lags_grid=lags_grid,
         steps=steps,
@@ -73,7 +71,7 @@ def main(region, infrastructure, residence):
                                    transformer_y=StandardScaler(),
                                    lags=20)
 
-    fa_autoreg.fit(y=df_train_attendance['Attendance'])
+    fa_autoreg.fit(y=df_train_arrivals['Arrivals'])
 
     # predizione
     fa_pred = fa_autoreg.predict(steps=steps)
@@ -93,5 +91,5 @@ if __name__ == '__main__':
 # ===================================================================
 # To run the script write in the terminal:
 # !pip install skforecast
-# python attendance_prediction.py 'region' 'infrastructure' 'residence'
+# python arrivals_covid_prediction.py 'region' 'infrastructure' 'residence'
 # ===================================================================

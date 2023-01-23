@@ -29,14 +29,12 @@ def main(region, infrastructure, residence):
     df.reset_index(inplace=True)
     df = df.drop(['index'], axis=1)
 
-    df_train = df[:-24]
-    df_test = df[-24:]
+    df_train = df
 
-    df_train_attendance = df_train[['Attendance', 'Date']]
-    df_test_attendance = df_test[['Attendance', 'Date']]
+    df_train_attendance = df_train[['Attendance','Date']]
 
-    # i 24 mesi di test più i 60 sconosciuti
-    steps = 24 + 120
+    # i 120 sconosciuti
+    steps = 120
 
     # addestramento
     forecaster = ForecasterAutoreg(
@@ -93,5 +91,5 @@ if __name__ == '__main__':
 # ===================================================================
 # To run the script write in the terminal:
 # !pip install skforecast
-# python attendance_prediction.py 'region' 'infrastructure' 'residence'
+# python attendance_covid_prediction.py 'region' 'infrastructure' 'residence'
 # ===================================================================

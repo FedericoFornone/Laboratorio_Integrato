@@ -78,6 +78,8 @@ def main(region, infrastructure, residence):
     # predizione
     fa_pred = fa_autoreg.predict(steps=steps)
 
+    fa_pred[fa_pred < 0] = 0
+
     prediction = fa_pred[-120:]
 
     print('data start')

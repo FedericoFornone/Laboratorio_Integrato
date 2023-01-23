@@ -33,14 +33,29 @@ public class API_frontend {
         return result.toString();
     }
 
-    @GetMapping("/predictions")
-    public static String APIPredictions(@RequestParam(defaultValue = "arrivals") String dataType, @RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(defaultValue = "HOTELLIKE") String infrastructure, @RequestParam(defaultValue = "Italia") String residenceCountry) throws IOException {
+    // this endpoint calls a python script at runtime to generate the predicted values
+    // we originally used this for the frondend directly, but it made loading times extremely small
+    // so we switched to a /predictions endpoint that just fetches data from the DB that has been populated beforehand
+    // we still used this endpoint to automatically populate the DB with DB_populator/predictions.py
+    @GetMapping("/predictionspython")
+    public static String APIPredictions(@RequestParam(defaultValue = "arrivals") String dataType, @RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(defaultValue = "HOTELLIKE") String infrastructure, @RequestParam(defaultValue = "Italia") String residenceCountry, @RequestParam(required = false) String covid) throws IOException {
         String pythonStdOut = new String();
         if (dataType.equals("attendance")) {
-            pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\attendance_prediction.py", region, infrastructure, residenceCountry);
+            if (covid != null && covid.equals("yes")) {
+                pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\attendance_covid_prediction.py", region, infrastructure, residenceCountry);
+            }
+            else {
+                pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\attendance_prediction.py", region, infrastructure, residenceCountry);
+            }
+            
         }
         else { // defaulting to arrivals even is misspelled
-            pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\arrivals_prediction.py", region, infrastructure, residenceCountry);
+            if (covid != null && covid.equals("yes")) {
+                pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\arrivals_covid_prediction.py", region, infrastructure, residenceCountry);
+            }
+            else {
+                pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\arrivals_prediction.py", region, infrastructure, residenceCountry);
+            } 
         }
         // the python standard output also contains a bunch of junk that we don't care about
         // to solve this, there is a print of the "data start" string to indicate that the data we want to collect is about to start
