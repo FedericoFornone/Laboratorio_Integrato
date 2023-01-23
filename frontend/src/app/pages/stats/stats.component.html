@@ -211,6 +211,16 @@
   </h2>
   <app-content [content]="'prevs'"></app-content>
 
+  <div class="flex gap-3 mx-5 my-3 lg:mx-0">
+    <input
+      type="checkbox"
+      id="covidCheck"
+      class="checkbox checkbox-primary"
+      [(ngModel)]="covidIncluded"
+    />
+    <label for="covidCheck">Includi gli anni del covid</label>
+  </div>
+
   <section
     class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
   >

@@ -22,6 +22,7 @@ export class StatsComponent implements OnInit {
   attendancesStatsChart!: ResponseChartData;
   arrivalsPredictionsChart!: ResponseChartData;
   attendancesPredictionsChart!: ResponseChartData;
+  covidIncluded = false;
   mobileCanvas = false;
 
   statisticsFilters: Filters = {
@@ -108,7 +109,8 @@ export class StatsComponent implements OnInit {
         this.regionName,
         this.predictionsFilters.predictionsYear,
         this.predictionsFilters.infrastructureType,
-        this.predictionsFilters.residenceCountry
+        this.predictionsFilters.residenceCountry,
+        this.covidIncluded ? 'yes' : 'no'
       )
       .subscribe((data: any) => (this.arrivalsPredictionsChart = data));
 
@@ -117,7 +119,8 @@ export class StatsComponent implements OnInit {
         this.regionName,
         this.predictionsFilters.predictionsYear,
         this.predictionsFilters.infrastructureType,
-        this.predictionsFilters.residenceCountry
+        this.predictionsFilters.residenceCountry,
+        this.covidIncluded ? 'yes' : 'no'
       )
       .subscribe((data: any) => (this.attendancesPredictionsChart = data));
   }
