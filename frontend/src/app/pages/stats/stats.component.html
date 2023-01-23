@@ -1,14 +1,14 @@
 <main class="container mx-auto">
   <!-- FIXME: breadcrumbs -->
   <h1
-    class="font-bold text-center text-secondary text-xl md:text-2xl mt-36 mb-10"
+    class="mb-10 text-xl font-bold text-center text-secondary md:text-2xl mt-36"
   >
     Dashboard
   </h1>
   <h2
-    class="font-bold text-center text-3xl md:text-4xl lg:text-5xl text-secondary"
+    class="text-3xl font-bold text-center md:text-4xl lg:text-5xl text-secondary"
   >
-  {{ 'Statistiche_relative_a' | translate }}
+    {{ "Statistiche_relative_a" | translate }}
     <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
   </h2>
   <app-content [content]="'stats'"></app-content>
@@ -70,39 +70,67 @@
     class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
   >
     <div class="flex flex-col flex-1 gap-1">
-      <label for="tourists" class="text-sm font-medium" [translate]="'charts.select1.label'"></label>
+      <label
+        for="tourists"
+        class="text-sm font-medium"
+        [translate]="'charts.select1.label'"
+      ></label>
       <select
         class="w-full bg-white select select-bordered"
         id="tourists"
-        [(ngModel)]="residenceCountry"
+        [(ngModel)]="statisticsFilters.residenceCountry"
       >
-        <option selected value="" [translate]="'charts.select1.options.all'"></option>
-        <option value="Italia" [translate]="'charts.select1.options.italy'"></option>
-        <option value="Paesi esteri" [translate]="'charts.select1.options.foreign'"></option>
+        <option
+          selected
+          value=""
+          [translate]="'charts.select1.options.all'"
+        ></option>
+        <option
+          value="Italia"
+          [translate]="'charts.select1.options.italy'"
+        ></option>
+        <option
+          value="Paesi esteri"
+          [translate]="'charts.select1.options.foreign'"
+        ></option>
       </select>
     </div>
     <div class="flex flex-col flex-1 gap-1">
-      <label for="structures" class="text-sm font-medium"
-      [translate]="'charts.select2.label'"></label
-      >
+      <label
+        for="structures"
+        class="text-sm font-medium"
+        [translate]="'charts.select2.label'"
+      ></label>
       <select
         class="w-full bg-white select select-bordered"
         id="structures"
-        [(ngModel)]="infrastructureType"
+        [(ngModel)]="statisticsFilters.infrastructureType"
       >
-        <option selected value="" [translate]="'charts.select2.options.all'"></option>
-        <option value="HOTELLIKE" [translate]="'charts.select2.options.hotel'"></option>
-        <option value="OTHER" [translate]="'charts.select2.options.other'"></option>
+        <option
+          selected
+          value=""
+          [translate]="'charts.select2.options.all'"
+        ></option>
+        <option
+          value="HOTELLIKE"
+          [translate]="'charts.select2.options.hotel'"
+        ></option>
+        <option
+          value="OTHER"
+          [translate]="'charts.select2.options.other'"
+        ></option>
       </select>
     </div>
     <div class="flex flex-col flex-1 gap-1">
-      <label for="statsYear" class="text-sm font-medium"
-      [translate]="'charts.select3.label'"></label
-      >
+      <label
+        for="statsYear"
+        class="text-sm font-medium"
+        [translate]="'charts.select3.label'"
+      ></label>
       <select
         class="w-full bg-white select select-bordered"
         id="statsYear"
-        [(ngModel)]="statisticsYear"
+        [(ngModel)]="statisticsFilters.statisticsYear"
       >
         <option selected value="2021">2021</option>
         <option value="2020">2020</option>
@@ -120,25 +148,12 @@
         <option value="2008">2008</option>
       </select>
     </div>
-    <div class="flex flex-col flex-1 gap-1">
-      <label for="predictionsYear" class="text-sm font-medium"
-      [translate]="'charts.select4.label'"></label
-      >
-      <select
-        class="w-full bg-white select select-bordered"
-        id="predictionsYear"
-        [(ngModel)]="predictionsYear"
-      >
-        <option selected value="2022">2022</option>
-        <option value="2023">2023</option>
-        <option value="2024">2024</option>
-        <option value="2025">2025</option>
-        <option value="2026">2026</option>
-      </select>
-    </div>
-    <button class="md:col-span-2 btn btn-primary" (click)="onFilterChange()" [translate]="'charts.button'">
-    
-    </button>
+
+    <button
+      class="self-end btn btn-primary"
+      (click)="onStatisticsFilterChange()"
+      [translate]="'charts.button'"
+    ></button>
   </section>
 
   <app-responsive-slider>
@@ -189,12 +204,92 @@
   </app-responsive-slider>
 
   <h2
-    class="font-bold text-center text-3xl md:text-4xl lg:text-5xl text-secondary mt-20"
+    class="mt-20 text-3xl font-bold text-center md:text-4xl lg:text-5xl text-secondary"
   >
-  {{ 'Previsioni_relative_a' | translate }}
+    {{ "Previsioni_relative_a" | translate }}
     <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
   </h2>
   <app-content [content]="'prevs'"></app-content>
+
+  <section
+    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
+  >
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="tourists"
+        class="text-sm font-medium"
+        [translate]="'charts.select1.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="tourists"
+        [(ngModel)]="predictionsFilters.residenceCountry"
+      >
+        <option
+          selected
+          value=""
+          [translate]="'charts.select1.options.all'"
+        ></option>
+        <option
+          value="Italia"
+          [translate]="'charts.select1.options.italy'"
+        ></option>
+        <option
+          value="Paesi esteri"
+          [translate]="'charts.select1.options.foreign'"
+        ></option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="structures"
+        class="text-sm font-medium"
+        [translate]="'charts.select2.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="structures"
+        [(ngModel)]="predictionsFilters.infrastructureType"
+      >
+        <option
+          selected
+          value=""
+          [translate]="'charts.select2.options.all'"
+        ></option>
+        <option
+          value="HOTELLIKE"
+          [translate]="'charts.select2.options.hotel'"
+        ></option>
+        <option
+          value="OTHER"
+          [translate]="'charts.select2.options.other'"
+        ></option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="predictionsYear"
+        class="text-sm font-medium"
+        [translate]="'charts.select4.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="predictionsYear"
+        [(ngModel)]="predictionsFilters.predictionsYear"
+      >
+        <option selected value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+      </select>
+    </div>
+    <button
+      class="self-end btn btn-primary"
+      [translate]="'charts.button'"
+    ></button>
+  </section>
+
   <app-responsive-slider>
     <ng-template #slide>
       <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>

@@ -1,8 +1,14 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { TranslatePipe } from '@ngx-translate/core';
 import { ResponseChartData } from 'src/app/models/api.model';
 import { StatsService } from 'src/app/services/stats.service';
+
+interface Filters {
+  residenceCountry: '' | 'Italia' | 'Paesi esteri';
+  infrastructureType: '' | 'HOTELLIKE' | 'OTHER';
+  statisticsYear?: string;
+  predictionsYear?: string;
+}
 
 @Component({
   selector: 'app-stats',
@@ -15,10 +21,17 @@ export class StatsComponent implements OnInit {
   attendancesStatsChart!: ResponseChartData;
   mobileCanvas = false;
 
-  residenceCountry: '' | 'Italia' | 'Paesi esteri' = '';
-  infrastructureType: '' | 'HOTELLIKE' | 'OTHER' = '';
-  statisticsYear = '2021';
-  predictionsYear = '2022';
+  statisticsFilters: Filters = {
+    residenceCountry: '',
+    infrastructureType: '',
+    statisticsYear: '2021',
+  };
+
+  predictionsFilters: Filters = {
+    residenceCountry: '',
+    infrastructureType: '',
+    predictionsYear: '2022',
+  };
 
   constructor(
     private route: ActivatedRoute,
@@ -56,22 +69,22 @@ export class StatsComponent implements OnInit {
     this.tutorialModalOpen = true;
   }
 
-  onFilterChange() {
+  onStatisticsFilterChange() {
     this.statsService
       .getArrivals(
         this.regionName,
-        this.statisticsYear,
-        this.infrastructureType,
-        this.residenceCountry
+        this.statisticsFilters.statisticsYear,
+        this.statisticsFilters.infrastructureType,
+        this.statisticsFilters.residenceCountry
       )
       .subscribe((data: any) => (this.arrivalsStatsChart = data));
 
     this.statsService
       .getAttendances(
         this.regionName,
-        this.statisticsYear,
-        this.infrastructureType,
-        this.residenceCountry
+        this.statisticsFilters.statisticsYear,
+        this.statisticsFilters.infrastructureType,
+        this.statisticsFilters.residenceCountry
       )
       .subscribe((data: any) => (this.attendancesStatsChart = data));
   }
