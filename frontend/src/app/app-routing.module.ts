@@ -6,6 +6,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { ArrivalStatsResolver } from './resolvers/arrivalstats.resolver';
 import { AttendanceStatsResolver } from './resolvers/attendancestats.resolver';
+import { ArrivalPredictionsResolver } from './resolvers/arrivalpredictions.resolver';
+import { AttendancePredictionsResolver } from './resolvers/attendancepredictions.resolver';
 import { RegionResolver } from './resolvers/region.resolver';
 import { WindowSizeResolver } from './resolvers/windowsize.resolver';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -21,8 +23,10 @@ const routes: Routes = [
     path: 'dashboard/stats/:region',
     component: StatsComponent,
     resolve: {
-      arrivals: ArrivalStatsResolver,
-      attendances: AttendanceStatsResolver,
+      arrivalsStats: ArrivalStatsResolver,
+      attendancesStats: AttendanceStatsResolver,
+      arrivalsPredictions: ArrivalPredictionsResolver,
+      attendancesPredictions: AttendancePredictionsResolver,
       region: RegionResolver,
       windowSize: WindowSizeResolver,
     },

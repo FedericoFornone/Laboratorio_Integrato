@@ -6,7 +6,8 @@ export const assembleUrl = (
   region: string,
   date: string,
   infrastructure?: '' | 'HOTELLIKE' | 'OTHER',
-  residenceCountry?: '' | 'Italia' | 'Paesi esteri'
+  residenceCountry?: '' | 'Italia' | 'Paesi esteri',
+  covid?: 'yes' | 'no'
 ) => {
   let url = `http://localhost:7790/${endpoint}?region=${region}&date=${date}&dateType=monthly`;
 
@@ -16,6 +17,10 @@ export const assembleUrl = (
 
   if (residenceCountry) {
     url += '&residenceCountry=' + residenceCountry;
+  }
+
+  if (covid) {
+    url += '&covid=' + covid;
   }
 
   return url;

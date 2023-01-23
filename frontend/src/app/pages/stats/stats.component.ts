@@ -19,6 +19,8 @@ export class StatsComponent implements OnInit {
   tutorialModalOpen = false;
   arrivalsStatsChart!: ResponseChartData;
   attendancesStatsChart!: ResponseChartData;
+  arrivalsPredictionsChart!: ResponseChartData;
+  attendancesPredictionsChart!: ResponseChartData;
   mobileCanvas = false;
 
   statisticsFilters: Filters = {
@@ -50,14 +52,23 @@ export class StatsComponent implements OnInit {
   ngOnInit() {
     this.tutorialModalOpen = localStorage.getItem('statsModalSeen') !== 'true';
 
-    this.route.data.subscribe(
-      ({ arrivals, attendances, region, windowSize }) => {
-        this.arrivalsStatsChart = arrivals;
-        this.attendancesStatsChart = attendances;
-        this.regionName = region;
-        this.makeChartsResponsive(windowSize);
-      }
-    );
+    this.route.data.subscribe((data) => {
+      const {
+        arrivalsStats,
+        attendancesStats,
+        arrivalsPredictions,
+        attendancesPredictions,
+        region,
+        windowSize,
+      } = data;
+
+      this.arrivalsStatsChart = arrivalsStats;
+      this.attendancesStatsChart = attendancesStats;
+      this.arrivalsPredictionsChart = arrivalsPredictions;
+      this.attendancesPredictionsChart = attendancesPredictions;
+      this.regionName = region;
+      this.makeChartsResponsive(windowSize);
+    });
   }
 
   closeModal() {
