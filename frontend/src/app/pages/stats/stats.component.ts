@@ -9,6 +9,7 @@ interface Filters {
   infrastructureType: '' | 'HOTELLIKE' | 'OTHER';
   statisticsYear?: string;
   predictionsYear?: string;
+  covidIncluded?: boolean;
 }
 
 @Component({
@@ -22,7 +23,6 @@ export class StatsComponent implements OnInit {
   attendancesStatsChart!: ResponseChartData;
   arrivalsPredictionsChart!: ResponseChartData;
   attendancesPredictionsChart!: ResponseChartData;
-  covidIncluded = false;
   mobileCanvas = false;
 
   statisticsFilters: Filters = {
@@ -35,6 +35,7 @@ export class StatsComponent implements OnInit {
     residenceCountry: '',
     infrastructureType: '',
     predictionsYear: '2022',
+    covidIncluded: false,
   };
 
   constructor(
@@ -130,7 +131,7 @@ export class StatsComponent implements OnInit {
         this.predictionsFilters.predictionsYear,
         this.predictionsFilters.infrastructureType,
         this.predictionsFilters.residenceCountry,
-        this.covidIncluded ? 'yes' : 'no'
+        this.predictionsFilters.covidIncluded ? 'yes' : 'no'
       )
       .subscribe((data: any) => (this.arrivalsPredictionsChart = data));
 
@@ -140,7 +141,7 @@ export class StatsComponent implements OnInit {
         this.predictionsFilters.predictionsYear,
         this.predictionsFilters.infrastructureType,
         this.predictionsFilters.residenceCountry,
-        this.covidIncluded ? 'yes' : 'no'
+        this.predictionsFilters.covidIncluded ? 'yes' : 'no'
       )
       .subscribe((data: any) => (this.attendancesPredictionsChart = data));
   }

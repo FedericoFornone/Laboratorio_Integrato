@@ -211,14 +211,18 @@
   </h2>
   <app-content [content]="'prevs'"></app-content>
 
-  <div class="flex gap-3 mx-5 my-3 lg:mx-0 justify-center items-center">
+  <div class="flex items-center justify-center gap-3 mx-5 my-3 lg:mx-0">
     <input
       type="checkbox"
       id="covidCheck"
       class="checkbox checkbox-primary"
-      [(ngModel)]="covidIncluded"
+      [(ngModel)]="predictionsFilters.covidIncluded"
     />
-    <label for="covidCheck" [innerHTML]="'check' | translate" class="text-neutral"></label>
+    <label
+      for="covidCheck"
+      [innerHTML]="'check' | translate"
+      class="text-neutral"
+    ></label>
   </div>
 
   <section
