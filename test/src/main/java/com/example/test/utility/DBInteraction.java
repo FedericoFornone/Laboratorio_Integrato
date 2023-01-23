@@ -14,6 +14,7 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import org.hibernate.type.TrueFalseType;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -94,7 +95,7 @@ public class DBInteraction {
             return resultSet;
     }
 
-    public static ResultSet DBSelectFromRegionPredictions(String region, String infrastructure, String residenceCountry, String covid) throws SQLException {
+    public static ResultSet DBSelectFromRegionPredictions(String region, String infrastructure, String residenceCountry, String date, String covid) throws SQLException {
         Connection connection = DriverManager.getConnection("jdbc:mariadb://localhost/region_data","root", "");
 
         // this query has been modified to allow for multiple filters at the same time
@@ -103,8 +104,10 @@ public class DBInteraction {
         int indexOfCovid = 0;
         int indexOfInfrastructure = 0;
         int indexOfResidenceCountry = 0;
+        int indexOfDate = 0;
         boolean isInfrastructurePresent = false;
         boolean isResidenceCountryPresent = false;
+        boolean isDatePresent = false;
 
         // first we have to check if a parameter has been passed and build the query string accordingly
         // since the binding has to be done after setting the prepared statement, we have to memorize the index position here, and bind later 
@@ -120,6 +123,12 @@ public class DBInteraction {
             indexOfResidenceCountry = parameterCount;
             parameterCount++;
         }
+        if (date != null) {
+            query += " AND Date LIKE ?";
+            isDatePresent = true;
+            indexOfDate = parameterCount;
+            parameterCount++;
+        }
         // we add this regardless. we will check the value of the covid parameter later
         query += " AND Covid = ?";
         indexOfCovid = parameterCount;
@@ -133,6 +142,10 @@ public class DBInteraction {
         }
         if (isResidenceCountryPresent) {
             statement.setString(indexOfResidenceCountry, residenceCountry);
+        }
+        if (isDatePresent) {
+            date += "%";
+            statement.setString(indexOfDate, date);               
         }
         if (covid != null && covid.equals("yes")) {
             statement.setString(indexOfCovid, "yes");

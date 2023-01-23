@@ -87,8 +87,8 @@ public class API_frontend {
     }
 
     @GetMapping("/predictions")
-    public static String APIPredictions(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry, @RequestParam(required = false) String covid) throws SQLException {
-        ResultSet resultSet = DBInteraction.DBSelectFromRegionPredictions(region, infrastructure, residenceCountry, covid);
+    public static String APIPredictions(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry, @RequestParam(required = false) String date, @RequestParam(required = false) String covid) throws SQLException {
+        ResultSet resultSet = DBInteraction.DBSelectFromRegionPredictions(region, infrastructure, residenceCountry, date, covid);
         JSONArray result = ConvertToJSON.ResultSetToJSON(resultSet);
         return result.toString();
     }
