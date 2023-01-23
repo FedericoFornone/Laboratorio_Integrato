@@ -282,20 +282,64 @@
         <option value="2024">2024</option>
         <option value="2025">2025</option>
         <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+        <option value="2031">2031</option>
       </select>
     </div>
     <button
       class="self-end btn btn-primary"
       [translate]="'charts.button'"
+      (click)="onPredictionsFilterChange()"
     ></button>
   </section>
 
   <app-responsive-slider>
     <ng-template #slide>
-      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsPredictionsChart.chartData"
+          [options]="arrivalsPredictionsChart.options"
+          [legend]="arrivalsPredictionsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsPredictionsChart.chartData"
+          [options]="arrivalsPredictionsChart.mobileOptions"
+          [legend]="arrivalsPredictionsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
     </ng-template>
     <ng-template #slide>
-      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white"></div>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesPredictionsChart.chartData"
+          [options]="attendancesPredictionsChart.options"
+          [legend]="attendancesPredictionsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesPredictionsChart.chartData"
+          [options]="attendancesPredictionsChart.mobileOptions"
+          [legend]="attendancesPredictionsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
     </ng-template>
   </app-responsive-slider>
 </main>

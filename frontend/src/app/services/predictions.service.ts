@@ -12,7 +12,7 @@ export class PredictionsService {
 
   getArrivals(
     region: string,
-    date: string = '2021',
+    date: string = '2022',
     infrastructure?: '' | 'HOTELLIKE' | 'OTHER',
     residenceCountry?: '' | 'Italia' | 'Paesi esteri',
     covid: 'yes' | 'no' = 'no'
@@ -44,7 +44,7 @@ export class PredictionsService {
 
   getAttendances(
     region: string,
-    date: string = '2021',
+    date: string = '2022',
     infrastructure?: '' | 'HOTELLIKE' | 'OTHER',
     residenceCountry?: '' | 'Italia' | 'Paesi esteri',
     covid: 'yes' | 'no' = 'no'
@@ -57,6 +57,8 @@ export class PredictionsService {
       residenceCountry,
       covid
     );
+
+    console.log(url);
 
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {

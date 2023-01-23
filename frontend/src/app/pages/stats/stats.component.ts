@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ResponseChartData } from 'src/app/models/api.model';
 import { StatsService } from 'src/app/services/stats.service';
+import { PredictionsService } from 'src/app/services/predictions.service';
 
 interface Filters {
   residenceCountry: '' | 'Italia' | 'Paesi esteri';
@@ -37,7 +38,8 @@ export class StatsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private statsService: StatsService
+    private statsService: StatsService,
+    private predictionsService: PredictionsService
   ) {}
 
   @HostListener('window:resize', ['$event'])
@@ -98,5 +100,25 @@ export class StatsComponent implements OnInit {
         this.statisticsFilters.residenceCountry
       )
       .subscribe((data: any) => (this.attendancesStatsChart = data));
+  }
+
+  onPredictionsFilterChange() {
+    this.predictionsService
+      .getArrivals(
+        this.regionName,
+        this.predictionsFilters.predictionsYear,
+        this.predictionsFilters.infrastructureType,
+        this.predictionsFilters.residenceCountry
+      )
+      .subscribe((data: any) => (this.arrivalsPredictionsChart = data));
+
+    this.predictionsService
+      .getAttendances(
+        this.regionName,
+        this.predictionsFilters.predictionsYear,
+        this.predictionsFilters.infrastructureType,
+        this.predictionsFilters.residenceCountry
+      )
+      .subscribe((data: any) => (this.attendancesPredictionsChart = data));
   }
 }
