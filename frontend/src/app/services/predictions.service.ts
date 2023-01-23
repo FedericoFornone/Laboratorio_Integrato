@@ -26,8 +26,6 @@ export class PredictionsService {
       covid
     );
 
-    console.log(url);
-
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {
         const arrivals = reduceByDate(data, 'Arrivals');
