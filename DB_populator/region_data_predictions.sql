@@ -1,4 +1,4 @@
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES 
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES 
 ('Abruzzo', 'HOTELLIKE', 'Italia', 'no', '2022-01-01', 66133, 143623),
 ('Abruzzo', 'HOTELLIKE', 'Italia', 'no', '2022-02-01', 66769, 155225),
 ('Abruzzo', 'HOTELLIKE', 'Italia', 'no', '2022-03-01', 61384, 137851),

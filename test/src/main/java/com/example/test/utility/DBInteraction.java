@@ -27,7 +27,7 @@ public class DBInteraction {
             final int dateYearlyLength = 4;
 
             // this query has been modified to allow for multiple filters at the same time
-            String query = "SELECT * FROM Abruzzo WHERE Region = ?";
+            String query = "SELECT * FROM abruzzo WHERE Region = ?";
             int parameterCount = 2;
             int indexOfDate = 0;
             int indexOfInfrastructure = 0;
@@ -93,4 +93,54 @@ public class DBInteraction {
             ResultSet resultSet = statement.executeQuery();
             return resultSet;
     }
+
+    public static ResultSet DBSelectFromRegionPredictions(String region, String infrastructure, String residenceCountry, String covid) throws SQLException {
+        Connection connection = DriverManager.getConnection("jdbc:mariadb://localhost/region_data","root", "");
+
+        // this query has been modified to allow for multiple filters at the same time
+        String query = "SELECT * FROM abruzzo_predictions WHERE Region = ?";
+        int parameterCount = 2;
+        int indexOfCovid = 0;
+        int indexOfInfrastructure = 0;
+        int indexOfResidenceCountry = 0;
+        boolean isInfrastructurePresent = false;
+        boolean isResidenceCountryPresent = false;
+
+        // first we have to check if a parameter has been passed and build the query string accordingly
+        // since the binding has to be done after setting the prepared statement, we have to memorize the index position here, and bind later 
+        if (infrastructure != null) {
+            query += " AND Infrastructure = ?";
+            isInfrastructurePresent = true;
+            indexOfInfrastructure = parameterCount;
+            parameterCount++;
+        }
+        if (residenceCountry != null) {
+            query += " AND ResidenceCountry = ?";
+            isResidenceCountryPresent = true;
+            indexOfResidenceCountry = parameterCount;
+            parameterCount++;
+        }
+        // we add this regardless. we will check the value of the covid parameter later
+        query += " AND Covid = ?";
+        indexOfCovid = parameterCount;
+        parameterCount++;
+
+        PreparedStatement statement = connection.prepareStatement(query);
+        statement.setString(1, region);
+        // bind everything that is present
+        if (isInfrastructurePresent) {
+            statement.setString(indexOfInfrastructure, infrastructure);
+        }
+        if (isResidenceCountryPresent) {
+            statement.setString(indexOfResidenceCountry, residenceCountry);
+        }
+        if (covid != null && covid.equals("yes")) {
+            statement.setString(indexOfCovid, "yes");
+        }
+        else {
+            statement.setString(indexOfCovid, "no");
+        }
+        ResultSet resultSet = statement.executeQuery();
+        return resultSet;
+}
 }

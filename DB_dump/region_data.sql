@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2023 at 01:38 PM
+-- Generation Time: Jan 23, 2023 at 02:17 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -3696,7 +3696,7 @@ CREATE TABLE `abruzzo_predictions` (
   `Region` varchar(50) NOT NULL,
   `Infrastructure` varchar(50) NOT NULL,
   `ResidenceCountry` varchar(50) NOT NULL,
-  `Covid?` varchar(5) NOT NULL,
+  `Covid` varchar(5) NOT NULL,
   `Date` varchar(50) NOT NULL,
   `Arrivals` int(11) NOT NULL,
   `Attendance` int(11) NOT NULL
@@ -3706,7 +3706,7 @@ CREATE TABLE `abruzzo_predictions` (
 -- Dumping data for table `abruzzo_predictions`
 --
 
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES
 ('Abruzzo', 'HOTELLIKE', 'Italia', 'no', '2022-01-01', 66133, 143623),
 ('Abruzzo', 'HOTELLIKE', 'Italia', 'no', '2022-02-01', 66769, 155225),
 ('Abruzzo', 'HOTELLIKE', 'Italia', 'no', '2022-03-01', 61384, 137851),
@@ -4429,7 +4429,7 @@ INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry
 ('Abruzzo', 'OTHER', 'Italia', 'yes', '2031-12-01', 625, 24554),
 ('Abruzzo', 'OTHER', 'Paesi esteri', 'no', '2022-01-01', 147, 4938),
 ('Abruzzo', 'OTHER', 'Paesi esteri', 'no', '2022-02-01', 5, 5781);
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES
 ('Abruzzo', 'OTHER', 'Paesi esteri', 'no', '2022-03-01', 206, 5573),
 ('Abruzzo', 'OTHER', 'Paesi esteri', 'no', '2022-04-01', 1976, 8783),
 ('Abruzzo', 'OTHER', 'Paesi esteri', 'no', '2022-05-01', 6170, 27016),
@@ -5151,7 +5151,7 @@ INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry
 ('Chieti', 'OTHER', 'Italia', 'no', '2022-01-01', 1141, 7335),
 ('Chieti', 'OTHER', 'Italia', 'no', '2022-02-01', 634, 8269),
 ('Chieti', 'OTHER', 'Italia', 'no', '2022-03-01', 1080, 10005);
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES
 ('Chieti', 'OTHER', 'Italia', 'no', '2022-04-01', 3910, 14039),
 ('Chieti', 'OTHER', 'Italia', 'no', '2022-05-01', 3244, 15178),
 ('Chieti', 'OTHER', 'Italia', 'no', '2022-06-01', 10282, 50399),
@@ -5918,7 +5918,7 @@ INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry
 ('Teramo', 'HOTELLIKE', 'Paesi esteri', 'no', '2025-11-01', 711, 3689),
 ('Teramo', 'HOTELLIKE', 'Paesi esteri', 'no', '2025-12-01', 594, 4799),
 ('Teramo', 'HOTELLIKE', 'Paesi esteri', 'no', '2026-01-01', 550, 6373);
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES
 ('Teramo', 'HOTELLIKE', 'Paesi esteri', 'no', '2026-02-01', 597, 5761),
 ('Teramo', 'HOTELLIKE', 'Paesi esteri', 'no', '2026-03-01', 640, 4861),
 ('Teramo', 'HOTELLIKE', 'Paesi esteri', 'no', '2026-04-01', 2167, 8575),
@@ -6664,7 +6664,7 @@ INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry
 ('Pescara', 'HOTELLIKE', 'Italia', 'no', '2027-12-01', 18759, 37856),
 ('Pescara', 'HOTELLIKE', 'Italia', 'no', '2028-01-01', 14421, 24334),
 ('Pescara', 'HOTELLIKE', 'Italia', 'no', '2028-02-01', 11604, 15237);
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES
 ('Pescara', 'HOTELLIKE', 'Italia', 'no', '2028-03-01', 16384, 33698),
 ('Pescara', 'HOTELLIKE', 'Italia', 'no', '2028-04-01', 24312, 51355),
 ('Pescara', 'HOTELLIKE', 'Italia', 'no', '2028-05-01', 27109, 39747),
@@ -7404,7 +7404,7 @@ INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry
 ('Pescara', 'OTHER', 'Paesi esteri', 'no', '2029-07-01', 2555, 4367),
 ('Pescara', 'OTHER', 'Paesi esteri', 'no', '2029-08-01', 2284, 3885),
 ('Pescara', 'OTHER', 'Paesi esteri', 'no', '2029-09-01', 1672, 2652);
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES
 ('Pescara', 'OTHER', 'Paesi esteri', 'no', '2029-10-01', 905, 1397),
 ('Pescara', 'OTHER', 'Paesi esteri', 'no', '2029-11-01', 218, 565),
 ('Pescara', 'OTHER', 'Paesi esteri', 'no', '2029-12-01', 0, 225),
@@ -8113,7 +8113,7 @@ INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry
 ('L\'Aquila', 'OTHER', 'Italia', 'no', '2028-07-01', 6428, 20644),
 ('L\'Aquila', 'OTHER', 'Italia', 'no', '2028-08-01', 19372, 48744),
 ('L\'Aquila', 'OTHER', 'Italia', 'no', '2028-09-01', 2697, 10532);
-INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES
+INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES
 ('L\'Aquila', 'OTHER', 'Italia', 'no', '2028-10-01', 909, 4943),
 ('L\'Aquila', 'OTHER', 'Italia', 'no', '2028-11-01', 1691, 4957),
 ('L\'Aquila', 'OTHER', 'Italia', 'no', '2028-12-01', 3293, 8279),

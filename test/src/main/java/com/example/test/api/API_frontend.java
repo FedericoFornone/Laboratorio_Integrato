@@ -38,9 +38,9 @@ public class API_frontend {
     // so we switched to a /predictions endpoint that just fetches data from the DB that has been populated beforehand
     // we still used this endpoint to automatically populate the DB with DB_populator/predictions.py
     @GetMapping("/predictionspython")
-    public static String APIPredictions(@RequestParam(defaultValue = "arrivals") String dataType, @RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(defaultValue = "HOTELLIKE") String infrastructure, @RequestParam(defaultValue = "Italia") String residenceCountry, @RequestParam(required = false) String covid) throws IOException {
+    public static String APIPredictionsPython(@RequestParam(required = false) String dataType, @RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(defaultValue = "HOTELLIKE") String infrastructure, @RequestParam(defaultValue = "Italia") String residenceCountry, @RequestParam(required = false) String covid) throws IOException {
         String pythonStdOut = new String();
-        if (dataType.equals("attendance")) {
+        if (dataType != null && dataType.equals("attendance")) {
             if (covid != null && covid.equals("yes")) {
                 pythonStdOut = ExecutePythonAndCaptureOutput.ExecutePythonWithParameters("python", "pythonScripts\\attendance_covid_prediction.py", region, infrastructure, residenceCountry);
             }
@@ -84,6 +84,13 @@ public class API_frontend {
         // this does mean that results are effectively rounded down
         result = result.replaceAll("(\\.)(.*?)(?=,|})", "");
         return result;
+    }
+
+    @GetMapping("/predictions")
+    public static String APIPredictions(@RequestParam(defaultValue = "Abruzzo") String region, @RequestParam(required = false) String infrastructure, @RequestParam(required = false) String residenceCountry, @RequestParam(required = false) String covid) throws SQLException {
+        ResultSet resultSet = DBInteraction.DBSelectFromRegionPredictions(region, infrastructure, residenceCountry, covid);
+        JSONArray result = ConvertToJSON.ResultSetToJSON(resultSet);
+        return result.toString();
     }
  
 }

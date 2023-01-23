@@ -8,7 +8,7 @@ import requests
 
 url = 'http://localhost:7790/predictionspython'
 
-queryString = "INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid?`, `Date`, `Arrivals`, `Attendance`) VALUES "
+queryString = "INSERT INTO `abruzzo_predictions` (`Region`, `Infrastructure`, `ResidenceCountry`, `Covid`, `Date`, `Arrivals`, `Attendance`) VALUES "
 
 regionList = ['Abruzzo', 'Chieti', 'Teramo', 'Pescara', 'L\'Aquila']
 infrastructureList = ['HOTELLIKE', 'OTHER']
@@ -31,7 +31,7 @@ for region in regionList:
                     # prepared statements are technically cleaner then manually hacking together a query string like this and replacing the '
                     # but since this was a one-time operation performed by a team member, i didn't mind a quick and dirty solution
                     queryString += "\n('" + region.replace("'", "''") + "', '" + infrastructure + "', '" + residenceCountry + "', '" + covid + "', '" + row + "', " + str(arrivalsJson[row]) + ", " + str(attendanceJson[row]) + "),"
-                    print(region + ", " + infrastructure + ", " + residenceCountry + ", " + covid + ", appended. " + str(progressCounter) + "/40 done.")
+                print(region + ", " + infrastructure + ", " + residenceCountry + ", " + covid + ", appended. " + str(progressCounter) + "/40 done.")
                 # :)
                 progressCounter-=-1
                 
