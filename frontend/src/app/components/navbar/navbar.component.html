@@ -37,8 +37,11 @@
         <li><a class="w-16" [routerLink]="'/home/'">Home</a></li>
         <li><a class="w-24" [routerLink]="'/dashboard/'">Dashboard</a></li>
         <li><a class="w-16" [routerLink]="'/about/'">About</a></li>
-        <li><button (click)="changeLanguage('it')">IT</button></li>
-        <li><button (click)="changeLanguage('en')">EN</button></li>
+        <li>
+          <select class="bg-base-100 w-[70px]" [(ngModel)]="language" (change)="changeLanguage(language)">
+            <option *ngFor="let lang of langs" [ngValue]="lang">{{lang.toUpperCase()}}</option>
+          </select>
+        </li>
         <li>
           <label class="swap swap-rotate">
 
@@ -61,8 +64,11 @@
       <li class="mr-10"><a [routerLink]="'/home/'">Home</a></li>
       <li class="mr-10"><a [routerLink]="'/dashboard/'">Dashboard</a></li>
       <li class="mr-10"><a [routerLink]="'/about/'">About</a></li>
-      <li><button (click)="changeLanguage('it')">IT</button></li>
-      <li class="mr-10"><button (click)="changeLanguage('en')">EN</button></li>
+      <li class="mr-5">
+        <select class="bg-base-100 w-[70px]" [(ngModel)]="language" (change)="changeLanguage(language)">
+        <option *ngFor="let lang of langs" [ngValue]="lang">{{lang.toUpperCase()}}</option>
+      </select>
+      </li>
       <li>
         <label class="swap swap-rotate">
 

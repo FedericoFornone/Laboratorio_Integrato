@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -8,9 +8,16 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['../navbar/navbar.component.scss'],
 })
 export class NavbarComponent {
+  language:string = "";
+  langs:string[] = ['it', 'en'];
+
   @Output() themeChanged = new EventEmitter<boolean>();
   darkMode: boolean = false;
   constructor(public router: Router, private translate: TranslateService) {}
+
+  ngOnInit(): void {
+    this.language = "it";
+  }
 
 
   /**
