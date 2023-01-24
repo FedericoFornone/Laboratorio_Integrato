@@ -2,28 +2,42 @@
   <div class="container px-5 my-10 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <p
-        class="text-neutral text-lg lg:text-xl max-w-[100ch] w-[90%] lg:w-auto m-auto text-justify"
+        class="text-neutral text-lg lg:text-2xl max-w-[100ch] w-[90%] lg:w-auto m-auto text-justify"
         [translate]="content + '.subtitle'"
       ></p>
     </div>
     <div class="flex flex-wrap w-[90%] m-auto">
-      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-neutral border-opacity-60 xl:border-0">
-        <p class="leading-relaxed text-neutral mb-4 text-lg text-justify" [innerHTML]="content + '.section1' | translate"></p>
+      <div
+        class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-neutral border-opacity-60 xl:border-0"
+      >
+        <p
+          class="leading-relaxed text-neutral mb-4 text-lg lg:text-xl text-justify"
+          [innerHTML]="content + '.section1' | translate"
+        ></p>
       </div>
       <div
         class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-neutral border-opacity-60"
       >
-        <p class="leading-relaxed text-neutral mb-4 text-lg text-justify" [innerHTML]="content + '.section2' | translate"></p>
+        <p
+          class="leading-relaxed text-neutral mb-4 text-lg lg:text-xl text-justify"
+          [innerHTML]="content + '.section2' | translate"
+        ></p>
       </div>
       <div
         class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-neutral border-opacity-60"
       >
-        <p class="leading-relaxed text-neutral mb-4 text-lg text-justify" [innerHTML]="content + '.section3' | translate"></p>
+        <p
+          class="leading-relaxed text-neutral mb-4 text-lg lg:text-xl text-justify"
+          [innerHTML]="content + '.section3' | translate"
+        ></p>
       </div>
       <div
         class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-neutral border-opacity-60"
       >
-        <p class="leading-relaxed text-neutral mb-4 text-lg text-justify" [innerHTML]="content + '.section4' | translate"></p>
+        <p
+          class="leading-relaxed text-neutral mb-4 text-lg lg:text-xl text-justify"
+          [innerHTML]="content + '.section4' | translate"
+        ></p>
       </div>
     </div>
   </div>

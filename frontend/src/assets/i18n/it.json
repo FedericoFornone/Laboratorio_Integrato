@@ -10,7 +10,7 @@
       "label": "Scopri di più"
     },
     "section3": {
-      "title": "Titolo",
+      "title": "TItolo",
       "paragraph": "Abbiamo progettato Nomad a partire da un'idea: guidare l'utente in un viaggio per comprendere al meglio i dati dei flussi turistici in Abruzzo, rendendo la sua esperienza interattiva e piacevole.",
       "div1": {
         "title": "User friendly",
@@ -22,7 +22,7 @@
       },
       "div3": {
         "title": "Performante",
-        "paragraph": "Nonostante la grande mole di dati presi in analisi, abbiamo attuato una serie di ottimizzazioni che hanno reso Nomad performante ed efficace. Tutto ciò è stato possibile anche grazie all'utilizzo di tecnologie all'avanguardia, come il modello di machine learning per calcolare le previsioni."
+        "paragraph": "Nonostante la grande mole di dati presi in analisi, abbiamo attuato una serie di ottimizzazioni che hanno reso Nomad performante ed efficace, anche grazie all'utilizzo di tecnologie all'avanguardia, come il modello di machine learning per calcolare le previsioni."
       }
     }
   },
@@ -89,7 +89,7 @@
   "prevs": {
     "subtitle": "Qui trovi tutte le previsioni relative al territorio che hai scelto. Prima di iniziare, alcune informazioni importanti:",
     "section1": "Il modello addestrato fornisce una previsione <strong>da Gennaio 2022 a Dicembre 2031</strong>. Dopo i primi cinque anni non possiamo garantire una precisione al 100%. Più andrai avanti negli anni, <strong>meno i dati saranno accurati</strong>.",
-    "section2": "Il modello non considera gli anni 2020 e 2021, in cui il COVID-19 ha determinato un’intensa flessione dei flussi turistici. Se preferisci tenerne conto, puoi selezionare la <strong>spunta  ****</strong>. Noi ti consigliamo di non considerarli per una maggiore stabilità del modello, ma la scelta è tua!",
+    "section2": "Il modello non considera gli anni 2020 e 2021, in cui il COVID-19 ha determinato un’intensa flessione dei flussi turistici. Se preferisci tenerne conto, puoi selezionare la <strong>spunta</strong> che trovi qua sotto. Noi ti consigliamo di non considerarli per una maggiore stabilità del modello, ma la scelta è tua!",
     "section3": "Puoi selezionare uno o più <strong>filtri</strong> per vagliare la ricerca in base ad anno, struttura ricettiva, o residenza dei turisti. Se non selezioni nulla, vedrai il modello predittivo di tutti i turisti in qualsiasi struttura di residenza da Gennaio 2022 a Dicembre 2026.",
     "section4": "E’ la prima volta che utilizzi Nomad? Apri il <strong>tutorial</strong> e scopri tutte le funzionalità della dashboard. Troverai anche una spiegazione dettagliata del <strong>pannello di controllo</strong>."
   },
@@ -147,5 +147,5 @@
   },
   "Statistiche_relative_a": "Statistiche relative a",
   "Previsioni_relative_a": "Previsioni relative a",
-  "check": "<strong>Includi gli anni del COVID-19</strong>"
+  "check": "<strong>Includi gli anni del COVID</strong>"
 }

@@ -88,7 +88,7 @@
   "prevs": {
     "subtitle": "Here you can find all the forecasts related to the territory you have chosen. Before starting, some important information:",
     "section1": "The trained model provides a forecast <strong>from January 2022 to December 2031</strong>. After the first five years we cannot guarantee 100% accuracy. The more you go over the years, the <strong>less accurate the data will be</strong>.",
-    "section2": "The model does not consider the years 2020 and 2021, in which COVID-19 has determined an intense bending of the tourist flows. If you prefer to consider these years, you can select the <strong>checkbox  ****</strong>. We advise you not to consider them for greater stability of the model, but the choice is yours!",
+    "section2": "The model does not consider the years 2020 and 2021, in which COVID-19 has determined an intense bending of the tourist flows. If you prefer to consider these years, you can select the <strong>checkbox</strong> down here. We advise you not to consider them for greater stability of the model, but the choice is yours!",
     "section3": "You can select one or more <strong>filters</strong> to search by year, accommodation, or tourist residence. If you do not select anything, you will see the predictive model of all tourists in any residence structure from January 2022 to December 2026.",
     "section4": "Is this your first time using Nomad? Follow the <strong>tutorial</strong> and discover all the features of the dashboard. You will also find a detailed explanation of the <strong>control panel</strong>."
   },
@@ -145,5 +145,5 @@
   },
   "Statistiche_relative_a": "Statistics related to",
   "Previsioni_relative_a": "Forecasts related to",
-  "check": "<strong>Includes COVID-19 years</strong>"
+  "check": "<strong>Includes COVID years</strong>"
 }

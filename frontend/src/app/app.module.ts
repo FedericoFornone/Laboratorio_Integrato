@@ -23,6 +23,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { MultistepModalComponent } from './components/multistep-modal/multistep-modal.component';
 import { ContentComponent } from './components/content/content.component';
 
+import { BlockUIModule } from 'ng-block-ui';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +55,7 @@ import { ContentComponent } from './components/content/content.component';
       },
       defaultLanguage: 'it',
     }),
+    BlockUIModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
