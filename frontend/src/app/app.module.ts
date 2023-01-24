@@ -25,6 +25,7 @@ import { MultistepModalComponent } from './components/multistep-modal/multistep-
 import { ContentComponent } from './components/content/content.component';
 
 import { BlockUIModule } from 'ng-block-ui';
+import { BlockUIHttpModule } from 'ng-block-ui/http';
 
 @NgModule({
   declarations: [
@@ -56,8 +57,9 @@ import { BlockUIModule } from 'ng-block-ui';
       },
       defaultLanguage: 'it',
     }),
-    NgSelectModule
-    BlockUIModule.forRoot()
+    NgSelectModule,
+    //BlockUIModule.forRoot(),
+    //BlockUIHttpModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
