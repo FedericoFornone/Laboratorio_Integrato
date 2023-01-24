@@ -12,10 +12,11 @@ export class NavbarComponent {
   darkMode: boolean = false;
   constructor(public router: Router, private translate: TranslateService) {}
 
-  ngOnInit():void {
-    this.translate.use(localStorage.getItem("language") || "it");
+  ngOnInit(): void {
+    this.translate.use(localStorage.getItem('language') || 'it');
+    this.darkMode = localStorage.getItem('theme') === 'dark';
+    this.themeChanged.emit(this.darkMode);
   }
-
 
   /**
    * Function that changes the language of the app and
@@ -27,11 +28,11 @@ export class NavbarComponent {
     this.translate.use(language);
     //change the 'lang' attribute
     document.documentElement.lang = language;
-    localStorage.setItem("language", language);
+    localStorage.setItem('language', language);
   }
   changeTheme() {
     this.darkMode = !this.darkMode;
+    localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
     this.themeChanged.emit(this.darkMode);
   }
-
 }

@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  darkMode: boolean | undefined;
+  dataTheme: 'nomad-light' | 'nomad-dark' = 'nomad-light';
 
-  updateTheme(darkMode: boolean) {
-    this.darkMode = darkMode;
+  updateTheme(event: boolean) {
+    this.dataTheme = event ? 'nomad-dark' : 'nomad-light';
   }
 }
