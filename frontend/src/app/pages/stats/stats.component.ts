@@ -56,15 +56,11 @@ export class StatsComponent implements OnInit {
   ngOnInit() {
     this.tutorialModalOpen = localStorage.getItem('statsModalSeen') !== 'true';
 
-    const statisticsFilters = localStorage.getItem('statisticsFilters');
-    if (statisticsFilters) {
-      this.statisticsFilters = JSON.parse(statisticsFilters);
-    }
-
-    const predictionsFilters = localStorage.getItem('predictionsFilters');
-    if (predictionsFilters) {
-      this.predictionsFilters = JSON.parse(predictionsFilters);
-    }
+    this.statisticsFilters =
+      JSON.parse(localStorage.getItem('statisticsFilters')!) || ({} as Filters);
+    this.predictionsFilters =
+      JSON.parse(localStorage.getItem('predictionsFilters')!) ||
+      ({} as Filters);
 
     this.route.data.subscribe((data) => {
       const {
@@ -83,6 +79,16 @@ export class StatsComponent implements OnInit {
       this.regionName = region;
       this.makeChartsResponsive(windowSize);
     });
+
+    window.addEventListener('languageChanged', () => {
+      this.updateStatisticsCharts();
+      this.updatePredictionsCharts();
+    });
+
+    window.addEventListener('themeChanged', () => {
+      this.updateStatisticsCharts();
+      this.updatePredictionsCharts();
+    });
   }
 
   closeModal() {
@@ -100,6 +106,19 @@ export class StatsComponent implements OnInit {
       JSON.stringify(this.statisticsFilters)
     );
 
+    this.updateStatisticsCharts();
+  }
+
+  onPredictionsFilterChange() {
+    localStorage.setItem(
+      'predictionsFilters',
+      JSON.stringify(this.predictionsFilters)
+    );
+
+    this.updatePredictionsCharts();
+  }
+
+  updateStatisticsCharts() {
     this.statsService
       .getArrivals(
         this.regionName,
@@ -119,12 +138,7 @@ export class StatsComponent implements OnInit {
       .subscribe((data: any) => (this.attendancesStatsChart = data));
   }
 
-  onPredictionsFilterChange() {
-    localStorage.setItem(
-      'predictionsFilters',
-      JSON.stringify(this.predictionsFilters)
-    );
-
+  updatePredictionsCharts() {
     this.predictionsService
       .getArrivals(
         this.regionName,
