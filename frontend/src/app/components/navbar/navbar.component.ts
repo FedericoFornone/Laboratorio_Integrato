@@ -7,9 +7,9 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: '../navbar/navbar.component.html',
   styleUrls: ['../navbar/navbar.component.scss'],
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   @Output() themeChanged = new EventEmitter<boolean>();
-  darkMode: boolean = false;
+  darkMode!: boolean;
   constructor(public router: Router, private translate: TranslateService) {}
 
   ngOnInit(): void {

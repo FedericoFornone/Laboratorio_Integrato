@@ -82,9 +82,7 @@
 
             <!-- sun icon -->
             <svg
-              class="w-5 h-5 fill-current"
-              [class.swap-on]="darkMode"
-              [class.swap-off]="!darkMode"
+              class="w-5 h-5 fill-current swap-on"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -95,9 +93,7 @@
 
             <!-- moon icon -->
             <svg
-              class="w-5 h-5 fill-current"
-              [class.swap-on]="!darkMode"
-              [class.swap-off]="darkMode"
+              class="w-5 h-5 fill-current swap-off"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -110,7 +106,7 @@
       </ul>
     </div>
   </div>
-  <div class="hidden navbar-end lg:flex">
+  <div class="hidden navbar-end lg:flex lg:min-w-[40rem]">
     <ul class="px-1 text-lg menu menu-horizontal">
       <div *ngIf="router.url.includes('home'); else homeNotSelected">
         <li class="mr-10 mt-[3px] pt-1 pb-1 bg-primary rounded">
