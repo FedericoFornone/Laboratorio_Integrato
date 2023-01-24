@@ -88,3 +88,7 @@ export const generateChartData = (
     legend: barChartLegend,
   };
 };
+
+export const getSelectedLanguage = () => {
+  return localStorage.getItem('language') || 'it';
+};
