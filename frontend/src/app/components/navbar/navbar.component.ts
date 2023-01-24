@@ -8,15 +8,12 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['../navbar/navbar.component.scss'],
 })
 export class NavbarComponent {
-  language:string = "";
-  langs:string[] = ['it', 'en'];
-
   @Output() themeChanged = new EventEmitter<boolean>();
   darkMode: boolean = false;
   constructor(public router: Router, private translate: TranslateService) {}
 
-  ngOnInit(): void {
-    this.language = "it";
+  ngOnInit():void {
+    this.translate.use(localStorage.getItem("language") || "it");
   }
 
 
@@ -30,6 +27,7 @@ export class NavbarComponent {
     this.translate.use(language);
     //change the 'lang' attribute
     document.documentElement.lang = language;
+    localStorage.setItem("language", language);
   }
   changeTheme() {
     this.darkMode = !this.darkMode;
