@@ -1,5 +1,5 @@
-li>a {
-  color: #2F4858;
+li {
+  @apply text-secondary;
 }
 
 li>a:active {
@@ -9,4 +9,24 @@ li>a:active {
 
 .menu {
   right: 10px;
+}
+
+label>input {
+  display: none;
+  visibility: hidden;
+}
+
+select {
+  border-style: none;
+}
+
+select:hover {
+  background-color: rgba(172, 170, 170, 0.263);
+  border-style: none;
+}
+
+select:active {
+  color: white;
+  background-color: #E70B67;
+  border-style: none;
 }

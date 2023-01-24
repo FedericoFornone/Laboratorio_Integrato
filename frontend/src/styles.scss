@@ -15,7 +15,7 @@
   left: -15rem;
   width: 1000vw;
   height: 100%;
-  background: #f1cfdd;
+  @apply bg-accent;
   border-radius: 1000px 0 0 1000px;
 }
 

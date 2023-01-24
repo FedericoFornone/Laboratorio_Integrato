@@ -13,7 +13,7 @@
       class="flex items-center tooltip tooltip-left tooltip-open tooltip-primary"
       data-tip="Tutorial"
     >
-      <button (click)="openModal()">
+      <button class="text-neutral" (click)="openModal()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -35,6 +35,7 @@
   <app-multistep-modal
     [modalOpen]="tutorialModalOpen"
     (closeModal)="closeModal()"
+    class="text-neutral"
   >
     <ng-template #step>
       <h3 class="text-lg font-bold">Step 1</h3>
