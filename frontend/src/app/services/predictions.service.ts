@@ -7,6 +7,7 @@ import {
   reduceByDate,
   generateChartData,
   getSelectedLanguage,
+  getMonths,
 } from './utils';
 
 @Injectable({
@@ -34,7 +35,7 @@ export class PredictionsService {
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {
         const arrivals = reduceByDate(data, 'Arrivals');
-        const labels: string[] = [...Object.keys(arrivals)];
+        const labels: string[] = getMonths(arrivals);
         const values: any = [...Object.values(arrivals)];
         const title =
           getSelectedLanguage() === 'it'
@@ -66,7 +67,7 @@ export class PredictionsService {
     return this.http.get<ApiModel[]>(url).pipe(
       map((data) => {
         const attendances = reduceByDate(data, 'Attendance');
-        const labels: string[] = [...Object.keys(attendances)];
+        const labels: string[] = getMonths(attendances);
         const values: any = [...Object.values(attendances)];
         const title =
           getSelectedLanguage() === 'it'

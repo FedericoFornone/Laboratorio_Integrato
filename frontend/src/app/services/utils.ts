@@ -66,6 +66,25 @@ export const generateChartData = (
   const barChartOptions: ChartOptions<'bar'> = {
     responsive: true,
     maintainAspectRatio: false,
+    scales: {
+      y: {
+        ticks: {
+          callback: (value: any) => {
+            let newValue;
+
+            if (value >= 1000) {
+              newValue = value / 1000 + 'k';
+            }
+
+            if (value >= 1000000) {
+              newValue = value / 1000000 + 'm';
+            }
+
+            return newValue;
+          },
+        },
+      },
+    },
     plugins: {
       title: {
         display: true,
@@ -84,11 +103,42 @@ export const generateChartData = (
     mobileOptions: {
       ...barChartOptions,
       indexAxis: 'y',
+      scales: {
+        x: {
+          ticks: {
+            callback: (value: any) => {
+              let newValue;
+
+              if (value >= 1000) {
+                newValue = value / 1000 + 'k';
+              }
+
+              if (value >= 1000000) {
+                newValue = value / 1000000 + 'm';
+              }
+
+              return newValue;
+            },
+          },
+        },
+      },
     },
+
     legend: barChartLegend,
   };
 };
 
 export const getSelectedLanguage = () => {
   return localStorage.getItem('language') || 'it';
+};
+
+export const getMonths = (arr: any) => {
+  return [...Object.keys(arr)].map((label) => {
+    const month = label.split('-')[1];
+    const date = new Date();
+    date.setMonth(Number(month) - 1);
+    return date
+      .toLocaleString(getSelectedLanguage(), { month: 'short' })
+      .toUpperCase();
+  });
 };
