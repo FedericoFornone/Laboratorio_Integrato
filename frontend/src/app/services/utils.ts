@@ -1,6 +1,5 @@
 import { ChartConfiguration, ChartOptions } from 'chart.js';
-import { ApiModel, ResponseChartData } from '../models/api.model';
-import { withLatestFrom } from 'rxjs';
+import { ApiModel } from '../models/api.model';
 
 export const assembleUrl = (
   endpoint: 'statistics' | 'predictions',
