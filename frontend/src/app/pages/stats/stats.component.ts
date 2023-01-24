@@ -77,11 +77,6 @@ export class StatsComponent implements OnInit {
       this.updateStatisticsCharts();
       this.updatePredictionsCharts();
     });
-
-    window.addEventListener('themeChanged', () => {
-      this.updateStatisticsCharts();
-      this.updatePredictionsCharts();
-    });
   }
 
   closeModal() {

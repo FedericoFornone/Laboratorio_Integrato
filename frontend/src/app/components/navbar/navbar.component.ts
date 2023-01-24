@@ -34,7 +34,6 @@ export class NavbarComponent implements OnInit {
   changeTheme() {
     this.darkMode = !this.darkMode;
     localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
-    window.dispatchEvent(new Event('themeChanged'));
     this.themeChanged.emit(this.darkMode);
   }
 }
