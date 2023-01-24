@@ -3,14 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ResponseChartData } from 'src/app/models/api.model';
 import { StatsService } from 'src/app/services/stats.service';
 import { PredictionsService } from 'src/app/services/predictions.service';
-
-interface Filters {
-  residenceCountry: '' | 'Italia' | 'Paesi esteri';
-  infrastructureType: '' | 'HOTELLIKE' | 'OTHER';
-  statisticsYear?: string;
-  predictionsYear?: string;
-  covidIncluded?: boolean;
-}
+import { Filters } from 'src/app/models/api.model';
 
 @Component({
   selector: 'app-stats',
