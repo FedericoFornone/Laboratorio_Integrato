@@ -1,15 +1,19 @@
-<div *ngIf="!darkMode; else basicUserTemplate">
+<div *ngIf="!darkMode; else light">
   <div data-theme="nomad-light">
-    <app-navbar (themeChanged)="updateTheme($event)"></app-navbar>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <div class="bg-base-100">
+      <app-navbar (themeChanged)="updateTheme($event)"></app-navbar>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </div>
   </div>
 </div>
-<ng-template #basicUserTemplate>
+<ng-template #light>
   <div data-theme="nomad-dark">
-    <app-navbar (themeChanged)="updateTheme($event)"></app-navbar>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <div class="bg-base-100">
+      <app-navbar (themeChanged)="updateTheme($event)"></app-navbar>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </div>
   </div>
 </ng-template>
 

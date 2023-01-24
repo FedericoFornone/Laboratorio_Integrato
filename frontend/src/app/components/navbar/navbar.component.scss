@@ -1,5 +1,5 @@
-li>a {
-  color: #2F4858;
+li {
+  @apply text-secondary;
 }
 
 li>a:active {
@@ -14,4 +14,20 @@ li>a:active {
 label>input {
   display: none;
   visibility: hidden;
+}
+
+select {
+  border-style: none;
+}
+
+select:hover {
+  color: white;
+  background-color: #E70B67;
+  border-style: none;
+}
+
+select:active {
+  color: white;
+  background-color: #E70B67;
+  border-style: none;
 }
