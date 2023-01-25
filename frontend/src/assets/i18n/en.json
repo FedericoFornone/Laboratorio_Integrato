@@ -11,7 +11,7 @@
     },
     "section3": {
       "title": "Titolo",
-      "paragraph": "We designed Nomad starting from an idea: to guide the user on a journey to better understand the data of tourist flows in Abruzzo, making his experience interactive and enjoyable.",
+      "paragraph": "We designed Nomad starting from <strong>an idea</strong>: to guide the user on a <strong>journey</strong> to better understand the data of tourist flows in <strong>Abruzzo</strong>, making his experience interactive and enjoyable.",
       "div1": {
         "title": "User friendly",
         "paragraph": "Nomad has an intuitive interface and an attractive visual design. We have implemented interactive graphs and a tutorial, to make its functionality more accessible and to focus the user on data visualization."
