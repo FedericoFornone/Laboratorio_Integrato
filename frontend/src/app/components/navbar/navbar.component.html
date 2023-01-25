@@ -1,7 +1,10 @@
 <div class="fixed top-0 z-50 px-10 shadow-md navbar bg-base-100">
   <section class="flex items-center navbar-start lg:ml-16">
     <picture role="button">
-      <source media="(min-width:1024px)" srcset="/assets/logos/desktopLogo.svg" />
+      <source
+        media="(min-width:1024px)"
+        srcset="/assets/logos/desktopLogo.svg"
+      />
       <img
         src="assets/logos/mobileLogo.webp"
         alt="Nomad Logo Mobile"
@@ -82,7 +85,9 @@
 
       <!-- sun icon -->
       <svg
-        class="w-6 h-6 lg:w-10 lg:h-10 fill-[#f2f2f2] swap-on"
+        class="w-6 h-6 lg:w-10 lg:h-10"
+        [class.fill-white]="darkMode"
+        [class.fill-black]="!darkMode"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -92,7 +97,9 @@
       </svg>
       <!-- moon icon -->
       <svg
-        class="w-6 h-6 lg:w-10 lg:h-10 fill-current swap-off"
+        class="w-6 h-6 lg:w-10 lg:h-10"
+        [class.fill-white]="darkMode"
+        [class.fill-black]="!darkMode"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
