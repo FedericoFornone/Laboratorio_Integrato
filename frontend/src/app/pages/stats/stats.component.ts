@@ -37,6 +37,10 @@ export class StatsComponent implements OnInit {
     private predictionsService: PredictionsService
   ) {}
 
+  /* we're listening to resize events to check the current
+  screen size, and see if it's necessary to change the graph that 
+  is currently displayed. 
+  Possible performance increase: debounce this method */
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.makeChartsResponsive(event.target.innerWidth);
@@ -47,6 +51,7 @@ export class StatsComponent implements OnInit {
   }
 
   ngOnInit() {
+    // getting all the defaults from local storage
     this.tutorialModalOpen = localStorage.getItem('statsModalSeen') !== 'true';
 
     const statisticsFilters = localStorage.getItem('statisticsFilters');
@@ -59,6 +64,7 @@ export class StatsComponent implements OnInit {
       this.predictionsFilters = JSON.parse(predictionsFilters);
     }
 
+    // collecting all the data from the resolvers
     this.route.data.subscribe((data) => {
       const {
         arrivalsStats,
@@ -77,6 +83,11 @@ export class StatsComponent implements OnInit {
       this.makeChartsResponsive(windowSize);
     });
 
+    /* this is listening to a custom event dispatched by the navbar. The way
+    this works is that every time the language is being changed, the charts are 
+    rebuilt, and this would also update the language of their current labels. We decided
+    on this solution instead of manually changing the values in the chart configuartions as 
+    that would have been too cumbersome and lengthy */
     window.addEventListener('languageChanged', () => {
       this.updateStatisticsCharts();
       this.updatePredictionsCharts();
@@ -92,6 +103,8 @@ export class StatsComponent implements OnInit {
     this.tutorialModalOpen = true;
   }
 
+  /* saving the currently selected filters and updating the charts to 
+  reflect the changes */
   onStatisticsFilterChange() {
     localStorage.setItem(
       'statisticsFilters',

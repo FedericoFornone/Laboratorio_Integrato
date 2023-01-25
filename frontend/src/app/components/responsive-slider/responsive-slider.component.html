@@ -41,6 +41,8 @@
     [ngStyle]="{ transform: 'translateX(' + -currentSlide * 100 + '%)' }"
     class="flex lg:grid lg:grid-cols-2 mx-5 lg:mx-0 lg:gap-5 lg:!transform-none"
   >
+    <!-- main logic of this component, it emits all the content children 
+    and displays only the one that is currently selected -->
     <ng-container *ngFor="let slide of slides; let i = index">
       <div
         class="min-w-full transition-all duration-200 lg:transform-none"

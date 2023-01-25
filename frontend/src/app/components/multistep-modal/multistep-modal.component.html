@@ -29,6 +29,8 @@
           </svg>
         </button>
       </div>
+      <!-- main logic of this component, it emits all the content children 
+      and displays only the one that is currently selected -->
       <ng-container *ngFor="let step of steps; let i = index">
         <ng-container
           [ngTemplateOutlet]="step"

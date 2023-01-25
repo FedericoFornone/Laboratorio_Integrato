@@ -30,6 +30,8 @@ export class DashboardComponent implements OnInit {
     },
   ];
 
+  /* this ensures that the tutorial is only displayed by default if 
+  the user has never seen it yet */
   ngOnInit(): void {
     this.tutorialModalOpen =
       localStorage.getItem('dashboardModalSeen') !== 'true';
@@ -44,6 +46,10 @@ export class DashboardComponent implements OnInit {
     this.tutorialModalOpen = true;
   }
 
+  /* while we're saving the stats filters in local storage, we 
+  also decided to reset them when a different region is selected, 
+  as it wouldn't make sense to keep the same filters for different
+  graphs */
   resetFilters() {
     localStorage.removeItem('statisticsFilters');
     localStorage.removeItem('predictionsFilters');

@@ -160,6 +160,9 @@
   <app-responsive-slider>
     <ng-template #slide>
       <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <!-- we're rendering two different graphs for different screen sizes, as 
+        simply changing the options of the currently displayed graph doesn't work with 
+        this library -->
         <canvas
           baseChart
           [type]="'bar'"

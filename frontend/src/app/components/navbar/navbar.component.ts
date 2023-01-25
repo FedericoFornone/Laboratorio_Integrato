@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
   constructor(public router: Router, private translate: TranslateService) {}
 
   ngOnInit(): void {
+    // gettin defaults from local storage
     this.translate.use(localStorage.getItem('language') || 'it');
     this.darkMode = localStorage.getItem('theme') === 'dark';
     this.themeChanged.emit(this.darkMode);
@@ -29,10 +30,12 @@ export class NavbarComponent implements OnInit {
     //change the 'lang' attribute
     document.documentElement.lang = language;
     localStorage.setItem('language', language);
+    // dispatches an event so that we can catch it in other components to update the charts
     window.dispatchEvent(new Event('languageChanged'));
   }
   changeTheme() {
     this.darkMode = !this.darkMode;
+    // keeping the theme permanent so it works on reload
     localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
     this.themeChanged.emit(this.darkMode);
   }

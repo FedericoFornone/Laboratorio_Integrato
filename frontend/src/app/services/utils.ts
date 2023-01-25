@@ -1,6 +1,9 @@
 import { ChartConfiguration, ChartOptions } from 'chart.js';
 import { ApiModel } from '../models/api.model';
 
+/* We're using two different endpoints: statistics and predictions.
+Each endpoints has a certain set of parameters, and not all of them are required.
+We're using these functions to assemble the url for the api call with the correct parameters. */
 export const assembleUrl = (
   endpoint: 'statistics' | 'predictions',
   region: string,
@@ -26,10 +29,15 @@ export const assembleUrl = (
   return url;
 };
 
+/* The api response is an array of object, with each object having multiple values
+that we don't really need. This functions is used to reduce the response to a series of 
+key value pairs, where the key represents the current date, and the value represents the number
+of tourists on that date */
 export const reduceByDate = (
   data: ApiModel[],
   parameter: 'Arrivals' | 'Attendance'
 ) => {
+  /* reducing all the results from the same date into a single key value pair */
   const reducedData = data.reduce((acc: { [key: string]: number }, item) => {
     const date = item.Date;
     const result = item[parameter];
@@ -46,6 +54,8 @@ export const reduceByDate = (
   return reducedData;
 };
 
+/* since we're using the same chart config for every graph, we use this single
+function that handles all the logic for it */
 export const generateChartData = (
   labels: string[],
   values: any,
@@ -79,6 +89,7 @@ export const generateChartData = (
           font: {
             family: 'Nunito',
           },
+          // changin numbers to a more readable format
           callback: (value: any) => {
             let newValue;
 
@@ -118,8 +129,11 @@ export const generateChartData = (
   return {
     chartData: barChartData,
     options: barChartOptions,
+    /* this object represent the chart config to use when displaying
+    the charts on smaller screens */
     mobileOptions: {
       ...barChartOptions,
+      // the main difference is that we're using a horizontal bar chart
       indexAxis: 'y',
       scales: {
         y: {
@@ -160,6 +174,9 @@ export const getSelectedLanguage = () => {
   return localStorage.getItem('language') || 'it';
 };
 
+/* could have just used a fixed array of lables, but this
+function ensures that we're getting only the months that the api
+returns, and that they're properly translated in the current language */
 export const getMonths = (arr: any) => {
   return [...Object.keys(arr)].map((label) => {
     const month = label.split('-')[1];
