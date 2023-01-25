@@ -67,8 +67,18 @@ export const generateChartData = (
     responsive: true,
     maintainAspectRatio: false,
     scales: {
+      x: {
+        ticks: {
+          font: {
+            family: 'Nunito',
+          },
+        },
+      },
       y: {
         ticks: {
+          font: {
+            family: 'Nunito',
+          },
           callback: (value: any) => {
             let newValue;
 
@@ -91,6 +101,14 @@ export const generateChartData = (
         text: titleText,
         font: {
           size: 16,
+          family: 'Nunito',
+        },
+      },
+      legend: {
+        labels: {
+          font: {
+            family: 'Nunito',
+          },
         },
       },
     },
@@ -104,8 +122,18 @@ export const generateChartData = (
       ...barChartOptions,
       indexAxis: 'y',
       scales: {
+        y: {
+          ticks: {
+            font: {
+              family: 'Nunito',
+            },
+          },
+        },
         x: {
           ticks: {
+            font: {
+              family: 'Nunito',
+            },
             callback: (value: any) => {
               let newValue;
 
