@@ -3,30 +3,30 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-stats',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
   tutorialModalOpen = false;
   provincesData = [
     {
       name: 'Abruzzo',
-      imageName: 'abruzzo.jpg',
+      imageName: 'abruzzo.webp',
     },
     {
       name: "L'Aquila",
-      imageName: 'aquila.jpg',
+      imageName: 'aquila.webp',
     },
     {
       name: 'Teramo',
-      imageName: 'teramo.jpg',
+      imageName: 'teramo.webp',
     },
     {
       name: 'Pescara',
-      imageName: 'pescara.jpg',
+      imageName: 'pescara.webp',
     },
     {
       name: 'Chieti',
-      imageName: 'chieti.jpg',
+      imageName: 'chieti.webp',
     },
   ];
 

@@ -1,9 +1,9 @@
 <div class="fixed top-0 z-50 px-10 shadow-md navbar bg-base-100">
   <section class="flex items-center navbar-start lg:ml-16">
     <picture role="button">
-      <source media="(min-width:1024px)" srcset="/assets/desktopLogo.svg" />
+      <source media="(min-width:1024px)" srcset="/assets/logos/desktopLogo.svg" />
       <img
-        src="assets/nomadLogo.webp"
+        src="assets/logos/mobileLogo.webp"
         alt="Nomad Logo Mobile"
         class="h-10 my-4"
         [routerLink]="'/home/'"
@@ -40,7 +40,7 @@
         <li class="flex-nowrap justify-around flex-row">
           <button (click)="changeLanguage('it')" class="">
             <img
-              src="assets/italy-flag-icon.svg"
+              src="assets/flags/italy-flag-icon.svg"
               alt="Italian flag"
               class="w-[30%]"
               (click)="changeLanguage('it')"
@@ -51,7 +51,7 @@
         <li class="flex-nowrap justify-around flex-row">
           <button (click)="changeLanguage('en')" class="ml-4">
             <img
-              src="assets/united-kingdom-flag-icon.svg"
+              src="assets/flags/united-kingdom-flag-icon.svg"
               alt="Italian flag"
               class="w-[30%]"
               (click)="changeLanguage('en')"
