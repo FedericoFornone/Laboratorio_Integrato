@@ -57,6 +57,7 @@
     <ng-template #slide *ngFor="let province of provincesData">
       <div
         class="rounded-xl h-[25rem] overflow-hidden"
+        (click)="resetFilters()"
         [routerLink]="'stats/' + province.name.toLowerCase()"
       >
         <figure

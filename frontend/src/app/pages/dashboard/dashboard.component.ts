@@ -43,4 +43,9 @@ export class DashboardComponent implements OnInit {
   openModal() {
     this.tutorialModalOpen = true;
   }
+
+  resetFilters() {
+    localStorage.removeItem('statisticsFilters');
+    localStorage.removeItem('predictionsFilters');
+  }
 }
