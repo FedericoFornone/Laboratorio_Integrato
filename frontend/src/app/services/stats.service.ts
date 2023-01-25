@@ -10,6 +10,10 @@ import {
   getMonths,
 } from './utils';
 
+/* this service is in charge of calling the /statistics endpoint and getting the 
+filtered data. The two functions are each used to get data about the arrivals and 
+attendances */
+
 @Injectable({
   providedIn: 'root',
 })
