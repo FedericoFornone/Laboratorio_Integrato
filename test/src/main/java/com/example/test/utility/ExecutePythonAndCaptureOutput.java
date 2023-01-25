@@ -1,9 +1,15 @@
 package com.example.test.utility;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+
+// this class is unused in the final project during runtime
+// we used this to populate the DB with predicted data automatically
 public class ExecutePythonAndCaptureOutput {
     
+    // this executes a python script without any additional parameters. this utility method was never used.
     public static String ExecutePython(String scriptFilePath) throws IOException {
         ProcessBuilder pb = new ProcessBuilder().command("python", scriptFilePath)
         .redirectErrorStream(true);
