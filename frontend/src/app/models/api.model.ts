@@ -15,3 +15,11 @@ export interface ResponseChartData {
   mobileOptions: ChartOptions<'bar'>;
   legend: boolean;
 }
+
+export interface Filters {
+  residenceCountry: '' | 'Italia' | 'Paesi esteri';
+  infrastructureType: '' | 'HOTELLIKE' | 'OTHER';
+  statisticsYear?: string;
+  predictionsYear?: string;
+  covidIncluded?: boolean;
+}

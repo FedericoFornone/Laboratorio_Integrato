@@ -29,6 +29,7 @@ export class NavbarComponent implements OnInit {
     //change the 'lang' attribute
     document.documentElement.lang = language;
     localStorage.setItem('language', language);
+    window.dispatchEvent(new Event('languageChanged'));
   }
   changeTheme() {
     this.darkMode = !this.darkMode;
