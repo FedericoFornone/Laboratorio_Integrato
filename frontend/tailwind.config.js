@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui"), require('@tailwindcss/forms')],
+  plugins: [require("daisyui"), require("@tailwindcss/forms")],
   daisyui: {
     themes: [
       {
@@ -24,7 +24,7 @@ module.exports = {
         "nomad-dark": {
           primary: "#E70B67",
           secondary: "#F2f2f2",
-          accent: "#ef9ea4",
+          accent: "#2e173a",
           neutral: "#F2f2f2",
           "base-100": "#100E2D",
           "base-content": "#32323233",
@@ -33,7 +33,7 @@ module.exports = {
           warning: "#A25E10",
           error: "#E56C76",
           transparent: "#ffffff00",
-        }
+        },
       },
     ],
   },
