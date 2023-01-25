@@ -1,14 +1,69 @@
 <!DOCTYPE html><html lang="it" data-theme="nomad-light"><head>
     <meta charset="utf-8">
-    <title>Frontend</title>
     <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal}body{margin:0;line-height:inherit}:root,[data-theme]{background-color:hsla(var(--b1) / var(--tw-bg-opacity, 1));color:hsla(var(--bc) / var(--tw-text-opacity, 1))}html{-webkit-tap-highlight-color:transparent}:root{--p:335 91% 47%;--pf:335 91% 38%;--sf:245 17% 23%;--af:335 55% 70%;--nf:203 30% 21%;--b2:0 0% 85%;--b3:0 0% 77%;--bc:0 0% 19%;--pc:335 100% 89%;--sc:245 76% 86%;--ac:335 83% 18%;--nc:203 100% 85%;--inc:4 100% 91%;--suc:317 100% 89%;--wac:265 100% 89%;--erc:243 52% 84%;--rounded-box:1rem;--rounded-btn:.5rem;--rounded-badge:1.9rem;--animation-btn:.25s;--animation-input:.2s;--btn-text-case:uppercase;--btn-focus-scale:.95;--border-btn:1px;--tab-border:1px;--tab-radius:.5rem;--s:245 17% 29%;--a:335 55% 88%;--n:203 30% 26%;--b1:0 0% 95%;--in:4 97% 56%;--su:317 51% 46%;--wa:265 32% 45%;--er:243 17% 22%}*,:before,:after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.overflow-x-hidden{overflow-x:hidden}</style><link rel="stylesheet" href="styles.48d2d2aca6237744.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.48d2d2aca6237744.css"></noscript></head>
+    <title>Nomad: statistiche e previsioni dell'Abruzzo</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo-mobile.webp">
+    <meta name="description" content="Nomad, una web-app che offre statistiche e previsioni dei flussi turistici in Abruzzo e usa un modello di Machine Learning addestrato">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Luna Diatto, Jacopo Trompeo, Michele Aliverti">
+    <!-- script json -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org/",
+          "@type": "WebSite",
+          "description": "Nomad, una web-app che offre statistiche e previsioni dei flussi turistici in Abruzzo e usa un modello di Machine Learning addestrato",
+          "brand": {
+            "@type": "Web Agency",
+            "name": "Outlander"
+            "streetAddress": "Via Jacopo Durandi 10",
+            "addressLocality": "Torino",
+            "addressRegion": "Piemonte",
+            "postalCode": "10123",
+            "addressCountry": "Italy"
+          },
+          "authors":[{
+            "@type": "Person",
+            "name": "Luna Diatto"    
+          },
+          {
+            "@type": "Person",
+            "name": "Jacopo Trompeo"    
+          },
+          {
+            "@type": "Person",
+            "name": "Michele Aliverti"    
+          }],
+          "openingHoursSpecification": [{
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "18:00"
+          }],
+          "sameAs": ["https://www.facebook.com/Outlander/"]
+      }
+    </script>
+    <!-- end script json -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:site_name" content="Nomad">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="assets/logo-mobile.webp">
+    <meta property="og:title" content="Nomad: statistiche e previsioni dell'Abruzzo">
+    <meta property="og:description" content="Nomad, una web-app che offre statistiche e previsioni dei flussi turistici in Abruzzo e usa un modello di Machine Learning addestrato">
+
+    <meta property="business:contact_data:street_address" content="Via Jacopo Durandi 10">
+    <meta property="business:contact_data:locality" content="Torino">
+    <meta property="business:contact_data:region" content="Piemonte">
+    <meta property="business:contact_data:postal_code" content="10123">
+    <meta property="business:contact_data:country_name" content="Italy">
+
+    <!-- FIXME:link rel icon apple -->
+  <style>@import"https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap";*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:Nunito,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal}body{margin:0;line-height:inherit}:root,[data-theme]{background-color:hsla(var(--b1) / var(--tw-bg-opacity, 1));color:hsla(var(--bc) / var(--tw-text-opacity, 1))}html{-webkit-tap-highlight-color:transparent}:root{--p:335 91% 47%;--pf:335 91% 38%;--sf:245 17% 23%;--af:335 55% 70%;--nf:203 30% 21%;--b2:0 0% 85%;--b3:0 0% 77%;--pc:335 100% 89%;--sc:245 76% 86%;--ac:335 83% 18%;--nc:203 100% 85%;--inc:4 100% 91%;--suc:317 100% 89%;--wac:265 100% 89%;--erc:243 52% 84%;--rounded-box:1rem;--rounded-btn:.5rem;--rounded-badge:1.9rem;--animation-btn:.25s;--animation-input:.2s;--btn-text-case:uppercase;--btn-focus-scale:.95;--border-btn:1px;--tab-border:1px;--tab-radius:.5rem;--s:245 17% 29%;--a:335 55% 88%;--n:203 30% 26%;--b1:0 0% 95%;--bc:0 0% 20%;--in:4 97% 56%;--su:317 51% 46%;--wa:265 32% 45%;--er:243 17% 22%;transparent:#ffffff00}[data-theme=nomad-light]{--p:335 91% 47%;--pf:335 91% 38%;--sf:245 17% 23%;--af:335 55% 70%;--nf:203 30% 21%;--b2:0 0% 85%;--b3:0 0% 77%;--pc:335 100% 89%;--sc:245 76% 86%;--ac:335 83% 18%;--nc:203 100% 85%;--inc:4 100% 91%;--suc:317 100% 89%;--wac:265 100% 89%;--erc:243 52% 84%;--rounded-box:1rem;--rounded-btn:.5rem;--rounded-badge:1.9rem;--animation-btn:.25s;--animation-input:.2s;--btn-text-case:uppercase;--btn-focus-scale:.95;--border-btn:1px;--tab-border:1px;--tab-radius:.5rem;--s:245 17% 29%;--a:335 55% 88%;--n:203 30% 26%;--b1:0 0% 95%;--bc:0 0% 20%;--in:4 97% 56%;--su:317 51% 46%;--wa:265 32% 45%;--er:243 17% 22%;transparent:#ffffff00}*,:before,:after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.overflow-x-hidden{overflow-x:hidden}</style><link rel="stylesheet" href="styles.567c1968fbeabd98.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.567c1968fbeabd98.css"></noscript></head>
   <body>
     <div class="overflow-x-hidden">
       <app-root></app-root>
     </div>
-  <script src="runtime.89bfad0fe920d2c9.js" type="module"></script><script src="polyfills.a028c55f58455cf5.js" type="module"></script><script src="main.4fc97fe01d7e78f6.js" type="module"></script>
+  <script src="runtime.89bfad0fe920d2c9.js" type="module"></script><script src="polyfills.a028c55f58455cf5.js" type="module"></script><script src="main.c3859c1824729c0c.js" type="module"></script>
 
 </body></html>
