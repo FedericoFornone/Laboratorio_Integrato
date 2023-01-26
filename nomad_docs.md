@@ -37,7 +37,7 @@ To run the models script you have to install `skforecast` package using the comm
 ```shell
 C:\> pip install skforecast
 ```
-The folder `/models` contains all the ML model files.
+The folder `/models` contains all the Machine Learning model files.
 
 Every dataset file is contained inside the `./Data` folder.
 Inside this folder there is also a `./final_data` folder that contain the final dataset cleaned and processed.
