@@ -22,6 +22,7 @@ The web application has the following areas:
   - [External resources](#external-resources)
   - [License and contact information](#license-and-contact-information)
   - [Authors](#authors)
+    - [Contacts](#contacts)
   - [Changelog and version history](#changelog-and-version-history)
 ---
 
@@ -61,7 +62,7 @@ The backend is written using `SpringBoot` and `Java`, while the fintech is writt
 You can find their relative documentation here:     
 
 - [Backend](https://github.com/FedericoFornone/Laboratorio_Integrato/blob/dev/Backend/test/README.md)
-- [Fintech](https://github.com/FedericoFornone/Laboratorio_Integrato/blob/dev/Fintech/nomad_docs.md)
+- [Fintech](https://github.com/FedericoFornone/Laboratorio_Integrato/blob/dev/Fintech/README.md)
 
 ---
 
@@ -205,6 +206,12 @@ check the link in the [External resources](#external-resources) section.
 - Jacopo Trompeo, Web Developer
 - Luna Diatto, Web Developer
 - Michele Aliverti, Web Developer
+
+### Contacts
+
+- jacopo.trompeo@edu.itspiemonte.it
+- luna.diatto@edu.itspiemonte.it
+- michele.aliverti@edu.itspiemonte.it
 
 ---
 
