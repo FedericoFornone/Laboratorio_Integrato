@@ -2,10 +2,80 @@
 <html lang="it" data-theme="nomad-light">
   <head>
     <meta charset="utf-8" />
-    <title>Frontend</title>
     <base href="/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Nomad: statistiche e previsioni dell'Abruzzo</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo-mobile.webp" />
+    <meta
+      name="description"
+      content="Nomad, una web-app che offre statistiche e previsioni dei flussi turistici in Abruzzo e usa un modello di Machine Learning addestrato"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="author"
+      content="Luna Diatto, Jacopo Trompeo, Michele Aliverti"
+    />
+    <!-- script json -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org/",
+          "@type": "WebSite",
+          "description": "Nomad, una web-app che offre statistiche e previsioni dei flussi turistici in Abruzzo e usa un modello di Machine Learning addestrato",
+          "brand": {
+            "@type": "Web Agency",
+            "name": "Outlander"
+            "streetAddress": "Via Jacopo Durandi 10",
+            "addressLocality": "Torino",
+            "addressRegion": "Piemonte",
+            "postalCode": "10123",
+            "addressCountry": "Italy"
+          },
+          "authors":[{
+            "@type": "Person",
+            "name": "Luna Diatto"    
+          },
+          {
+            "@type": "Person",
+            "name": "Jacopo Trompeo"    
+          },
+          {
+            "@type": "Person",
+            "name": "Michele Aliverti"    
+          }],
+          "openingHoursSpecification": [{
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "18:00"
+          }],
+          "sameAs": ["https://www.facebook.com/Outlander/"]
+      }
+    </script>
+    <!-- end script json -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:site_name" content="Nomad" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="assets/logo-mobile.webp" />
+    <meta
+      property="og:title"
+      content="Nomad: statistiche e previsioni dell'Abruzzo"
+    />
+    <meta
+      property="og:description"
+      content="Nomad, una web-app che offre statistiche e previsioni dei flussi turistici in Abruzzo e usa un modello di Machine Learning addestrato"
+    />
+
+    <meta
+      property="business:contact_data:street_address"
+      content="Via Jacopo Durandi 10"
+    />
+    <meta property="business:contact_data:locality" content="Torino" />
+    <meta property="business:contact_data:region" content="Piemonte" />
+    <meta property="business:contact_data:postal_code" content="10123" />
+    <meta property="business:contact_data:country_name" content="Italy" />
+
+    <!-- FIXME:link rel icon apple -->
   </head>
   <body>
     <div class="overflow-x-hidden">

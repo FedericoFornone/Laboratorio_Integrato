@@ -1,8 +1,8 @@
 <!-- HERO section -->
 <div
-  class="hero min-h-screen"
+  class="min-h-screen hero"
   style="
-    background-image: url(assets/about/3.jpg);
+    background-image: url(assets/about/landscape.webp);
     background-color: #cccccc;
     height: 8em;
     background-position: center;
@@ -10,21 +10,19 @@
     background-repeat: no-repeat;
   "
 >
-  <!-- FIXME:border? text white -->
-  <div class="hero-overlay bg-opacity-0"></div>
-  <div class="hero-content text-center">
+  <div class="bg-opacity-0 hero-overlay"></div>
+  <div class="text-center hero-content">
     <div class="max-w-md">
       <h1
         id="outlander"
-        class="mb-7 text-center text-5xl font-bold drop-shadow-2xl lg:text-7xl"
+        class="text-5xl font-bold text-center mb-7 drop-shadow-2xl lg:text-7xl"
       >
         OUTLANDER
       </h1>
       <p
-        class="mb-7 text-xl text-white drop-shadow-2xl lg:text-2xl xl:text-3xl"
-      >
-        Charting a new course in the digital realm
-      </p>
+        class="mb-7 text-3xl text-white drop-shadow-2xl lg:text-4xl xl:text-4xl m-auto w-[90%] md:w-auto"
+        [innerHTML]="'about.introduction.paragraph' | translate"
+      ></p>
     </div>
   </div>
 </div>
@@ -32,201 +30,213 @@
 <!-- FEATURES section -->
 <main class="container mx-auto">
   <div class="py-24 sm:py-30">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mt-10 max-w-lg sm:mx-auto md:max-w-none">
+    <div class="px-6 mx-auto max-w-7xl lg:px-8">
+      <div class="max-w-lg mt-10 sm:mx-auto md:max-w-none">
         <div
           class="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16"
         >
-          <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+          <section
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
-              class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+              class="flex items-center justify-center w-12 h-12 text-white rounded-xl sm:shrink-0"
             >
               <!-- Heroicon name: outline/globe-alt -->
-              <img src="assets/about/handcrafts/undraw_ghost.svg" />
+              <img
+                src="assets/about/handcrafts/undraw_ghost.svg"
+                alt="UnDraw handcraft of a ghost"
+                width="40.95"
+                height="49.14"
+              />
             </div>
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900">
-                CHI SIAMO
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                Outlander è una
-                <span class="font-bold">web agency torinese</span> specializzata
-                nella creazione di siti e web applications all'avanguardia.
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                L'azienda è nata da un team di developers e designers
-                determinati a
-                <span class="font-bold"
-                  >trasformare le loro passioni in soluzioni
-                </span>
-                per privati ed aziende, ideate una ad una con creatività e con
-                un approccio fuori dagli schemi.
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                La parola outlander evoca l'idea di
-                <span class="font-bold"
-                  >un'esplorazione verso soluzioni innovative</span
-                >, create per soddisfare il cliente ed accompagnarlo in un
-                viaggio alla scoperta frontiera digitale.
-              </p>
+              <p
+                class="text-2xl font-semibold leading-8 text-secondary"
+                [innerHTML]="'about.main.features.div1.title' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div1.paragraph1' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div1.paragraph2' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div1.paragraph3' | translate"
+              ></p>
             </div>
-          </div>
+          </section>
 
-          <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+          <section
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
-              class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+              class="flex items-center justify-center w-12 h-12 text-white rounded-xl sm:shrink-0"
             >
               <!-- Heroicon name: outline/scale -->
-              <img src="assets/about/handcrafts/undraw_heart-fun.svg" />
+              <img
+                src="assets/about/handcrafts/undraw_heart-fun.svg"
+                alt="UnDraw handcraft of a heart"
+                width="48"
+                height="49.81"
+              />
             </div>
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900">
-                IL NOSTRO FOCUS
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                Ci occupiamo di soluzioni web per privati e aziende legate al
-                <span class="font-bold">settore turistico</span>.
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                Il nostro focus comprende
-                <span class="font-bold">innovazione</span> e
-                <span class="font-bold">User Experience</span>, e con questi
-                pilastri proponiamo soluzioni su misura per soddisfare i bisogni
-                del cliente.
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                Tutti i progetti e le soluzioni di Outlander comprendono
-                un'attenta analisi della <span class="font-bold">UX</span> e
-                della <span class="font-bold">UI</span>, uno sviluppo
-                <span class="font-bold">Mobile First</span> e un'ottimizzazione
-                in ottica <span class="font-bold">SEO</span>.
-              </p>
+              <p
+                class="text-2xl font-semibold leading-8 text-secondary"
+                [innerHTML]="'about.main.features.div2.title' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div2.paragraph1' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div2.paragraph2' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div2.paragraph3' | translate"
+              ></p>
             </div>
-          </div>
+          </section>
 
-          <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+          <section
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
-              class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+              class="flex items-center justify-center w-12 h-12 text-white rounded-xl sm:shrink-0"
             >
               <!-- Heroicon name: outline/bolt -->
-              <img src="assets/about/handcrafts/undraw_code.svg" />
+              <img
+                src="assets/about/handcrafts/undraw_code.svg"
+                alt="UnDraw handcraft of a coding symbol"
+                width="48"
+                height="35.54"
+              />
             </div>
             <!-- FIXME:icons e copyright -->
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900">
-                LE NOSTRE TECNOLOGIE
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600 mb-5">
-                Un viaggio alla scoperta della digital era, guidato da
-                tecnologie innovative ed esperienza.
-              </p>
-              <ul class="mt-5 text-base leading-7 text-gray-600">
-                <li class="flex items-center justify-center m-5 gap-20">
+              <p
+                class="text-2xl font-semibold leading-8 text-secondary"
+                [innerHTML]="'about.main.features.div3.title' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral mb-5 text-justify"
+                [innerHTML]="'about.main.features.div3.paragraph1' | translate"
+              ></p>
+              <ul class="m-5 text-base leading-7 text-neutral">
+                <li
+                  class="flex items-center justify-center gap-8 mt-8 lg:gap-20"
+                >
                   <img
                     src="assets/about/technologies/angular.svg"
-                    alt="tecnology logo"
+                    alt="Angular logo"
                     class="w-20 h-20"
+                    width="20"
+                    height="20"
                   />
                   <img
                     src="assets/about/technologies/javascript.svg"
-                    alt="tecnology logo"
+                    alt="Javascript logo"
                     class="w-20 h-20"
-                  />
-                </li>
-                <li class="flex items-center justify-center m-5 gap-20">
-                  <img
-                    src="assets/about/technologies/java.svg"
-                    alt="tecnology logo"
-                    class="w-20 h-20"
+                    width="20"
+                    height="20"
                   />
                   <img
                     src="assets/about/technologies/sql.svg"
-                    alt="tecnology logo"
+                    alt="Sql logo"
                     class="w-20 h-20"
+                    width="20"
+                    height="20"
                   />
                 </li>
-
-                <li class="flex items-center justify-center m-5 gap-20">
+                <li class="flex items-center justify-center gap-20 m-5">
+                  <img
+                    src="assets/about/technologies/java.svg"
+                    alt="Java logo"
+                    class="w-20 h-20"
+                    width="20"
+                    height="20"
+                  />
                   <img
                     src="assets/about/technologies/python.svg"
-                    alt="tecnology logo"
+                    alt="Python logo"
                     class="w-20 h-20"
+                    width="20"
+                    height="20"
                   />
                 </li>
+
+                <li class="flex items-center justify-center gap-20 m-5"></li>
               </ul>
             </div>
-          </div>
+          </section>
 
-          <div
-            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+          <section
+            class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row m-5 lg:m-0.5"
           >
             <div
-              class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+              class="flex items-center justify-center w-12 h-12 text-white rounded-xl sm:shrink-0"
             >
-              <!-- FIXME:logo nomad? -->
               <!-- Heroicon name: outline/device-phone-mobile -->
-              <img src="assets/about/handcrafts/undraw_bar-chart.svg" />
+              <img
+                src="assets/about/handcrafts/undraw_bar-chart.svg"
+                alt="UnDraw handcraft of a bar chart"
+                width="48"
+                height="51.19"
+              />
             </div>
             <div class="sm:min-w-0 sm:flex-1">
-              <p class="text-lg font-semibold leading-8 text-gray-900">NOMAD</p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                È il nostro ultimo progetto, una web application che permette
-                l'utente di
-                <span class="font-bold">esplorare la regione Abruzzo</span> come
-                mai prima d'ora.
+              <p class="text-2xl font-semibold leading-8 text-secondary">
+                NOMAD
               </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                Analizzando dataset ISTAT, NOMAD crea
-                <span class="font-bold">grafici interattivi</span> che
-                forniscono all'utente uno sguardo dettagliato sui flussi di
-                turisti, italiani e stranieri, e sulle loro scelte, dal tipo di
-                alloggio alle province più popolari. NOMAD è la soluzione ideale
-                che garantisce affidabilità e correttezza dei dati.
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                Inoltre, con un modello di machine learning addestrato, NOMAD
-                propone una serie di <span class="font-bold">previsioni</span> a
-                breve, medio e lungo termine dei flussi turistici futuri,
-                assicurando un'accuratezza fino a
-                <span class="font-bold">cinque anni</span>.
-              </p>
-              <p class="mt-2 text-base leading-7 text-gray-600">
-                Con la sua interfaccia user-friendly e la capacità di analizzare
-                dati complessi, NOMAD è lo strumento perfetto per scoprire a
-                pieno l'Abruzzo.
-              </p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div4.paragraph1' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div4.paragraph2' | translate"
+              ></p>
+              <p
+                class="mt-2 text-[1.2rem] leading-7 text-neutral text-justify"
+                [innerHTML]="'about.main.features.div4.paragraph3' | translate"
+              ></p>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
   </div>
 
   <!-- TEAM section -->
-  <div class="py-15 sm:py-20 pseudo-bg-primary">
-    <div class="mx-auto px-6 lg:px-8">
+  <section class="z-0 py-15 sm:py-20 pseudo-bg-primary">
+    <div class="px-6 mx-auto lg:px-8">
       <div class="text-center">
         <p
-          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-        >
-          Il nostro team
-        </p>
+          class="mb-12 text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl text-neutral"
+          [innerHTML]="'about.main.team.title' | translate"
+        ></p>
       </div>
       <div
-        class="flex items-center justify-center flex-wrap gap-6 flex-col lg:flex-row"
+        class="flex flex-col flex-wrap items-center justify-center gap-6 lg:flex-row"
       >
         <div
+          class="flex items-center justify-center flex-[0_0_22%] xs:flex-[0_0_10%] text-neutral"
           *ngFor="let person of team"
-          style="flex: 0 0 320px"
-          class="flex items-center justify-center"
         >
           <app-avatar
+            *ngIf="person.name === 'Federico Fornone'"
+            style="width: max-content"
+            [name]="person.name"
+            [role]="person.role"
+            [image]="person.image"
+          ></app-avatar>
+          <app-avatar
+            *ngIf="person.name !== 'Federico Fornone'"
             [name]="person.name"
             [role]="person.role"
             [image]="person.image"
@@ -234,22 +244,21 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- CONTACTS section -->
-  <div class="py-10 sm:py-15">
-    <div class="mx-auto px-6 lg:px-8">
+  <section class="py-10 sm:py-15">
+    <div class="px-6 mx-auto lg:px-8">
       <div class="text-center">
         <p
-          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-        >
-          Contatti
-        </p>
+          class="mt-6 text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl text-secondary"
+          [innerHTML]="'about.main.contacts.title' | translate"
+        ></p>
       </div>
     </div>
-  </div>
-  <div class="mx-auto mb-50 max-w-7xl px-6 lg:px-8">
-    <div class="mt-10 max-w-lg sm:mx-auto md:max-w-none">
+  </section>
+  <section class="px-6 mx-auto mb-50 max-w-7xl lg:px-8">
+    <div class="max-w-lg mt-10 sm:mx-auto md:max-w-none">
       <div
         class="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16"
       >
@@ -257,17 +266,24 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex items-center justify-center w-12 h-12 m-auto text-white rounded-xl sm:shrink-0"
           >
-            <img src="assets/about/handcrafts/undraw_heart-fun.svg" />
+            <img
+              src="assets/about/handcrafts/undraw_heart-fun.svg"
+              alt="UnDraw handcraft of a heart"
+              width="48"
+              height="49.81"
+            />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
-            <p class="text-lg font-semibold leading-8 text-gray-900">
-              OUTLANDER S.r.l.
-            </p>
-            <p class="mt-2 text-base leading-7 text-gray-600">
-              © 2022. All right reserved. P.Iva:1000000000
-            </p>
+          <div class="text-center sm:min-w-0 sm:flex-1 lg:text-justify lg:ml-5">
+            <p
+              class="text-lg font-semibold leading-8 text-secondary"
+              [innerHTML]="'about.main.contacts.div1.title' | translate"
+            ></p>
+            <p
+              class="m-auto w-[60%] md:mt-2 md:w-auto text-base leading-7 text-neutral"
+              [innerHTML]="'about.main.contacts.div1.description' | translate"
+            ></p>
           </div>
         </div>
 
@@ -275,17 +291,24 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex items-center justify-center w-12 h-12 m-auto text-white rounded-xl sm:shrink-0"
           >
-            <img src="assets/about/handcrafts/undraw_pointer.svg" />
+            <img
+              src="assets/about/handcrafts/undraw_pointer.svg"
+              alt="UnDraw handcraft of a pointer"
+              width="39.17"
+              height="52.61"
+            />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
-            <p class="text-lg font-semibold leading-8 text-gray-900">
-              TURIN HQ
-            </p>
-            <p class="mt-2 text-base leading-7 text-gray-600">
-              Via Jacopo Durandi 10 - Torino (TO) 10123 - IT
-            </p>
+          <div class="text-center sm:min-w-0 sm:flex-1 lg:text-justify lg:ml-5">
+            <p
+              class="text-lg font-semibold leading-8 text-secondary"
+              [innerHTML]="'about.main.contacts.div2.title' | translate"
+            ></p>
+            <address
+              class="m-auto w-[60%] md:mt-2 md:w-auto text-base leading-7 text-neutral not-italic"
+              [innerHTML]="'about.main.contacts.div2.description' | translate"
+            ></address>
           </div>
         </div>
 
@@ -293,13 +316,18 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex items-center justify-center w-12 h-12 m-auto text-white rounded-xl sm:shrink-0"
           >
-            <img src="assets/about/handcrafts/undraw_envelope.svg" />
+            <img
+              src="assets/about/handcrafts/undraw_envelope.svg"
+              alt="UnDraw handcraft of an envelope"
+              width="48"
+              height="34.63"
+            />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
-            <p class="text-lg font-semibold leading-8 text-gray-900">EMAIL</p>
-            <p class="mt-2 text-base leading-7 text-gray-600">
+          <div class="text-center sm:min-w-0 sm:flex-1 lg:text-justify lg:ml-5">
+            <p class="text-lg font-semibold leading-8 text-secondary">EMAIL</p>
+            <p class="mt-2 text-base leading-7 text-neutral">
               <a
                 href="mailto:info@outlander.com"
                 class="underline underline-offset-2"
@@ -313,13 +341,18 @@
           class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
         >
           <div
-            class="flex h-12 w-12 items-center justify-center rounded-xl text-white sm:shrink-0"
+            class="flex items-center justify-center w-12 h-12 m-auto text-white rounded-xl sm:shrink-0"
           >
-            <img src="assets/about/handcrafts/undraw_chat.svg" />
+            <img
+              src="assets/about/handcrafts/undraw_chat.svg"
+              alt="UnDraw handcraft of a chat"
+              width="48"
+              height="48.56"
+            />
           </div>
-          <div class="sm:min-w-0 sm:flex-1">
-            <p class="text-lg font-semibold leading-8 text-gray-900">TEL.</p>
-            <p class="mt-2 text-base leading-7 text-gray-600">
+          <div class="text-center sm:min-w-0 sm:flex-1 lg:text-justify lg:ml-5">
+            <p class="text-lg font-semibold leading-8 text-secondary">TEL.</p>
+            <p class="mt-2 leading-7 text-neutral">
               <a href="tel:+3901103333333" class="underline underline-offset-2"
                 >+39 011 03333333</a
               >
@@ -328,5 +361,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </main>

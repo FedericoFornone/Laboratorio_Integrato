@@ -1,0 +1,62 @@
+<input
+  type="checkbox"
+  id="tutorial-modal"
+  class="modal-toggle"
+  [checked]="modalOpen"
+/>
+<div class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div class="flex flex-col">
+      <div class="mb-5 ml-auto">
+        <button
+          for="tutorial-modal"
+          class="cursor-pointer"
+          (click)="emitCloseModal()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- main logic of this component, it emits all the content children 
+      and displays only the one that is currently selected -->
+      <ng-container *ngFor="let step of steps; let i = index">
+        <ng-container
+          [ngTemplateOutlet]="step"
+          *ngIf="i === currentStep"
+        ></ng-container>
+      </ng-container>
+      <div class="flex gap-3 ml-auto">
+        <button
+          class="btn btn-primary"
+          (click)="previousStep()"
+          *ngIf="currentStep > 0"
+          [translate]="'modal.previous'"
+        ></button>
+        <button
+          class="btn btn-primary"
+          (click)="nextStep()"
+          *ngIf="currentStep < steps.length - 1"
+          [translate]="'modal.next'"
+        ></button>
+        <button
+          class="btn btn-primary"
+          *ngIf="currentStep === steps.length - 1"
+          (click)="emitCloseModal()"
+          [translate]="'modal.end'"
+        ></button>
+      </div>
+    </div>
+  </div>
+</div>

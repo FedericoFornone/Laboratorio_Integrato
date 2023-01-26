@@ -1,0 +1,149 @@
+{
+  "homepage": {
+    "section1": {
+      "paragraph": "Our data-driven solution for smart planning and unlock the secrets of Abruzzo tourism",
+      "label": "Get started"
+    },
+    "section2": {
+      "title": "About Nomad",
+      "paragraph": "Nomad is our solution linked to the world of tourism that monitors the tourist flows of Abruzzo, starting from official ISTAT datasets. It provides statistics and  future forecasts based on a trained Machine Learning model.",
+      "label": "Find out more"
+    },
+    "section3": {
+      "title": "Titolo",
+      "paragraph": "We designed Nomad starting from <strong>an idea</strong>: to guide the user on a <strong>journey</strong> to better understand the data of tourist flows in <strong>Abruzzo</strong>, making his experience interactive and enjoyable.",
+      "div1": {
+        "title": "User friendly",
+        "paragraph": "Nomad has an intuitive interface and an attractive visual design. We have implemented interactive graphs and a tutorial, to make its functionality more accessible and to focus the user on data visualization."
+      },
+      "div2": {
+        "title": "Reliable",
+        "paragraph": "All data comes from official ISTAT datasets. Nomad therefore guarantees the accuracy and quality of the statistical information."
+      },
+      "div3": {
+        "title": "Powerful",
+        "paragraph": "Despite the large amount of data taken into analysis, we implemented a series of optimizations that have made Nomad performing and effective. This was also possible thanks to the use of cutting-edge technologies, such as the machine learning model to calculate forecasts."
+      }
+    }
+  },
+
+  "dashboard": {
+    "section1": {
+      "paragraph": "From here you can see the statistics and forecasts related to Abruzzo. <strong>Select the region or province</strong> whose data you want to view."
+    },
+    "tutorial1": {
+      "step1": {
+        "paragraph": "Welcome to the dashboard! From here you can choose a particular province or the complete region and view the relevant charts"
+      },
+      "step2": {
+        "paragraph": "If you want to see the data for the whole region click on <strong>Abruzzo</strong>, otherwise click on the desired province. Enjoy your trip!"
+      }
+    },
+    "tutorial2": {
+      "step1": "Welcome to the Dashboard! Here you can find statistics and predictive models of the province you have chosen or the entire region.",
+      "step2": "The dashboard is divided into two sections.<br> The <strong>first</strong> is about statistics: here you will see the graphs of <strong>arrivals</strong> and <strong>attendance</strong>. Arrivals include the number of customers who have arrived and checked in to the accommodation facility. Attendance includes the number of nights spent by customers in the accommodation facility.<br> The <strong>second</strong>  is about predictive models: here you will see the future forecasts of arrivals and attendance. At the top you find the control panel, continue to find out what it contains!",
+      "step3": "In the control panel you find <strong>4 filters</strong>: <br> - <strong>Type of tourists</strong>, it concerns their country of residence. You can choose between Italians, foreigners or both. <br> - <strong>Residence structure</strong>, you can choose the accommodation among hotels, other (includes b&b, farmhouses or private) or all. <br> - <strong>Year of the statistics</strong>, it concerns the section Statistics.  You can choose a year in particular from 2008 to 2021. <br> - <strong>Year of the forecast</strong>, it concerns the Forecast section. You can choose a particular year from 2022 to 2032.",
+      "step4": "⚠️Remember that the predictive model is only <strong>accurate for the first 5 years</strong>, later it will be less accurate. <br>Moreover the model does not consider the years 2020 and 2021, in which the COVID-19 has determined an intense bending of the tourist flows in all the national territory. If you prefer to take these years into account, you can select the <strong>check</strong> down here. We advise you not to consider them for greater stability of the model, but the choice is yours!",
+      "step5": "Do you prefer not to select any filters? As soon as you enter the dashboard you can see in the Statistics section the graphs of all tourists in any accommodation, in the year 2021. <br> In the Forecast section you can see a predictive trend of all tourists in any residence structure of the 2022 year.",
+      "step6": "You are now ready to use Nomad to the fullest. If at any time you need to open the tutorial, you can click on the <strong>question mark</strong> at the top right. Have a nice trip!"
+    }
+  },
+  "modal": {
+    "previous": "Previous",
+    "next": "Next",
+    "end": "End"
+  },
+  "charts": {
+    "select1": {
+      "label": "Origin of tourists",
+      "options": {
+        "all": "Italian and foreign tourists",
+        "italy": "Italian tourists",
+        "foreign": "Foreign tourists"
+      }
+    },
+    "select2": {
+      "label": "Accomodation facilities",
+      "options": {
+        "all": "All",
+        "hotel": "Hotels",
+        "other": "Other facilities"
+      }
+    },
+    "select3": {
+      "label": "Year of the statistics"
+    },
+    "select4": {
+      "label": "Year of the forecast"
+    },
+    "button": "Go"
+  },
+  "stats": {
+    "subtitle": "Here you can find all the statistics related to the territory you have chosen. Before starting, some important information:",
+    "section1": "All graphs concern ISTAT datasets for a specific period: <strong>from 2008 to 2021</strong>",
+    "section2": "You can select one or more <strong>filters</strong> to screen the search: by year, accommodation, or country of residence of tourists.",
+    "section3": "If you <strong>do not select anything</strong>, you will see statistics of all tourists in any residence structure in the year 2021.",
+    "section4": "Is this your first time using Nomad? Open the <strong>tutorial</strong>, you will also find a detailed explanation of the <strong>control panel</strong>."
+  },
+  "prevs": {
+    "subtitle": "Here you can find all the forecasts related to the territory you have chosen. Before starting, some important information:",
+    "section1": "The trained model provides a forecast <strong>from January 2022 to December 2031</strong>. After the first five years we cannot guarantee 100% accuracy. The more you go over the years, the <strong>less accurate the data will be</strong>.",
+    "section2": "The model does not consider the years 2020 and 2021, in which COVID-19 has determined an intense bending of the tourist flows. If you prefer to consider these years, you can select the <strong>checkbox</strong> down here. We advise you not to consider them for greater stability of the model, but the choice is yours!",
+    "section3": "You can select one or more <strong>filters</strong> to search by year, accommodation, or tourist residence. If you do not select anything, you will see the predictive model of all tourists in any residence structure of the 2022 year.",
+    "section4": "Is this your first time using Nomad? Follow the <strong>tutorial</strong> and discover all the features of the dashboard. You will also find a detailed explanation of the <strong>control panel</strong>."
+  },
+  "about": {
+    "introduction": {
+      "paragraph": "Charting a new course in the digital realm"
+    },
+    "main": {
+      "features": {
+        "div1": {
+          "title": "WHO WE ARE",
+          "paragraph1": "Outlander is a <strong>web agency in Turin</strong> specialising in the creation of cutting-edge sites and web applications.",
+          "paragraph2": "The company was born from a team of developers and designers determined to <strong>transform their passions into solutions</strong> for individuals and companies, conceived one by one with creativity and an out-of-the-box approach.",
+          "paragraph3": "The word outlander conjures up the idea of <strong>an exploration into innovative solutions</strong>, created to satisfy the customer and accompany him or her on a voyage of discovery into the digital frontier."
+        },
+        "div2": {
+          "title": "OUR FOCUS",
+          "paragraph1": "We deal with web solutions for individuals and companies related to the <strong>tourism</strong> sector.",
+          "paragraph2": "Our focus includes <strong>innovation</strong> and <strong>User Experience</strong>, and with these pillars we offer tailored solutions to meet customer needs.",
+          "paragraph3": "All Outlander projects and solutions include a careful analysis of the <strong>UX</strong> and the <strong>UI</strong>, a <strong>Mobile First</strong> development and <strong>SEO</strong> optimization."
+        },
+        "div3": {
+          "title": "OUR TECHNOLOGIES",
+          "paragraph1": "A journey to discover the digital age, guided by innovative technology and experience."
+        },
+        "div4": {
+          "paragraph1": "It is our latest project, a web application that allows the user to <strong>explore the Abruzzo</strong> region like never before.",
+          "paragraph2": "With a user-friendly interface, NOMAD analyzes ISTAT datasets and creates <strong>interactive charts</strong> that provide the user with a detailed look at tourist flows and their choices, from the type of accommodation to the most popular provinces. NOMAD is the ideal solution that guarantees reliability and data accuracy.",
+          "paragraph3": "In addition, with a trained machine learning model, NOMAD proposes medium and long-term <strong>forecasts</strong> of future tourist flows, ensuring accuracy up to <strong>five years</strong>."
+        }
+      },
+      "team": {
+        "title": "Our Team"
+      },
+      "contacts": {
+        "title": "Contacts",
+        "div1": {
+          "title": "OUTLANDER Co. Ltd",
+          "description": "© 2022. All rights reserved. VAT N:1000000000"
+        },
+        "div2": {
+          "title": "TURIN HQ",
+          "description": "Via Jacopo Durandi 10 - Turin (TO) 10123 - IT"
+        }
+      }
+    }
+  },
+
+  "footer": {
+    "rights": "Copyright © 2022 - All rights reserved by OUTLANDER Co. Ltd"
+  },
+  "404": {
+    "paragraph": "Oops, this page doesn't exist. Click on the compass and go back to the homepage!"
+  },
+  "Statistiche_relative_a": "Statistics related to",
+  "Previsioni_relative_a": "Forecasts related to",
+  "check": "<strong>Includes COVID years</strong>"
+}

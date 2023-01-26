@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 
 .pseudo-bg-primary {
   position: relative;
@@ -15,7 +16,7 @@
   left: -15rem;
   width: 1000vw;
   height: 100%;
-  background: #f1cfdd;
+  @apply bg-accent;
   border-radius: 1000px 0 0 1000px;
 }
 
@@ -25,3 +26,7 @@
   }
 }
 
+::selection {
+  @apply bg-primary;
+  color: white;
+}
