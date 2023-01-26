@@ -2,7 +2,7 @@
 
 This is a web application about tourism, named "_Nomad_". The application analyses official datasets  
 from Istat ([istat.it](https://www.istat.it)) and generates statistics and predictions about tourists flow  
-in the region Abruzzo. The previsions are calculated using a trained machine learning model.
+in the region Abruzzo. The predictions are calculated using a trained machine learning model.
 
 The web application has the following areas:
 
