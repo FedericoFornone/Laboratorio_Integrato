@@ -15,10 +15,6 @@
 The backend is written entirely in `Java` using version 2.7.7 of `SpringBoot`.  
 As `JDK` we used version 11, but we also tested with version 17.
 
-You can find their relative documentation here:
-- https://docs.oracle.com/en/java/javase/11/
-- https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
-
 Dependencies used:
 - spring-boot-starter-web
 - spring-boot-starter-data-jpa
