@@ -2,6 +2,7 @@
 
 - [Backend NOMAD](#backend-nomad)
   - [Configuration and technical characteristics](#configuration-and-technical-characteristics)
+  - [Files and project structure](#files-and-project-structure)
   - [Database configuration](#database-configuration)
   - [Utility](#utility)
   - [API and endpoints](#api-and-endpoints)
@@ -25,6 +26,24 @@ Dependencies used:
 - mariadb-java-client
 - spring-boot-devtools
 - json
+
+---
+## Files and project structure
+
+```
+Files structure
+    main/
+        java/com/example/test
+            api/
+                API_frontend.java -> frontend endpoints
+            utility/
+                ConvertToJSON.java -> convert in a JSON format string
+                DBInteraction.java -> connect to the database
+                ExecutePythonAndCaptureOutput.java -> to populate the DB with predicted data automatically
+            TestApplication.java
+        resources/ -> frontend
+            
+```
 
 ---
 ## Database configuration
