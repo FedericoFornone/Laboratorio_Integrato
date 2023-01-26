@@ -1,0 +1,136 @@
+<main class="container mx-auto">
+  <section class="grid min-h-screen grid-cols-1 mt-20 lg:gap-10 lg:grid-cols-2">
+    <div class="grid text-center lg:text-left place-content-center">
+      <h1
+        class="font-bold text-center lg:text-left text-7xl md:text-8xl lg:text-9xl text-secondary"
+      >
+        Nomad
+      </h1>
+      <p
+        class="text-neutral text-center lg:text-left text-2xl lg:text-3xl max-w-[45ch] mt-5 w-[90%] md:w-auto m-auto"
+        [translate]="'homepage.section1.paragraph'"
+      ></p>
+
+      <app-button [class]="'mt-5 lg:mt-10'" [link]="'/dashboard/'">
+        <p [translate]="'homepage.section1.label'"></p>
+      </app-button>
+    </div>
+    <div class="grid place-content-center">
+      <figure class="w-3/4 mx-auto lg:w-auto lg:mx-0">
+        <img
+          src="assets/home/home-hero.svg"
+          alt="UnDraw illustration of a person with a map vector"
+        />
+      </figure>
+    </div>
+  </section>
+  <section
+    class="grid min-h-screen grid-cols-1 lg:gap-10 lg:grid-cols-2 z-0 | pseudo-bg-primary"
+  >
+    <div class="grid order-last place-content-center lg:order-first">
+      <figure class="w-3/4 mx-auto lg:w-auto lg:mx-0">
+        <img
+          src="assets/home/home-about.svg"
+          alt="UnDraw illustration of a person with a chart"
+        />
+      </figure>
+    </div>
+    <div class="grid text-center lg:text-left place-content-center">
+      <h2
+        class="mb-3 text-5xl font-bold text-neutral md:text-6xl lg:text-7xl mt-5"
+        [translate]="'homepage.section2.title'"
+      ></h2>
+      <p
+        class="text-neutral text-xl lg:text-2xl max-w-[45ch] mt-5 w-[80%] md:w-auto m-auto text-justify md:text-left"
+        [translate]="'homepage.section2.paragraph'"
+      ></p>
+
+      <app-button [class]="'mt-5 lg:mt-10'" [link]="'/about/'"
+        ><p [translate]="'homepage.section2.label'"></p
+      ></app-button>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="mb-20 text-center">
+        <p
+          class="m-8 text-xl leading-relaxed text-justify text-neutral xl:w-2/4 lg:w-3/4 lg:text-3xl md:m-auto md:text-center"
+          [innerHTML]="'homepage.section3.paragraph' | translate"
+        ></p>
+        <div class="flex justify-center mt-6">
+          <div class="inline-flex w-16 h-1 rounded-full bg-primary"></div>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap -mx-4 -mt-4 -mb-10 space-y-6 sm:-m-4 md:space-y-0"
+      >
+        <div class="flex flex-col items-center p-4 text-center md:w-1/3">
+          <div
+            class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-indigo-500 rounded-full"
+          >
+            <img
+              src="/assets/home/undraw_smiley-face.svg"
+              alt="UnDraw handcraft of a smiley face"
+              width="54.24"
+              height="54.24"
+            />
+          </div>
+          <div class="flex-grow">
+            <h3
+              class="mb-3 text-xl font-semibold leading-8 text-neutral lg:text-2xl"
+              [translate]="'homepage.section3.div1.title'"
+            ></h3>
+            <p
+              class="leading-relaxed text-neutral lg:w-[85%] m-8 lg:m-auto text-justify text-lg lg:text-xl"
+              [translate]="'homepage.section3.div1.paragraph'"
+            ></p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center p-4 text-center md:w-1/3">
+          <div
+            class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-indigo-500 rounded-full"
+          >
+            <img
+              src="/assets/home/undraw_check.svg"
+              alt="UnDraw handcraft of a check"
+              width="25.25"
+              height="36"
+            />
+          </div>
+          <div class="flex-grow">
+            <h3
+              class="mb-3 text-xl font-semibold leading-8 text-neutral lg:text-2xl"
+              [translate]="'homepage.section3.div2.title'"
+            ></h3>
+            <p
+              class="leading-relaxed text-neutral lg:w-[85%] m-8 lg:m-auto text-justify text-lg lg:text-xl"
+              [translate]="'homepage.section3.div2.paragraph'"
+            ></p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center p-4 text-center md:w-1/3">
+          <div
+            class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-indigo-500 rounded-full"
+          >
+            <img
+              src="/assets/home/undraw_rocket.svg"
+              alt="UnDraw handcraft of a space rocket"
+              width="50.23"
+              height="58.64"
+            />
+          </div>
+          <div class="flex-grow">
+            <h3
+              class="mb-3 text-xl font-semibold leading-8 text-neutral lg:text-2xl"
+              [translate]="'homepage.section3.div3.title'"
+            ></h3>
+            <p
+              class="leading-relaxed text-neutral lg:w-[85%] m-8 lg:m-auto text-justify text-lg lg:text-xl"
+              [translate]="'homepage.section3.div3.paragraph'"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

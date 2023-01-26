@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+.pseudo-bg-primary {
+  position: relative;
+}
+
+.pseudo-bg-primary::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -15rem;
+  width: 1000vw;
+  height: 100%;
+  @apply bg-accent;
+  border-radius: 1000px 0 0 1000px;
+}
+
+@media (min-width: 1024px) {
+  .pseudo-bg-primary::before {
+    left: -10rem;
+  }
+}
+
+::selection {
+  @apply bg-primary;
+  color: white;
+}

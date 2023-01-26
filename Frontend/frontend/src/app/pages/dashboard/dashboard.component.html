@@ -1,0 +1,80 @@
+<main class="container mx-auto">
+  <h1
+    class="text-3xl font-bold text-center md:text-4xl lg:text-5xl text-secondary"
+  >
+    Dashboard
+  </h1>
+  <p
+    class="text-neutral text-lg lg:text-2xl max-w-[70ch] mt-5 w-[90%] md:w-auto m-auto text-justify md:text-center"
+    [innerHTML]="'dashboard.section1.paragraph' | translate"
+  ></p>
+  <div class="flex justify-end mx-5 my-5 lg:mx-0">
+    <div
+      class="flex items-center tooltip tooltip-left tooltip-open tooltip-primary"
+      data-tip="Tutorial"
+    >
+      <button class="text-neutral" (click)="openModal()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-7 h-7"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <app-multistep-modal
+    [modalOpen]="tutorialModalOpen"
+    (closeModal)="closeModal()"
+    class="text-neutral"
+  >
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 1</h3>
+      <p
+        class="py-4"
+        [innerHTML]="'dashboard.tutorial1.step1.paragraph' | translate"
+      ></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 2</h3>
+      <p
+        class="py-4"
+        [innerHTML]="'dashboard.tutorial1.step2.paragraph' | translate"
+      ></p>
+    </ng-template>
+  </app-multistep-modal>
+
+  <app-responsive-slider [hasMain]="true">
+    <ng-template #slide *ngFor="let province of provincesData">
+      <div
+        class="rounded-xl h-[25rem] overflow-hidden"
+        (click)="resetFilters()"
+        [routerLink]="'stats/' + province.name.toLowerCase()"
+      >
+        <figure
+          class="relative w-full h-full transition-all duration-200 cursor-pointer hover:scale-105"
+        >
+          <img
+            [src]="'assets/provinces/' + province.imageName"
+            [alt]="province.name"
+            class="object-cover w-full h-full grayscale hue-rotate-[340deg] hover:grayscale-0 hover:hue-rotate-0"
+          />
+          <figcaption
+            class="absolute inset-0 grid text-5xl font-medium text-white pointer-events-none bg-base-content bg-opacity-60 place-items-center lg:text-7xl"
+          >
+            {{ province.name }}
+          </figcaption>
+        </figure>
+      </div>
+    </ng-template>
+  </app-responsive-slider>
+</main>

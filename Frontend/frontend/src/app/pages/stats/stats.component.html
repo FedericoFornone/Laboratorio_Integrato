@@ -1,0 +1,365 @@
+<main class="container mx-auto">
+  <!-- FIXME: breadcrumbs -->
+  <h1
+    class="mb-10 text-xl font-bold text-center text-secondary md:text-2xl pt-36"
+  >
+    Dashboard
+  </h1>
+  <h2
+    class="text-3xl font-bold text-center md:text-4xl lg:text-5xl text-secondary"
+  >
+    {{ "Statistiche_relative_a" | translate }}
+    <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
+  </h2>
+  <app-content [content]="'stats'"></app-content>
+  <app-multistep-modal
+    [modalOpen]="tutorialModalOpen"
+    (closeModal)="closeModal()"
+    class="text-neutral"
+  >
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 1</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step1' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 2</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step2' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 3</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step3' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 4</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step4' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 5</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step5' | translate"></p>
+    </ng-template>
+    <ng-template #step>
+      <h3 class="text-lg font-bold">Step 6</h3>
+      <p class="py-4" [innerHTML]="'dashboard.tutorial2.step6' | translate"></p>
+    </ng-template>
+  </app-multistep-modal>
+
+  <section class="flex justify-end mx-5 my-5 lg:mx-0">
+    <div
+      class="flex items-center tooltip tooltip-left tooltip-open tooltip-primary"
+      data-tip="Tutorial"
+    >
+      <button class="text-neutral" (click)="openModal()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-7 h-7"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+          />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <section
+    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
+  >
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="tourists"
+        class="text-sm font-medium lg:text-xl text-neutral"
+        [translate]="'charts.select1.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="tourists"
+        [(ngModel)]="statisticsFilters.residenceCountry"
+      >
+        <option
+          selected
+          value=""
+          [translate]="'charts.select1.options.all'"
+        ></option>
+        <option
+          value="Italia"
+          [translate]="'charts.select1.options.italy'"
+        ></option>
+        <option
+          value="Paesi esteri"
+          [translate]="'charts.select1.options.foreign'"
+        ></option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="structures"
+        class="text-sm font-medium lg:text-xl text-neutral"
+        [translate]="'charts.select2.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="structures"
+        [(ngModel)]="statisticsFilters.infrastructureType"
+      >
+        <option
+          selected
+          value=""
+          [translate]="'charts.select2.options.all'"
+        ></option>
+        <option
+          value="HOTELLIKE"
+          [translate]="'charts.select2.options.hotel'"
+        ></option>
+        <option
+          value="OTHER"
+          [translate]="'charts.select2.options.other'"
+        ></option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="statsYear"
+        class="text-sm font-medium lg:text-xl text-neutral"
+        [translate]="'charts.select3.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="statsYear"
+        [(ngModel)]="statisticsFilters.statisticsYear"
+      >
+        <option selected value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+      </select>
+    </div>
+
+    <button
+      class="self-end btn btn-primary"
+      (click)="onStatisticsFilterChange()"
+      [translate]="'charts.button'"
+    ></button>
+  </section>
+
+  <app-responsive-slider>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <!-- we're rendering two different graphs for different screen sizes, as 
+        simply changing the options of the currently displayed graph doesn't work with 
+        this library -->
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.options"
+          [legend]="arrivalsStatsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsStatsChart.chartData"
+          [options]="arrivalsStatsChart.mobileOptions"
+          [legend]="arrivalsStatsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesStatsChart.chartData"
+          [options]="attendancesStatsChart.options"
+          [legend]="attendancesStatsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesStatsChart.chartData"
+          [options]="attendancesStatsChart.mobileOptions"
+          [legend]="attendancesStatsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
+    </ng-template>
+  </app-responsive-slider>
+
+  <h2
+    class="mt-20 text-3xl font-bold text-center md:text-4xl lg:text-5xl text-secondary"
+  >
+    {{ "Previsioni_relative_a" | translate }}
+    <span class="font-bold text-primary">{{ regionName | uppercase }}</span>
+  </h2>
+  <app-content [content]="'prevs'"></app-content>
+
+  <div
+    class="flex items-center justify-center gap-3 mx-5 my-3 text-lg lg:mx-0 lg:text-xl"
+  >
+    <input
+      type="checkbox"
+      id="covidCheck"
+      class="checkbox checkbox-primary"
+      [(ngModel)]="predictionsFilters.covidIncluded"
+    />
+    <label
+      for="covidCheck"
+      [innerHTML]="'check' | translate"
+      class="text-neutral"
+    ></label>
+  </div>
+
+  <section
+    class="grid grid-cols-1 gap-2 mx-5 my-5 md:gap-5 md:grid-cols-2 lg:flex lg:justify-center lg:mx-0 lg:items-end"
+  >
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="tourists"
+        class="text-sm font-medium lg:text-xl text-neutral"
+        [translate]="'charts.select1.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="tourists"
+        [(ngModel)]="predictionsFilters.residenceCountry"
+      >
+        <option
+          selected
+          value=""
+          [translate]="'charts.select1.options.all'"
+        ></option>
+        <option
+          value="Italia"
+          [translate]="'charts.select1.options.italy'"
+        ></option>
+        <option
+          value="Paesi esteri"
+          [translate]="'charts.select1.options.foreign'"
+        ></option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="structures"
+        class="text-sm font-medium lg:text-xl text-neutral"
+        [translate]="'charts.select2.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="structures"
+        [(ngModel)]="predictionsFilters.infrastructureType"
+      >
+        <option
+          selected
+          value=""
+          [translate]="'charts.select2.options.all'"
+        ></option>
+        <option
+          value="HOTELLIKE"
+          [translate]="'charts.select2.options.hotel'"
+        ></option>
+        <option
+          value="OTHER"
+          [translate]="'charts.select2.options.other'"
+        ></option>
+      </select>
+    </div>
+    <div class="flex flex-col flex-1 gap-1">
+      <label
+        for="predictionsYear"
+        class="text-sm font-medium lg:text-xl text-neutral"
+        [translate]="'charts.select4.label'"
+      ></label>
+      <select
+        class="w-full bg-white select select-bordered"
+        id="predictionsYear"
+        [(ngModel)]="predictionsFilters.predictionsYear"
+      >
+        <option selected value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+        <option value="2031">2031</option>
+      </select>
+    </div>
+    <button
+      class="self-end btn btn-primary"
+      [translate]="'charts.button'"
+      (click)="onPredictionsFilterChange()"
+    ></button>
+  </section>
+
+  <app-responsive-slider>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsPredictionsChart.chartData"
+          [options]="arrivalsPredictionsChart.options"
+          [legend]="arrivalsPredictionsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="arrivalsPredictionsChart.chartData"
+          [options]="arrivalsPredictionsChart.mobileOptions"
+          [legend]="arrivalsPredictionsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
+    </ng-template>
+    <ng-template #slide>
+      <div class="rounded-xl h-[40rem] md:h-[35rem] shadow-xl bg-white">
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesPredictionsChart.chartData"
+          [options]="attendancesPredictionsChart.options"
+          [legend]="attendancesPredictionsChart.legend"
+          *ngIf="!mobileCanvas"
+        >
+        </canvas>
+        <canvas
+          baseChart
+          [type]="'bar'"
+          [data]="attendancesPredictionsChart.chartData"
+          [options]="attendancesPredictionsChart.mobileOptions"
+          [legend]="attendancesPredictionsChart.legend"
+          *ngIf="mobileCanvas"
+        >
+        </canvas>
+      </div>
+    </ng-template>
+  </app-responsive-slider>
+</main>

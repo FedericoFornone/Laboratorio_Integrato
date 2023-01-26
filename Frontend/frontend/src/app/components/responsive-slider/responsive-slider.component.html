@@ -1,0 +1,58 @@
+<div class="relative">
+  <button
+    class="absolute z-50 p-2 text-5xl font-bold -translate-y-1/2 bg-black bg-opacity-50 rounded-full top-1/2 left-7 lg:hidden"
+    (click)="previousSlide()"
+    *ngIf="currentSlide > 0"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="white"
+      class="w-6 h-6"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+  <button
+    class="absolute z-50 p-2 text-5xl font-bold -translate-y-1/2 bg-black bg-opacity-50 rounded-full top-1/2 right-7 lg:hidden"
+    (click)="nextSlide()"
+    *ngIf="currentSlide < slides.length - 1"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      class="w-6 h-6"
+      stroke="white"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+  <div
+    [ngStyle]="{ transform: 'translateX(' + -currentSlide * 100 + '%)' }"
+    class="flex lg:grid lg:grid-cols-2 mx-5 lg:mx-0 lg:gap-5 lg:!transform-none"
+  >
+    <!-- main logic of this component, it emits all the content children 
+    and displays only the one that is currently selected -->
+    <ng-container *ngFor="let slide of slides; let i = index">
+      <div
+        class="min-w-full transition-all duration-200 lg:transform-none"
+        [class.col-span-2]="hasMain && i === 0"
+        [class.-translate-x-full]="currentSlide - 1 === i"
+        [class.translate-x-0]="currentSlide === i"
+        [class.translate-x-full]="currentSlide + 1 === i"
+      >
+        <ng-container [ngTemplateOutlet]="slide"></ng-container>
+      </div>
+    </ng-container>
+  </div>
+</div>
