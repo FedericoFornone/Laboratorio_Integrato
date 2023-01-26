@@ -61,7 +61,7 @@ The backend is written using `SpringBoot` and `Java`, while the fintech is writt
 
 You can find their relative documentation here:     
 
-- [Backend](https://github.com/FedericoFornone/Laboratorio_Integrato/blob/dev/Backend/test/README.md)
+- [Backend](https://github.com/FedericoFornone/Laboratorio_Integrato/blob/dev/Backend/README.md)
 - [Fintech](https://github.com/FedericoFornone/Laboratorio_Integrato/blob/dev/Fintech/README.md)
 
 ---
