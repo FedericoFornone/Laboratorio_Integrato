@@ -257,7 +257,6 @@ Note: The program assumes that the csv file 'final_data/abruzzo.csv' is located 
 
 -   Riccardo Rapelli, Fintech software developer
 
----
 
 ### Contacts
 
