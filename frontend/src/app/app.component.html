@@ -1,5 +1,7 @@
 <div [attr.data-theme]="dataTheme">
-  <app-navbar (themeChanged)="updateTheme($event)"></app-navbar>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
+  <block-ui message="Loading">
+    <app-navbar (themeChanged)="updateTheme($event)"></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </block-ui>
 </div>
