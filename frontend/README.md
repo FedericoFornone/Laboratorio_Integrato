@@ -17,12 +17,12 @@ The web application has the following areas:
   - [Configuration and technical characteristics](#configuration-and-technical-characteristics)
   - [Files and project structure](#files-and-project-structure)
   - [Features delivered](#features-delivered)
+    - [Additional features](#additional-features)
   - [Browser compatibility](#browser-compatibility)
   - [External resources](#external-resources)
   - [License and contact information](#license-and-contact-information)
   - [Authors](#authors)
   - [Changelog and version history](#changelog-and-version-history)
-
 ---
 
 ## Usage
@@ -45,8 +45,11 @@ to run the application in development mode.
 
 
 Note that you have to follow some instructions to have the backend up and running.    
-In the next section you can find 
+In the next section you can find the link to that documentation.    
 
+If you want, you can check a deployed version of the project on this link, but note that you won't   
+see the dashboard because the database is not yet deployed.      
+The entire project will be deployed soon.    
 
 ---
 
@@ -84,7 +87,7 @@ Files structure
     models/
         api.model.ts -> it contains all the interfaces used to handle the API
     resolvers/
-        arrivalpredictions.resolver.ts    FIXME:
+        arrivalpredictions.resolver.ts   
         arrivalstats.resolver.ts
         attendancepredictions.resolver.ts
         attendancestats.resolver.ts
@@ -153,7 +156,15 @@ flows in all the national territory
 - If the user prefers to take these years into account, he can select the check below the control panel.      
 However, we advise not to consider them for greater stability of the model.
 
+### Additional features     
 
+We have delivered two addictional features on the project:   
+
+- a **dark mode**, in the navbar there is a toggle with an icon of the moon.     
+- the possibility to **change the language** of the web application. We have used     
+  Angular international to do so, you can find a link to its documentation in the [External resources](#external-resources) section
+
+--- 
 
 ## Browser compatibility
 
