@@ -6,6 +6,7 @@
   - [Database configuration](#database-configuration)
   - [Utility](#utility)
   - [API and endpoints](#api-and-endpoints)
+  - [Deploy on server](#deploy-on-server)
   - [Authors](#authors)
   - [Changelog and version history](#changelog-and-version-history)
 
@@ -118,6 +119,11 @@ public class API_frontend {
   </dd>
 </dl>
 
+---
+## Deploy on server
+To deploy a SpringBoot application: 
+- Bring to the server, with an FTP application (filezilla for example), the file . war generated
+- run with the command "java -jar [namewar]"
 ---
 ## Authors
 - Daniele Budano, Backend System Integrator
