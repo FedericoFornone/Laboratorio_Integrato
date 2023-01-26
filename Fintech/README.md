@@ -22,6 +22,7 @@ This is the Fintech branch about the project named **Nomad**, it has the followi
     - [Percentage calculator](#percentage-calculator)
     - [Entry Data Analysis (EDA) Abruzzo](#entry-data-analysis-abruzzo)
 -   [Authors](#authors)
+    - [Contacts](#contacts)
 
 ---
 
@@ -255,3 +256,9 @@ Note: The program assumes that the csv file 'final_data/abruzzo.csv' is located 
 ## Authors
 
 -   Riccardo Rapelli, Fintech software developer
+
+---
+
+### Contacts
+
+- riccardo.rapelli@edu.itspiemonte.it
