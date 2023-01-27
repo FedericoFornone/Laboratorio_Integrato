@@ -8,6 +8,7 @@
   - [API and endpoints](#api-and-endpoints)
   - [Deploy on server](#deploy-on-server)
   - [Authors](#authors)
+    -[Contacts] (#contacts)
   - [Changelog and version history](#changelog-and-version-history)
 
 ---
@@ -126,6 +127,10 @@ To deploy a SpringBoot application:
 - Federico Fornone, Backend System Integrator
 - Alessia Rizzo, Backend System Integrator
 
+###Contacts
+- daniele.budano@edu.itspiemonte.it
+- federico.fornone@edu.itspiemonte.it
+- alessia.rizzo@edu.itspiemonte.it
 ---
 ## Changelog and version history
 
