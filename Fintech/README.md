@@ -21,6 +21,7 @@ This is the Fintech branch about the project named **Nomad**, it has the followi
     - [Processing data](#processing-data)
     - [Percentage calculator](#percentage-calculator)
     - [Entry Data Analysis (EDA) Abruzzo](#entry-data-analysis-abruzzo)
+    - [API documentation (.yaml)](https://github.com/FedericoFornone/Laboratorio_Integrato/blob/dev/Fintech/python_script/api_docs.yaml)
 -   [Authors](#authors)
     - [Contacts](#contacts)
 
